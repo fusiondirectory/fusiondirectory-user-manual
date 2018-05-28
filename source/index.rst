@@ -6,6 +6,10 @@
 Welcome to FusionDirectory User Manual's documentation!
 =======================================================
 
+.. image:: /_static/images/fd_logo.png
+   :alt: FusionDirectory
+   :align: center
+
 Contents:
 
 .. toctree::
@@ -13,10 +17,4 @@ Contents:
 
    plugins/index
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+.. include:: globals.rst
