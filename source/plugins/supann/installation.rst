@@ -9,24 +9,24 @@ Archlinux
 
 .. code-block:: bash
 
-  yaourt -S fusiondirectory-plugin-supann
-  yaourt -S fusiondirectory-plugin-supann-schema
+   yaourt -S fusiondirectory-plugin-supann
+   yaourt -S fusiondirectory-plugin-supann-schema
 
 Debian
 ^^^^^^
 
 .. code-block:: bash
 
-  apt-get install fusiondirectory-plugin-supann
-  apt-get install fusiondirectory-plugin-supann-schema
+   apt-get install fusiondirectory-plugin-supann
+   apt-get install fusiondirectory-plugin-supann-schema
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-  yum install fusiondirectory-plugin-supann
-  yum install fusiondirectory-plugin-supann-schema
+   yum install fusiondirectory-plugin-supann
+   yum install fusiondirectory-plugin-supann-schema
 
 Install schemas
 ---------------
@@ -36,24 +36,24 @@ Archlinux
 
 .. code-block:: bash
 
-  fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/internet2.schema
-  fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/supann_2009.schema
-  fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/supann-fd-conf.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/internet2.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/supann_2009.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/supann-fd-conf.schema
 
 Debian
 ^^^^^^
 
 .. code-block:: bash
 
-  fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/internet2.schema
-  fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/supann_2009.schema
-  fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/supann-fd-conf.schema
+   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/internet2.schema
+   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/supann_2009.schema
+   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/supann-fd-conf.schema
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-  fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/internet2.schema
-  fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/supann_2009.schema
-  fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/supann-fd-conf.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/internet2.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/supann_2009.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/supann-fd-conf.schema

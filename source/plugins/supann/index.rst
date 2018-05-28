@@ -10,4 +10,3 @@ FusionDirectory Plugins Supann
    installation
    configuration
    functionalities
-   images/index.rst
