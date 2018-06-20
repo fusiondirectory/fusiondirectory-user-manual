@@ -1,0 +1,9 @@
+Migrate FusionDirectory from 1.0.7.3 to 1.0.7.4
+===============================================
+                                               
+
+Upgrade FusionDirectory first
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Upgrade FusionDirectory core package before other ones to avoid
+dependencies errors:

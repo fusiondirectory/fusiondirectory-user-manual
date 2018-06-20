@@ -15,6 +15,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   update/index
    plugins/index
 
 .. include:: globals.rst

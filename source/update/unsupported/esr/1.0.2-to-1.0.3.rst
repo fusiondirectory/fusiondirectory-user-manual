@@ -1,0 +1,57 @@
+Migrate FusionDirectory from 1.0.2 to 1.0.3
+===========================================
+
+
+Remove fusiondirectory-plugin-goto
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Before migration from FusionDirectory 1.0.2 to 1.0.3 is important to
+remove the fusiondirectory-plugin-goto, fusiondirectory-plugin-mit-krb5
+and fusiondirectory-plugin-phpgw to avoid errors:
+
+Debian
+~~~~~~
+
+``root@fusion-install:~#`` ``apt-get`` ``remove``
+``fusiondirectory-plugin-goto`` ``root@fusion-install:~#`` ``apt-get``
+``remove`` ``fusiondirectory-plugin-mit-krb5``
+``root@fusion-install:~#`` ``apt-get`` ``remove``
+``fusiondirectory-plugin-phpgw``
+
+RHEL / Fedora
+~~~~~~~~~~~~~
+
+Not Applicable
+
+Upgrade fusiondirectory first
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Upgrade FusionDirectory core package before other ones to avoid
+dependencies errors:
+
+Debian
+~~~~~~
+
+``root@fusion-install:~#`` ``apt-get`` ``update``
+``root@fusion-install:~#`` ``apt-get`` ``install`` ``fusiondirectory``
+``root@fusion-install:~#`` ``apt-get`` ``upgrade``
+
+RHEL / Fedora
+~~~~~~~~~~~~~
+
+#. yum makecache
+#. yum upgrade fusiondirectory\*
+
+Run setup
+^^^^^^^^^
+
+Starting with version 1.0.3, the addition of a plugin is handled
+automatically by fusiondirectory. To activate this you have to re-run
+the setup from the web interface. ``root@fusion-install:~#`` ``mv``
+``/etc/fusiondirectory/fusiondirectory.conf``
+``/etc/fusiondirectory/fusiondirectory.conf.back`` Then from web
+interface type :
+
+http://your_server/fusiondirectory/setup.php
+
+and fill the required information.

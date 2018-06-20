@@ -1,0 +1,41 @@
+Migrate FusionDirectory from 1.0.1 to 1.0.2
+===========================================
+
+
+Remove fusiondirectory-plugin-opsi
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Before migration from FusionDirectory 1.0.1 to 1.0.2 is important to
+remove the fusiondirectory-plugin-opsi and fusiondirectory-plugin-log to
+avoid errors:
+
+Debian
+~~~~~~
+
+``root@fusion-install:~#`` ``apt-get`` ``remove``
+``fusiondirectory-plugin-opsi`` ``root@fusion-install:~#`` ``apt-get``
+``remove`` ``fusiondirectory-plugin-log``
+
+RHEL / Fedora
+~~~~~~~~~~~~~
+
+Not Applicable
+
+Upgrade fusiondirectory first
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Upgrade FusionDirectory core package before other ones to avoid
+dependencies errors:
+
+Debian
+~~~~~~
+
+``root@fusion-install:~#`` ``apt-get`` ``update``
+``root@fusion-install:~#`` ``apt-get`` ``install`` ``fusiondirectory``
+``root@fusion-install:~#`` ``apt-get`` ``upgrade``
+
+RHEL / Fedora
+~~~~~~~~~~~~~
+
+#. yum makecache
+#. yum upgrade fusiondirectory\*
