@@ -1,0 +1,277 @@
+Migrate FusionDirectory from 1.0.3 to 1.0.4
+===========================================
+
+
+Upgrade fusiondirectory first
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Upgrade FusionDirectory core package and fusiondirectory-plugin-systems
+(if it's installed) before other ones to avoid dependencies errors:
+
+Debian
+~~~~~~
+
+``root@fusion-install:~#`` ``apt-get`` ``update``
+``root@fusion-install:~#`` ``apt-get`` ``install`` ``fusiondirectory``
+``root@fusion-install:~#`` ``apt-get`` ``install``
+``fusiondirectory-plugin-systems`` ``root@fusion-install:~#``
+``apt-get`` ``upgrade``
+
+Main page is changed
+^^^^^^^^^^^^^^^^^^^^
+
+Starting with version 1.0.4, the main page of FusionDirectory interface
+is changed. From now, the main menu will be displayed in the following
+order:
+
+| `` * Administration``
+| `` * Addons``
+| `` * My Account``
+
+To adapt to change, you have 2 ways :
+
+| `` * Re-run setup``
+| `` * Change data manually in fusiondirectory.conf``
+
+Re-run setup
+~~~~~~~~~~~~
+
+Before you re-run the setup from the web interface, you must do this :
+
+``root@fusion-install:~#`` ``mv``
+``/etc/fusiondirectory/fusiondirectory.conf``
+``/etc/fusiondirectory/fusiondirectory.conf.back``
+
+Then from web interface type :
+
+http://your_server/fusiondirectory/setup.php
+
+and fill the required information.
+
+Change data manually in fusiondirectory.conf
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In fusiondirectory.conf file, in the menu part, you must place sections
+in this order :
+
+| `` * section name="Administration"``
+| `` * section name="Addons"``
+| `` * section name="My account"``
+
+Upgrade of LDAP directory
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You have to update your LDAP schema, FusionDirectory provide you
+dedicated LDIF file for updating your LDAP tree. If you are still using
+.schema files a restart of your ldap server should be sufficient.
+
+The files to apply to your OpenLDAP server, there are stored in
+"/etc/ldap/schema/fusiondirectory/update-from-1.0.3"
+
+``root@fusion-install:~#`` ``ls`` ``-l``
+``/etc/ldap/schema/fusiondirectory/update-from-1.0.3/*``
+``/etc/ldap/schema/fusiondirectory/update-from-1.0.3/remove-trust.ldif``
+``/etc/ldap/schema/fusiondirectory/update-from-1.0.3/update-argonaut.ldif``
+``/etc/ldap/schema/fusiondirectory/update-from-1.0.3/update-fdQuota.ldif``
+``/etc/ldap/schema/fusiondirectory/update-from-1.0.3/update-goserver.ldif``
+``/etc/ldap/schema/fusiondirectory/update-from-1.0.3/update-goto.ldif``
+``/etc/ldap/schema/fusiondirectory/update-from-1.0.3/update-recovery.ldif``
+
+Remove trust schema
+~~~~~~~~~~~~~~~~~~~
+
+If in a previous version of FusionDirectory you have installed
+\*\*trust\*\* schema, you need to remove it. For this you can use
+remove-trust.ldif.
+
+Because we can not predict the order of schema insertion in your ldap
+directory, you need to modify the provided remove-trust.ldif.
+
+-  
+
+   -  1.\*\* Identify the number of insertion of the trust schema in
+      your ldap directory :
+
+ root@fusion-install:~# ldapsearch -Y EXTERNAL -H ldapi:/// -LLL -b
+cn=schema,cn=config \| grep "dn: cn={"
+
+... dn: cn={29}trust,cn=schema,cn=config ...
+
+-  
+
+   -  2.\*\* edit the remove-trust.ldif file :
+
+ root@fusion-install:~# nano
+/etc/ldap/schema/fusiondirectory/update-from-1.0.3/remove-trust.ldif
+
+dn: cn=trust,cn=schema,cn=config ...
+
+and add the find number {29} at the first line, like this :
+
+``dn:`` ``cn={29}trust,cn=schema,cn=config`` ``...``
+
+-  
+
+   -  3.\*\* Run the fusiondirectory-insert-schema command :
+
+ root@fusion-install:~# fusiondirectory-insert-schema -i
+/etc/ldap/schema/fusiondirectory/update-from-1.0.3/remove-trust.ldif
+
+SASL/EXTERNAL authentication started SASL username:
+gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth SASL SSF: 0
+executing 'ldapadd -Y EXTERNAL -H ldapi:/// -f
+/etc/ldap/schema/fusiondirectory/update-from-1.0.3/remove-trust.ldif'SASL/EXTERNAL
+authentication started SASL username:
+gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth SASL SSF: 0
+modifying entry "cn={29}trust,cn=schema,cn=config"
+
+Update needed fusiondirectory schema
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The following needed schema :
+
+| `` * goserver``
+| `` * goto``
+| `` * recovery``
+
+must be upgraded.
+
+Because we can not predict the order of schema insertion in your ldap
+directory, you need to modify the provided update-goserver.ldif,
+update-goto.ldif, update-recovery.ldif.
+
+For exemple, for goserver schema :
+
+-  
+
+   -  1.\*\* Identify the number of insertion of the goserver schema in
+      your ldap directory :
+
+ root@fusion-install:~# ldapsearch -Y EXTERNAL -H ldapi:/// -LLL -b
+cn=schema,cn=config \| grep "dn: cn={"
+
+... dn: cn={9}goserver,cn=schema,cn=config ...
+
+-  
+
+   -  2.\*\* edit the update-goserver.ldif file :
+
+ root@fusion-install:~# nano
+/etc/ldap/schema/fusiondirectory/update-from-1.0.3/update-goserver.ldif
+
+dn: cn=goserver,cn=schema,cn=config ...
+
+and add the find number {9} at the first line, like this :
+
+``dn:`` ``cn={9}goserver,cn=schema,cn=config`` ``...``
+
+-  
+
+   -  3.\*\* Run the fusiondirectory-insert-schema command :
+
+ root@fusion-install:~# fusiondirectory-insert-schema -i
+/etc/ldap/schema/fusiondirectory/update-from-1.0.3/update-goserver.ldif
+
+SASL/EXTERNAL authentication started SASL username:
+gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth SASL SSF: 0
+executing 'ldapadd -Y EXTERNAL -H ldapi:/// -f
+/etc/ldap/schema/fusiondirectory/update-from-1.0.3/update-goserver.ldif'SASL/EXTERNAL
+authentication started SASL username:
+gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth SASL SSF: 0
+modifying entry "cn={9}goserver,cn=schema,cn=config"
+
+You must do the same for goto et recovery also.
+
+Upgrade argonaut schema
+~~~~~~~~~~~~~~~~~~~~~~~
+
+If you've installed \*\*argonaut\*\* plugin, you must upgrade his
+schema.
+
+Because we can not predict the order of schema insertion in your ldap
+directory, you need to modify the provided update-argonaut.ldif.
+
+-  
+
+   -  1.\*\* Identify the number of insertion of the argonaut schema in
+      your ldap directory :
+
+ root@fusion-install:~# ldapsearch -Y EXTERNAL -H ldapi:/// -LLL -b
+cn=schema,cn=config \| grep "dn: cn={"
+
+... dn: cn={14}argonaut,cn=schema,cn=config ...
+
+-  
+
+   -  2.\*\* edit the update-argonaut.ldif file :
+
+ root@fusion-install:~# nano
+/etc/ldap/schema/fusiondirectory/update-from-1.0.3/update-argonaut.ldif
+
+dn: cn=argonaut,cn=schema,cn=config ...
+
+and add the find number {14} at the first line, like this :
+
+``dn:`` ``cn={14}argonaut,cn=schema,cn=config`` ``...``
+
+-  
+
+   -  3.\*\* Run the fusiondirectory-insert-schema command :
+
+ root@fusion-install:~# fusiondirectory-insert-schema -i
+/etc/ldap/schema/fusiondirectory/update-from-1.0.3/update-argonaut.ldif
+
+SASL/EXTERNAL authentication started SASL username:
+gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth SASL SSF: 0
+executing 'ldapadd -Y EXTERNAL -H ldapi:/// -f
+/etc/ldap/schema/fusiondirectory/update-from-1.0.3/update-argonaut.ldif'SASL/EXTERNAL
+authentication started SASL username:
+gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth SASL SSF: 0
+modifying entry "cn={14}argonaut,cn=schema,cn=config"
+
+Upgrade fdQuota schema
+~~~~~~~~~~~~~~~~~~~~~~
+
+If you've installed \*\*quota\*\* plugin, you must upgrade fdQuota
+schema.
+
+Because we can not predict the order of schema insertion in your ldap
+directory, you need to modify the provided update-fdQuota.ldif.
+
+-  
+
+   -  1.\*\* Identify the number of insertion of the fdQuota schema in
+      your ldap directory :
+
+ root@fusion-install:~# ldapsearch -Y EXTERNAL -H ldapi:/// -LLL -b
+cn=schema,cn=config \| grep "dn: cn={"
+
+... dn: cn={25}fdQuota,cn=schema,cn=config ...
+
+-  
+
+   -  2.\*\* edit the update-fdQuota.ldif file :
+
+ root@fusion-install:~# nano
+/etc/ldap/schema/fusiondirectory/update-from-1.0.3/update-fdQuota.ldif
+
+dn: cn=fdQuota,cn=schema,cn=config ...
+
+and add the find number {25} at the first line, like this :
+
+``dn:`` ``cn={25}fdQuota,cn=schema,cn=config`` ``...``
+
+-  
+
+   -  3.\*\* Run the fusiondirectory-insert-schema command :
+
+ root@fusion-install:~# fusiondirectory-insert-schema -i
+/etc/ldap/schema/fusiondirectory/update-from-1.0.3/update-fdQuota.ldif
+
+SASL/EXTERNAL authentication started SASL username:
+gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth SASL SSF: 0
+executing 'ldapadd -Y EXTERNAL -H ldapi:/// -f
+/etc/ldap/schema/fusiondirectory/update-from-1.0.3/update-fdQuota.ldif'SASL/EXTERNAL
+authentication started SASL username:
+gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth SASL SSF: 0
+modifying entry "cn={25}fdQuota,cn=schema,cn=config"

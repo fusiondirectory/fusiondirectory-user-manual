@@ -1,0 +1,195 @@
+Migrate FusionDirectory from 1.0.20 to 1.1
+==========================================
+
+
+Ubuntu 12.0.4 TLS users
+^^^^^^^^^^^^^^^^^^^^^^^
+
+    !:
+
+FusionDirectory needs the php-cas library for CAS server support. This
+library can normally be found in universe in the Ubuntu repositories.
+
+In case you did not find it, grab the deb from there and install it:
+
+http://packages.ubuntu.com/trusty/all/php-cas/download
+
+and select your favorite mirror
+
+New Depot Configuration
+^^^^^^^^^^^^^^^^^^^^^^^
+
+    !: The repositories have been cleaned and reorganized please update
+    your configuration accordingly :!:
+
+`Downloading from Repositories <en:dl_install>`__
+
+Removed plugins
+^^^^^^^^^^^^^^^
+
+If you used kolab2 plugin you need to remove the plugin and its schema
+with the following command
+
+``apt-get`` ``remove`` ``fusiondirectory-plugin-kolab2`` ``apt-get``
+``remove`` ``fusiondirectory-plugin-kolab2-schema``
+
+Splitted plugins
+^^^^^^^^^^^^^^^^
+
+The posix tab of fusiondirectory is now a plugin by itself, if you use
+posix attributes install the corresponding plugin
+
+``apt-get`` ``install`` ``fusiondirectory-plugin-posix``
+
+Upgrade schema2ldif
+^^^^^^^^^^^^^^^^^^^
+
+For Jessie distribution add extra repository
+
+#. fusiondirectory debian-extra repository
+
+deb http://repos.fusiondirectory.org/fusiondirectory-extra/debian-jessie
+jessie main
+
+Update the package list and upgrade schema2ldif
+
+``apt-get`` ``update`` ``apt-get`` ``install`` ``schema2ldif``
+
+Upgrade FusionDirectory first
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Upgrade FusionDirectory core package before other ones to avoid
+dependencies errors:
+
+``apt-get`` ``install`` ``fusiondirectory``
+
+Upgrade FusionDirectory schema package too.
+
+``apt-get`` ``install`` ``fusiondirectory-schema``
+
+Upgrade of LDAP directory
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Upgrade the core schemas
+
+``fusiondirectory-insert-schema`` ``-m``
+``/etc/ldap/schema/fusiondirectory/core-fd-conf.schema``
+``fusiondirectory-insert-schema`` ``-m``
+``/etc/ldap/schema/fusiondirectory/core-fd.schema``
+
+Upgrade of LDAP directory
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+if you are using the argonaut plugin you have to update its schema
+
+``fusiondirectory-insert-schema`` ``-m``
+``/etc/ldap/schema/fusiondirectory/argonaut-fd.schema``
+
+if you are using the dhcp plugin you have to update its schema
+
+``fusiondirectory-insert-schema`` ``-m``
+``/etc/ldap/schema/fusiondirectory/dhcp-fd.schema``
+
+if you are using the fai plugin you have to update its schema
+
+``fusiondirectory-insert-schema`` ``-m``
+``/etc/ldap/schema/fusiondirectory/fai.schema``
+
+if you are using the mail plugin you have to update its schema
+
+``fusiondirectory-insert-schema`` ``-m``
+``/etc/ldap/schema/fusiondirectory/mail-fd.schema``
+
+if you are using the systems plugin you have to update its schema
+
+``fusiondirectory-insert-schema`` ``-m``
+``/etc/ldap/schema/fusiondirectory/service-fd.schema``
+``fusiondirectory-insert-schema`` ``-m``
+``/etc/ldap/schema/fusiondirectory/systems-fd-conf.schema``
+``fusiondirectory-insert-schema`` ``-m``
+``/etc/ldap/schema/fusiondirectory/systems-fd.schema``
+
+Migrate old objects
+^^^^^^^^^^^^^^^^^^^
+
+If you have systems use this command to migrate them
+
+``fusiondirectory-setup`` ``--migrate-systems``
+
+If you have phones use this command to migrate them
+
+``fusiondirectory-setup`` ``--migrate-phones``
+
+If you have winstations use this command to migrate them
+
+``fusiondirectory-setup`` ``--migrate-winstations``
+
+Check for deprecated attributes and objectClasses in your LDAP
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The \*\*list-deprecated\*\* option of \*\*fusiondirectory-setup\*\* show
+deprecated attributes and objectClasses for FusionDirectory
+
+ fusiondirectory-setup --list-deprecated List deprecated attributes and
+objectclasses Deprecated attributes:
+
+| ``gotoHotplugDevice              (GOto - keeps hotplug devices)                                  - 1.3.6.1.4.1.10098.1.1.11.14``
+| ``gotoSyslogServer               (GOto - Gonicus Terminal Concept, value syslogServer.)          - 1.3.6.1.4.1.10098.1.1.1.1``
+| ``gotoLdapServer                 (LDAP server to use)                                            - 1.3.6.1.4.1.10098.1.1.1.38``
+| ``gotoHotplugDeviceDN            (GOto - points to hotplug devices)                              - 1.3.6.1.4.1.10098.1.1.11.18``
+| ``gotoMode                       (GOto - Gonicus Terminal Concept, Terminal is active.)          - 1.3.6.1.4.1.10098.1.1.1.24``
+| ``gosaUser                       (GOsa - DN of a user)                                           - 1.3.6.1.4.1.10098.1.1.12.2``
+| ``argonautLdap2zoneAllowNotify   (Fusion Directory - Argonaut, allow notify.)                    - 1.3.6.1.4.1.38414.2.13.2``
+| ``gotoLogoffScript               (GOto - specifies a LogoffScript)                               - 1.3.6.1.4.1.10098.1.1.11.19``
+| ``gotoLogonScript                (GOto - specifies a LogonScript)                                - 1.3.6.1.4.1.10098.1.1.11.10``
+| ``gosaDefaultPrinter             (Defines a default printer a user owns)                         - 1.3.6.1.4.1.10098.1.1.12.13``
+| ``fdMailMethod                   (FusionDirectory - Mail method)                                 - 1.3.6.1.4.1.38414.10.10.1``
+| ``gosaObject                     (GOsa - DN of an object)                                        - 1.3.6.1.4.1.10098.1.1.12.3``
+
+Deprecated objectClasses:
+
+| ``GOhard                         (Gonicus Hardware definitions, objectclass)                     - 1.3.6.1.4.1.10098.1.2.1.3``
+| ``gosaLockEntry                  (GOsa - Class for GOsa locking)                                 - 1.3.6.1.4.1.10098.1.2.1.19.2``
+| ``gotoWorkstation                (GOto - Gonicus Terminal Concept, objectclass)                  - 1.3.6.1.4.1.10098.1.2.1.30``
+| ``gotoEnvironment                (GOto - contains environment settings)                          - 1.3.6.1.4.1.10098.1.2.1.32``
+| ``fdAsteriskPluginConf           (FusionDirectory asterisk plugin configuration)                 - 1.3.6.1.4.1.38414.19.2.1``
+| ``gotoWorkstationTemplate        (GOto - Gonicus Terminal Concept, objectclass)                  - 1.3.6.1.4.1.10098.1.2.1.34``
+| ``goServer                       (Server description)                                            - 1.3.6.1.4.1.10098.1.2.1.27``
+| ``gotoDevice                     (GOto - contains environment settings)                          - 1.3.6.1.4.1.10098.1.2.1.42``
+| ``gotoPrinter                    (GOto - Gonicus Terminal Concept, objectclass)                  - 1.3.6.1.4.1.10098.1.2.1.31``
+| ``gotoTerminal                   (GOto - Gonicus Terminal Concept, objectclass)                  - 1.3.6.1.4.1.10098.1.2.1.1``
+| ``gotoTerminalTemplate           (GOto - Gonicus Terminal Concept, objectclass)                  - 1.3.6.1.4.1.10098.1.2.1.35``
+
+The \*\*check-deprecated\*\* option will output a list of dn using old
+attributes and objectClasses of they are present in your ldap server
+
+``fusiondirectory-setup`` ``--check-deprecated`` ``List`` ``LDAP``
+``entries`` ``using`` ``deprecated`` ``attributes`` ``or``
+``objectclasses`` ``There`` ``are`` ``no`` ``entries`` ``in`` ``the``
+``LDAP`` ``using`` ``obsolete`` ``attributes`` ``There`` ``are`` ``no``
+``entries`` ``in`` ``the`` ``LDAP`` ``using`` ``obsolete`` ``classes``
+
+The \*\*ldif-deprecated\*\* option will output an ldif file on the
+console that you can use with ldapmodify to clean you ldap server from
+old attributes. ``fusiondirectory-setup`` ``--ldif-deprecated`` ``>``
+``remove_deprecated.ldif``
+
+If they are old objectClasses it will warn you and you will have to
+remove them by hand, they have been specified at the
+\*\*check-deprecated\*\* step.
+
+Please read it carefully before applying :!::!:
+
+Checking your indexed attributes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Check that all you index still match with valid attributes present in
+your ldap directory
+
+New format for repository service
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you have a repository service. Open and save it back so it will use
+the new format
+
+Enjoy :)
