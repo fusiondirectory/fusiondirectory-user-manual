@@ -3,7 +3,7 @@ Migrate FusionDirectory from 1.0.8.9 to 1.0.9
 
 
 Backup you template First
-^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------
 
 The template system has been completely rewritten, and the old template
 will not be converted, so you need to backup them, remove them from
@@ -14,7 +14,7 @@ branch now and are the basis for having template for the whole
 application in the future.
 
 Backup your phones
-^^^^^^^^^^^^^^^^^^
+------------------
 
 You must backup all your phones in a LDIF and remove them. Modify your
 LDIF like below:
@@ -37,7 +37,7 @@ You can use the next command to backup your phones
 ``backupPhones.ldif``
 
 Moved Attributes
-^^^^^^^^^^^^^^^^
+----------------
 
 We cleaned the core of FusionDirectory to only used classical attributes
 and objectClass, so the FusionDirectory special attributes on the first
@@ -49,13 +49,12 @@ and is best suited to contain those data not normalized. So of you use
 to install the personal plugin.
 
 Upgrade FusionDirectory
-^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------
 
 Upgrade FusionDirectory core package before other ones to avoid dependencies errors
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Debian
-------
+**Debian**
 
 ``apt-get`` ``install`` ``fusiondirectory``
 
@@ -67,8 +66,7 @@ There is a new schema for the templates, so you need to run
 
 ``fusiondirectory-insert-schema``
 
-RPM
----
+**RPM**
 
 ``yum`` ``remove`` ``fusiondirectory`` ``yum`` ``install``
 ``fusiondirectory``
@@ -83,7 +81,7 @@ There is a new schema for the templates, so you need to run
 ``fusiondirectory-insert-schema``
 
 Removed obsolete plugins
-~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 In this version we removed obsolete plugin, because they where based on
 software no longer existing or needed an sql backend and we decided they
@@ -121,7 +119,7 @@ installation
 ``apt-get`` ``remove`` ``fusiondirectory-plugin-uwimap``
 
 New Plugin for peoples using a mix of groupOfNames and posixGroup on the same object
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We cleaned the code of FusionDirectory and by default it make posixGroup
 or clean standard compliant groupOfNames. If you need a mix of
@@ -138,10 +136,10 @@ applications.
 ``apt-get`` ``install`` ``fusiondirectory-plugin-mixedgroups``
 
 Upgrade of LDAP directory
-^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------
 
 Upgrade Core FusionDirectory Schema
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The password recovery schema has been migrated into the core schema so
 you must remove it first
@@ -320,14 +318,14 @@ changetype:modify delete:fdRfc2307bis - delete:fdCopyPaste -
    -  Please read it carefully before applying :!: :!:\*\*
 
 Remove old schema from /etc/ldap/schema/fusiondirectory
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The old schema are not automatically removed from
 /etc/ldap/schema/fusiondirectory. You can safely remove
 \*\*recovery-fd.schema\*\* and \*\*asterisk-fd.conf\*\*
 
 Problems when we removing objectClasses
-'''''''''''''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When you remove gosaAccount you can have some troubles.
 
@@ -338,7 +336,7 @@ on the users where the samba tab is not activate.
 ``sambaPwdLastSet``
 
 If you use argonaut client tab on some objets
-'''''''''''''''''''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To add the new attribute argonautClientProtocol, you must only open the
 objets that have an argonaut client tab and save it again.
