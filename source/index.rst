@@ -18,5 +18,6 @@ Contents:
    install/index
    update/index
    plugins/index
+   license/index.rst
 
 .. include:: globals.rst
