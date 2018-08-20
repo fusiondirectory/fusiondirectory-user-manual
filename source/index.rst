@@ -16,6 +16,7 @@ Contents:
    :maxdepth: 2
 
    whatis/fusiondirectory.rst
+   prerequisite/prerequisite.rst
    install/index
    update/index
    plugins/index
