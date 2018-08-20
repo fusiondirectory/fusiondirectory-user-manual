@@ -15,6 +15,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   whatis/fusiondirectory.rst
    install/index
    update/index
    plugins/index
