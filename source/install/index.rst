@@ -7,3 +7,4 @@ Install FusionDirectory
    :maxdepth: 2
 
    gpg-keys.rst
+   download.rst
