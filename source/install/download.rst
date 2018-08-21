@@ -1,7 +1,13 @@
 .. _debian-repository-label:
 
+
 Debian Repository
 '''''''''''''''''
+
+.. _debian-repository-stretch-label:
+
+Debian Stretch
+^^^^^^^^^^^^^^
 
 To use the lastest published version for **stretch** put this in
 your /etc/apt/sources.list
@@ -16,6 +22,11 @@ your /etc/apt/sources.list
    #fusiondirectory extra repository
    deb http://repos.fusiondirectory.org/fusiondirectory-extra/debian-stretch stretch main
 
+
+.. _debian-repository-jessie-label:
+
+Debian Jessie
+^^^^^^^^^^^^^
 
 To use the lastest published version for **jessie** put this in your
 /etc/apt/sources.list
