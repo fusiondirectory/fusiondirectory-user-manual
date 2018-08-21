@@ -8,4 +8,5 @@ Install FusionDirectory
 
    gpg-keys.rst
    download.rst
+   debian/index.rst
    centos/index.rst
