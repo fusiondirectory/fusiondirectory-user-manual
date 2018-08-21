@@ -46,6 +46,8 @@ FusionDirectory.
 
 To use the lastest published version put this in your yum config :
 
+.. _rpm-repository-centos6-label:
+
 CentOS 6 / RHEL 6
 ^^^^^^^^^^^^^^^^^
 
@@ -81,6 +83,8 @@ SRPMS are also available in the following repo :
    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-FUSIONDIRECTORY
 
 !!! Scientific Linux is deprecated and will not be maintained anymore, you can switch the centos packages !!!
+
+.. _rpm-repository-centos7-label:
 
 CentOS 7 / RHEL 7
 ^^^^^^^^^^^^^^^^^
