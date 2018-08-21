@@ -8,11 +8,15 @@ Upgrade FusionDirectory first
 Upgrade FusionDirectory core package before other ones to avoid
 dependencies errors:
 
-``apt-get`` ``install`` ``fusiondirectory``
+.. code-block:: shell
+
+   apt-get install fusiondirectory
 
 Upgrade FusionDirectory schema package too.
 
-``apt-get`` ``install`` ``fusiondirectory-schema``
+.. code-block:: shell
+
+   apt-get install fusiondirectory-schema
 
 Remove the deprecated plugins
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -20,11 +24,16 @@ Remove the deprecated plugins
 The rolemanagement plugin has been integrated to the core so it must be
 removed.
 
-``apt-get`` ``--purge`` ``remove``
-``fusiondirectory-plugin-rolemanagement`` The board plugin has been
-renamed so it must be replaced ``apt-get`` ``--purge`` ``remove``
-``fusiondirectory-plugin-board`` ``apt-get`` ``install``
-``fusiondirectory-plugin-dashboard``
+.. code-block:: shell
+
+   apt-get --purge remove fusiondirectory-plugin-rolemanagement
+   
+The board plugin has been renamed so it must be replaced
+
+.. code-block:: shell
+
+   apt-get --purge remove fusiondirectory-plugin-board
+   apt-get install fusiondirectory-plugin-dashboard
 
 Upgrade of LDAP directory
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -32,18 +41,18 @@ Upgrade of LDAP directory
 You have to update your LDAP schemas, first update the FusionDirectory
 core schemas.
 
-``fusiondirectory-insert-schema`` ``-m``
-``/etc/ldap/schema/fusiondirectory/core-fd.schema``
+.. code-block:: shell
 
-``fusiondirectory-insert-schema`` ``-m``
-``/etc/ldap/schema/fusiondirectory/core-fd-conf.schema``
+   fusiondirectory-insert-schema -m /etc/ldap/schema/fusiondirectory/core-fd.schema
+
+   fusiondirectory-insert-schema -m /etc/ldap/schema/fusiondirectory/core-fd-conf.schema
 
 After that you have to update the schema for the plugins you are using.
 In this version the following schema have to be updated
 
-| `` * argonaut-fd-schema``
-| `` * ipmi-fd.schema``
-| `` * repository-fd.schema``
+- argonaut-fd-schema
+- ipmi-fd.schema
+- repository-fd.schema
 
 Migration of the FusionDirectory acls
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -52,7 +61,10 @@ FusionDirectory acl management has been changed from 1.0.7 to 1.0.8, so
 they need to be migrated. We added a command to fusiondirectory-setup
 for that.
 
-``fusiondirectory-setup`` ``--migrate-acls``
+.. code-block:: shell
 
-    !: This is tricky, don't forget to write down you acl first in case
-    it doesnt work :!:
+   fusiondirectory-setup --migrate-acls
+
+.. warning::
+
+   This is tricky, don't forget to write down you acl first in case it doesnt work

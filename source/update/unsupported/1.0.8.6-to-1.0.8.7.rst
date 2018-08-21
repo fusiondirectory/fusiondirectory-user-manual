@@ -8,11 +8,15 @@ Upgrade FusionDirectory first
 Upgrade FusionDirectory core package before other ones to avoid
 dependencies errors:
 
-``apt-get`` ``install`` ``fusiondirectory``
+.. code-block:: shell
+
+   apt-get install fusiondirectory
 
 Upgrade FusionDirectory schema package too.
 
-``apt-get`` ``install`` ``fusiondirectory-schema``
+.. code-block:: shell
+
+   apt-get install fusiondirectory-schema
 
 Upgrade of LDAP directory
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -20,14 +24,17 @@ Upgrade of LDAP directory
 You have to update your LDAP schemas, first remove the dashboard
 configuration schema.
 
-``fusiondirectory-insert-schema`` ``-e`` ``dashboard-fd-conf`` ``Are``
-``you`` ``sure`` ``you`` ``want`` ``to`` ``empty`` ``schema(s)``
-``dashboard-fd-conf?`` ``[Yes/No]?`` ``Yes``
+.. code-block:: shell
+
+   fusiondirectory-insert-schema -e dashboard-fd-conf
+   Are you sure you want to empty schema(s) dashboard-fd-conf?
+   [Yes/No]? Yes
 
 Then update the core-fd-conf schema.
 
-``fusiondirectory-insert-schema`` ``-m``
-``/etc/ldap/schema/fusiondirectory/core-fd-conf.schema``
+.. code-block:: shell
+
+   fusiondirectory-insert-schema -m /etc/ldap/schema/fusiondirectory/core-fd-conf.schema``
 
 Check for deprecated attributes and objectClasses in your LDAP
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -35,37 +42,33 @@ Check for deprecated attributes and objectClasses in your LDAP
 since FusionDirectory 1.0.8.1 two new options are in
 fusiondirectory-setup
 
- fusiondirectory-setup --list-deprecated List deprecated attributes and
-objectclasses Deprecated attributes:
 
-| ``gosaUnitTag                    (Takes a list of relevant mime-type|priority settings)          - 1.3.6.1.4.1.10098.1.1.12.33``
-| ``gosaSnapshotType               (Takes either undo or snapshot)                                 - 1.3.6.1.4.1.10098.1.1.12.36``
-| ``fdHonourUnitTags               (FusionDirectory - Honour unit tags)                            - 1.3.6.1.4.1.38414.8.14.3``
+- **fusiondirectory-setup --list-deprecated** List deprecated attributes and objectclasses Deprecated attributes:
+
+.. code-block:: shell
+
+   gosaUnitTag                    (Takes a list of relevant mime-type|priority settings)          - 1.3.6.1.4.1.10098.1.1.12.33
+   gosaSnapshotType               (Takes either undo or snapshot)                                 - 1.3.6.1.4.1.10098.1.1.12.36
+   fdHonourUnitTags               (FusionDirectory - Honour unit tags)                            - 1.3.6.1.4.1.38414.8.14.3
 
 Deprecated objectClasses:
 
-| ``gosaAdministrativeUnitTag      (Marker for objects below administrational units (v2.6.1))      - 1.3.6.1.4.1.10098.1.2.1.19.16``
-| ``gosaAdministrativeUnit         (Marker for administrational units (v2.6.1))                    - 1.3.6.1.4.1.10098.1.2.1.19.15``
+.. code-block:: shell
 
--  
+   gosaAdministrativeUnitTag      (Marker for objects below administrational units (v2.6.1))      - 1.3.6.1.4.1.10098.1.2.1.19.16
+   gosaAdministrativeUnit         (Marker for administrational units (v2.6.1))                    - 1.3.6.1.4.1.10098.1.2.1.19.15
 
-   -  fusiondirectory-setup --list-deprecated\*\* show deprecated
-      attributes and objectClasses for FusionDirectory
+.. code-block:: shell
 
-``fusiondirectory-setup`` ``--check-deprecated`` ``List`` ``LDAP``
-``entries`` ``using`` ``deprecated`` ``attributes`` ``or``
-``objectclasses`` ``There`` ``are`` ``no`` ``entries`` ``in`` ``the``
-``LDAP`` ``using`` ``obsolete`` ``attributes`` ``There`` ``are`` ``no``
-``entries`` ``in`` ``the`` ``LDAP`` ``using`` ``obsolete`` ``classes``
+   fusiondirectory-setup --check-deprecated
+   List LDAP entries using deprecated attributes or objectclasses
+   There are no entries in the LDAP using obsolete attributes
+   There are no entries in the LDAP using obsolete classes
 
--  
+- **fusiondirectory-setup --check-deprecated** will output an ldif file on
+  the console that you can use with ldapmodify to clean you ldap server
+  from old attributes and objectClasses
 
-   -  fusiondirectory-setup --check-deprecated\*\* will output a list of
-      dns using old attributes and objectClasses \\\\
-   -  fusiondirectory-setup --ldif-deprecated\*\* will output an ldif
-      file on the console that you can use with ldapmodify to clean you
-      ldap server from old attributes and objectClasses
+.. warning::  
 
--  
-
-   -  Please read it carefully before applying :!: :!:\*\*
+   Please read it carefully before applying !!

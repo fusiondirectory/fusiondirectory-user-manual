@@ -5,7 +5,11 @@ Migrate FusionDirectory from 1.0.8.5 to 1.0.8.6
 Removal of the mixed posixAccount / groupOfNames aka rfc2307bis
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-``:!: This was done to be more respectful of standard and not change the core openldap schema, but it seems to be causing trouble on some install, so if you use it **don't upgrade to 1.0.8.6** and **wait for 1.0.8.7**  :!:``
+.. warning::
+
+   This was done to be more respectful of standard and not change the core openldap schema,
+   but it seems to be causing trouble on some install, so if you use it 
+   **don't upgrade to 1.0.8.6** and **wait for 1.0.8.7**  !!!
 
 Upgrade FusionDirectory first
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -13,8 +17,12 @@ Upgrade FusionDirectory first
 Upgrade FusionDirectory core package before other ones to avoid
 dependencies errors:
 
-``apt-get`` ``install`` ``fusiondirectory``
+.. code-block:: shell
+
+   apt-get install fusiondirectory
 
 Upgrade FusionDirectory schema package too.
 
-``apt-get`` ``install`` ``fusiondirectory-schema``
+.. code-block:: shell
+
+   apt-get install fusiondirectory-schema

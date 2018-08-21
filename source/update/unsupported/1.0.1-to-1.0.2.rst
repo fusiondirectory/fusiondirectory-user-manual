@@ -12,9 +12,10 @@ avoid errors:
 Debian
 ~~~~~~
 
-``root@fusion-install:~#`` ``apt-get`` ``remove``
-``fusiondirectory-plugin-opsi`` ``root@fusion-install:~#`` ``apt-get``
-``remove`` ``fusiondirectory-plugin-log``
+.. code-block:: shell
+
+   apt-get remove fusiondirectory-plugin-opsi
+   apt-get remove fusiondirectory-plugin-log
 
 RHEL / Fedora
 ~~~~~~~~~~~~~
@@ -30,12 +31,16 @@ dependencies errors:
 Debian
 ~~~~~~
 
-``root@fusion-install:~#`` ``apt-get`` ``update``
-``root@fusion-install:~#`` ``apt-get`` ``install`` ``fusiondirectory``
-``root@fusion-install:~#`` ``apt-get`` ``upgrade``
+.. code-block:: shell
+
+   apt-get update
+   apt-get install fusiondirectory
+   apt-get upgrade
 
 RHEL / Fedora
 ~~~~~~~~~~~~~
 
-#. yum makecache
-#. yum upgrade fusiondirectory\*
+.. code-block:: shell
+
+   yum makecache
+   yum upgrade fusiondirectory\*

@@ -13,13 +13,15 @@ Debian
 Add new debian-extra repo to you source list
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-``deb``
-```http://repos.fusiondirectory.org/debian-extra`` <http://repos.fusiondirectory.org/debian-extra>`__
-``jessie`` ``main``
+.. code-block:: shell
 
-``root@fusion-install:~#`` ``apt-get`` ``update``
-``root@fusion-install:~#`` ``apt-get`` ``install`` ``fusiondirectory``
-``root@fusion-install:~#`` ``apt-get`` ``upgrade``
+   deb http://repos.fusiondirectory.org/debian-extra jessie main
+
+.. code-block:: shell
+
+   apt-get update
+   apt-get install fusiondirectory
+   apt-get upgrade
 
 Upgrade of LDAP directory
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -31,13 +33,14 @@ files.
 
 The following schemas needs an update :
 
-| `` * core-fd-conf.schema ``
-| `` * mail-fd.schema``
-| `` * service-fd.schema``
-| `` * systems-fd-conf.schema``
-| `` * systems-fd.schema``
+- core-fd-conf.schema
+- mail-fd.schema
+- service-fd.schema
+- systems-fd-conf.schema
+- systems-fd.schema
 
-``fusiondirectory-insert-schema`` ``-m``
-``/etc/ldap/schema/fusiondirectory/core-fd-conf.schema``
+.. code-block:: shell
+
+   fusiondirectory-insert-schema -m /etc/ldap/schema/fusiondirectory/core-fd-conf.schema
 
 You must do the same procedure for all other schema needing an update
