@@ -1,3 +1,5 @@
+.. _gpg-keys-label:
+
 Getting the official GPG keys to active package signature
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 

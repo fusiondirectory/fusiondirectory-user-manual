@@ -5,15 +5,15 @@ Migrate FusionDirectory from 1.0.10 to 1.0.11
 Ubuntu 12.0.4 TLS users
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-    !:
+.. warning::
 
-Since 1.0.9.2 FusionDirectory need the php-cas library for CAS server
-support. This library can normally found in universe in the Ubuntu
-repositories.
+   Since 1.0.9.2 FusionDirectory need the php-cas library for CAS server
+   support. This library can normally found in universe in the Ubuntu
+   repositories.
 
 In case you did not find it, grab the deb from here and install it
 
-http://packages.ubuntu.com/trusty/all/php-cas/download
+`<http://packages.ubuntu.com/trusty/all/php-cas/download>`_
 
 and select your preferred mirror
 
@@ -23,10 +23,12 @@ Upgrade FusionDirectory first
 Upgrade FusionDirectory core package before other ones to avoid
 dependencies errors:
 
-``apt-get`` ``install`` ``fusiondirectory``
+.. code-block:: shell
+
+   apt-get install fusiondirectory
 
 Upgrade FusionDirectory schema package too.
 
-``apt-get`` ``install`` ``fusiondirectory-schema``
+.. code-block:: shell
 
-Then upgrade the rest of your plugins
+   apt-get install fusiondirectory-schema

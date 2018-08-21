@@ -6,7 +6,7 @@ Update FusionDirectory
 .. toctree::
    :maxdepth: 2
 
-   supported/index
-   unsupported/index
+   supported/index.rst
+   unsupported/index.rst
 
 

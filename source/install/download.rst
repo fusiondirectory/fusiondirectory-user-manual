@@ -1,3 +1,5 @@
+.. _debian-repository-label:
+
 Debian Repository
 '''''''''''''''''
 
@@ -30,6 +32,8 @@ To use the lastest published version for **jessie** put this in your
 
 !!! Wheezy is deprecated and will not be maintained anymore, the latest release is 1.2 !!!
 
+
+.. _rpm-repository-label:
 
 RPM Repository
 ''''''''''''''

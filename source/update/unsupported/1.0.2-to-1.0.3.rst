@@ -12,11 +12,11 @@ and fusiondirectory-plugin-phpgw to avoid errors:
 Debian
 ~~~~~~
 
-``root@fusion-install:~#`` ``apt-get`` ``remove``
-``fusiondirectory-plugin-goto`` ``root@fusion-install:~#`` ``apt-get``
-``remove`` ``fusiondirectory-plugin-mit-krb5``
-``root@fusion-install:~#`` ``apt-get`` ``remove``
-``fusiondirectory-plugin-phpgw``
+.. code-block:: shell
+
+  apt-get remove fusiondirectory-plugin-goto
+  apt-get remove fusiondirectory-plugin-mit-krb5
+  apt-get remove fusiondirectory-plugin-phpgw
 
 RHEL / Fedora
 ~~~~~~~~~~~~~
@@ -32,9 +32,11 @@ dependencies errors:
 Debian
 ~~~~~~
 
-``root@fusion-install:~#`` ``apt-get`` ``update``
-``root@fusion-install:~#`` ``apt-get`` ``install`` ``fusiondirectory``
-``root@fusion-install:~#`` ``apt-get`` ``upgrade``
+.. code-block:: shell
+
+   apt-get update
+   apt-get install fusiondirectory
+   apt-get upgrade
 
 RHEL / Fedora
 ~~~~~~~~~~~~~
@@ -47,10 +49,13 @@ Run setup
 
 Starting with version 1.0.3, the addition of a plugin is handled
 automatically by fusiondirectory. To activate this you have to re-run
-the setup from the web interface. ``root@fusion-install:~#`` ``mv``
-``/etc/fusiondirectory/fusiondirectory.conf``
-``/etc/fusiondirectory/fusiondirectory.conf.back`` Then from web
-interface type :
+the setup from the web interface. 
+
+.. code-block:: shell
+   
+   mv /etc/fusiondirectory/fusiondirectory.conf /etc/fusiondirectory/fusiondirectory.conf.back
+   
+Then from web interface type :
 
 http://your_server/fusiondirectory/setup.php
 

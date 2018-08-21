@@ -1,7 +1,6 @@
 Migrate FusionDirectory from 1.0.7.2 to 1.0.7.3
 ===============================================
 
-
 Upgrade FusionDirectory first
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -19,5 +18,6 @@ files.
 In this version only the schema from the argonaut plugin needs to be
 update if you have the systems or argonaut plugins installed
 
-``fusiondirectory-insert-schema`` ``-m``
-``/etc/ldap/schema/fusiondirectory/argonaut-fd.schema``
+.. code-block:: shell
+
+   fusiondirectory-insert-schema -m /etc/ldap/schema/fusiondirectory/argonaut-fd.schema``
