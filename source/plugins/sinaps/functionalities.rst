@@ -2,17 +2,21 @@
 Functionalities
 ===============
 
+Once your FusionDirectory instance is correctly set to be receiving user and structures diffusion events in Sinaps and Sinaps plugin is up and running (see :ref:`configuration` ), creation and modification on Sinaps objects will be applied in FusionDirectory with the following rules.
+
 Diffusion
 ---------
 
-Once your FusionDirectory instance is correctly set to be receiving user and structures diffusion events in Sinaps and Sinaps plugin is up and running (see configuration_), creation and modification on Sinaps objects will be applied in FusionDirectory with the following rules.
+When a Diffusion event is received :
 
-When a Diffusion event is received, FusionDirectory first looks at the cross references and search for the application identifier set in the configuration. If no reference is found or the reference found is then not found in the LDAP, an object is created. Otherwise the matching object is updated.
+* FusionDirectory first looks at the cross references and search for the application identifier set in the configuration
+* If no reference is found or the reference found is not found in the LDAP, an object is created.
+* Otherwise the matching object is updated.
 
 Structure
 +++++++++
 
-Structures are synchronized as SupAnn_ entities.
+Structures are synchronized as :ref:`SupAnn` entities.
 
 ==========================  ==============================================  ===========
 FusionDirectory field       Sinaps XML field                                Details
@@ -42,7 +46,7 @@ If *rattachements* is empty, the event is considered as a deletion, in which cas
 * The fields telephoneNumber, facsimileTelephoneNumber and mobile are emptied
 * The mail tab is removed
 
-Otherwhise the following fields are sychronized:
+Otherwise the following fields are sychronized:
 
 ================================= ======================================================================================================  ===========
 FusionDirectory field             Sinaps XML field                                                                                        Details
@@ -73,5 +77,5 @@ Acquisition
 
 Once FusionDirectory is properly configured to send Acquisition events to Sinaps, it will do so when a user is modified, with the following rules:
 
-* Fields listed in "Contact methods" in the configuration are sent as the indicated contact methods
-* *supannEntiteAffectationPrincipale* is send as a *rattachement* with roles/role/typeRole = EXT and roles/role/externe/typeExterne the value configured in "Acquisition external type" in the configuration
+* Fields listed in **Contact methods** in the configuration are sent as the indicated contact methods
+* *supannEntiteAffectationPrincipale* is send as a *rattachement* with roles/role/typeRole = EXT and roles/role/externe/typeExterne the value configured in **Acquisition external type** in the configuration
