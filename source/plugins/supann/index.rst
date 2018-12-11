@@ -1,3 +1,5 @@
+.. _SupAnn:
+
 Supann
 ======
 
