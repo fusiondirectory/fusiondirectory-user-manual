@@ -40,7 +40,7 @@ This process work for the following attributes:
 
 You need to do the following to make it work.
 
-*   Add a file like |file|diplome_CUSTOM in |folder| /etc/fusiondirectory/supann/
+*   Add a file like |file| diplome_CUSTOM in |folder| /etc/fusiondirectory/supann/
 *   Fill your file with your customs entries
 
 In FusionDirectory you will need to select your "CUSTOM" part before selecting your entry that are in your file
