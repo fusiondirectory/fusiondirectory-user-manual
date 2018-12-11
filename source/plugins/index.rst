@@ -7,5 +7,4 @@ FusionDirectory Plugins
    :maxdepth: 2
 
    supann/index
-
-
+   sinaps/index
