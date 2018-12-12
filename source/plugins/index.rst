@@ -6,5 +6,6 @@ FusionDirectory Plugins
 .. toctree::
    :maxdepth: 2
 
-   supann/index
+   public-forms/index
    sinaps/index
+   supann/index
