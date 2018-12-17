@@ -1,9 +1,7 @@
-.. _SupAnn:
-
-Supann
+Sinaps
 ======
 
-FusionDirectory Plugins Supann
+FusionDirectory Plugins Sinaps
 
 .. toctree::
    :maxdepth: 2

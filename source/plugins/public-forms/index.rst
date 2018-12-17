@@ -1,9 +1,7 @@
-.. _SupAnn:
+Public Forms
+============
 
-Supann
-======
-
-FusionDirectory Plugins Supann
+FusionDirectory Plugins Public Forms
 
 .. toctree::
    :maxdepth: 2
