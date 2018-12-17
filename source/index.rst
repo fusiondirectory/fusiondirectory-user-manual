@@ -20,6 +20,7 @@ Contents:
    install/index
    update/index
    plugins/index
+   contributing.rst
    license/index.rst
    authors/index.rst
    contact/contact.rst
