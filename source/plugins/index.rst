@@ -7,5 +7,6 @@ FusionDirectory Plugins
    :maxdepth: 2
 
    invitations/index
-   supann/index
+   public-forms/index
    sinaps/index
+   supann/index
