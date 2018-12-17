@@ -10,3 +10,4 @@ Install FusionDirectory
    download.rst
    debian/index.rst
    centos/index.rst
+   web-setup.rst
