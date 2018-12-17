@@ -21,6 +21,7 @@ Contents:
    update/index
    plugins/index
    license/index.rst
+   authors/index.rst
    contact/contact.rst
 
 .. include:: globals.rst
