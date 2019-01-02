@@ -23,7 +23,7 @@ Core settings
 * **LDAP size limit**: Tells FusionDirectory to retrieve the specified maximum number of results. The user will get a warning, that not all entries were shown.
 * **Edit locking**: Enables FusionDirectory to check if a entry currently being edited has been modified from someone else outside FusionDirectory in the meantime. It will display an informative dialog then. It can be set to *entryCSN* for OpenLDAP based systems or *contextCSN* for Sun DS based systems.
 * **Enable logging**: Enables event logging on FusionDirectory side. Setting it to true, FusionDirectory will log every action a user performs via syslog. If you use rsyslog and configure it to mysql logging, you can browse all events within FusionDirectory.
-* **Schema validation**:
+* **Schema validation**: Validate the installed schema before connecting to FusionDirectory
 * **Enable snapshots**: This enables you to save certain states of entries and restore them later on.
 * **Snapshot base**: Defines the base where snapshots should be stored inside of the LDAP.
 * **Wildcard foreign keys**: Whether to activate foreign key handling in cases where a wildcard filter is needed. For instance when moving a department containing users, this will make sure any reference to a user in this department is updated. This maintain consistency but may be a bit slow on big trees.
@@ -33,7 +33,19 @@ Password settings
 
 * **Password default hash**: (required) Defines the default password hash to choose for new accounts.
 
-  Valid values are crypt/standard-des, crypt/enhanced-des, crypt/md5,  crypt/blowfish, crypt/sha-256, crypt/sha-512, smd5, md5, sasl, ssha, sha.
+  Valid values are :
+  
+  * crypt/standard-des
+  * crypt/enhanced-des
+  * crypt/md5
+  * crypt/blowfish
+  * crypt/sha-256
+  * crypt/sha-512
+  * smd5
+  * md5
+  * sasl
+  * ssha
+  * sha
 
   These values will be overridden when using templates.
 * **Force default hash**: Enable/Disable force the use of the default password hash.
@@ -51,7 +63,7 @@ Login and session
 * **Warn if session is not encrypted**: Enables PHP security checks to detect non encrypted access to the web interface. FusionDirectory will display a warning in this case.
 * **Session lifetime**: (required) Defines  when  a  session will expire in seconds. For Debian systems, this will not work because the sessions will be removed by a cron job instead. Please modify the value inside of your php.ini instead.
 * **HTTP authentification**: Activate HTTP authentification (basic auth).
-* **HTTP Header authentication**: Activate HTTP header authentification (default [[http://lemonldap-ng.org|LemonLDAP-NG]] method)
+* **HTTP Header authentication**: Activate HTTP header authentification (default `LemonLDAP::NG`_ method)
 * **Header name**: Define the name of the header you will use for HTTP Header Authentification
 
 SSL
@@ -118,3 +130,5 @@ Hooks
   * Command: The executed command when this hook is triggered. Use the placeholder syntax to pass attribute values to the hook.
 
 * **Display hook output**: Activate to display the hook output.
+
+.. _LemonLDAP::NG : http://lemonldap-ng.org/
