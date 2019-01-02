@@ -19,6 +19,7 @@ Contents:
    prerequisite/prerequisite.rst
    install/index
    update/index
+   core/index
    plugins/index
    contributing.rst
    license/index.rst
