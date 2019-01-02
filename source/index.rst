@@ -23,6 +23,7 @@ Contents:
    plugins/index
    contributing.rst
    support/index.rst
+   security/index.rst
    license/index.rst
    authors/index.rst
    contact/contact.rst
