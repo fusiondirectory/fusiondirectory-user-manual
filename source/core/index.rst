@@ -13,3 +13,4 @@ FusionDirectory Core
    aclroles
    acls
    configuration
+   dashboard
