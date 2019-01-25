@@ -2,27 +2,29 @@ Installing Dependencies
 '''''''''''''''''''''''
 
 FusionDirectory requires both the `EPEL`_ repository and
-the Software Collection `SCL`_ for php 5.6 or higher.
+the `REMI`_ repository for PHP 7.1
 
 -  To install epel
 
 .. code-block:: shell
 
-   yum install epel-release
+   yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
    
--  To install php 5.6 Software Collection
+-  To install remi repository
 
 .. code-block:: shell
 
-   yum install centos-release-scl
+   yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
-   yum install rh-php56
+   yum install yum-utils
 
-- To enable php 5.6
+- To enable Remi repo an PHP 7.1
 
 .. code-block:: shell
 
-   scl enable rh-php56 bash
+   yum-config-manager --enable remi-php71
+   yum-config-manager --enable remi
+   yum update
 
 Install the FusionDirectory Repos
 '''''''''''''''''''''''''''''''''
@@ -81,7 +83,6 @@ You should see the FusionDirectory setup page come up by going to:
 http://SERVER-IP/fusiondirectory
 
 .. _EPEL : https://fedoraproject.org/wiki/EPEL
-.. _SCL : https://www.softwarecollections.org
-.. _rh-php56 : https://www.softwarecollections.org/en/scls/rhscl/rh-php56
+.. _REMI : https://rpms.remirepo.net/
 
 
