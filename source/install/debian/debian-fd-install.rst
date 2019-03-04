@@ -3,6 +3,11 @@ Installing Dependencies
 
 All The needed dependancies are resolved by the debian packages
 
+.. note::
+
+   The repositories are in https for Debian
+   so you will need to install **apt-transport-https**
+
 Install the FusionDirectory Repos
 '''''''''''''''''''''''''''''''''
 
