@@ -44,3 +44,16 @@ You need to do the following to make it work.
 *   Fill your file with your customs entries
 
 In FusionDirectory you will need to select your "CUSTOM" part before selecting your entry that are in your file
+
+SupAnn Status
+^^^^^^^^^^^^^
+
+The plugin also adds a tab on users to see/set the current state of their resources.
+Default available resources are the mail account and the account itself.
+
+.. image:: images/user-status.png
+   :alt: Picture of "SupAnn Status" user tab in FusionDirectory
+
+You can also set the start date and end date of the current status for a resource.
+If you set an end date, make sure you have a tool or daemon running to keep the status in a consistent state by changing it before the end date.
+We provide a tool for this in our argonaut project by passing the "--supann-update" option to argonaut-user-reminder. Make sure it runs daily if you chose to use this solution.
