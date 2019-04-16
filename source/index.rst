@@ -20,6 +20,7 @@ Contents:
    install/index
    update/index
    core/index
+   acls/index
    plugins/index
    contributing.rst
    support/index.rst
