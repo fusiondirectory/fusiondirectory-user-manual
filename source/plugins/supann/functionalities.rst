@@ -55,5 +55,7 @@ Default available resources are the mail account and the account itself.
    :alt: Picture of "SupAnn Status" user tab in FusionDirectory
 
 You can also set the start date and end date of the current status for a resource.
-If you set an end date, make sure you have a tool or daemon running to keep the status in a consistent state by changing it before the end date.
-We provide a tool for this in our argonaut project by passing the "--supann-update" option to argonaut-user-reminder. Make sure it runs daily if you chose to use this solution.
+
+If you set an end date, you either have to change the status yourself or use our tool **argonaut-user-reminder** with the option **--supann-update**. 
+
+**argonaut-user-reminder** should run daily to keep the status consistent.
