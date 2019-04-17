@@ -50,7 +50,7 @@ Now go to LDAP tab and click on the entry you see
    :alt: Picture of Applications LDAP tab in FusionDirectory
    
    
-This will give you an overview of the role rights on the webapplication you just created   
+This will give you an overview of attributes **fdApplicationAllowed** that you will be able to use in a filter to restrict who can login
 
 
 
