@@ -7,6 +7,7 @@ FusionDirectory Plugins
    :maxdepth: 2
 
    alias/index
+   applications/index
    audit/index
    supann/index
    sinaps/index
