@@ -63,7 +63,7 @@ Use FusionDirectory as portal
 
 Go in configuration 
 
-.. image:: images/applications-configuration-menu-ok.png
+.. image:: images/applications-configuration-menu.png
    :alt: Picture of Configuration tab in FusionDirectory
    
    
@@ -76,4 +76,14 @@ Click on plugins section and then click edit in the bottom right corner
 .. image:: images/applications-edit-button.png
    :alt: Picture of Edit button in FusionDirectory
    
+Select your portal mode in the "Show web applications in menu" drop-down menu
+
+
+.. image:: images/applications-select-portal.png
+   :alt: Picture of Edit button in FusionDirectory
    
+
+* None: no use portal mode
+* Only allowed: only allow user that are in a role that have your application
+* All: the icons are displayed for everyone
+
