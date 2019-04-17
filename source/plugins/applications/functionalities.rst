@@ -63,7 +63,7 @@ Use FusionDirectory as portal
 
 Go in configuration 
 
-.. image:: images/applications-configuration-menu.png
+.. image:: images/applications-configuration-menu-ok.png
    :alt: Picture of Configuration tab in FusionDirectory
    
    
@@ -77,85 +77,3 @@ Click on plugins section and then click edit in the bottom right corner
    :alt: Picture of Edit button in FusionDirectory
    
    
-Select your portal mode in the "Show web applications in menu" drop-down menu
-
-
-.. image:: images/applications-select-portal.png
-   :alt: Picture of Edit button in FusionDirectory
-   
-
-* None: no use portal mode
-* Only allowed: only allow user that are in a role that have your application
-* All: the icons are displayed for everyone
-
-
-* Add an application in a role
-
-
-Go in groups and roles
-
-.. image:: images/application-groups-and-roles.png
-   :alt: Picture of Groups and roles icon in FusionDirectory
-   
-   
-Create a role
-
-
-.. image:: images/applications-create-role.png
-   :alt: Picture of Create a role in FusionDirectory
-   
-
-Add the users in the role and click on application tabs  
-
-
-.. image:: images/applications-create-role.png
-   :alt: Picture of Create a role in FusionDirectory
-   
-   
-Activate applications tab by clicking on "Add applications settings"
-
-
-.. image:: images/applications-add-settings.png
-   :alt: Picture of Applications settings add in FusionDirectory
-   
-   
-Add the applications that you will use in the role
-
-
-.. image:: images/applications-list.png
-   :alt: Picture of Applications tab of role-test in FusionDirectory
-   
-   
-Finally click on ok to save your role    
-
-
-
-
-
-   
- 
-
-   
- 
-
-
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
- 
-
