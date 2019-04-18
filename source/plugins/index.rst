@@ -10,5 +10,6 @@ FusionDirectory Plugins
    applications/index
    audit/index
    autofs/index
+   certificates/index
    supann/index
    sinaps/index
