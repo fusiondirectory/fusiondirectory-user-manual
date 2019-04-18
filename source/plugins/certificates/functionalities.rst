@@ -21,17 +21,5 @@ Select an user an click on certificate tab
    :alt: Picture of Certificate add pem certificate in FusionDirectory (first part)
    
    
-* Problems with functions
 
-If you see an error message that not found the next function:
-
-.. code-block:: bash
-
-   openssl_x509_parse()
-   
-
-
-Try to edit your “/etc/php/php.ini” and uncomment “extension=openssl.so”
-
-To finish, restart your webserver.        
 
