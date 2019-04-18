@@ -1,7 +1,6 @@
 Functionalities
 ===============
 
-How to use the autofs plugin
 
 
 In your FusionDirectory web interface you have now, in the “Administration” section, a new tab and a new icon called “Autofs” that you can use 
