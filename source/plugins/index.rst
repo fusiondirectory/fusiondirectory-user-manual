@@ -10,6 +10,7 @@ FusionDirectory Plugins
    applications/index
    audit/index
    autofs/index
+   certificates/index
    invitations/index
    public-forms/index
    sinaps/index
