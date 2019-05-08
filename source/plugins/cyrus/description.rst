@@ -1,4 +1,4 @@
 Description
 ===========
 
-This plugin is used to manage Cyrus through an LDAP directory. 
+This plugin is used to manage Cyrus mailboxes with FusionDirectory.

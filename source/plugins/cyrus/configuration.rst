@@ -55,7 +55,7 @@ Mail settings
      my-prefix.%cn%%domain%    => my-prefix.development@example.com 
      
      
-* Placeholders:
+* Placeholders for the Mail folder template usage:
     
     
     
