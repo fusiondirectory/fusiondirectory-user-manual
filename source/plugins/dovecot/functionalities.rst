@@ -29,12 +29,14 @@ Add Dovecot service
    :alt: Picture of Dovecot add service in FusionDirectory
    
    
- Fill the fields for the Dovecot plugin and save it:
+   
+Fill the fields for the Dovecot plugin and save it:
 
     * Hostname: the hostname of the server
     * Port: port for the connexion
     * Option: tls or not
     * Validate certificate: if we validate the certificate or not
+    
 
 .. image:: images/dovecot-fields.png
    :alt: Picture of Dovecot fields in FusionDirectory   
