@@ -11,6 +11,7 @@ FusionDirectory Plugins
    audit/index
    autofs/index
    certificates/index
+   cyrus/index
    invitations/index
    public-forms/index
    sinaps/index

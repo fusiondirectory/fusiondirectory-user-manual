@@ -1,0 +1,56 @@
+Installation
+============
+
+Install packages
+----------------
+
+Archlinux
+^^^^^^^^^
+
+.. code-block:: bash
+
+   yaourt -S fusiondirectory-plugin-cyrus
+   yaourt -S fusiondirectory-plugin-cyrus-schema
+
+Debian
+^^^^^^
+
+.. code-block:: bash
+
+   apt-get install fusiondirectory-plugin-cyrus
+   apt-get install fusiondirectory-plugin-cyrus-schema
+
+RHEL
+^^^^
+
+.. code-block:: bash
+
+   yum install fusiondirectory-plugin-cyrus
+   yum install fusiondirectory-plugin-cyrus-schema
+
+Install schemas
+---------------
+
+Archlinux
+^^^^^^^^^
+
+.. code-block:: bash
+
+   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/cyrus-fd.schema
+   
+
+Debian
+^^^^^^
+
+.. code-block:: bash
+
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/cyrus-fd.schema
+ 
+
+RHEL
+^^^^
+
+.. code-block:: bash
+
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/cyrus-fd.schema
+   
