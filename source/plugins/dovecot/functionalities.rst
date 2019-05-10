@@ -37,10 +37,19 @@ Fill the fields for the Dovecot plugin and save it:
     * Option: tls or not
     * Validate certificate: if we validate the certificate or not
     
+    
+Fill in Dovecot connections    
+    
 
-.. image:: images/dovecot-fields.png
-   :alt: Picture of Dovecot fields in FusionDirectory   
+.. image:: images/dovecot-connections.png
+   :alt: Picture of Dovecot connections in FusionDirectory   
    
+   
+Fill in Dovecot master credentials 
+ 
+
+.. image:: images/dovecot-master-credentials.png
+   :alt: Picture of Dovecot master credentials in FusionDirectory      
    
 Click on ok to save your server     
 

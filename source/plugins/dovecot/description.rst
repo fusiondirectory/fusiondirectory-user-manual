@@ -1,5 +1,5 @@
 Description
 ===========
 
-The Dovecot plugin is an IMAP server to manage mailbox in FusionDirectory.
+The Dovecot plugin allows to manage Dovecot mailbox in FusionDirectory.
 
