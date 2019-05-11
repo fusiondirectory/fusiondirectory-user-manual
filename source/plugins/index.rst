@@ -12,5 +12,6 @@ FusionDirectory Plugins
    autofs/index
    certificates/index
    cyrus/index
+   dovecot/index
    supann/index
    sinaps/index
