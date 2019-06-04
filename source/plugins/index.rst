@@ -14,5 +14,6 @@ FusionDirectory Plugins
    cyrus/index
    dovecot/index
    dsa/index
+   gpg/index
    supann/index
    sinaps/index
