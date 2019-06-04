@@ -13,5 +13,6 @@ FusionDirectory Plugins
    certificates/index
    cyrus/index
    dovecot/index
+   dsa/index
    supann/index
    sinaps/index
