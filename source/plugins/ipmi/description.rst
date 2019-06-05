@@ -1,4 +1,4 @@
 Description
 ===========
 
-The Ipmi plugin is used to manage the electronic part of your server in FusionDirectory
+This impi plugin is used to store the impi credentials to connect to the impi component inside your systems.
