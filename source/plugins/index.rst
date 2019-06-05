@@ -16,5 +16,6 @@ FusionDirectory Plugins
    dsa/index
    gpg/index
    ipmi/index
+   ldapdump/index
    supann/index
    sinaps/index
