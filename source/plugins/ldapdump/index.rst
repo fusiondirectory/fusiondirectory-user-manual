@@ -1,7 +1,7 @@
-ldapdump
+Ldapdump
 ========
 
-FusionDirectory Plugins Supann
+FusionDirectory Plugins Ldapdump
 
 .. toctree::
    :maxdepth: 2

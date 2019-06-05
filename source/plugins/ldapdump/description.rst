@@ -1,4 +1,4 @@
 Description
 ===========
 
-The LDAP Dump plugin gives all the information from an element that is stored in the LDAP. 
+The Ldapdump plugin gives all the information from an object that is stored in the LDAP. 

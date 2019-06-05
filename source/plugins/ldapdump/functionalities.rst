@@ -5,6 +5,8 @@ Functionalities
 
 * How to use the LDAP Dump plugin
 
+For example to see the ldapdump of a user object
+
 Click on Users icon in FusionDirectory
 
 .. image:: images/ldapdump-users.png
