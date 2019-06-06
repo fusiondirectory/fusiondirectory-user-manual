@@ -13,6 +13,7 @@ FusionDirectory Plugins
    certificates/index
    cyrus/index
    dovecot/index
+   dsa/index
    invitations/index
    public-forms/index
    sinaps/index
