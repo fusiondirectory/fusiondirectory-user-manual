@@ -17,6 +17,7 @@ FusionDirectory Plugins
    gpg/index
    ipmi/index
    ldapdump/index
+   ldapmanager/index
    invitations/index
    public-forms/index
    sinaps/index
