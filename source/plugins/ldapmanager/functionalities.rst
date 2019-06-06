@@ -78,42 +78,4 @@ The CSV import plugin provides methods to generate user accounts from a file con
 .. image:: images/ldapmanager-csv-import.png
    :alt: Picture of CSV import tab in FusionDirectory    
 
-Note that the file must not contain a header line, all lines are treated as data to import, except if they start with a #.    
-      
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+Note that the file must not contain a header line, all lines are treated as data to import, except if they start with a #.
