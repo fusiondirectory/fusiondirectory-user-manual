@@ -19,6 +19,7 @@ FusionDirectory Plugins
    ldapdump/index
    ldapmanager/index
    invitations/index
+   personal/index
    public-forms/index
    sinaps/index
    supann/index
