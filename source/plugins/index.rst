@@ -15,6 +15,7 @@ FusionDirectory Plugins
    dovecot/index
    dsa/index
    gpg/index
+   ipmi/index
    invitations/index
    public-forms/index
    sinaps/index
