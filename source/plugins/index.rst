@@ -24,3 +24,4 @@ FusionDirectory Plugins
    renaterpartage/index
    sinaps/index
    supann/index
+   user-reminder/index
