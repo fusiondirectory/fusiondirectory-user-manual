@@ -21,5 +21,6 @@ FusionDirectory Plugins
    invitations/index
    personal/index
    public-forms/index
+   renaterpartage/index
    sinaps/index
    supann/index
