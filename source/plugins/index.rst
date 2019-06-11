@@ -24,3 +24,4 @@ FusionDirectory Plugins
    sinaps/index
    user-reminder/index
    weblink/index
+   webservice/index
