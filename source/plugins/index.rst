@@ -23,3 +23,4 @@ FusionDirectory Plugins
    supann/index
    sinaps/index
    user-reminder/index
+   weblink/index
