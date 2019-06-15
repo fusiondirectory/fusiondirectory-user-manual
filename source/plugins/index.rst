@@ -26,3 +26,4 @@ FusionDirectory Plugins
    supann/index
    user-reminder/index
    weblink/index
+   webservice/index
