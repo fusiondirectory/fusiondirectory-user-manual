@@ -11,6 +11,7 @@ FusionDirectory Plugins
    audit/index
    autofs/index
    certificates/index
+   community/index
    cyrus/index
    dovecot/index
    dsa/index
