@@ -15,6 +15,7 @@ FusionDirectory Plugins
    cyrus/index
    dovecot/index
    dsa/index
+   ejbca/index
    gpg/index
    ipmi/index
    ldapdump/index
