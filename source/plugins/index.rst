@@ -20,6 +20,7 @@ FusionDirectory Plugins
    ipmi/index
    ldapdump/index
    ldapmanager/index
+   newsletter/index
    personal/index
    renaterpartage/index
    supann/index
