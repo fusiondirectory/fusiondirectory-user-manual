@@ -25,7 +25,7 @@ Click on EJBCA settings button
 .. image:: images/ejbca-settings-activation.png
    :alt: Picture of EJBCA settings activation button in FusionDirectory
    
-Add your certificate
+Select a certificate from the list
 
 .. image:: images/ejbca-certs.png
    :alt: Picture of EJBCA certs window in FusionDirectory
@@ -60,7 +60,7 @@ Click on EJBCA settings button
    :alt: Picture of EJBCA settings activation button in FusionDirectory
       
    
-Add your certificate to your system
+Select a certificate from the list
 
 .. image:: images/ejbca-certs.png
    :alt: Picture of EJBCA certs window in FusionDirectory
@@ -76,7 +76,7 @@ Click on OK button bottom right to save
 .. image:: images/ejbca-ok.png
    :alt: Picture of OK button in FusionDirectory  
    
-* Grab certificate 
+* Add a certificate
 
 Click on EJBCA icon in FusionDirectory
 
