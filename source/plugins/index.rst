@@ -24,6 +24,7 @@ FusionDirectory Plugins
    newsletter/index
    personal/index
    public-forms/index
+   pureftpd/index
    renaterpartage/index
    sinaps/index
    supann/index
