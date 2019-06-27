@@ -22,6 +22,7 @@ FusionDirectory Plugins
    ldapmanager/index
    newsletter/index
    personal/index
+   pureftpd/index
    renaterpartage/index
    supann/index
    sinaps/index
