@@ -27,6 +27,7 @@ FusionDirectory Plugins
    pureftpd/index
    renaterpartage/index
    sinaps/index
+   sogo/index
    supann/index
    user-reminder/index
    weblink/index
