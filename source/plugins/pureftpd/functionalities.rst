@@ -51,7 +51,7 @@ Quota :
    * Files : restrict the maximum number of files of a user directory
    * Size (MB) : restrict the maximum size, in MB, of a user directory
    
-   .. image:: images/pureftpd-miscellaneous.png
+.. image:: images/pureftpd-miscellaneous.png
    :alt: Picture of miscellaneous settings in FusionDirectory
    
 Miscellaneous :
