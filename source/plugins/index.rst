@@ -28,6 +28,7 @@ FusionDirectory Plugins
    renaterpartage/index
    sinaps/index
    sogo/index
+   squid/index
    supann/index
    user-reminder/index
    weblink/index
