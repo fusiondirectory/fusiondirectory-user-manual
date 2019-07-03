@@ -28,6 +28,7 @@ FusionDirectory Plugins
    sinaps/index
    sogo/index
    squid/index
+   subcontracting/index
    user-reminder/index
    weblink/index
    webservice/index
