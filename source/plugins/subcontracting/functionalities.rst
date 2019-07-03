@@ -25,7 +25,15 @@ Click on "Add Subcontracting settings" button
 .. image:: images/subcontracting-settings.png
    :alt: Picture of Add Subcontracting settings in FusionDirectory
    
-Fill-in SubContracting Information   
+Fill-in SubContracting Information
+
+
+   * Intermediate : Contact to the Final Customer
+   * Final Customer : Final Customer for this mission
+   * Mail Address : mail address assigned for this mission
+   * Phone : phone number assigned for this mission
+   * Street Address : address where this mission is executed
+      
 
 .. image:: images/subcontracting-information.png
    :alt: Picture of Subcontracting information in FusionDirectory
