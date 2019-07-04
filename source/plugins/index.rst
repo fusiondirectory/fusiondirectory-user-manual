@@ -21,6 +21,7 @@ FusionDirectory Plugins
    ipmi/index
    ldapdump/index
    ldapmanager/index
+   mail/index
    newsletter/index
    personal/index
    pureftpd/index
