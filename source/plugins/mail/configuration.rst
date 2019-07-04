@@ -19,9 +19,7 @@ In Mail tab you will find the configuration of the plugin
    
 Mail settings
 
-* Identification : (required) which attribute will be used to create accounts
-     
-* Account attribute : (required) Determines which attribute FusionDirectory will use to create accounts. Valid values are mail and uid
+* Account attribute Identification : (required) Determines which attribute FusionDirectory will use to create accounts. Valid values are mail and uid
 
 * Mail user template : Allows to override the user account creation syntax. See the 'Mail folder template' description for more details  
    
@@ -81,12 +79,7 @@ Placeholders
    
    
 * Use cyrus UNIX style : Determines if FusionDirectory should use “foo/bar” instead of “foo.bar” namespaces in IMAP. Unix style is with slashes.
-To use this option, you must set 'unixhierarchysep' parameter to 'yes' in your imapd.conf configuration file.
-
-.. code-block:: bash
-
-   unixhierarchysep: yes
-   
+  To use this option, you must set 'unixhierarchysep' parameter to 'yes' in your imapd.conf configuration file.
    
 * Delete mailbox on account deletion : Determines if FusionDirectory should remove the mailbox from your IMAP server or keep it after the account is deleted in LDAP  
 

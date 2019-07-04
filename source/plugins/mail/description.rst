@@ -1,4 +1,4 @@
 Description
 ===========
 
-The Mail plugin is used to manage mail base in FusionDirectory.
+The Mail plugin is used to manage basic mail attributes in FusionDirectory.

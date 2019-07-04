@@ -3,23 +3,6 @@
 Functionalities
 ===============
 
-FusionDirectory mail concept
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-* Mail methods
-
- FusionDirectory supports different ways to manage your mail accounts, each type of mail account is represented by a so called mail method. Every method implements a specific storage of mail accounts. The mail methods can also add functionalities specific for each kin of server we manage.
-
-For now we support : 
-
-   * `The base method <https://docs.fusiondirectory.org/en/documentation/admin_mail_method_installation/mail_methods/base_method>`_
-   * `The Cyrus mail method <https://docs.fusiondirectory.org/en/documentation/admin_mail_method_installation/mail_methods/cyrus_mail_method>`_
-   * `Dovecot <https://fusiondirectory-user-manual.readthedocs.io/en/1.3/plugins/dovecot/index.html>`_
-   * `RENATER Partage <https://fusiondirectory-user-manual.readthedocs.io/en/1.3/plugins/renaterpartage/index.html>`_
-   
-The basic method just store the data that can be used by other service like postfix for example. The other method like cyrus, dovecot, renater-partage need the corresponding server   
-
-
 Basic service provided
 ^^^^^^^^^^^^^^^^^^^^^^
 
