@@ -13,6 +13,7 @@ FusionDirectory Plugins
    certificates/index
    community/index
    cyrus/index
+   developers/index
    dovecot/index
    dsa/index
    ejbca/index
