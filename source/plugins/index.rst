@@ -23,6 +23,7 @@ FusionDirectory Plugins
    ldapmanager/index
    invitations/index
    newsletter/index
+   mail/index
    personal/index
    public-forms/index
    pureftpd/index
