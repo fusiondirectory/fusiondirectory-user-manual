@@ -4,7 +4,7 @@ Core
 FusionDirectory Core
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    menu
    departments
@@ -12,5 +12,4 @@ FusionDirectory Core
    groups
    aclroles
    acls
-   configuration
    dashboard
