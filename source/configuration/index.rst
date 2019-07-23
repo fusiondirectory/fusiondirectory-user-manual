@@ -7,3 +7,4 @@ FusionDirectory Configuration
    :maxdepth: 2
 
    configuration
+   passwordRecovery
