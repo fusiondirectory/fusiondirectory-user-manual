@@ -51,7 +51,7 @@ To activate password recovery you must check the box next to “Activate passwor
 * Sender email address : e-mail address from which e-mails will be sent (required)
 * Link validity (minutes) : number of minutes before a recovery link expires (required)
 * Salt for tokens : just a security measure, you can put anything in there, even random characters (required)
-* Allow the use of alternate addresses : if thicked, users will also be able to enter one of theirs alternate addresses to recover their password
+* Allow the use of alternate addresses : if checked, users will also be able to enter one of theirs alternate addresses to recover their password
 
 Fill-in First email settings
 
@@ -86,12 +86,12 @@ Your user will receive a mail like this :
 .. code-block:: bash
 
    [FusionDirectory] Password recovery link
- From: root@fd-install.be
- To: tototot@fd-install.be
+ From: reset@fusiondirectory.org
+ To: myname@acme.org
  Hello,
  Here are your informations : 
- - Login : tototot
- - Link : http://xxx.xxx.xxx.xxx/fusiondirectory/recovery.php?uniq=KSDnZ31AYR7psZETCtHNGyNkzMKfZKOXP9xpTAF5nprwwMnwF3ZH28EL9&uid=tototot&address_mail=tototot@fd-install.be
+ - Login : myname
+ - Link : http://fusiondirectory.org/fusiondirectory/recovery.php?uniq=KSDnZ31AYR7psZETCtHNGyNkzMKfZKOXP9xpTAF5nprwwMnwF3ZH28EL9&uid=tototot&address_mail=myname@acme.org
  This link is only valid for 10 minutes.
 
 When user will browse to the link sending him by e-mail, a message like this will appear on the screen
@@ -102,43 +102,12 @@ Now the user need to fill the required new password and then click on “Change�
 .. code-block:: bash
 
  [FusionDirectory] Password Changed recovery successful
- From: root@fd-install.be
- To: tototot@fd-install.be
+ From: reset@fusiondirectory.org
+ To: myname@acme.org
  
  Hello,
  Your password has been changed.
- Your login is still tototot.
+ Your login is still myname.
  
  
 He just needs to click on “Return to login screen” to connect with his new password
- 
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         
-
