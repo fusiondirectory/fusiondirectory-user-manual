@@ -23,6 +23,7 @@ Contents:
    configuration/index
    acls/index
    plugins/index
+   templates/index
    faq/index.rst
    contributing.rst
    support/index.rst
