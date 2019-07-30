@@ -75,6 +75,30 @@ Examples:
    %d[today,epoch]|%                 From 1.3 it's possibe to use epoch date format
    
    
+**i**
+
+The **i** macro can be used to have the first letter of a word in capital letters and the rest in lower case letters.
+
+
+Examples:    
+
+
+.. code-block:: bash
+
+   %i|sn% if our sn is "MY LAST NAME" we will have "My Last Name" in description.
+   
+We do not allow element to be transformed by itself.
+
+Example : we cannot do %i|sn% in %sn% because it would make a loop.
+
+If we try it we will have this kind of error 
+
+
+.. code-block:: bash
+
+   Recursive dependency in the template fields: "givenName" cannot depend on "givenName" as "givenName" already depends on "givenName".
+      
+   
 **l**
 
 The **l** macro can be used to return the lowercase version of the parameter.    
