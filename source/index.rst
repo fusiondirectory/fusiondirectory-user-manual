@@ -24,6 +24,7 @@ Contents:
    acls/index
    plugins/index
    templates/index
+   triggers/index
    faq/index.rst
    contributing.rst
    support/index.rst
