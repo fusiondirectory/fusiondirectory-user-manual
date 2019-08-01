@@ -7,5 +7,7 @@ FusionDirectory ACLs
    :maxdepth: 2
 
    introduction
-   howto-use-acls
-
+   functionalities
+   create-acls
+   use-acls
+   delegation.rst
