@@ -32,5 +32,6 @@ Contents:
    license/index.rst
    authors/index.rst
    contact/contact.rst
+   code-of-conduct.rst
 
 .. include:: globals.rst
