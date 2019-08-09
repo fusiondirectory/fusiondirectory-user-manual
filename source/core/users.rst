@@ -134,10 +134,10 @@ You can also you the text box to do a text search.
    
 Click on the filter you are interested in in order to show all the users that apply to that filter. 
 
-For example, if you select "Show Templates" filter, you will see the list of user's template 
+For example, if you select "Mail" filter, you will see the list of users having Mail plugin installed
    
-.. image:: images/core-show-templates.png
-   :alt: Picture of show templates filter in FusionDirectory
+.. image:: images/core-show-mail.png
+   :alt: Picture of show Mail filter in FusionDirectory
          
 Checking the "Search in subtrees" checkbox allows to search in the whole subtree under the current base.
    
@@ -149,10 +149,10 @@ List
 
 In the list you see objects matching current filter options under the currently selected base.
 
-In this example, we selected the three following filters : SHow functional users, SHow Mail users and Show Samba users
+In this example, we selected the following filter : Mail
    
-.. image:: images/core-three-filters.png
-   :alt: Picture of three filters in FusionDirectory
+.. image:: images/core-users-list-mail.png
+   :alt: Picture of Mail filter in FusionDirectory
 
 You can click on column headers to sort the list 
    
