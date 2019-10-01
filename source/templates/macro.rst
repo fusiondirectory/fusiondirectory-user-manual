@@ -72,7 +72,13 @@ Examples:
    %d[tomorrow]|%                    16.03.2017
    %d[today+6days]|%                 21.03.2017
    %d[now,l jS \of F Y h:i:s A]|%    Wednesday 15th of March 2017 02:12:18 PM
-   %d[today,epoch]|%                 From 1.3 it's possibe to use epoch date format
+   
+as POSIX date fields expects a specific format you need to add 'epoch' as second parameter to the d modifier.
+
+.. code-block:: bash
+
+   %d[today+30days,epoch]|%                 15.04.2017
+   
    
    
 **i**
