@@ -115,7 +115,27 @@ The **l** macro can be used to return the lowercase version of the parameter.
    %l|sn%           "Last name" field returned in lowercase. 
                      If "sn=Valérie" then the returned value is "valérie"
                      
-                     
+**n**
+
+The modifier **n** can be used to generate numbers.
+As the **r** and **d** modifiers it should be used alone, with no attribute name.
+
+This modifier will make sure the result value is unique for the filled field in the LDAP. The number will get as high as needed to ensure that.
+
+* First parameter is whether the number should always be there or only in case of duplicates (1 or 0, defaults to 0).
+* Second parameter is starting number, defaults to 1.
+* Third parameter is step, defaults to 1.
+
+Examples:
+
+.. code-block:: bash
+
+   %n|%           If not unique, adds a number starting at 1
+   %n[1]|%        A number starting at 1
+   %n[0, 2]|%     If not unique, adds a number starting at 2
+   %n[1,10]|%     A number starting at 10
+   %n[1,20,10]|%  A number starting at 20 and going up ten by ten
+
 **p**
 
 The **p** macro can be used to remove whitespaces. It can also be used for any search and replace based on preg_replace. 
