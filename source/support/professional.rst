@@ -1,11 +1,11 @@
 Professional paid support
 =========================
 
-`OpenSides`_ helps you keep FusionDirectory running smoothly
+`FusionDirectory`_ helps you keep FusionDirectory running smoothly
 
-Why choose Opensides ?
+Why choose FusionDirectory ?
 
-* You are in contact with the designers of FusionDirectory.
+* You are the publishers of FusionDirectory.
 * We have over 16 years experience in the support of LDAP directories and applications directory management.
 * We support and maintains OpenLDAP architectures for various entities from small to very big on a daily basis
 * We maintain and develop the `PHP LDAP`_ module
@@ -22,10 +22,10 @@ Support Options :
 
 * Get `support for your FusionDirectory`_ instance 
 * Get `training for your daily use`_ of FusionDirectory
-* Get `profesionnal plugin made`_ by OpenSides
+* Get `support on specialized plugins`_ of FusionDirectory
 
-.. _OpenSides : https://www.opensides.be/en/
-.. _support for your FusionDirectory : https://www.opensides.be/en/support/fusiondirectory-support/
-.. _training for your daily use : https://www.opensides.be/en/training/fusiondirectory-for-administrators/
-.. _profesionnal plugin made : https://www.opensides.be/en/development/fusiondirectory-plugin/
+.. _FusionDirectory : https://www.fusiondirectory.org/
+.. _support for your FusionDirectory : https://www.fusiondirectory.org/en/our-support-offers/
+.. _training for your daily use : https://www.fusiondirectory.org/en/training/
+.. _support on specialized plugins : https://www.fusiondirectory.org/en/support-specialized-plugins/
 .. _PHP LDAP : https://secure.php.net/manual/en/book.ldap.php
