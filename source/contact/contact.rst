@@ -9,6 +9,6 @@ We are also contactable on :
 
 Follow Us
          
-on twitter : http://twitter.com/#!/fusiondirectory
+on twitter : http://twitter.com/fusiondirectory
 
-on linkedin : http://www.linkedin.com/ group FusionDirectory
+on linkedin : https://www.linkedin.com/company/fusiondirectory
