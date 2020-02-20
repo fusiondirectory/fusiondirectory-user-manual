@@ -26,7 +26,7 @@ Contents:
    templates/index
    triggers/index
    faq/index.rst
-   contributing.rst
+   contribute/bugreport.rst
    support/index.rst
    security/index.rst
    license/index.rst
