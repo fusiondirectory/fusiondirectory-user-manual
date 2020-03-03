@@ -28,6 +28,7 @@ Contents:
    faq/index.rst
    contribute/bugreport.rst
    release/index
+   distribution/index.rst
    support/index.rst
    security/index.rst
    license/index.rst
