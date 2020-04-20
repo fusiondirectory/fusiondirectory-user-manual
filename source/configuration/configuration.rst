@@ -82,6 +82,8 @@ CAS
 * **Port**: Port of the CAS Server.
 * **CAS context**: CAS context to be used
 
+.. _configuration_people_and_group_storage:
+
 People and group storage
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
