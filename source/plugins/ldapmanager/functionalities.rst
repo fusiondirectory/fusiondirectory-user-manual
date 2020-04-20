@@ -26,7 +26,7 @@ The LDIF export plugin provides methods to download a complete snapshot of the r
 
 .. code-block:: bash
 
-   cn=sales,ou=groups,dc=opensides,dc=be
+   cn=sales,ou=groups,dc=fusiondirectory,dc=org
    
 the result is an ldif file with this content: 
 
@@ -34,7 +34,7 @@ the result is an ldif file with this content:
 
 .. code-block:: bash
 
-   dn: cn=sales,ou=groups,dc=opensides,dc=be
+   dn: cn=sales,ou=groups,dc=fusiondirectory,dc=org
    cn: sales
    gidNumber: 1105
    memberUid: Homer.Sympson
@@ -64,7 +64,7 @@ which corresponds at this entry in my ldap directory:
 
 .. code-block:: bash
 
-   dn: cn=posix-group,ou=groups,dc=opensides,dc=be
+   dn: cn=posix-group,ou=groups,dc=fusiondirectory,dc=org
    cn: posix-group
    gidNumber: 1105
    memberUid: durieux.Bcarole

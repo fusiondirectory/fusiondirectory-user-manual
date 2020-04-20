@@ -211,9 +211,9 @@ If you get an error like this :
 
    LDAP operation failed!
 
-   Object: cn=mailserver.opensides.be,ou=servers,ou=systems,dc=opensides,dc=be
+   Object: cn=mailserver.fusiondirectory.org,ou=servers,ou=systems,dc=fusiondirectory,dc=org
 
-   Error: Object class violation (unrecognized objectClass 'goMailServer', while operating on 'cn=mailserver.opensides.be,ou=servers,ou=systems,dc=opensides,dc=be' using LDAP server 'ldap://localhost:389')
+   Error: Object class violation (unrecognized objectClass 'goMailServer', while operating on 'cn=mailserver.fusiondirectory.org,ou=servers,ou=systems,dc=fusiondirectory,dc=org' using LDAP server 'ldap://localhost:389')
 
 this means that in your related ldap entry you have an objectClass like
 this :
@@ -237,10 +237,10 @@ If you get an error like this :
 
    LDAP operation failed!
 
-   Object: cn=mailserver.opensides.be,ou=servers,ou=systems,dc=opensides,dc=be
+   Object: cn=mailserver.fusiondirectory.org,ou=servers,ou=systems,dc=fusiondirectory,dc=org
 
    Error: Undefined attribute type - attribute: flag_enable_debug
-   (flag_enable_debug: AttributeDescription contains inappropriate characters, while operating on 'cn=mailserver.opensides.be,ou=servers,ou=systems,dc=opensides,dc=be' using LDAP server 'ldap://localhost:389')
+   (flag_enable_debug: AttributeDescription contains inappropriate characters, while operating on 'cn=mailserver.fusiondirectory.org,ou=servers,ou=systems,dc=fusiondirectory,dc=org' using LDAP server 'ldap://localhost:389')
 
 this means that in your related ldap entry you have an attribute like
 this :
