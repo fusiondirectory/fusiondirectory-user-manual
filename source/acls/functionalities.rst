@@ -167,5 +167,7 @@ Restrict targets with filter can be used to restrict target objects on which rig
 
 * This is a **template pattern** which may use any user field.
 * Example: (manager=%dn%) on base with subtree, will only give rights on objects of which we are manager. It may be smarter to put add an objectClass check in the filter. An other example is (memberUid=%uid%) to give rights on groups the user is member of.
+
 For target filter, people should avoid using a field that users can edit in the filter like (something=%description%) if users are allowed to edit their description.
+
 Also, target filter should not match more than the sizelimit, so it should not be used for something too general like (eduPersonAffiliation=student), because that will match a lot of LDAP node and FD will attempt at tstoring an ACL for each of them in RAM. (user filter have no such restriction because they are only tested on the logged in user).

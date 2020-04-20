@@ -49,7 +49,7 @@ The line :
 This will generate an automated e-mail like this :
 
 
-.. code-block:: bash
+.. code-block:: text
 
    Hello bilbo the hobbit,
 
