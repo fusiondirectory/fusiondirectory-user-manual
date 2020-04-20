@@ -23,7 +23,7 @@ Before
 
 .. code-block:: shell
 
-   cn=namePhone,ou=phones,ou=systems,dc=labo,dc=opensides,dc=be
+   cn=namePhone,ou=phones,ou=systems,dc=fusiondirectory,dc=org
    cn: namePhone 
    goFonType: friend
    goFonDmtfMode: inband
@@ -36,7 +36,7 @@ After
 
 .. code-block:: shell
 
-   cn=namePhone,ou=phones,ou=systems 
+   cn=namePhone,ou=phones,ou=systems,dc=fusiondirectory,dc=org
    cn: namePhone
    ipHostNumber: 127.0.0.1
    macAddress: 00:0C:7F:31:33:F1
@@ -51,7 +51,7 @@ You can use the next command to backup your phones
 
 .. code-block:: shell
 
-   ldapsearch -xLLL -b ou=phones,ou=systems,dc=labo,dc=opensides,dc=be > backupPhones.ldif
+   ldapsearch -xLLL -b ou=phones,ou=systems,dc=fusiondirectory,dc=org > backupPhones.ldif
 
 Moved Attributes
 ----------------
@@ -313,9 +313,9 @@ Deprecated objectClasses:
 
    fusiondirectory-setup --check-deprecated
    List LDAP entries using deprecated attributes or objectclasses   
-   cn=fusiondirectory,ou=configs,dc=labo,dc=opensides,dc=be contains an obsolete attribute
-   cn=fusiondirectory,ou=configs,dc=labo,dc=opensides,dc=be uses the obsolete object class fdAsteriskPluginConf
-   uid=fd-admin,ou=people,dc=labo,dc=opensides,dc=be uses the obsolete object class gosaAccount
+   cn=fusiondirectory,ou=configs,dc=fusiondirectory,dc=org contains an obsolete attribute
+   cn=fusiondirectory,ou=configs,dc=fusiondirectory,dc=org uses the obsolete object class fdAsteriskPluginConf
+   uid=fd-admin,ou=people,dc=fusiondirectory,dc=org uses the obsolete object class gosaAccount
 
 - fusiondirectory-setup --ldif-deprecated will output an ldif
   file on the console that you can use with ldapmodify to clean you
@@ -328,7 +328,7 @@ Deprecated objectClasses:
 .. code-block:: shell
 
 
-   dn:cn=fusiondirectory,ou=configs,dc=labo,dc=opensides,dc=be
+   dn:cn=fusiondirectory,ou=configs,dc=fusiondirectory,dc=org
    changetype:modify delete:fdRfc2307bis
    -
    delete:fdCopyPaste
