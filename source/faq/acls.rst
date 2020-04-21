@@ -22,9 +22,9 @@ Additionally you have to check the option 'Apply this acl only for users own ent
 
 .. code-block:: xml
 
-   <main default="default"
-        ...
+   <main default="default">
+        <!-- ... -->
         ignoreAcl="put_the_desired_dn"
-        ...
-  
+        <!-- ... -->
+    </main>
 
