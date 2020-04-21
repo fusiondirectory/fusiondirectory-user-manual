@@ -1,5 +1,5 @@
 FusionDirectory libraries
-=======================
+=========================
 
 This is the alphabetical list of libraries and their authors that FusionDirectory is using
 
