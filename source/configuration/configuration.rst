@@ -120,17 +120,17 @@ Miscellaneous
 * **Available department categories**: Available categories in the departments category dropdown.
 * **Plugin menu blacklist**: A list of plugins to hide from FusionDirectory menu for a given group of users.
 
-Hooks
-^^^^^
+Triggers
+^^^^^^^^
 
-* **Hooks**: Defines hooks that are called when specific actions happens.
+* **Triggers**: Defines triggers that are called when specific actions happens.
 
-  Each hook is defined by:
+  Each trigger is defined by:
 
-  * Tab: The plugin tab triggering this hook
-  * Mode: When this hook is triggered
-  * Command: The executed command when this hook is triggered. Use the placeholder syntax to pass attribute values to the hook.
+  * Tab: The plugin tab triggering this trigger
+  * Mode: When this trigger is triggered
+  * Command: The executed command when this trigger is triggered. Use the placeholder syntax to pass attribute values to the trigger.
 
-* **Display hook output**: Activate to display the hook output.
+* **Display trigger output**: Activate to display the trigger output.
 
 .. _LemonLDAP::NG : http://lemonldap-ng.org/
