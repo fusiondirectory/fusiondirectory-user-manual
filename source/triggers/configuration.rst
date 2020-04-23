@@ -27,21 +27,16 @@ In Triggers section you can define all your triggers
 * **Deactivated** : use this to temporarily deactivate a trigger (required)
 * **Command** : the command that will be called (rquired)
 
-
-.. note::
-
-   The arguments are automatically escape and surrounds by quote so you may not use quote in command.
-
-
-
-
 The line :
 
 
 .. code-block:: bash
 
-   check 	sudo /usr/local/sbin/fd-userCheckHookSendMail.sh %dn% %fdPrivateMail% %givenName% %sn% %uid% %callerGIVENNAME% %callerSN% %passwordClear% %nbCheckErrors%
+   sudo /usr/local/sbin/fd-userCheckHookSendMail.sh %dn% %fdPrivateMail% %givenName% %sn% %uid% %callerGIVENNAME% %callerSN% %passwordClear% %nbCheckErrors%
 
+.. note::
+
+   The arguments are automatically escaped and surroundes by quote so you may not use quote in command.
 
 This will generate an automated e-mail like this :
 
