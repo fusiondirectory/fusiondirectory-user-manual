@@ -35,6 +35,7 @@ FusionDirectory Plugins
    ssh/index
    subcontracting/index
    supann/index
+   systems/index
    user-reminder/index
    weblink/index
    webservice/index
