@@ -3,8 +3,8 @@
 Functionalities
 ===============
 
-Crate a system
-^^^^^^^^^^^^^^
+Create a system
+^^^^^^^^^^^^^^^
 
 Click on Systems icon on FusionDirectory main menu
 
