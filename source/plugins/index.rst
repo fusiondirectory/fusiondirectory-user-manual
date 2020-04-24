@@ -19,6 +19,7 @@ FusionDirectory Plugins
    ejbca/index
    gpg/index
    ipmi/index
+   ipam/index
    ldapdump/index
    ldapmanager/index
    invitations/index
