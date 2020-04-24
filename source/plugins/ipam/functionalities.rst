@@ -110,3 +110,13 @@ You can now see you just created vlan in the list
 
 .. image:: images/ipam-subnet-line.png
    :alt: Picture of Ipam subnet line in FusionDirectory
+   
+* VLAN section when creating  `Systems <https://fusiondirectory-user-manual.readthedocs.io/en/1.4/plugins/systems/index.html>`_
+
+Note that when you create a system in "Systems" section, additional IPAM fiends will appear and need to be filled :
+
+.. image:: images/ipam-interfaces-configuration-page.png
+   :alt: Picture of Ipam interface configuration menu in FusionDirectory
+   
+* **VLAN** : if you select a vlan, the network subnet will be restricted to the vlan contained in this subnet
+* **Add free IP from subnet** : the ADD IP button allows you to automatically add a free ip in the subnet selected
