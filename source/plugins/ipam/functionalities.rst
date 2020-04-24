@@ -25,13 +25,13 @@ Fill-in the following fields :
 
 * **Base** : object base
 * **Name** : subnet name (required)
-* **Description** : descriotion of this simple securyty object
-* **Active** : is this subnet active (required)
-* **Organization** : subnet organization
-* **Type** : subnet type
-* **Applicant** : applicant
-* **Allocation date** : allocation date
-* **Release date** : release date   
+* **Description** : description of this subnet
+* **Active** : is the subnet active (required)
+* **Organization** : organization who asked for the subnet
+* **Type** : subnet type (lan, wan, wifi)
+* **Applicant** : name of the person who asked for the subnet
+* **Allocation date** : start allocation
+* **Release date** : end allocation date   
 * **VLANs** : VLANs linked to this subnet
 * **IP** : subnet IP
 * **Netmask** : subnet netmask
@@ -66,12 +66,6 @@ You can now see you just created subnet in the list
 .. image:: images/ipam-subnet-line.png
    :alt: Picture of Ipam subnet line in FusionDirectory
    
-If you click on your subnet line and go to LDAP tab, you will see LDAP attributes
-
-.. image:: images/ipam-subnet-ldap-attributes.png
-   :alt: Picture of subnet LDAP attributes in FusionDirectory
-  
-
 Create a VLAN
 ^^^^^^^^^^^^^
 
@@ -89,12 +83,12 @@ Fill-in the following fields :
 
 * **Base** : object base      
 * **Name** : subnet name (required)
-* **Description** : description of this simple security object
+* **Description** : description of this vlan
 * **Active** : is this subnet active (required)
-* **Organization** : subnet organization
+* **Organization** : organization who asked for the subnet
 * **Inner ID** : inner VLAN ID (required)
 * **QinQ ID** : QinQ ID VLAN ID
-* **Applicant** : applicant
+* **Applicant** : name of the person who asked for the subnet
 
 Example of VLAN
 ^^^^^^^^^^^^^^^
@@ -116,8 +110,3 @@ You can now see you just created vlan in the list
 
 .. image:: images/ipam-subnet-line.png
    :alt: Picture of Ipam subnet line in FusionDirectory
-   
-If you click on your VLAN line and go to LDAP tab, you will see LDAP attributes
-
-.. image:: images/ipam-vlan-ldap-attributes.png
-   :alt: Picture of VLAN LDAP attributes in FusionDirectory
