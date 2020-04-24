@@ -3,7 +3,7 @@
 Functionalities
 ===============
 
-Crate a server
+Crate a system
 ^^^^^^^^^^^^^^
 
 Click on Systems icon on FusionDirectory main menu
@@ -11,7 +11,7 @@ Click on Systems icon on FusionDirectory main menu
 .. image:: images/systems-icon-main.png
    :alt: Picture of Systems icon in FusionDirectory
 
-You are now on Systems main page
+You are now on Systems main page and we will create a server as an example
 
 .. image:: images/systems-main-page.png
    :alt: Picture of Systems main page in FusionDirectory
@@ -64,9 +64,3 @@ Fill-in the following fields :
 * **Name** : interface name (required)
 * **Mac address** : MAC address of the system
 * **IP address** : IP addresses this system uses (v4 or v6)
-* **VLAN** : VLAN
-* **VLAN tag** : VLAN tag
-* **Subnet** : Subnet
-* **Add free IP from subnet** : add a new IP from selected subnet
-     
-

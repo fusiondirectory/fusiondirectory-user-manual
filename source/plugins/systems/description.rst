@@ -1,4 +1,4 @@
 Description
 ===========
 
-The Systems plugin is used to manage all kinds of systems, servers, workstation, terminal, phones, gsm etc. in FusionDirectory.
+The Systems plugin is used to manage all kinds of systems, servers, workstation, terminal, phones, gsm ...
