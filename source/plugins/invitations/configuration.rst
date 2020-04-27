@@ -16,7 +16,7 @@ Click on Edit button bottom right
 .. image:: images/invitations-edit-button.png
    :alt: Image of Edit button in FusionDirectory
 
-You are now able to configure INvitations parameters
+You are now able to configure Invitations parameters
 
 .. image:: images/config.png
    :alt: Invitations plugin configuration screen
