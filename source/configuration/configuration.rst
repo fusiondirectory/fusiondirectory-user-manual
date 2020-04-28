@@ -3,15 +3,26 @@ Configuration
 
 All the configuration is stored inside the ldap, in FusionDirectory branch.
 
-If you need to modify something, you can access to FD configuration by the "Configuration" entry in the "Addons" section of the main menu.
+If you need to modify something, you can access to FD configuration by clicking on "Configuration" icon of the main menu.
 
-.. image:: images/configuration.png
-   :alt: Configuration screen
+.. image:: images/configuration-icon-main.png
+   :alt: Image of Configuration icon in FusionDirectory
+   
+Then click on "Configuration" Tab  
 
-You need to click on "Edit" first to access edition and then "Ok" once you’ve finished.
+.. image:: images/configuration-tab.png
+   :alt: Image of Configuration tab in FusionDirectory
+   
+You need to click on "Edit" button bottom right first to access edition and then "Ok" once you’ve finished.
+
+.. image:: images/configuration-edit-button.png
+   :alt: Image of Edit button in FusionDirectory
 
 Look and feel
 ^^^^^^^^^^^^^
+
+.. image:: images/configuration-look-and-feel.png
+   :alt: Image of Look and Feel menu in FusionDirectory
 
 * **Language**: Defines the default language used by FusionDirectory. Normally FusionDirectory autodetects the language from the browser settings. If this is not working or you want to force the language, just modify the language here.
 * **Theme**: (required) Defines what theme is used to display FusionDirectory pages. You can install some corporate identity like theme and/or modify certain  templates  to fit your needs within themes.
@@ -19,6 +30,9 @@ Look and feel
 
 Core settings
 ^^^^^^^^^^^^^
+
+.. image:: images/configuration-core-settings.png
+   :alt: Image of Core settings menu in FusionDirectory
 
 * **LDAP size limit**: Tells FusionDirectory to retrieve the specified maximum number of results. The user will get a warning, that not all entries were shown.
 * **Edit locking**: Enables FusionDirectory to check if a entry currently being edited has been modified from someone else outside FusionDirectory in the meantime. It will display an informative dialog then. It can be set to *entryCSN* for OpenLDAP based systems or *contextCSN* for Sun DS based systems.
@@ -29,9 +43,12 @@ Core settings
 * **Wildcard foreign keys**: Whether to activate foreign key handling in cases where a wildcard filter is needed. For instance when moving a department containing users, this will make sure any reference to a user in this department is updated. This maintain consistency but may be a bit slow on big trees.
 
 Password settings
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^   
 
-* **Password default hash**: (required) Defines the default password hash to choose for new accounts.
+.. image:: images/configuration-password-settings.png
+   :alt: Image of Password settings menu in FusionDirectory
+
+* **Allowed password hashes**: (required) Defines the default password hash to choose for new accounts.
 
   Valid values are :
   
@@ -55,19 +72,24 @@ Password settings
 * **SASL Realm**: Defines the way the kerberos realm is stored in the userPassword attribute. Set it to REALM.NET in order to get {sasl}user@REALM.NET.
 * **SASL Exop**: Defines the attribute to be stored in the userPasword attribute. Set it to uid in order to get the {sasl}uid of the user.
 
-Login and session
+Login and session   
 ^^^^^^^^^^^^^^^^^
+
+.. image:: images/configuration-login-and-session.png
+   :alt: Image of Login and Session menu in FusionDirectory
 
 * **Login attribute**: (required) Defines which LDAP attribute is used in Fusiondirectory as the login name during login. It can be set to uid, mail or both.
 * **Enforce encrypted connections**: Enables PHP security checks to force encrypted access (https) to the web interface.
 * **Warn if session is not encrypted**: Enables PHP security checks to detect non encrypted access to the web interface. FusionDirectory will display a warning in this case.
 * **Session lifetime**: (required) Defines  when  a  session will expire in seconds. For Debian systems, this will not work because the sessions will be removed by a cron job instead. Please modify the value inside of your php.ini instead.
-* **HTTP authentification**: Activate HTTP authentification (basic auth).
-* **HTTP Header authentication**: Activate HTTP header authentification (default `LemonLDAP::NG`_ method)
+* **Login method**: (required) Which login method should be used for connecting to FusionDirectory
 * **Header name**: Define the name of the header you will use for HTTP Header Authentification
 
 SSL
 ^^^
+
+.. image:: images/configuration-ssl.png
+   :alt: Image of SSL menu in FusionDirectory
 
 * **Key path**: Path of the private key for FusionDirectory on the server.
 * **Certificate path**: Path of the certifiate for FusionDirectory on the server.
@@ -76,7 +98,9 @@ SSL
 CAS
 ^^^
 
-* **Enable CAS**: Enable CAS.
+.. image:: images/configuration-cas.png
+   :alt: Image of CAS menu in FusionDirectory
+
 * **CA certificate path**: Path of the CA for the CAS server.
 * **Host**: Host of the CAS Server.
 * **Port**: Port of the CAS Server.
@@ -88,6 +112,9 @@ People and group storage
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Pay attention to the changes in this section of the configuration**
+
+.. image:: images/configuration-people-and-group-storage.png
+   :alt: Image of People and Group storage menu in FusionDirectory
 
 * **People DN attribute**: (required) Defines the attribute to use at the beginning of users dn.
 
@@ -103,26 +130,43 @@ People and group storage
 * **Restrict role members**: When enabled only users from the same branch or members of groups from the same branch can be added to a role.
 * **Separate address fields**: When enabled, expose *street*, *postOfficeBox* and *postalCode* fields instead of *postalAddress*.
 * **Postal address pattern**: When **Separate address fields** is enabled, filling this allows to fill *postalAddress* using values from the separate fields in a pattern.
+* **Avatar max size**: Maximum user picture width and height in pixels. Bigger uploaded pictures will be resized.
 
 Debugging
 ^^^^^^^^^
+
+.. image:: images/configuration-debugging.png
+   :alt: Image of Debugging menu in FusionDirectory
 
 * **Display errors**: Defines whether to enable the display of PHP errors in the upper part of the screen. This should be disabled in productive deployments, because there might be some passwords in it.
 * **Maximum LDAP query time**: Tells FusionDirectory to stop LDAP actions if there is no answer within the specified number of seconds.
 * **Log LDAP statistics**: Tells FusionDirectory to track LDAP timing statistics to the syslog. This may help to find indexing problems or bad search filters.
 * **Debug level**: Display certains debug informations on each page load. Valid values are LDAP, Database, Shell, POST, SESSION, ACL, SI, Mail. The different values ​​can also be combined with each other.
+* **Log debug messages**: Sends debug output to syslog as well
 
 Miscellaneous
 ^^^^^^^^^^^^^
+
+.. image:: images/configuration-miscellaneous.png
+   :alt: Image of Miscellaneous menu in FusionDirectory
 
 * **Display summary in listings**: Determines whether a status bar will be shown on the bottom of FusionDirectory generated lists, displaying a short summary of type and  number of elements in the list.
 * **Show ACL tab on all objects**: For very specific ACL rights setting where you might need to give rights on a single object.
 * **Available department categories**: Available categories in the departments category dropdown.
 * **Plugin menu blacklist**: A list of plugins to hide from FusionDirectory menu for a given group of users.
+* **ACL target filter limit**: Defines the maximum number of entries an ACL target filter is allowed to return
 
 Triggers
 ^^^^^^^^
 
+Click on Triggers tab
+
+.. image:: images/configuration-triggers-tab.png
+   :alt: Image of Triggers tab in FusionDirectory
+
+.. image:: images/configuration-triggers-menu.png
+   :alt: Image of Triggers menu in FusionDirectory   
+   
 * **Triggers**: Defines triggers that are called when specific actions happens.
 
   Each trigger is defined by:
@@ -134,3 +178,41 @@ Triggers
 * **Display trigger output**: Activate to display the trigger output.
 
 .. _LemonLDAP::NG : http://lemonldap-ng.org/
+
+Click on Plugins tab
+
+.. image:: images/configuration-plugins-tab.png
+   :alt: Image of Plugins tab in FusionDirectory
+
+Object groups
+^^^^^^^^^^^^^
+
+.. image:: images/configuration-object-groups.png
+   :alt: Image of Object groups menu in FusionDirectory   
+   
+* **Groups RDN**: (required) Branch in which object groups will be stored.
+
+SASL
+^^^^
+
+.. image:: images/configuration-sasl.png
+   :alt: Image of SASL menu in FusionDirectory   
+   
+* **Force to ask for password**: (required) Useful if you add a trigger using password value when SASL user passwords are edited.
+
+Dashboard name schema
+^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: images/configuration-dashboard-name-schema.png
+   :alt: Image of Dashboard name schema menu in FusionDirectory   
+   
+* **Number of digits**: Number of digits to use after prefix.
+* **Prefixes**: (required) Prefixes to be used for computer ids.
+
+Dashboard expired users
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: images/configuration-dashboard-expired-users.png
+   :alt: Image of Dashboard expired users menu in FusionDirectory   
+   
+* **Number of days**: Number of days before expiration needed for an account to show in the dashboard not expired accounts list.
