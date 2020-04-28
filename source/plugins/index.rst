@@ -18,13 +18,13 @@ FusionDirectory Plugins
    dsa/index
    ejbca/index
    gpg/index
-   ipmi/index
    ipam/index
+   ipmi/index
    ldapdump/index
    ldapmanager/index
    invitations/index
-   newsletter/index
    mail/index
+   newsletter/index
    personal/index
    public-forms/index
    pureftpd/index
