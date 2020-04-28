@@ -31,7 +31,6 @@ FusionDirectory Plugins
    renaterpartage/index
    sinaps/index
    sogo/index
-   squid/index
    ssh/index
    subcontracting/index
    supann/index
