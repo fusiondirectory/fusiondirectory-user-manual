@@ -179,6 +179,11 @@ Click on Triggers tab
 
 .. _LemonLDAP::NG : http://lemonldap-ng.org/
 
+Click on Plugins tab
+
+.. image:: images/configuration-plugins-tab.png
+   :alt: Image of Plugins tab in FusionDirectory
+
 Object groups
 ^^^^^^^^^^^^^
 
