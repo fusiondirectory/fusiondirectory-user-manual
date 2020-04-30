@@ -11,4 +11,7 @@ FusionDirectory Plugins Supann
    description
    installation
    configuration
-   functionalities
+   supann-status
+   structures
+   users
+   multiservices-card

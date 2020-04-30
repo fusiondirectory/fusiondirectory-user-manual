@@ -1,7 +1,7 @@
 .. include:: ../../globals.rst
 
-Functionalities
-===============
+SupAnn Status
+=============
 
 * Create an entity
 
