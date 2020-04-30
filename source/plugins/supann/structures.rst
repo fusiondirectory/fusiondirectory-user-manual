@@ -3,6 +3,53 @@
 Structures
 ==========
 
+Create an establishement
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Back on SupAnn structures page, click on Actions --> Create > Supann Establishment
+
+.. image:: images/supann-actions-create-supann-establishment.png
+   :alt: Picture of Actions Create Supann Establishment drop-down menu in FusionDirectory
+
+Go to Establishment tab
+
+.. image:: images/supann-establishment-tab.png
+   :alt: Picture of Establishment tab in FusionDirectory
+   
+.. image:: images/supann-establishment-properties.png
+   :alt: Picture of Establishment Properties menu in FusionDirectory
+      
+Fill-in the following fields :
+
+* **Root establishment** : see this establishment as the root one
+* **Name** : the name to write in the o attribute for this establishment (required)
+* **Description** : a short description of this establishment
+  
+.. image:: images/supann-establishment-location.png
+   :alt: Picture of Establishment location menu in FusionDirectory
+   
+Fill-in the following fields :
+
+* **Telephone** : phone number of this establishment
+* **Fax** : fax number of this establishment
+* **Location** : usually the city where this establishment is situated
+* **Address** : the postal address of this establishment  
+
+.. image:: images/supann-establishment-SupAnn-properties.png
+   :alt: Picture of Establishment SupAnn properties menu in FusionDirectory
+   
+Fill-in the following fields :
+
+* **Establishment code** : the code of this establishment (must have a prefix between {}) (required)
+* **Establishment type** : the SupAnn type that best fits this Establishment
+* **SupAnn code** : the SupAnn code for this establishment (required)
+* **Parent entities** : the parent entities of this entity
+* **Reference IDs** : supannRefId - IDs/links for this entity on other systems
+* **Legal name** : the legal name of this establishment (required)
+* **Home page URI** : the URI of this establishment website home page
+* **Institution URI** : the URI of this establishment institution website
+* **White pages URI** : the URI of this establishment white pages 
+
 Create an entity
 ^^^^^^^^^^^^^^^^
 
@@ -52,51 +99,4 @@ Click on OK button bottom right to save your settings
 
 .. image:: images/supann-ok-button.png
    :alt: Picture of OK button in FusionDirectory    
-   
-
-Create an establishement
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-Back on SupAnn structures page, click on Actions --> Create > Supann Establishment
-
-.. image:: images/supann-actions-create-supann-establishment.png
-   :alt: Picture of Actions Create Supann Establishment drop-down menu in FusionDirectory
-
-Go to Establishment tab
-
-.. image:: images/supann-establishment-tab.png
-   :alt: Picture of Establishment tab in FusionDirectory
-   
-.. image:: images/supann-establishment-properties.png
-   :alt: Picture of Establishment Properties menu in FusionDirectory
       
-Fill-in the following fields :
-
-* **Root establishment** : see this establishment as the root one
-* **Name** : the name to write in the o attribute for this establishment (required)
-* **Description** : a short description of this establishment
-  
-.. image:: images/supann-establishment-location.png
-   :alt: Picture of Establishment location menu in FusionDirectory
-   
-Fill-in the following fields :
-
-* **Telephone** : phone number of this establishment
-* **Fax** : fax number of this establishment
-* **Location** : usually the city where this establishment is situated
-* **Address** : the postal address of this establishment  
-
-.. image:: images/supann-establishment-SupAnn-properties.png
-   :alt: Picture of Establishment SupAnn properties menu in FusionDirectory
-   
-Fill-in the following fields :
-
-* **Establishment code** : the code of this establishment (must have a prefix between {}) (required)
-* **Establishment type** : the SupAnn type that best fits this Establishment
-* **SupAnn code** : the SupAnn code for this establishment (required)
-* **Parent entities** : the parent entities of this entity
-* **Reference IDs** : supannRefId - IDs/links for this entity on other systems
-* **Legal name** : the legal name of this establishment (required)
-* **Home page URI** : the URI of this establishment website home page
-* **Institution URI** : the URI of this establishment institution website
-* **White pages URI** : the URI of this establishment white pages    

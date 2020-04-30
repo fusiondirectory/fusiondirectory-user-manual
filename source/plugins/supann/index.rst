@@ -13,5 +13,6 @@ FusionDirectory Plugins Supann
    configuration
    supann-status
    structures
-   users
    multiservices-card
+   users
+   
