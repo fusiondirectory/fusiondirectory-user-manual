@@ -11,4 +11,6 @@ FusionDirectory Plugins Supann
    description
    installation
    configuration
-   functionalities
+   structures
+   users/index
+   
