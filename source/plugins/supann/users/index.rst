@@ -8,7 +8,8 @@ Supann users management
 .. toctree::
    :maxdepth: 2
    
-   users
+   supann-users
+   custom-lists
    supann-status
    multiservice-card
    
