@@ -9,7 +9,7 @@ Supann users management
    :maxdepth: 2
    
    supann-users
-   custom-lists
+   supann-custom-lists
    supann-status
-   multiservice-card
+   supann-multiservice-card
    
