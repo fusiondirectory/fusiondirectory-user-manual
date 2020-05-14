@@ -127,7 +127,7 @@ You can select which object types you want to list or hide, if you want to show 
 
 You can also filter objects depending on which tabs are activated on them.
 
-You can also you the text box to do a text search.
+You can also use the text box to do a text search.
    
 .. image:: images/core-filters.png
    :alt: Picture of filters overview in FusionDirectory
@@ -143,6 +143,13 @@ Checking the "Search in subtrees" checkbox allows to search in the whole subtree
    
 .. image:: images/core-search-in-subtrees.png
    :alt: Picture of search in subtrees filter in FusionDirectory
+   
+There is an option to search on attribute dependent on the columns displayed in list.
+
+When you put your cursor on the magnifying glass icon under filter menu, a black line will appear, describing the different items displayed for this user
+
+.. image:: images/core-filters-magnifying-glass-icon.png
+   :alt: Picture of magnifying glass icon in FusionDirectory   
    
 List
 ^^^^
