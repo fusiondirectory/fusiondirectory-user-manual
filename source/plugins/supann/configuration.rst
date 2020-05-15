@@ -64,3 +64,15 @@ On **Substatus**  drop-down menu you have now a "Library" entry
 Configure Multiservice card
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Here is the wiew of Multiservice Card settings to configure
+
+.. image:: images/supann-multiservice-card-settings_1.png
+   :alt: Picture of Multiservice Card settings in FusionDirectory
+   
+.. image:: images/supann-multiservice-card-settings_2.png
+   :alt: Picture of Multiservice Card settings in FusionDirectory
+   
+* **Card types** : card types and their labels. Please, prefiw with {ORIGIN} for non standard types
+* **Card sources** : multi service card possible sources, with format system@domain
+* **Card formats** : allowed formats for multiservice cards      
+* **Card application domains** : domains for card applications
