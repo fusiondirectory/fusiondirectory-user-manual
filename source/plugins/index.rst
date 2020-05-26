@@ -25,6 +25,7 @@ FusionDirectory Plugins
    invitations/index
    mail/index
    newsletter/index
+   nextcloud/index
    personal/index
    public-forms/index
    pureftpd/index
