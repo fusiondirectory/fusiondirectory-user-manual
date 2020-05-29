@@ -16,6 +16,7 @@ Contents:
    :maxdepth: 2
 
    fusiondirectory/index.rst
+   schema2ldif/index.rst
    support/index.rst
    security/index.rst
    authors/index.rst
