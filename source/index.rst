@@ -15,23 +15,9 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   whatis/fusiondirectory.rst
-   prerequisite/prerequisite.rst
-   install/index
-   update/index
-   core/index
-   configuration/index
-   acls/index
-   plugins/index
-   templates/index
-   triggers/index
-   faq/index.rst
-   contribute/bugreport.rst
-   release/index
-   distribution/index.rst
+   fusiondirectory/index.rst
    support/index.rst
    security/index.rst
-   license/index.rst
    authors/index.rst
    contact/contact.rst
    code-of-conduct.rst
