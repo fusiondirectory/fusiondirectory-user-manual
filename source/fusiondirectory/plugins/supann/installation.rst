@@ -37,7 +37,7 @@ Archlinux
 .. code-block:: bash
 
    fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/internet2.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/supann_2009.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/supann-2019-11-22.schema
    fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/supann-fd-conf.schema
 
 Debian
