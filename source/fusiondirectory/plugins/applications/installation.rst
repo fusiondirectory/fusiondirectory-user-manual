@@ -17,8 +17,8 @@ Debian
 
 .. code-block:: bash
 
-   apt-get install ffusiondirectory-plugin-applications
-   apt-get fusiondirectory-plugin-applications-schema
+   apt-get install fusiondirectory-plugin-applications
+   apt-get install fusiondirectory-plugin-applications-schema
 
 RHEL
 ^^^^
