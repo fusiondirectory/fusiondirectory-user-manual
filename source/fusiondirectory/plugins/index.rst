@@ -17,6 +17,7 @@ FusionDirectory Plugins
    developers/index
    dovecot/index
    dsa/index
+   dyngroup/index
    ejbca/index
    gpg/index
    ipam/index
