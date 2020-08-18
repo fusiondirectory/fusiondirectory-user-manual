@@ -26,7 +26,7 @@ Examples:
 
 Get interfaces:
 
-.. code-block::
+.. code-block:: bash
 
    GET /objects/server/cn=server1,ou=servers,ou=systems,dc=example,dc=com/interfacesManagement/networkInterfaces
    Response:
@@ -47,6 +47,6 @@ Get interfaces:
 
 Add an interface:
 
-.. code-block::
+.. code-block:: bash
 
    PATCH /objects/server/cn=server1,ou=servers,ou=systems,dc=example,dc=com/interfacesManagement/networkInterfaces/values [{"cn":["eth2"],"ipHostNumber":["192.168.2.3"]}]
