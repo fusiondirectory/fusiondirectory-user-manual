@@ -6,7 +6,7 @@ Functionalities
 Add Renater Partage service
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Go to systems 
+Go to Systems 
 
 .. image:: images/renaterpartage-systems.png
    :alt: Picture of Systems icon in FusionDirectory
@@ -24,7 +24,7 @@ Click on services tab
 Add the Renater Partage service
 
 .. image:: images/renaterpartage-add-service.png
-   :alt: Picture of Add Renaterpartage in FusionDirectory    
+   :alt: Picture of Add Renaterpartage in FusionDirectory 
 
 Fill the fields for the Renater plugin and save it
 
@@ -39,9 +39,9 @@ Fill the fields for the Renater plugin and save it
    
 * Per domains settings : 
 
-   * Domain : mail domain ex: acme.com
-   * Key : API key received from Renater   
-   * Class of service : Service class name | cos id (zimbra cos id)
+   * Domain: mail domain ex: acme.com
+   * Key: API key received from Renater   
+   * Class of service: Service class name | cos id (zimbra cos id)
    
 Click on "save" button bottom right to save your server       
 
@@ -79,16 +79,3 @@ Click on "Apply" button bottom right to save your settings
 .. image:: images/renaterpartage-apply-button.png
    :alt: Picture of other addresses entries in FusionDirectory  
 
-
-
-   
-    
-
-   
-   
-   
-   
-   
-   
-   
-   
