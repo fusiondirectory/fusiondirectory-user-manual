@@ -1,47 +1,10 @@
 .. include:: /globals.rst
 
-Functionalities
-===============
+Attributes
+==========
 
-Add Renater Partage to a user
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Click on "users" button in FusionDirectory main page
-
-.. image:: images/renaterpartage-users.png
-   :alt: Picture of Users icon in FusionDirectory
-
-Select a user
-
-.. image:: images/renaterpartage-user.png
-   :alt: Picture of User line in FusionDirectory
-
-Go to Mail tab and click on "Add mail settings"
-
-.. image:: images/renaterpartage-add-mail-settings.png
-   :alt: Picture of Add mail settings button in FusionDirectory
-
-Fill in all the required information : mail account and other addresses and redirections
-
-.. image:: images/renaterpartage-mail-account-info.png
-   :alt: Picture of mail account entries in FusionDirectory
-
-.. image:: images/renaterpartage-other-addresses.png
-   :alt: Picture of other addresses entries in FusionDirectory
-
-Click on "Apply" button bottom right to save your settings
-
-.. image:: images/renaterpartage-apply-button.png
-   :alt: Picture of other addresses entries in FusionDirectory
-
-Add Renater Partage to a group
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-In the same way you can use the mail tab of a user group to synchronize it with PARTAGE.
-In this case you can activate and use the PARTAGE tab of the group to fill additional information.
-
-Fields synchronised by renater-partage plugin
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Attributes synchronised by renater-partage plugin
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Here are the fields which are synchronized for users:
 
@@ -50,7 +13,7 @@ PARTAGE                             LDAP                      Notes
 =================================== ========================= ======
 zimbraCOSId                                                   COS id from Renater Partage service
 zimbraMailQuota                     gosaMailQuota             Converted to Mio
-zimbraPrefMailLocalDeliveryDisabled                           Checkbox "No delivery to own mailbox"
+zimbraPrefMailLocalDeliveryDisabled gosaMailDeliveryMode      Checkbox "No delivery to own mailbox"
 zimbraPrefMailForwardingAddress     gosaMailForwardingAddress Only one value
 ----------------------------------- ------------------------- ------
 description                         description
