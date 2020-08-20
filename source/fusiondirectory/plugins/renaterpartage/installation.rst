@@ -1,7 +1,7 @@
 Installation
 ============
 
-In order to install renater partage plugin, you need to have installed and configured mail plugin.
+In order to install renater-partage plugin, you need to have installed and configured mail plugin.
 
 Install packages
 ----------------
@@ -30,7 +30,7 @@ RHEL
    yum install fusiondirectory-plugin-renater-partage
    yum install fusiondirectory-plugin-renater-partage-schema
 
-Install schemas
+Insert schemas
 ---------------
 
 Archlinux
