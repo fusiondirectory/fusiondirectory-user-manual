@@ -17,7 +17,7 @@ Public Form
 * **Object type**: The type of object this form will create
 * **Template**: The template to use for this form
 * **Confirmation text**: The confirmation text shown once the form is successfully submitted
-* **Private**: This is only useful if the :ref:`invitations` plugin is installed and will make this form only available with a valid invitation
+* **Private**: This is only useful if the :ref:`plugins-invitations` plugin is installed and will make this form only available with a valid invitation
 * **Creation base**: The base the created object will be placed in
 * **TOS URL**: If filled, a mandatory checkbox will force people to accept the terms of service available at this URL before submitting the form
 
