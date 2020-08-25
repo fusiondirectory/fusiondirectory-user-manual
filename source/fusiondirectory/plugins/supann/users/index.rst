@@ -1,4 +1,4 @@
-.. _SupAnn:
+.. _SupAnn-users:
 
 Users
 ======
