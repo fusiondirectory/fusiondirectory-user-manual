@@ -11,12 +11,11 @@ before_script:
   - apt-get update -qq
   - apt-get install -y -qq python-sphinx python-sphinx-rtd-theme make
 
-# Generate perlcritic rapport
+# Generate sphinx rapport
 create_sphinx_rapport:
   only:
     - branches
     - tags
   script:
-    - make html
-
+    - make SPHINXOPTS='-n -W' dummy
 

@@ -12,7 +12,7 @@ Ubuntu 12.0.4 TLS users
 
 In case you did not find it, grab the deb from here and install it
 
-`<http://packages.ubuntu.com/trusty/all/php-cas/download>`_
+`<https://packages.ubuntu.com/trusty/all/php-cas/download>`_
 
 and select your preferred mirror
 
@@ -98,7 +98,7 @@ the spamassassin plugin and insert the spamassasin schema
 Remove old schema from /etc/ldap/schema/fusiondirectory
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The old schema are not automatically removed from /etc/ldap/schema/fusiondirectory. 
+The old schema are not automatically removed from /etc/ldap/schema/fusiondirectory.
 You can safely remove **recovery-fd.schema** and **asterisk-fd.conf** if they still
 exist
 
@@ -189,7 +189,7 @@ attributes and objectClasses of they are present in your ldap server
 .. code-block:: shell
 
    fusiondirectory-setup --check-deprecated
-   List LDAP entries using deprecated attributes or objectclasses   
+   List LDAP entries using deprecated attributes or objectclasses
    There are no entries in the LDAP using obsolete attributes
    There are no entries in the LDAP using obsolete classes
 
@@ -201,9 +201,9 @@ old attributes.
 
    fusiondirectory-setup --ldif-deprecated > remove_deprecated.ldif
 
-If they are old objectClasses it will warn you and you will have to remove it by hand, 
+If they are old objectClasses it will warn you and you will have to remove it by hand,
 they have been specified at the **fusiondirectory-setup --check-deprecated** step.
 
-.. warning::  
+.. warning::
 
    Please read it carefully before applying !!

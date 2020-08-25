@@ -3,9 +3,7 @@
 Functionalities
 ===============
 
-FusionDirectory user template's, you can give the possibility to automatically create some entries during your new user creation process. 
-
-The concept of templates in FusionDirectory is to allow you to automatically create any objects stored inside Fusiondirectory in a programmable way.
+FusionDirectory templates allow you to automatically fill some fields at object creation, or automatically fill them on existing objects to make them consistent by applying a template. 
 
     * Define precisely how the attributes will be constructed, uppercase, lowercase, first letter of an attribute+4 letters of another attribute ...
     * Fill other attributes based on value stored elsewhere

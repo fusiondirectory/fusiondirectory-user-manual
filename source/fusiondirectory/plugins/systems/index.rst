@@ -1,4 +1,4 @@
-.. _Systems:
+.. _plugins-systems:
 
 Systems
 =======

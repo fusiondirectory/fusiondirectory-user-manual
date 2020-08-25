@@ -1,4 +1,4 @@
-.. _configuration:
+.. _public-forms-configuration:
 
 Configuration
 =============
