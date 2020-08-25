@@ -10,5 +10,4 @@ We are also contactable on:
 Follow Us
 
 * On twitter: https://twitter.com/fusiondirectory
-
-.. ~ * On linkedin: https://www.linkedin.com/company/fusiondirectory
+* On linkedin: https://www.linkedin.com/company/fusiondirectory
