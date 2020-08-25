@@ -1,4 +1,4 @@
-.. _configuration:
+.. _sinaps-configuration:
 
 Configuration
 =============

@@ -2,7 +2,7 @@
 Functionalities
 ===============
 
-Once your FusionDirectory instance is correctly set to be receiving user and structures diffusion events in Sinaps and Sinaps plugin is up and running (see :ref:`configuration` ), creation and modification on Sinaps objects will be applied in FusionDirectory with the following rules.
+Once your FusionDirectory instance is correctly set to be receiving user and structures diffusion events in Sinaps and Sinaps plugin is up and running (see :ref:`sinaps-configuration` ), creation and modification on Sinaps objects will be applied in FusionDirectory with the following rules.
 
 Diffusion
 ---------
