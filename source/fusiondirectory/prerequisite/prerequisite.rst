@@ -15,12 +15,12 @@ FusionDirectory requires a web server that supports PHP, like:
 
 * `Apache 2 (or more recent) <http://httpd.apache.org>`_;
 * `Nginx <http://nginx.org/>`_;
-* `Microsoft IIS <http://www.iis.net>`_.
+* `Microsoft IIS <https://www.iis.net>`_.
 
 PHP
 ---
 
-As of 1.4 release, FusionDirectory requires `PHP <http://php.net>`_ 7.0 or more recent.
+As of 1.4 release, FusionDirectory requires `PHP <https://www.php.net>`_ 7.0 or more recent.
 
 .. note::
 
@@ -78,12 +78,12 @@ PHP configuration file (``php.ini``) must be adapted to reflect following variab
 LDAP server
 -----------
 
-For FusionDirectory to work you need an ldap server. 
+For FusionDirectory to work you need an ldap server.
 
 Servers know to work are :
 
 * `OpenLDAP`_
 * `389DS`_
 
-.. _OpenLDAP : http://www.openldap.org/
-.. _389DS : http://directory.fedoraproject.org/
+.. _OpenLDAP : https://www.openldap.org/
+.. _389DS : https://directory.fedoraproject.org/

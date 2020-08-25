@@ -13,7 +13,7 @@ Ubuntu 12.0.4 TLS users
 
 In case you did not find it, grab the deb from here and install it
 
-`<http://packages.ubuntu.com/trusty/all/php-cas/download>`_
+`<https://packages.ubuntu.com/trusty/all/php-cas/download>`_
 
 and select your preferred mirror
 
@@ -146,17 +146,17 @@ Deprecated objectClasses:
 .. code-block:: shell
 
    fusiondirectory-setup --check-deprecated
-   List LDAP entries using deprecated attributes or objectclasses   
+   List LDAP entries using deprecated attributes or objectclasses
    There are no entries in the LDAP using obsolete attributes
    There are no entries in the LDAP using obsolete classes
 
 - **fusiondirectory-setup --ldif-deprecated** will output an ldif
   file on the console that you can use with ldapmodify to clean you
-  ldap server from old attributes. 
-  
+  ldap server from old attributes.
+
   If they are old objectClasses it will warn you and you will have to remove it by hand,
   they have been specified at the **fusiondirectory-setup --check-deprecated** step.
-  
-.. warning::  
+
+.. warning::
 
    Please read it carefully before applying !!

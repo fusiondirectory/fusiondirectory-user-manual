@@ -8,7 +8,7 @@ We are also contactable on:
 * IRC: #fusiondirectory on irc.freenode.org `<irc://irc.freenode.org/fusiondirectory>`__
 
 Follow Us
-         
-on twitter: http://twitter.com/fusiondirectory
 
-on linkedin: https://www.linkedin.com/company/fusiondirectory
+* On twitter: https://twitter.com/fusiondirectory
+
+.. ~ * On linkedin: https://www.linkedin.com/company/fusiondirectory

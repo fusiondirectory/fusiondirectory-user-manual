@@ -37,7 +37,7 @@ To use the lastest published version for **jessie** put this in your
    deb http://repos.fusiondirectory.org/fusiondirectory-current/debian-jessie jessie main
 
 .. code-block:: shell
-  
+
    #fusiondirectory extra repository
    deb http://repos.fusiondirectory.org/fusiondirectory-extra/debian-jessie jessie main
 
@@ -136,4 +136,4 @@ Downloading the source
 
 The source download area is here
 
-http://repos.fusiondirectory.org/sources/
+https://repos.fusiondirectory.org/sources/
