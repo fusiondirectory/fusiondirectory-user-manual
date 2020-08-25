@@ -1,10 +1,10 @@
-.. _debian-repository-label:
+.. _fd-debian-repository-label:
 
 
 Debian Repository
 '''''''''''''''''
 
-.. _debian-repository-stretch-label:
+.. _fd-debian-repository-stretch-label:
 
 Debian Stretch
 ^^^^^^^^^^^^^^
@@ -23,7 +23,7 @@ your /etc/apt/sources.list
    deb http://repos.fusiondirectory.org/fusiondirectory-extra/debian-stretch stretch main
 
 
-.. _debian-repository-jessie-label:
+.. _fd-debian-repository-jessie-label:
 
 Debian Jessie
 ^^^^^^^^^^^^^
@@ -44,7 +44,7 @@ To use the lastest published version for **jessie** put this in your
 !!! Wheezy is deprecated and will not be maintained anymore, the latest release is 1.2 !!!
 
 
-.. _rpm-repository-label:
+.. _fd-rpm-repository-label:
 
 RPM Repository
 ''''''''''''''
@@ -57,7 +57,7 @@ FusionDirectory.
 
 To use the lastest published version put this in your yum config :
 
-.. _rpm-repository-centos6-label:
+.. _fd-rpm-repository-centos6-label:
 
 CentOS 6 / RHEL 6
 ^^^^^^^^^^^^^^^^^
@@ -93,9 +93,9 @@ SRPMS are also available in the following repo :
    gpgcheck=1
    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-FUSIONDIRECTORY
 
-!!! Scientific Linux is deprecated and will not be maintained anymore, you can switch the centos packages !!!
+!!! Scientific Linux is deprecated and will not be maintained anymore, you can switch the centos packages !!!
 
-.. _rpm-repository-centos7-label:
+.. _fd-rpm-repository-centos7-label:
 
 CentOS 7 / RHEL 7
 ^^^^^^^^^^^^^^^^^
