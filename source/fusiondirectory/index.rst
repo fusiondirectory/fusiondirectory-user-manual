@@ -12,6 +12,7 @@ Contents:
 
    whatis/fusiondirectory.rst
    prerequisite/prerequisite.rst
+   distribution/certified-distribution.rst
    install/index
    update/index
    core/index
@@ -23,5 +24,4 @@ Contents:
    faq/index.rst
    contribute/bugreport.rst
    release/index
-   distribution/certified-distribution.rst
    license/index.rst
