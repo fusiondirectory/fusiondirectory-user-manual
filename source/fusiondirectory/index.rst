@@ -1,10 +1,14 @@
 FusionDirectory
 ===============
 
+.. image:: /_static/images/fd_logo.png
+   :alt: FusionDirectory
+   :align: center
+
 Contents:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    whatis/fusiondirectory.rst
    prerequisite/prerequisite.rst
@@ -19,9 +23,5 @@ Contents:
    faq/index.rst
    contribute/bugreport.rst
    release/index
-   distribution/index.rst
+   distribution/certified-distribution.rst
    license/index.rst
-
-.. include:: ../globals.rst
-
-
