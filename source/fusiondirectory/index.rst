@@ -23,5 +23,5 @@ Contents:
    faq/index.rst
    contribute/bugreport.rst
    release/index
-   distribution/index.rst
+   distribution/certified-distribution.rst
    license/index.rst
