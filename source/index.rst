@@ -17,6 +17,7 @@ Contents:
 
    fusiondirectory/index.rst
    schema2ldif/index.rst
+   argonaut/index.rst
    support/index.rst
    security/index.rst
    authors/index.rst
