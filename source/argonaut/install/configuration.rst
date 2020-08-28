@@ -66,25 +66,3 @@ What is the password for the provided bind dn.
 
 whether communication should be encrypted or not
 
-[rest]
-^^^^^^
-
-This section contains all the REST API parameters :
-
-.. code-block:: shell
-
-  endpoint = https://example.com/fusiondirectory/rest.php
-
-Where is the fusiondirectory webservice endpoint
-
-.. code-block:: shell
-
-  login = bmortier
-
-Which user is authorized to connect to the FusionDirectory webservice, this is not a full dn.
-
-.. code-block:: shell
-
-  password = password
-
-This user will need to be given to correct access with FusionDirectory acl to perform the action requested.
