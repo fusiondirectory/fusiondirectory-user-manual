@@ -10,6 +10,7 @@ Argonaut
 
    whatis/argonaut.rst
    install/index.rst
+   install/configuration.rst
    applications/index.rst
    contributing.rst
    license/license.rst
