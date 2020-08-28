@@ -10,4 +10,3 @@ Install Argonaut
    download.rst
    debian/index.rst
    centos/index.rst
-   configuration.rst
