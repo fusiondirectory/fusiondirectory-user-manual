@@ -17,7 +17,7 @@ directory repos
 
 Chose the repositories that goes with your centos version
 
-:ref:`rpm-repository-centos7-label`
+:ref:`cs_rpm-repository-centos7-label`
 
 Create 2 new repo file your favorite text editor.
 

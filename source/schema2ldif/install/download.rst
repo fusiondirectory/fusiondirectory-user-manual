@@ -4,7 +4,7 @@
 Debian Repository
 '''''''''''''''''
 
-.. _schema2ldif-debian-repository-stretch-label:
+.. _sl-debian-repository-stretch-label:
 
 Debian Stretch
 ^^^^^^^^^^^^^^
@@ -18,7 +18,7 @@ your /etc/apt/sources.list
    deb http://repos.fusiondirectory.org/fusiondirectory-extra/debian-stretch stretch main
 
 
-.. _schema2ldif-debian-repository-jessie-label:
+.. _sl-debian-repository-jessie-label:
 
 Debian Jessie
 ^^^^^^^^^^^^^
@@ -31,7 +31,7 @@ To use the lastest published version for **jessie** put this in your
    #fusiondirectory extra repository
    deb http://repos.fusiondirectory.org/fusiondirectory-extra/debian-jessie jessie main
 
-.. _schema2ldif-rpm-repository-label:
+.. _sl-rpm-repository-label:
 
 RPM Repository
 ''''''''''''''
