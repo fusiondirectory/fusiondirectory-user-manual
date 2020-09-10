@@ -9,7 +9,7 @@ directory repos
 
 Chose the repositories that goes with your centos version
 
-:ref:`rpm-repository-label`
+:ref:`sl-rpm-repository-label`
 
 Create one new repo file for fusiondirectory-extra with your favorite text editor in */etc/yum.repos.d/*
 

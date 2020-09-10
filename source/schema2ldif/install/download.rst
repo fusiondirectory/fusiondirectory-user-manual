@@ -1,10 +1,10 @@
-.. _debian-repository-label:
+.. _schema2ldif-debian-repository-label:
 
 
 Debian Repository
 '''''''''''''''''
 
-.. _debian-repository-stretch-label:
+.. _sl-debian-repository-stretch-label:
 
 Debian Stretch
 ^^^^^^^^^^^^^^
@@ -18,7 +18,7 @@ your /etc/apt/sources.list
    deb http://repos.fusiondirectory.org/fusiondirectory-extra/debian-stretch stretch main
 
 
-.. _debian-repository-jessie-label:
+.. _sl-debian-repository-jessie-label:
 
 Debian Jessie
 ^^^^^^^^^^^^^
@@ -27,11 +27,11 @@ To use the lastest published version for **jessie** put this in your
 /etc/apt/sources.list
 
 .. code-block:: shell
-  
+
    #fusiondirectory extra repository
    deb http://repos.fusiondirectory.org/fusiondirectory-extra/debian-jessie jessie main
 
-.. _rpm-repository-label:
+.. _sl-rpm-repository-label:
 
 RPM Repository
 ''''''''''''''
@@ -57,4 +57,4 @@ Downloading the source
 
 The source download area is here
 
-http://repos.fusiondirectory.org/sources/
+https://repos.fusiondirectory.org/sources/

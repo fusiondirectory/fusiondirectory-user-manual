@@ -1,4 +1,4 @@
-.. _gpg-keys-label:
+.. _schema2ldif-gpg-keys-label:
 
 Getting the official GPG keys to active package signature
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''

@@ -20,7 +20,7 @@ You are sure to get :
 
 Support Options :
 
-* Get `support for your FusionDirectory`_ instance 
+* Get `support for your FusionDirectory`_ instance
 * Get `training for your daily use`_ of FusionDirectory
 * Get `support on specialized plugins`_ of FusionDirectory
 
@@ -28,4 +28,4 @@ Support Options :
 .. _support for your FusionDirectory : https://www.fusiondirectory.org/en/our-support-offers/
 .. _training for your daily use : https://www.fusiondirectory.org/en/training/
 .. _support on specialized plugins : https://www.fusiondirectory.org/en/support-specialized-plugins/
-.. _PHP LDAP : https://secure.php.net/manual/en/book.ldap.php
+.. _PHP LDAP : https://www.php.net/manual/en/book.ldap.php
