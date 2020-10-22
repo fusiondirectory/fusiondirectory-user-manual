@@ -34,5 +34,5 @@ When you are done, click on the OK button to save your settings
 ACL
 ---
 
-To give rights to a user to archive objects, you need to give him a creation right on the archive item in the concerned category.
-For instance, for someone to be able to archive users, you need to give him right "c" on user/archive. Remember that archiving is deleting.
+To give rights to a user to archive objects, you need to give him a creation right on the Archived Object item in the concerned category.
+For instance, for someone to be able to archive users, you need to give him right "c" on user/archivedObject. Remember that archiving is deleting.

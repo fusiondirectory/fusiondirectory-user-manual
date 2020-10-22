@@ -20,6 +20,6 @@ Once objects are archived, they are deleted, and you can consult the archived ob
 
 You can open an archived object to read all archived information
 
-.. image:: images/archived-object.png
+.. image:: images/archive-details.png
    :alt: Picture of an opened archived object in FusionDirectory
 
