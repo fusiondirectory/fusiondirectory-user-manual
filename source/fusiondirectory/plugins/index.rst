@@ -8,6 +8,7 @@ FusionDirectory Plugins
 
    alias/index
    applications/index
+   archive/index
    audit/index
    autofs/index
    certificates/index
