@@ -7,4 +7,4 @@ Applications
 
    components.rst
    user-reminder/index.rst
-
+   clean-audit/index.rst
