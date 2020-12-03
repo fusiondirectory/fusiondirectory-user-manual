@@ -4,14 +4,6 @@ Installation
 Install packages
 ----------------
 
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   yaourt -S fusiondirectory-plugin-sogo
-   yaourt -S fusiondirectory-plugin-sogo-schema
-
 Debian
 ^^^^^^
 
@@ -30,15 +22,6 @@ RHEL
 
 Install schemas
 ---------------
-
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/sogo-fd-conf.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/calEntry.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/calRessources.schema
 
 Debian
 ^^^^^^

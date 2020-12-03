@@ -4,14 +4,6 @@ Installation
 Install packages
 ----------------
 
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   yaourt -S fusiondirectory-plugin-ejbca
-   yaourt -S fusiondirectory-plugin-ejbca-schema
-
 Debian
 ^^^^^^
 
@@ -30,13 +22,6 @@ RHEL
 
 Install schemas
 ---------------
-
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/ejbca-fd*
 
 Debian
 ^^^^^^

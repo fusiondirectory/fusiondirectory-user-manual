@@ -6,14 +6,6 @@ In order to install renater-partage plugin, you need to have installed and confi
 Install packages
 ----------------
 
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   yaourt -S fusiondirectory-plugin-renater-partage
-   yaourt -S fusiondirectory-plugin-renater-partage-schema
-
 Debian
 ^^^^^^
 
@@ -33,13 +25,6 @@ RHEL
 Insert schemas
 ---------------
 
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/openldap/renater-partage-fd.schema
-   
 Debian
 ^^^^^^
 
