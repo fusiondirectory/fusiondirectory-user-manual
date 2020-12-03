@@ -4,14 +4,6 @@ Installation
 Install packages
 ----------------
 
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   yaourt -S fusiondirectory-plugin-ipmi
-   yaourt -S fusiondirectory-plugin-ipmi-schema
-
 Debian
 ^^^^^^
 
@@ -31,13 +23,6 @@ RHEL
 Install schemas
 ---------------
 
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/ipmi-fd.schema
-   
 Debian
 ^^^^^^
 

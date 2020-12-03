@@ -4,14 +4,6 @@ Installation
 Install packages
 ----------------
 
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   yaourt -S fusiondirectory-plugin-cyrus
-   yaourt -S fusiondirectory-plugin-cyrus-schema
-
 Debian
 ^^^^^^
 
@@ -30,14 +22,6 @@ RHEL
 
 Install schemas
 ---------------
-
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/cyrus-fd.schema
-   
 
 Debian
 ^^^^^^

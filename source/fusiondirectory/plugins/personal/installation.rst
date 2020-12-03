@@ -4,14 +4,6 @@ Installation
 Install packages
 ----------------
 
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   yaourt -S fusiondirectory-plugin-personal
-   yaourt -S fusiondirectory-plugin-personal-schema
-
 Debian
 ^^^^^^
 
@@ -31,14 +23,6 @@ RHEL
 Install schemas
 ---------------
 
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/personal-fd.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/personal-fd-conf.schema
-   
 Debian
 ^^^^^^
 
