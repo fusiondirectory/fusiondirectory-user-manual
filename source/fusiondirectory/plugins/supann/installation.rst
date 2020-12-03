@@ -4,14 +4,6 @@ Installation
 Install packages
 ----------------
 
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   yaourt -S fusiondirectory-plugin-supann
-   yaourt -S fusiondirectory-plugin-supann-schema
-
 Debian
 ^^^^^^
 
@@ -30,15 +22,6 @@ RHEL
 
 Install schemas
 ---------------
-
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/internet2.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/supann_2009.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/supann-fd-conf.schema
 
 Debian
 ^^^^^^

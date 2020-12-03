@@ -4,14 +4,6 @@ Installation
 Install packages
 ----------------
 
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   yaourt -S fusiondirectory-plugin-user-reminder
-   yaourt -S fusiondirectory-plugin-user-reminder-schema
-
 Debian
 ^^^^^^
 
@@ -31,13 +23,6 @@ RHEL
 Install schemas
 ---------------
 
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/user-reminder-fd-conf.schema
-   
 Debian
 ^^^^^^
 
