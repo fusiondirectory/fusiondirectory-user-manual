@@ -4,14 +4,6 @@ Installation
 Install packages
 ----------------
 
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   yaourt -S fusiondirectory-plugin-alias
-   yaourt -S fusiondirectory-plugin-alias-schema
-
 Debian
 ^^^^^^
 
@@ -30,14 +22,6 @@ RHEL
 
 Install schemas
 ---------------
-
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/alias-fd-conf.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/alias-fd.schema
 
 Debian
 ^^^^^^

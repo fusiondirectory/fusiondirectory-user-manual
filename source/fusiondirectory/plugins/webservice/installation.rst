@@ -4,14 +4,6 @@ Installation
 Install packages
 ----------------
 
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   yaourt -S fusiondirectory-plugin-webservice
-   yaourt -S fusiondirectory-plugin-webservice-schema
-
 Debian
 ^^^^^^
 
@@ -30,13 +22,6 @@ RHEL
 
 Install schemas
 ---------------
-
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/webservice-fd-conf.schema
 
 Debian
 ^^^^^^

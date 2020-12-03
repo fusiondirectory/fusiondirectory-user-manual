@@ -4,14 +4,6 @@ Installation
 Install packages
 ----------------
 
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   yaourt -S fusiondirectory-plugin-public-forms
-   yaourt -S fusiondirectory-plugin-public-forms-schema
-
 Debian
 ^^^^^^
 
@@ -30,14 +22,6 @@ RHEL
 
 Install schemas
 ---------------
-
-Archlinux
-^^^^^^^^^
-
-.. code-block:: bash
-
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/public-forms-fd.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/public-forms-fd-conf.schema
 
 Debian
 ^^^^^^
