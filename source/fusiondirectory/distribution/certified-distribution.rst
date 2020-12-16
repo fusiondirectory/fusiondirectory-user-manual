@@ -21,5 +21,5 @@ Ubuntu 18.04 LTS  not supported            supported
 Ubuntu 20.04 LTS  not supported            work in progress
 ----------------- ------------------------ -----------------------
 Centos 7          need a support contract  supported
-Centos 8          not supported            work in progress
+Centos 8          not supported            not supported
 ================= ======================== =======================
