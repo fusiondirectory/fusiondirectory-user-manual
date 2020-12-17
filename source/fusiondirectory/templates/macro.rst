@@ -92,8 +92,28 @@ as POSIX date fields expects a specific format you need to add 'epoch' as second
 
    %d[today+30days,epoch]|%                 15.04.2017
    
+**e**
+
+The modifier **e** can be used to generate incremental numbers.
+As the **r**, **d** and **n** modifiers it should be used alone, with no attribute name.
+
+This modifier will add an incremental number to the value. The number will be incremented relative to the last generated value.
+It does not check or ensure unicity by itself. It does not ensure that values will be contiguous, as an incremented value may happen in a template usage that fails in the end.
+
+* First parameter is an id to reference this incremental number. Several masks sharing this id will share the value pool.
+* Second parameter is starting number, defaults to 1.
+* Third parameter is step, defaults to 1.
+
+Examples:
+
+.. code-block:: bash
+
+   %e[employeeNumber]|%     Number starting at 1
+   %e[twoDigitsNumber,10]|% Number starting at 10
+   %e[evenNumber,0,2]|%     Number starting at 0 and going 2 by 2
    
    
+
 **i**
 
 The **i** modifier can be used to have the first letter of a word in capital letters and the rest in lower case letters.
