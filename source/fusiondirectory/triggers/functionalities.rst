@@ -14,7 +14,8 @@ Pre triggers
 * **preremove**: Execute the script before removing.
 
 
-The trigger works well and does not display information if it returns 0 On error, prevents save and displays error.
+The trigger works well and does not display information if it returns 0 
+On error, prevents save and displays error.
 
 
 Post triggers
@@ -67,8 +68,19 @@ On users you get these extra variables available:
 * **%passwordClear%** to get clear password
 * **%userLocked%** to get user lock status (0 or 1)
 
+Complete saving cycle
+---------------------
 
+When an object is saved, all check triggers are run first, then if no errors were returned, the plugin is moved if the dn changed, and then each tab is saved separately, running its precreate/premodify triggers, saving itself to the LDAP, and then running its postcreate/postmodify.
+This means that when your trigger is called, the tabs after the one that triggered it are not saved yet.
+Any trigger error (code returned other than 0) will interrupt the saving cycle.
 
+There is no specific order between triggers on the same event of the same tab. If you need several triggers to run in a specific order on a same tab, call them from a script that you set as trigger, allowing you to control the order.
+
+Also note that the save will only happen if something changed in the tab. If no data was modified, no saving is needed, and thus the triggers won’t get called.
+
+.. image:: images/saving-workflow.png
+   :alt: Saving workflow
 
 
 
