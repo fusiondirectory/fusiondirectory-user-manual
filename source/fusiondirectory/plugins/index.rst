@@ -41,3 +41,4 @@ FusionDirectory Plugins
    user-reminder/index
    weblink/index
    webservice/index
+   zimbra/index
