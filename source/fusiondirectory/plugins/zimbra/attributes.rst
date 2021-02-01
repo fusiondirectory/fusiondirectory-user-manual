@@ -15,6 +15,7 @@ zimbraCOSId                                                   COS id from Zimbra
 zimbraMailQuota                     gosaMailQuota             In bytes for Zimbra, in MiB in the LDAP
 zimbraPrefMailLocalDeliveryDisabled gosaMailDeliveryMode      Checkbox "No delivery to own mailbox"
 zimbraPrefMailForwardingAddress     gosaMailForwardingAddress Only one value
+Aliases                             gosaMailAlternateAddress
 ----------------------------------- ------------------------- ------
 description                         description
 displayName                         displayName
