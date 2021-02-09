@@ -34,7 +34,10 @@ Modifiers
 
 **a**
 
-The **a** modifier can be used to return the unaccented version of the parameter.
+The **a** modifier can be used to remove accents, in one of two modes:
+
+* ascii (default): In this mode accents and non-ascii characters are removed.
+* uid: In this mode accents and all invalid characters for an uid value are removed. if **Strict naming policy** is **on** in the configuration, this will also convert to lowercase.
 
 Examples: 
 
@@ -42,8 +45,10 @@ Examples:
 
 .. code-block:: shell
 
-   %a|sn%           "Last name" field returned in unaccented. 
+   %a|sn%           "Last name" field returned unaccented.
                      If "sn=Valérie" then the returned value is "Valerie"
+   %a[uid]|sn%      "Last name" field returned as valid uid.
+                     If "sn=Poivre D'Arvor" then the returned value is "poivredarvor"
                      
 **b**
 
