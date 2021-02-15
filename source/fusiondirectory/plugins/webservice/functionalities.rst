@@ -10,4 +10,4 @@ It is a standard JSONRPC server served on HTTPS protocol.
 
 Note that you can allow HTTP in plugin configuration, but please avoid doing so except for testing purposes.
 
-The `webservice methods are detailed here <http://api.fusiondirectory.org/classfdRPCService.html#details>`_.
+The `webservice methods are detailed here <https://stable-api.fusiondirectory.info/classfdRPCService.html#details>`_.
