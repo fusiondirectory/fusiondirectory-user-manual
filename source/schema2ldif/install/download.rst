@@ -38,8 +38,8 @@ RPM Repository
 
 A repository is available for Centos7
 
-CentOS 7 / RHEL 7
-^^^^^^^^^^^^^^^^^
+CentOS 7
+^^^^^^^^
 
 To use the lastest published version put this
 
