@@ -22,28 +22,6 @@ your /etc/apt/sources.list
    #fusiondirectory extra repository
    deb http://repos.fusiondirectory.org/fusiondirectory-extra/debian-stretch stretch main
 
-
-.. _debian-repository-jessie-label:
-
-Debian Jessie
-^^^^^^^^^^^^^
-
-To use the lastest published version for **jessie** put this in your
-/etc/apt/sources.list
-
-.. code-block:: shell
-
-   #fusiondirectory repository
-   deb http://repos.fusiondirectory.org/fusiondirectory-current/debian-jessie jessie main
-
-.. code-block:: shell
-  
-   #fusiondirectory extra repository
-   deb http://repos.fusiondirectory.org/fusiondirectory-extra/debian-jessie jessie main
-
-!!! Wheezy is deprecated and will not be maintained anymore, the latest release is 1.2 !!!
-
-
 .. _rpm-repository-label:
 
 RPM Repository

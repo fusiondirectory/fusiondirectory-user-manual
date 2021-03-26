@@ -17,20 +17,6 @@ your /etc/apt/sources.list
    #fusiondirectory extra repository
    deb http://repos.fusiondirectory.org/fusiondirectory-extra/debian-stretch stretch main
 
-
-.. _sl-debian-repository-jessie-label:
-
-Debian Jessie
-^^^^^^^^^^^^^
-
-To use the lastest published version for **jessie** put this in your
-/etc/apt/sources.list
-
-.. code-block:: shell
-
-   #fusiondirectory extra repository
-   deb http://repos.fusiondirectory.org/fusiondirectory-extra/debian-jessie jessie main
-
 .. _sl-rpm-repository-label:
 
 RPM Repository

@@ -18,8 +18,6 @@ Chose the repositories that goes with your Debian version
 
 :ref:`debian-repository-stretch-label`
 
-:ref:`debian-repository-jessie-label`
-
 Create 2 new *.list* file your favorite text editor in */etc/apt/source.list.d*
 
 - One for fusiondirectory
