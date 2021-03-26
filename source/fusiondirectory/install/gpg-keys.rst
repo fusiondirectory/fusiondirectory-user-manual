@@ -3,7 +3,7 @@
 Getting the official GPG keys to active package signature
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Our packages for Debian and Centos/RHEL are signed with the official gpg
+Our packages for Debian and Centos are signed with the official gpg
 key of the project.
 
 Getting the new official gpg key
@@ -31,8 +31,8 @@ Adding the key to apt for Debian/Ubuntu
 
    apt-key add FD-archive-key
 
-Adding the key to RPM for Centos / RHEL / Scientific Linux
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Adding the key for RPM into Centos
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: shell
 
