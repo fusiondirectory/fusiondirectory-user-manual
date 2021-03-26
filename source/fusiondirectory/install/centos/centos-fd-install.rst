@@ -34,8 +34,6 @@ directory repos
 
 Chose the repositories that goes with your centos version
 
-:ref:`fd-rpm-repository-centos6-label`
-
 :ref:`fd-rpm-repository-centos7-label`
 
 Create 2 new repo file your favorite text editor.

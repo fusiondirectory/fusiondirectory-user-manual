@@ -1,7 +1,7 @@
 Digital signature
 -----------------
 
-Our official packages for Debian and Centos/RHEL are signed with the official gpg
+Our official packages for Debian and Centos are signed with the official gpg
 key of the project.
 
 Official gpg key
@@ -13,7 +13,7 @@ Official gpg key
        A94DE63F2EDB5F0DC0785EBBD744D55EACDA69FF
  uid                  [  totale ] FusionDirectory Project Signing Key <contact@fusiondirectory.org>
 
-Our official development packages for Debian and Centos/RHEL are signed with the official development gpg
+Our official development packages for Debian and Centos are signed with the official development gpg
 key of the project.
 
 Development gpg key
