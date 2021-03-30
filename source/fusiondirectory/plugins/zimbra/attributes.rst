@@ -15,6 +15,7 @@ zimbraCOSId                                                   COS id from Zimbra
 zimbraMailQuota                     gosaMailQuota             In bytes for Zimbra, in MiB in the LDAP
 zimbraPrefMailLocalDeliveryDisabled gosaMailDeliveryMode      Checkbox "No delivery to own mailbox"
 zimbraPrefMailForwardingAddress     gosaMailForwardingAddress Only one value
+zimbraPrefFromAddress               mail                      Only if Id attribute is not mail
 Aliases                             gosaMailAlternateAddress
 ----------------------------------- ------------------------- ------
 description                         description
@@ -41,7 +42,6 @@ physicalDeliveryOfficeName          roomNumber
 zimbraAccountStatus                                           Computed from FD lock status
 initials                                                      Computed from givenName and sn
 ----------------------------------- ------------------------- ------
-carLicense                          eduPersonPrincipalName    From SupAnn tab
 zimbraHideInGal                     supannListeRouge          From SupAnn tab
 ----------------------------------- ------------------------- ------
 co                                  co                        From personal tab
