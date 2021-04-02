@@ -50,7 +50,7 @@ if you are using the sinaps plugin you have to update is schema
 Fonctionality Added
 ^^^^^^^^^^^^^^^^^^^
 
-* The macro **%passwordClear%** is now available in the sambaAccount so that in can be used in hooks for AD sync.
+* The macro **%passwordClear%** is now available in the sambaAccount so that in can be used in hooks for AD sync.
 * The ldapdump fonctionality is now available on the configuration
 * The supann etablissment objects is now equal to entite objects except for the attribute ou
 

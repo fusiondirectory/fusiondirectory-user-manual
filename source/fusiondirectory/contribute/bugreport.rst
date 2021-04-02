@@ -36,8 +36,8 @@ before.
 I just have a question!
 -----------------------
 
-.. note:: 
-   
+.. note::
+
    Please don't file an issue to ask a question. You'll get
    faster results by using the resource below.
 
@@ -95,9 +95,9 @@ reproduce the problem:
 -  **Explain which behavior** you expected to see instead and why.
 -  **Include screenshots and animated GIFs** which show you following
    the described steps and clearly demonstrate the problem. You can use
-   `this tool <http://www.cockos.com/licecap/>`__ to record GIFs on
+   `this tool <https://www.cockos.com/licecap/>`__ to record GIFs on
    macOS and Windows, and `this tool <https://github.com/colinkeenan/silentcast>`__ on Linux.
-   
+
 -  **Include the PHP errors and trace** collected at the debug step
    above
 -  **If the problem is linked to a specific LDAP entry** attach its LDAP
@@ -140,7 +140,7 @@ faster.
    expected to see instead** and why.
 -  **Include screenshots and animated GIFs** which help you demonstrate
    the steps which the suggestion is related to. You can use `this
-   tool <http://www.cockos.com/licecap/>`__ to record GIFs on macOS and
+   tool <https://www.cockos.com/licecap/>`__ to record GIFs on macOS and
    Windows, and `this
    tool <https://github.com/colinkeenan/silentcast>`__ on Linux.
 -  **Explain why this enhancement would be useful** to most

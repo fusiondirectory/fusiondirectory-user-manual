@@ -127,7 +127,7 @@ You can select which object types you want to list or hide, if you want to show 
 
 You can also filter objects depending on which tabs are activated on them.
 
-You can also you the text box to do a text search.
+You can also use the text box to do a text search.
    
 .. image:: images/core-filters.png
    :alt: Picture of filters overview in FusionDirectory

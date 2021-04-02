@@ -1,9 +1,9 @@
-.. _Dovecot:
+.. _plugins-dovecot:
 
 Dovecot
 =======
 
-FusionDirectory Plugins Supann
+FusionDirectory Plugin Dovecot
 
 .. toctree::
    :maxdepth: 2

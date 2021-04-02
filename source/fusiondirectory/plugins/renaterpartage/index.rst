@@ -1,3 +1,5 @@
+.. _plugins-renater-partage:
+
 Renater Partage
 ===============
 

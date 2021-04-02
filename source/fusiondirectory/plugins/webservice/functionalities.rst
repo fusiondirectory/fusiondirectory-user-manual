@@ -3,11 +3,9 @@
 Functionalities
 ===============
 
-FusionDirectory WebService plugin exposes a JSONRPC webservice you can use if you want to access LDAP content through FusionDirectory system.
-This way, you ensure that things like foreign keys are kept consistent, and you have a nicer API than the low-level LDAP one.
+FusionDirectory WebService plugin exposes a JSONRPC webservice that you can use if you want to access LDAP content through FusionDirectory system.
+This way, you ensure that your ldap objects are kept consistent, your are able to use the system templates and have restrictions applied by acls.
 
-It is a standard JSONRPC server served on HTTPS protocol. 
+On top of that you have a nicer API than the low-level LDAP one.
 
-Note that you can allow HTTP in plugin configuration, but please avoid doing so except for testing purposes.
-
-The `webservice methods are detailed here <https://stable-api.fusiondirectory.info/classfdRPCService.html#details>`_.
+The JSONRPC API is documented `here <https://stable-api.fusiondirectory.info/classfdRPCService.html#details>`_.
