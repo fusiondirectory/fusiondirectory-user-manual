@@ -7,7 +7,7 @@ Install FusionDirectory
    :maxdepth: 2
 
    gpg-keys.rst
-   download.rst
+   repositories/index.rst
    debian/index.rst
    centos/index.rst
    web-setup.rst
