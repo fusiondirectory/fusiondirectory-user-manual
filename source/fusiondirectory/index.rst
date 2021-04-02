@@ -13,6 +13,8 @@ Contents:
    whatis/fusiondirectory.rst
    prerequisite/prerequisite.rst
    distribution/certified-distribution.rst
+   subscription/buy-a-subscription.rst
+   subscription/activate-a-subscription.rst
    install/index
    update/index
    core/index

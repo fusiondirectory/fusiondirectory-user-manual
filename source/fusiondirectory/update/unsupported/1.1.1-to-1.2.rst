@@ -9,9 +9,9 @@ New Depot Configuration
    The repositories have been cleaned and reorganized please update
    your configuration accordingly
 
-   :ref:`debian-repository-label`.
+   :ref:`fd-debian-repository-label`.
 
-   :ref:`rpm-repository-label`.
+   :ref:`fd-rpm-repository-label`.
 
 .. warning::
 
