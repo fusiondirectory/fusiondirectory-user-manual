@@ -25,7 +25,8 @@ Post triggers
 * **postmodify** : Execute the script after editing.
 * **postremove** : Execute the script after removing.
 
-The hook works well and does not display information if it returns 0 On error, displays command output.
+The hook works well and does not display information if it returns 0 
+On error, displays command output.
 
 
 Check triggers
@@ -41,14 +42,14 @@ for instance if the script was not able to do the check for some reason).
 LDAP attributes
 ---------------
 
-You can use ldap attributes as command line options. Use the macro syntax.
-
+You can use ldap attributes as command line options. See :ref:`fd-macros-label`.
 
 LDAP arrays
 -----------
 
-If you put a var that is an array in the args of the hook, gosaAlternateMailAddress for instance, only the first value will be returned unless you use a modifier: macro
+If you put a var that is an array in the args of the hook, gosaAlternateMailAddress for instance, only the first value will be returned unless you use :ref:`array-modifiers`.
 
+.. _triggers-special-variables:
 
 Special variables
 -----------------

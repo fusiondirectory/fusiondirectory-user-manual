@@ -17,8 +17,8 @@ Access is read-only. If you need to make changes, then you must press the 'Edit'
 
 In Hooks section you can define all your triggers
 
-.. image:: images/triggers-settings.png
-   :alt: Picture of Edit button in FusionDirectory   
+.. image:: images/triggers-example.png
+   :alt: Picture of Hooks settings in FusionDirectory   
 
 * **Hooks** : triggers that are called when specific actions happens
 * **Tab** : the tab that this triggers concerns (mandatory)
@@ -27,24 +27,16 @@ In Hooks section you can define all your triggers
 * **Display hook output** : when enables successful trigger execution output is displayed to the user using a dialog
 
 
-.. note::
-
-   The arguments are automatically escape and surrounds by quote so you may not use quote in command.
-
-
-
-Example 
-
-.. image:: images/triggers-example .png
-   :alt: Picture of Edit button in FusionDirectory
-
 The line :
 
 
 .. code-block:: bash
 
-   check 	sudo /usr/local/sbin/fd-userCheckHookSendMail.sh %dn% %fdPrivateMail% %givenName% %sn% %uid% %callerGIVENNAME% %callerSN% %passwordClear% %nbCheckErrors%
+   sudo /usr/local/sbin/fd-userCheckHookSendMail.sh %dn% %fdPrivateMail% %givenName% %sn% %uid% %callerGIVENNAME% %callerSN% %passwordClear% %nbCheckErrors%
 
+.. note::
+
+   The arguments are automatically escaped and surroundes by quote so you may not use quote in command.
 
 This will generate an automated e-mail like this :
 

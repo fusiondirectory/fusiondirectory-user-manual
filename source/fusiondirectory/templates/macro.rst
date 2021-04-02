@@ -5,23 +5,26 @@
 Macros 
 ======
 
-You can use macros to automate the creation of attributes based on rules inside the templates.
+You can use macros to automate the creation of attributes based on rules inside the templates. They can also be used in trigger definitions.
 
-* How to use a macro
+How to use a macro
+------------------
 
-macro must always be enclosed in %. 
-
+A macro is enclosed in % and contains an LDAP attribute name. 
+It may optionnaly states modifiers to apply to the attribute, followed by a | between modifiers and the attribute name.
+Some modifiers accepts parameters enclosed in [] and separated by commas.
+Modifiers are applied from left to right.
 
 .. code-block:: bash
 
    %sn%           The value of "Last name" field, entered during account creation.
    
-   
-* Macros
+Modifiers
+---------
 
 **a**
 
-The **a** macro can be used to return the unaccented version of the parameter.
+The **a** modifier can be used to remove accents.
 
 Examples: 
 
@@ -29,16 +32,16 @@ Examples:
 
 .. code-block:: shell
 
-   %a|sn%           "Last name" field returned in unaccented. 
+   %a|sn%           "Last name" field returned unaccented.
                      If "sn=Valérie" then the returned value is "Valerie"
                      
 **b**
 
-The **b** macro can be used to convert to base64.
+The **b** modifier can be used to convert to base64.
 
 **c**
 
-The **c** macro can be used to put a comment. An example :                      
+The **c** modifier can be used to put a comment. An example :                      
 
 
 .. code-block:: bash
@@ -58,7 +61,7 @@ It can also be used to make a template uid unique when 2 templates have the same
    
 **d**
 
-The **d** macro can be used to generate dates and times.
+The **d** modifier can be used to generate dates and times.
 
 * First parameter is date string (defaults to “now”)
 * Second one is date format (defaults to “d.m.Y”, to be used in date fields).
@@ -83,7 +86,7 @@ as POSIX date fields expects a specific format you need to add 'epoch' as second
    
 **i**
 
-The **i** macro can be used to have the first letter of a word in capital letters and the rest in lower case letters.
+The **i** modifier can be used to have the first letter of a word in capital letters and the rest in lower case letters.
 
 
 Examples:    
@@ -107,7 +110,7 @@ If we try it we will have this kind of error
    
 **l**
 
-The **l** macro can be used to return the lowercase version of the parameter.    
+The **l** modifier can be used to return the lowercase version of the parameter.    
 
 
 .. code-block:: bash
@@ -118,7 +121,7 @@ The **l** macro can be used to return the lowercase version of the parameter.
                      
 **p**
 
-The **p** macro can be used to remove whitespaces. It can also be used for any search and replace based on preg_replace. 
+The **p** modifier can be used to remove whitespaces. It can also be used for any search and replace based on preg_replace. 
 
 For this provide 2 arguments
  
@@ -138,7 +141,7 @@ Examples:
    
 **r**
 
-The **r** macro can be used to generate random strings, for instance for passwords.
+The **r** modifier can be used to generate random strings, for instance for passwords.
 
 It can take up to three arguments
 
@@ -169,7 +172,7 @@ Examples:
    
 **s**
 
-The **s** macro can be used to generate substrings.
+The **s** modifier can be used to generate substrings.
 
 Examples:    
 
@@ -189,7 +192,7 @@ Examples:
    
 **t**
 
-The **t** macro can be used to return the transliterated version of the parameter. The parameters are the list of locales to use for transliteration (first one will be used by non-interactive uses of the template).
+The **t** modifier can be used to return the transliterated version of the parameter. The parameters are the list of locales to use for transliteration (first one will be used by non-interactive uses of the template).
 
 Examples:    
 
@@ -202,12 +205,16 @@ Examples:
                            
 Note that the locale used must be installed on the server (and web server needs to be restarted after locale installation). 
 
+.. _array-modifiers:
 
-* Array macro
+Array modifiers
+---------------
+
+Array modifiers are used for multivaluated LDAP attributes and are represented as uppercase letters. If no array modifier is used on a multivaluated attribute, the "first" value is used.
 
 **C**
 
-The **C** macro (added in version 1.0.10) returns the count of values in the attribute. It can be 0.                            
+The **C** modifier (added in version 1.0.10) returns the count of values in the attribute. It can be 0.                            
 
 
 .. code-block:: bash
@@ -217,12 +224,12 @@ The **C** macro (added in version 1.0.10) returns the count of values in the att
    
 **F**
 
-The **F** macro returns the first value of the array
+The **F** modifier returns the first value of the array
 
 
 **J**
 
-The **J** macro returns the values joined together. It takes the separator as parameter. 
+The **J** modifier returns the values joined together. It takes the separator as parameter. 
 
 
 .. code-block:: bash
@@ -232,10 +239,11 @@ The **J** macro returns the values joined together. It takes the separator as pa
 
 **L**
 
-The **L** macro returns the last value of the array
+The **L** modifier returns the last value of the array
 
 
-* Combining examples
+Combining examples
+------------------
 
 
 .. code-block:: bash

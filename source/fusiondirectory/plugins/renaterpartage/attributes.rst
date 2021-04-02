@@ -15,6 +15,7 @@ zimbraCOSId                                                   COS id from Renate
 zimbraMailQuota                     gosaMailQuota             Converted to Mio
 zimbraPrefMailLocalDeliveryDisabled gosaMailDeliveryMode      Checkbox "No delivery to own mailbox"
 zimbraPrefMailForwardingAddress     gosaMailForwardingAddress Only one value
+Aliases                             gosaMailAlternateAddress
 ----------------------------------- ------------------------- ------
 description                         description
 displayName                         displayName

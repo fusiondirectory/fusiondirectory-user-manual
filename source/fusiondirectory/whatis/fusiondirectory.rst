@@ -38,7 +38,7 @@ FusionDirectory Triggers
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 FusionDirectory incorporates a series of triggers that can launch a specific action based on a task
-FusionDirectory must run. 
+FusionDirectory must run.
 
 These triggers are associated with a content type (LDAP user, group, server, password, service
 and the triggering action (create, edit, delete, change password … )
@@ -57,7 +57,7 @@ Another example is when a user leaves, you must:
 *  archive and delete his mailbox
 *  archive and remove its network space
 *  delete him from third party applications not connected to LDAP.
- 
+
 
 All of this can be easily done by shell scripts (at least in UNIX environment) and run automatically after
 the suppression of the person by the administrator in FusionDirectory
@@ -77,7 +77,7 @@ This question can be solved by creating:
 -  An `Argonaut`_ module for the client installed on the server
 
 .. _FAI : https://fai-project.org/
-.. _OPSI : https://opsi.org/
+.. _OPSI : https://www.opsi.org/
 .. _PARTAGE : https://partage.renater.fr/
 .. _Argonaut : https://www.argonaut-project.org/
-.. _API : https://fusiondirectory-developer-documentation.readthedocs.io/en/latest/api/index.html
+.. _API : https://fusiondirectory-developer-documentation.readthedocs.io/en/1.3/api/index.html

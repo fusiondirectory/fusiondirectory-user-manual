@@ -1,3 +1,5 @@
+.. _plugins-cyrus:
+
 Cyrus
 =====
 

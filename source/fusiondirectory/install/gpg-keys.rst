@@ -1,7 +1,7 @@
 .. _gpg-keys-label:
 
 Getting the official GPG keys to active package signature
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+---------------------------------------------------------
 
 Our packages for Debian and Centos are signed with the official gpg
 key of the project.
