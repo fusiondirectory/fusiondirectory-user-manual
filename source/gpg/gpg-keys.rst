@@ -1,7 +1,7 @@
-.. _schema2ldif-gpg-keys-label:
+.. _gpg-keys-label:
 
 Getting the official GPG keys to active package signature
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+---------------------------------------------------------
 
 Our packages for Debian and Centos are signed with the official gpg
 key of the project.
@@ -11,18 +11,10 @@ Getting the new official gpg key
 
 .. code-block:: shell
 
-    gpg --keyserver keys.gnupg.net --recv-key 0xD744D55EACDA69FF
+    gpg --keyserver keys.gnupg.net --recv-key 0xFE0FEAE5AC483A86
 
-    gpg --export -a "FusionDirectory Project Signing Key <contact@fusiondirectory.org>" > FD-archive-key
+    gpg --export -a "FusionDirectory Packages Signing Key <contact@fusiondirectory.org>" > FD-archive-key
 
-Getting the development gpg key
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: shell
-
-   gpg --keyserver keys.gnupg.net --recv-key 0xADD3A1B88B29AE4A
-
-   gpg --export -a "FusionDirectory Packagers <fusiondirectory-packages@lists.fusiondirectory.org>" > FD-archive-dev-key
 
 Adding the key to apt for Debian/Ubuntu
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
