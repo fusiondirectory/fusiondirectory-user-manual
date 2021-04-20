@@ -11,7 +11,7 @@ Getting the new official gpg key
 
 .. code-block:: shell
 
-    gpg --keyserver keys.gnupg.net --recv-key 0xFE0FEAE5AC483A86
+    gpg --keyserver keys.openpgp.org --recv-key 0xFE0FEAE5AC483A86
 
     gpg --export -a "FusionDirectory Packages Signing Key <contact@fusiondirectory.org>" > FD-archive-key
 
