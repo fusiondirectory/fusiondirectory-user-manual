@@ -1,19 +1,6 @@
 Migrate FusionDirectory from 1.1 to 1.1.1
 =========================================
 
-
-New Depot Configuration
-^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-
-   The repositories have been cleaned and reorganized please update
-   your configuration accordingly
-
-   :ref:`fd-debian-repository-label`.
-
-   :ref:`fd-rpm-repository-label`.
-
 Upgrade schema2ldif
 ^^^^^^^^^^^^^^^^^^^
 
