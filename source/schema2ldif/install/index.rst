@@ -7,6 +7,6 @@ Install Schema2ldif
    :maxdepth: 2
 
    ../../gpg/gpg-keys.rst
-   download.rst
+   ../../repositories/schema2ldif-index.rst
    debian/index.rst
    centos/index.rst

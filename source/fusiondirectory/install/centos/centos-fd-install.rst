@@ -29,17 +29,9 @@ the `REMI`_ repository for PHP 7.1
 Install the FusionDirectory Repos
 '''''''''''''''''''''''''''''''''
 
-To easily install the latest version, you can install the fusion
-directory repos
-
 Chose the repositories that goes with your centos version
 
 :ref:`fd-rpm-repository-centos7-label`
-
-Create 2 new repo file your favorite text editor.
-
-- One for fusiondirectory
-- One for fusiondirectory-extra
 
 Install FusionDirectory
 '''''''''''''''''''''''
