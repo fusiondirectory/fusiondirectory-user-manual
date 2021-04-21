@@ -1,6 +1,8 @@
 Unsupported version
 ===================
 
+You can find all unsupported version on FusionDirectory `archive`_ for historic purposes
+
 Unsupported version
 
 .. toctree::
@@ -43,3 +45,9 @@ Unsupported version
    1.0.20-to-1.1.rst
    1.1-to-1.1.1.rst
    1.1.1-to-1.2.rst
+   1.2-to-1.2.1.rst
+   1.2.1-to-1.2.2.rst
+   1.2.2-to-1.2.3.rst
+   1.2.3-to-1.3.rst
+
+.. _archive : https://public.fusiondirectory.org/archive/fusiondirectory-release
