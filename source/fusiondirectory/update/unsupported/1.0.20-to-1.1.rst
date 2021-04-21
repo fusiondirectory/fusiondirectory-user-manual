@@ -17,18 +17,6 @@ In case you did not find it, grab the deb from here and install it
 
 and select your preferred mirror
 
-New Depot Configuration
-^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-
-   The repositories have been cleaned and reorganized please update
-   your configuration accordingly
-
-   :ref:`fd-debian-repository-label`.
-
-   :ref:`fd-rpm-repository-label`.
-
 Removed plugins
 ^^^^^^^^^^^^^^^
 
