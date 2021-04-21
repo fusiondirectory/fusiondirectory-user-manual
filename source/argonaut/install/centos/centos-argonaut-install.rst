@@ -9,20 +9,12 @@ Argonaut requires the `EPEL`_ repository
 
    yum install epel-release
    
-Install the FusionDirectory Repos
-'''''''''''''''''''''''''''''''''
-
-To easily install the latest version, you can install the fusion
-directory repos
+Install the Argonaut Repos
+''''''''''''''''''''''''''
 
 Chose the repositories that goes with your centos version
 
-:ref:`cs_rpm-repository-centos7-label`
-
-Create 2 new repo file your favorite text editor.
-
-- One for argonaut
-- One for argonaut-extra
+:ref:`ar-rpm-repository-label`
 
 Install Argonaut
 ''''''''''''''''
@@ -31,7 +23,7 @@ You can then install Argonaut by running:
 
 .. code-block:: shell
 
-   yum install -y argonaut-common
+   yum install argonaut-common
 
 .. _EPEL : https://fedoraproject.org/wiki/EPEL
 
