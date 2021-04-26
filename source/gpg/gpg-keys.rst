@@ -9,12 +9,19 @@ key of the project.
 Getting the new official gpg key
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+* Asking the key from the keyserver
+
 .. code-block:: shell
 
     gpg --keyserver keys.openpgp.org --recv-key 0xFE0FEAE5AC483A86
 
     gpg --export -a "FusionDirectory Packages Signing Key <contact@fusiondirectory.org>" > FD-archive-key
 
+* Getting the key from the public server in case gpg fetching doesn't work
+
+.. code-block:: shell
+
+   wget https://public.fusiondirectory.org/FD-archive-key
 
 Adding the key to apt for Debian/Ubuntu
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
