@@ -15,11 +15,10 @@ The **yourcompany-auth.conf** is the file needed to access the enterprise reposi
 
 The **fusiondirectory-subscription-centos7fixes.repo** is the file need to add the enterprise repository to a centos 7 Linux Distribution
 
-Debian Repository
-'''''''''''''''''
-
 .. _fd-enterprise-debian-repository-label:
 
+Debian Repository
+'''''''''''''''''
 
 * To authenticate to the enterprise repository copy with root access the file **yourcompany-auth.conf** to /etc/apt/auth.conf
 
@@ -50,6 +49,8 @@ Debian Repository
    Hit:1 http://security.debian.org/debian-security buster/updates InRelease
    Hit:2 http://deb.debian.org/debian buster InRelease                                                                   
    Hit:3 https://enterprise.fusiondirectory.org/buster-fusiondirectory-fixes buster InRelease
+
+.. _fd-enterprise-centos-repository-label:
 
 RPM Repository
 ''''''''''''''

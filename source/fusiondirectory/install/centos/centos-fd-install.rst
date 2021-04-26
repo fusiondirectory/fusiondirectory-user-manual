@@ -33,6 +33,10 @@ Chose the repositories that goes with your centos version
 
 :ref:`fd-rpm-repository-centos7-label`
 
+If you bought a subscription you can configure the subscription repositories
+
+:ref:`fd-enterprise-centos-repository-label`
+
 Install FusionDirectory
 '''''''''''''''''''''''
 
