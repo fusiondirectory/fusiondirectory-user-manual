@@ -15,6 +15,10 @@ Chose the repositories that goes with your Debian version
 
 :ref:`fd-debian-repository-stretch-label`
 
+If you bought a subscription you can configure the subscription repositories
+
+:ref:`fd-enterprise-debian-repository-label`
+
 Install FusionDirectory
 '''''''''''''''''''''''
 
