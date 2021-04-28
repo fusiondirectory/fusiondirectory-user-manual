@@ -7,7 +7,7 @@ When buying a subscription you will receive three files
 
 * yourcompany-subscription-fusiondirectory.ini
 * yourcompany-auth.conf
-* fusiondirectory-subscription-centos7fixes.repo
+* yourcompany-fusiondirectory-subscription-centos7fixes.repo
 
 The **yourcompany-subscription-fusiondirectory.ini** is the file to be imported into FusionDirectory to show that you have a valid subscription
 
