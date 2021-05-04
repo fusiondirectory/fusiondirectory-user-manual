@@ -10,7 +10,7 @@ Debian
 .. code-block:: bash
 
    apt-get install fusiondirectory-plugin-fai
-   apt-get fusiondirectory-plugin-fai-schema
+   apt-get install fusiondirectory-plugin-fai-schema
 
 RHEL
 ^^^^

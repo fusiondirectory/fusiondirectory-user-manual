@@ -10,7 +10,7 @@ Debian
 .. code-block:: bash
 
    apt-get install fusiondirectory-plugin-fusioninventory
-   apt-get fusiondirectory-plugin-fusioninventory-schema
+   apt-get install fusiondirectory-plugin-fusioninventory-schema
 
 RHEL
 ^^^^

@@ -10,7 +10,7 @@ Debian
 .. code-block:: bash
 
    apt-get install fusiondirectory-plugin-debconf
-   apt-get fusiondirectory-plugin-debconf-schema
+   apt-get install fusiondirectory-plugin-debconf-schema
 
 RHEL
 ^^^^

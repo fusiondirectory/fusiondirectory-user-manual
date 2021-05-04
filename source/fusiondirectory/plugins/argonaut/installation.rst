@@ -10,7 +10,7 @@ Debian
 .. code-block:: bash
 
    apt-get install fusiondirectory-plugin-argonaut
-   apt-get fusiondirectory-plugin-argonaut-schema
+   apt-get install fusiondirectory-plugin-argonaut-schema
 
 RHEL
 ^^^^

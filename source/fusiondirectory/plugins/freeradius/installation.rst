@@ -10,7 +10,7 @@ Debian
 .. code-block:: bash
 
    apt-get install fusiondirectory-plugin-freeradius
-   apt-get fusiondirectory-plugin-freeradius-schema
+   apt-get install fusiondirectory-plugin-freeradius-schema
 
 RHEL
 ^^^^

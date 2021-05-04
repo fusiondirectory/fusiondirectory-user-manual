@@ -10,7 +10,7 @@ Debian
 .. code-block:: bash
 
    apt-get install fusiondirectory-plugin-dhcp
-   apt-get fusiondirectory-plugin-dhcp-schema
+   apt-get install fusiondirectory-plugin-dhcp-schema
 
 RHEL
 ^^^^

@@ -10,7 +10,7 @@ Debian
 .. code-block:: bash
 
    apt-get install fusiondirectory-plugin-alias
-   apt-get fusiondirectory-plugin-alias-schema
+   apt-get install fusiondirectory-plugin-alias-schema
 
 RHEL
 ^^^^
