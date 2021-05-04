@@ -14,11 +14,17 @@ FusionDirectory Plugins
    certificates/index
    community/index
    cyrus/index
+   debconf/index
    developers/index
+   dhcp/index
+   dns/index
    dovecot/index
    dsa/index
    dyngroup/index
    ejbca/index
+   fai/index
+   fusioninventory/index
+   freeradius/index
    gpg/index
    ipam/index
    ipmi/index
@@ -26,12 +32,16 @@ FusionDirectory Plugins
    ldapmanager/index
    invitations/index
    mail/index
+   mixedgroups/index
+   netgroups/index
    newsletter/index
    nextcloud/index
    personal/index
    public-forms/index
    pureftpd/index
    renaterpartage/index
+   samba/index
+   supann/index
    sinaps/index
    sogo/index
    ssh/index
