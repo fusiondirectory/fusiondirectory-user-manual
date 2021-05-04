@@ -10,7 +10,7 @@ Debian
 .. code-block:: bash
 
    apt-get install fusiondirectory-plugin-dns
-   apt-get fusiondirectory-plugin-dns-schema
+   apt-get install fusiondirectory-plugin-dns-schema
 
 RHEL
 ^^^^
