@@ -7,6 +7,7 @@ FusionDirectory Plugins
    :maxdepth: 2
 
    alias/index
+   argonaut/index
    applications/index
    archive/index
    audit/index
