@@ -23,15 +23,16 @@ RHEL
 Install schemas
 ---------------
 
+.. note:: 
+   
+   The fai plugin depends on the systems plugins so the systems plugins schema should be installed correctly
+   The fai plugin depends on the argonaut plugins so the argonaut plugins schema should be installed correctly
+
 Debian
 ^^^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/service-fd.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/systems-fd-conf.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/systems-fd.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/argonaut-fd.schema
    fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/fai-fd-conf.schema
    fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/fai.schema
 
@@ -40,9 +41,5 @@ RHEL
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/service-fd.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/systems-fd-conf.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/systems-fd.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/argonaut-fd.schema
    fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/fai-fd-conf.schema
    fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/fai.schema
