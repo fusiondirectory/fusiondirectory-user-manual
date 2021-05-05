@@ -40,6 +40,7 @@ FusionDirectory Plugins
    pureftpd/index
    quota/index
    renaterpartage/index
+   repository/index
    samba/index
    sinaps/index
    sogo/index
