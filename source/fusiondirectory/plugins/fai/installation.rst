@@ -24,9 +24,8 @@ Install schemas
 ---------------
 
 .. note:: 
-   
-   The fai plugin depends on the systems plugins so the systems plugins schema should be installed correctly
-   The fai plugin depends on the argonaut plugins so the argonaut plugins schema should be installed correctly
+
+   The fai plugin depends on the systems and argonaut plugins so the schema for those plugins should be installed correctly
 
 Debian
 ^^^^^^
