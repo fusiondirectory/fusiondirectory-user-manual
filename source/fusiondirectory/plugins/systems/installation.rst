@@ -11,7 +11,7 @@ Debian
 
    apt-get install fusiondirectory-plugin-systems
    apt-get install fusiondirectory-plugin-systems-schema
-   
+
 RHEL
 ^^^^
 
@@ -19,7 +19,7 @@ RHEL
 
    yum install fusiondirectory-plugin-systems
    yum install fusiondirectory-plugin-systems-schema
- 
+
 Install schemas
 ---------------
 

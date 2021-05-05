@@ -7,9 +7,9 @@ FusionDirectory Plugins
    :maxdepth: 2
 
    alias/index
-   argonaut/index
    applications/index
    archive/index
+   argonaut/index
    audit/index
    autofs/index
    certificates/index
@@ -24,8 +24,8 @@ FusionDirectory Plugins
    dyngroup/index
    ejbca/index
    fai/index
-   fusioninventory/index
    freeradius/index
+   fusioninventory/index
    gpg/index
    ipam/index
    ipmi/index
@@ -39,15 +39,27 @@ FusionDirectory Plugins
    nextcloud/index
    personal/index
    public-forms/index
+   opsi/index
+   personal/index
+   posix/index
+   postfix/index
+   ppolicy/index
    pureftpd/index
+   quota/index
    renaterpartage/index
    samba/index
-   supann/index
    sinaps/index
    sogo/index
    ssh/index
    subcontracting/index
    supann/index
+   spamassassin/index
+   squid/index
+   ssh/index
+   subcontracting/index
+   sudo/index
+   supann/index
+   sympa/index
    systems/index
    user-reminder/index
    weblink/index
