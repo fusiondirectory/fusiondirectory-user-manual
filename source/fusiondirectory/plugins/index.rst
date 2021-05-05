@@ -55,7 +55,6 @@ FusionDirectory Plugins
    subcontracting/index
    supann/index
    spamassassin/index
-   squid/index
    ssh/index
    subcontracting/index
    sudo/index
