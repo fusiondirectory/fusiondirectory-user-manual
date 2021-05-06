@@ -11,6 +11,7 @@ FusionDirectory Plugins
    archive/index
    argonaut/index
    audit/index
+   autofs5/index
    autofs/index
    certificates/index
    community/index
@@ -27,41 +28,46 @@ FusionDirectory Plugins
    freeradius/index
    fusioninventory/index
    gpg/index
+   invitations/index
    ipam/index
    ipmi/index
+   kerberos/index
    ldapdump/index
    ldapmanager/index
-   invitations/index
    mail/index
+   migration-mailrouting/index
    mixedgroups/index
    netgroups/index
    newsletter/index
    nextcloud/index
-   personal/index
-   public-forms/index
    opsi/index
+   personal/index
    personal/index
    posix/index
    postfix/index
    ppolicy/index
+   public-forms/index
    pureftpd/index
    quota/index
    renaterpartage/index
    repository/index
    samba/index
+   schac/index
    sinaps/index
    sogo/index
-   ssh/index
-   subcontracting/index
-   supann/index
    spamassassin/index
    ssh/index
+   ssh/index
    subcontracting/index
+   subcontracting/index
+   subscriptions/index
    sudo/index
+   supann/index
    supann/index
    sympa/index
    systems/index
    user-reminder/index
+   webauthn/index
    weblink/index
    webservice/index
    zimbra/index
