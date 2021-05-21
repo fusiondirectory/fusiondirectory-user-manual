@@ -8,3 +8,5 @@ FusionDirectory Plugins Argonaut
 
    description
    installation
+   functionalities
+
