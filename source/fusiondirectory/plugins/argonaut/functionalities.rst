@@ -21,7 +21,7 @@ Argonaut Server
   .. image:: images/argonaut-systems-services.png
      :alt: Picture of all the services
 
-* Fill all the informations
+* Fill the informations related Argonaut Server
 
   .. image:: images/argonaut-server-filled.png
      :alt: Informations related to Argonaut Server
@@ -33,6 +33,8 @@ Argonaut Server
   * Timeout: connection timeout for Argonaut Server
   * Log directory: directory for Argonaut Server logs
 
+* Fill the informations related to SSL for Argonaut Server
+
   .. image:: images/argonaut-server-ssl-filled.png
      :alt: SSL informations related to Argonaut Server
 
@@ -40,6 +42,8 @@ Argonaut Server
   * Certificate: certificate used for https connection
   * CA certificate: ca used for https connections
   * CN of the certificate: custom CN if the hostname doesn't match by the certificate
+
+* Fill the informations related to wake on lan for Argonaut Server
 
   .. image:: images/argonaut-server-wol-filled.png
      :alt: WOL informations related to Argonaut Server
@@ -70,7 +74,7 @@ Argonaut Client
   .. image:: images/argonaut-systems-argonaut-client-activate-button.png
      :alt: Activate Argonaut Client
 
-* Fill all the required informations and click on ok
+* Fill the informations related to Argonaut Client
 
   .. image:: images/argonaut-client-filled.png
      :alt: Informations related to Argonaut Client
@@ -81,6 +85,8 @@ Argonaut Client
   * Taskid file: file used for writing the taskid
   * Log directory: directory for Argonaut Server logs
 
+* Fill the informations related to SSL for Argonaut Client
+
   .. image:: images/argonaut-client-ssl-filled.png
      :alt: SSL informations related to Argonaut Server
 
@@ -89,8 +95,11 @@ Argonaut Client
   * CA certificate: ca used for https connections
   * CN of the certificate: custom CN if the hostname doesn't match by the certificate
 
+* Fill the services names that you will need to know to control them from FusionDirectory through Argonaut Client
+
   .. image:: images/argonaut-client-services-filled.png
      :alt: Services files in /etc/init.d
 
   * folder: directory where are stored the start scripts for the services
-  * You not need to fill all the services names only the one you will use
+
+* Click on ok to save all your informations
