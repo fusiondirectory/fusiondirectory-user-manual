@@ -11,13 +11,13 @@ Argonaut-ldap2zone read the LDAP and retrieve the information for making the fil
 
 The arguments are the following:
 
-*  --verbose (be verbose)
-*  --noreverse (Do not write reverse zone)
-*  --norestart (Do not write reverse zone)
-*  --dumpdir (Dump the zones and bind configuration to another dir for testing purposes)
-*  --ldap2acls (Write the the acls needed for bind in named.conf.acls)
-*  --ldap2view (Write the zones in view format when you want to do split horizon dns)
-*  --slave (Write the udpated slave zones files)
+*  --verbose      (be verbose)
+*  --noreverse    (Do not write reverse zone)
+*  --norestart    (Do not write reverse zone)
+*  --dumpdir      (Dump the zones and bind configuration to another dir for testing purposes)
+*  --ldap2acls    (Write the the acls needed for bind in named.conf.acls)
+*  --ldap2view    (Write the zones in view format when you want to do split horizon dns)
+*  --slave        (Write the udpated slave zones files)
 
 Examples
 --------
