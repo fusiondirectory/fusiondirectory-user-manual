@@ -12,6 +12,7 @@ Argonaut
    install/index.rst
    install/configuration.rst
    argonaut-server/index.rst
+   argonaut-client/index.rst
    applications/index.rst
    contributing.rst
    license/license.rst
