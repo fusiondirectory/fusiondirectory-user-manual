@@ -9,6 +9,7 @@ Argonaut
    :maxdepth: 2
 
    whatis/argonaut.rst
+   whatis/components.rst
    install/index.rst
    install/configuration.rst
    argonaut-server/index.rst
