@@ -6,7 +6,7 @@ Install Argonaut
 .. toctree::
    :maxdepth: 2
 
-   ../../gpg/gpg-keys.rst
-   ../../repositories/argonaut-index.rst
+   ../../gpg/index.rst
+   ../../repositories/index.rst
    debian/index.rst
    centos/index.rst

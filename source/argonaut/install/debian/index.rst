@@ -1,7 +1,7 @@
 Install Argonaut on Debian
 =================================
 
-Install FusionDirectory
+Install Argonaut
 
 .. toctree::
    :maxdepth: 4
