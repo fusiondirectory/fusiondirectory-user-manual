@@ -1,7 +1,7 @@
 Install Argonaut on Centos
 ==========================
 
-Install FusionDirectory
+Install Argonaut
 
 .. toctree::
    :maxdepth: 4
