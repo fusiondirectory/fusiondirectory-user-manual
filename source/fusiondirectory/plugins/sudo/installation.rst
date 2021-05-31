@@ -40,5 +40,5 @@ RHEL
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/sudo-fd-conf.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/sudo.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/sudo-fd-conf.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/sudo.schema
