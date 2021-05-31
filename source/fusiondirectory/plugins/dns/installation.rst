@@ -37,6 +37,6 @@ RHEL
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/dns-fd-conf.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/dns-fd.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/dnszone.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/dns-fd-conf.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/dns-fd.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/dnszone.schema
