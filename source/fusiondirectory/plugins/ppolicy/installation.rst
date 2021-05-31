@@ -35,4 +35,4 @@ RHEL
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/ppolicy-fd-conf.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/ppolicy-fd-conf.schema

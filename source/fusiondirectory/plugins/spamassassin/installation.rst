@@ -39,4 +39,4 @@ RHEL
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/spamassassin-fd.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/spamassassin-fd.schema

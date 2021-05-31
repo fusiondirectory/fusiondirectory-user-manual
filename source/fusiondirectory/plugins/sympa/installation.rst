@@ -40,5 +40,5 @@ RHEL
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/sympa-fd-conf.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/sympa-fd.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/sympa-fd-conf.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/sympa-fd.schema

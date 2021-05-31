@@ -40,5 +40,5 @@ RHEL
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/samba-fd-conf.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/samba.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/samba-fd-conf.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/samba.schema
