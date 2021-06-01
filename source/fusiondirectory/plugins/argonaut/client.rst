@@ -32,7 +32,7 @@ SSL paths
 ^^^^^^^^^
 
   .. image:: images/argonaut-client-ssl-filled.png
-     :alt: SSL informations related to Argonaut Server
+     :alt: SSL informations related to Argonaut Client
 
   * Key: key used for https connection
   * Certificate: certificate used for https connection

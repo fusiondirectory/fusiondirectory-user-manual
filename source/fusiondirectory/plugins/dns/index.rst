@@ -8,3 +8,4 @@ FusionDirectory Plugins DNS
 
    description
    installation
+   functionalities
