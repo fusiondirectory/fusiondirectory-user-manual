@@ -8,5 +8,6 @@ FusionDirectory Plugins Argonaut
 
    description
    installation
-   functionalities
-
+   server
+   client
+   service-dns
