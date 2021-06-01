@@ -13,7 +13,11 @@ Argonaut Client
   .. image:: images/argonaut-systems-argonaut-client-activate-button.png
      :alt: Activate Argonaut Client
 
-* Fill the informations related to Argonaut Client
+Configuration
+-------------
+
+Argonaut client settings
+^^^^^^^^^^^^^^^^^^^^^^^^
 
   .. image:: images/argonaut-client-filled.png
      :alt: Informations related to Argonaut Client
@@ -24,7 +28,8 @@ Argonaut Client
   * Taskid file: file used for writing the taskid
   * Log directory: directory for Argonaut Server logs
 
-* Fill the informations related to SSL for Argonaut Client
+SSL paths
+^^^^^^^^^
 
   .. image:: images/argonaut-client-ssl-filled.png
      :alt: SSL informations related to Argonaut Server
@@ -34,11 +39,10 @@ Argonaut Client
   * CA certificate: ca used for https connections
   * CN of the certificate: custom CN if the hostname doesn't match by the certificate
 
-* Fill the services names that you will need to know to control them from FusionDirectory through Argonaut Client
+Service names
+^^^^^^^^^^^^^
 
   .. image:: images/argonaut-client-services-filled.png
      :alt: Services files in /etc/init.d
 
   * folder: directory where the start scripts for the services are stored
-
-* Click on ok to save all your information

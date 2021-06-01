@@ -18,7 +18,11 @@ Argonaut Server
   .. image:: images/argonaut-systems-services.png
      :alt: Picture of all the services
 
-* Fill the informations related Argonaut Server
+Configuration
+-------------
+
+Argonaut server
+^^^^^^^^^^^^^^^
 
   .. image:: images/argonaut-server-filled.png
      :alt: Informations related to Argonaut Server
@@ -30,7 +34,8 @@ Argonaut Server
   * Timeout: connection timeout for Argonaut Server
   * Log directory: directory for Argonaut Server logs
 
-* Fill the informations related to SSL for Argonaut Server
+SSL paths
+^^^^^^^^^
 
   .. image:: images/argonaut-server-ssl-filled.png
      :alt: SSL informations related to Argonaut Server
@@ -40,7 +45,8 @@ Argonaut Server
   * CA certificate: ca used for https connections
   * CN of the certificate: custom CN if the hostname doesn't match by the certificate
 
-* Fill the informations related to wake on lan for Argonaut Server
+Wake on lan
+^^^^^^^^^^^
 
   .. image:: images/argonaut-server-wol-filled.png
      :alt: WOL informations related to Argonaut Server
@@ -48,7 +54,7 @@ Argonaut Server
   * Interface: on which interface listend for wake on lan
   * IP tool: path of the ip tool used
 
-* After saving you will see the Argonaut Server service icon in the system list
+After saving you will see the Argonaut Server service icon in the system list
 
   .. image:: images/argonaut-systems-list-end.png
      :alt: Picture of server in FusionDirectory with Argonaut Server service
