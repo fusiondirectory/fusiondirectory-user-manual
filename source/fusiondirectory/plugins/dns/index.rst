@@ -8,4 +8,9 @@ FusionDirectory Plugins DNS
 
    description
    installation
-   functionalities
+   configuration
+   management
+   zone
+   acl
+   view
+   system-tab
