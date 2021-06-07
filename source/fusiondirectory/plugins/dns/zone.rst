@@ -36,8 +36,11 @@ Supported record types:
 * A
 * AAAA
 * AFSDB
+* CAA
 * CERT
 * CNAME
+* DKIM (TXT)
+* DMARC (TXT)
 * DS
 * KEY
 * KX
@@ -49,6 +52,9 @@ Supported record types:
 * PTR
 * RRSIG
 * SIG
+* SPF (TXT)
 * SRV
 * SSHFP
 * TXT
+
+The records with (TXT) appended are actually stored as TXT records in the zone, but FusionDirectory still provides a specific interface to help you correctly use them.
