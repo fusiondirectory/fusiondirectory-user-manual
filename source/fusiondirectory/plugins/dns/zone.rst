@@ -30,3 +30,25 @@ Records
 ^^^^^^^
 
 The DNS records for this zone
+
+Supported record types:
+
+* A
+* AAAA
+* AFSDB
+* CERT
+* CNAME
+* DS
+* KEY
+* KX
+* LOC
+* MX
+* NAPTR
+* NS
+* NSEC
+* PTR
+* RRSIG
+* SIG
+* SRV
+* SSHFP
+* TXT
