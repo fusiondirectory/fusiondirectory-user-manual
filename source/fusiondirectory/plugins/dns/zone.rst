@@ -11,12 +11,18 @@ A DNS zone with all the records it contains.
 Zone
 ^^^^
 
+.. image:: images/dnszone-dnszone-main.png
+   :alt: Screenshot of section Zone of tab DNS zone of type DNS zone
+
 * Base: Object base
 * Zone name: Zone name
 * Reverse zones: Reverse zones for this zone in the form xx.xx.in-addr.arpa. or x.x.ip6.arpa.
 
 SOA record
 ^^^^^^^^^^
+
+.. image:: images/dnszone-dnszone-soa.png
+   :alt: Screenshot of section SOA record of tab DNS zone of type DNS zone
 
 * Primary DNS server: Domain name of the name server that was the original or primary source of data for this zone
 * Mail address: Domain name which specifies the mailbox of the person responsible for this zone
@@ -28,6 +34,9 @@ SOA record
 
 Records
 ^^^^^^^
+
+.. image:: images/dnszone-dnszone-records.png
+   :alt: Screenshot of section Records of tab DNS zone of type DNS zone
 
 The DNS records for this zone
 
