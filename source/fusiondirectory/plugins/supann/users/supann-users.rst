@@ -3,28 +3,28 @@
 SupAnn Users
 ============
 
-* Create an user with supann informations
+* Create a user with SupAnn informations
 
 Click on Users icon on FusionDirectory main page
 
 .. image:: images/supann-user-users-icon-main.png
    :alt: Picture of Users icon in FusionDirectory
-   
+
 Click on Actions --> Create --> User
 
 .. image:: images/supann-user-actions-create-user.png
    :alt: Picture of create user drop-down menu in FusionDirectory
-   
+
 Go to SupAnn tab anc click on "Add SupAnn settings" button
 
 .. image:: images/supann-user-add-supann-settings.png
    :alt: Picture of "Add SupAnn settings" button in FusionDirectory
-   
+
 Identity
 
 .. image:: images/supann-user-identity.png
    :alt: Picture of Identity settings in FusionDirectory
-   
+
 Fill-in the following fields :
 
 * **Civilite** : supannCivilite - Civility of this person
@@ -36,36 +36,36 @@ Fill-in the following fields :
 Contact
 
 .. image:: images/supann-user-contact-settings_1 .png
-   :alt: Picture of SupAnn contact settings in FusionDirectory     
-   
+   :alt: Picture of SupAnn contact settings in FusionDirectory
+
 .. image:: images/supann-user-contact-settings_2 .png
-   :alt: Picture of SupAnn contact settings in FusionDirectory    
+   :alt: Picture of SupAnn contact settings in FusionDirectory
 
 Fill-in the following fields :
 
 * **Other phone numbers** : supannAutreTelephone - Other phone numbers for this user
 * **Private phone numbers** : supannTelephonePrive - Private phone numbers for this user
-* **Other email addresses** : supannAutreMail - Other e-mail addresses for this users . Each must be unique   
+* **Other email addresses** : supannAutreMail - Other e-mail addresses for this users . Each must be unique
 * **Personal email addresses** : supannMailPerso - Personal e-mail addresses for this user
-* **Private email addresses** : supannMailPrive - Private e-mail addresses for this user   
-* **Private addresses** : supannAdressePostalePrivee - Private addresses for this user  
+* **Private email addresses** : supannMailPrive - Private e-mail addresses for this user
+* **Private addresses** : supannAdressePostalePrivee - Private addresses for this user
 * **Red list** : supannListeRouge - Should this person be on the red list (required)
 
 Assignment
 
 .. image:: images/supann-user-assignement.png
    :alt: Picture of Assignment settings in FusionDirectory
-   
+
 Fill-in the following fields :
 
 * **Primary assignment** : supannEntiteAffectationPrincipale - Main assignment of the person
 * **Assignments** : supannEntiteAffectation - Reprents assignments of the person in an institution, a component, service, etc.
 * **Entity types** : supannTypeEntiteAffectation - TYpes of the entities this person is assigned to
 
-Student profile   
+Student profile
 
 .. image:: images/supann-user-student-profile.png
-   :alt: Picture of student profile settings in FusionDirectory   
+   :alt: Picture of student profile settings in FusionDirectory
 
 Fill-in the following fields :
 
@@ -75,7 +75,7 @@ Fill-in the following fields :
 Affiliation
 
 .. image:: images/supann-user-affiliation-settings.png
-   :alt: Picture of affiliation settings in FusionDirectory 
+   :alt: Picture of affiliation settings in FusionDirectory
 
 Fill-in the following fields :
 
@@ -87,14 +87,14 @@ Fill-in the following fields :
 Student registrations
 
 .. image:: images/supann-user-student-registrations.png
-   :alt: Picture of student registratons settings in FusionDirectory    
+   :alt: Picture of student registratons settings in FusionDirectory
 
 Fill-in the following fields :
 
 * **Establishment** : supannEtablissement - Establishment in which this registration was done (required)
 * **Registration type** : supannEtuRegimeInscription - The type of this registration (required)
 * **Diploma type** : supannEtuTypeDiplome - TYpe of diploma (required)
-* **Entity assignment** : supannEntiteAffectation - To which entities does this user belong to   
+* **Entity assignment** : supannEntiteAffectation - To which entities does this user belong to
 * **Step** : supannEtuEtape - Step can be considered a split (semester, year, etc.) in time of education leading to a diploma
 * **Year** : supannEtuAnneeInscription - The year this registration will begin (reqired)
 * **Disciplinary Sector** : supannEtuSecteurDisciplinaire - Disciplinary sector education diploma (required)
@@ -117,9 +117,9 @@ Roles
 
 .. image:: images/supann-user-roles.png
    :alt: Picture of Roles in FusionDirectory
-   
+
 * **Generic role** : select SUPANN and you will see a drop-down menu including all the different roles :
 
 .. image:: images/supann-user-roles.png
-   :alt: Picture of Roles in FusionDirectory       
+   :alt: Picture of Roles in FusionDirectory
 
