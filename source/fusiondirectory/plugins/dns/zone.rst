@@ -43,21 +43,96 @@ The DNS records for this zone
 Supported record types:
 
 * A
+
+.. image:: images/dnsrecord-A.png
+   :alt: Screenshot of record type A
+
 * AAAA
+
+.. image:: images/dnsrecord-AAAA.png
+   :alt: Screenshot of record type AAAA
+
 * AFSDB
+
+.. image:: images/dnsrecord-AFSDB.png
+   :alt: Screenshot of record type AFSDB
+
 * CERT
+
+.. image:: images/dnsrecord-CERT.png
+   :alt: Screenshot of record type CERT
+
 * CNAME
+
+.. image:: images/dnsrecord-CNAME.png
+   :alt: Screenshot of record type CNAME
+
 * DS
+
+.. image:: images/dnsrecord-DS.png
+   :alt: Screenshot of record type DS
+
 * KEY
+
+.. image:: images/dnsrecord-KEY.png
+   :alt: Screenshot of record type KEY
+
 * KX
+
+.. image:: images/dnsrecord-KX.png
+   :alt: Screenshot of record type KX
+
 * LOC
+
+.. image:: images/dnsrecord-LOC.png
+   :alt: Screenshot of record type LOC
+
 * MX
+
+.. image:: images/dnsrecord-MX.png
+   :alt: Screenshot of record type MX
+
 * NAPTR
+
+.. image:: images/dnsrecord-NAPTR.png
+   :alt: Screenshot of record type NAPTR
+
 * NS
+
+.. image:: images/dnsrecord-NS.png
+   :alt: Screenshot of record type NS
+
 * NSEC
+
+.. image:: images/dnsrecord-NSEC.png
+   :alt: Screenshot of record type NSEC
+
 * PTR
+
+.. image:: images/dnsrecord-PTR.png
+   :alt: Screenshot of record type PTR
+
 * RRSIG
+
+.. image:: images/dnsrecord-RRSIG.png
+   :alt: Screenshot of record type RRSIG
+
 * SIG
+
+.. image:: images/dnsrecord-SIG.png
+   :alt: Screenshot of record type SIG
+
 * SRV
+
+.. image:: images/dnsrecord-SRV.png
+   :alt: Screenshot of record type SRV
+
 * SSHFP
+
+.. image:: images/dnsrecord-SSHFP.png
+   :alt: Screenshot of record type SSHFP
+
 * TXT
+
+.. image:: images/dnsrecord-TXT.png
+   :alt: Screenshot of record type TXT
