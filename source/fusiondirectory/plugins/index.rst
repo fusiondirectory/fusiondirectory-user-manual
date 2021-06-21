@@ -35,6 +35,7 @@ FusionDirectory Plugins
    ldapdump/index
    ldapmanager/index
    mail/index
+   mailinblack/index
    migration-mailrouting/index
    mixedgroups/index
    netgroups/index
