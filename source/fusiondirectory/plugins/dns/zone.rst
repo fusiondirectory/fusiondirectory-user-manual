@@ -42,97 +42,154 @@ The DNS records for this zone
 
 Supported record types:
 
-* A
+A
++
+
+IPv4 address record.
 
 .. image:: images/dnsrecord-A.png
    :alt: Screenshot of record type A
 
-* AAAA
+AAAA
+++++
+
+IPv6 address record.
 
 .. image:: images/dnsrecord-AAAA.png
    :alt: Screenshot of record type AAAA
 
-* AFSDB
+AFSDB
++++++
+
+Location of database servers of an AFS cell.
 
 .. image:: images/dnsrecord-AFSDB.png
    :alt: Screenshot of record type AFSDB
 
-* CERT
+CERT
+++++
+
+Certificate record.
 
 .. image:: images/dnsrecord-CERT.png
    :alt: Screenshot of record type CERT
 
-* CNAME
+CNAME
++++++
+
+Alias of one name to another: the DNS lookup will continue by retrying the lookup with the new name.
 
 .. image:: images/dnsrecord-CNAME.png
    :alt: Screenshot of record type CNAME
 
-* DS
+DS
+++
+
+The record used to identify the DNSSEC signing key of a delegated zone.
 
 .. image:: images/dnsrecord-DS.png
    :alt: Screenshot of record type DS
 
-* KEY
+KEY
++++
+
+Key record.
 
 .. image:: images/dnsrecord-KEY.png
    :alt: Screenshot of record type KEY
 
-* KX
+KX
+++
+
+Key exchanger record.
 
 .. image:: images/dnsrecord-KX.png
    :alt: Screenshot of record type KX
 
-* LOC
+LOC
++++
+
+Location record, specifies a geographical location associated with a domain name.
 
 .. image:: images/dnsrecord-LOC.png
    :alt: Screenshot of record type LOC
 
-* MX
+MX
+++
+
+Mail exchange record, maps a domain name to a list of message transfer agents for that domain.
 
 .. image:: images/dnsrecord-MX.png
    :alt: Screenshot of record type MX
 
-* NAPTR
+NAPTR
++++++
+
+Naming authority pointer, allows regular-expression-based rewriting of domain names.
 
 .. image:: images/dnsrecord-NAPTR.png
    :alt: Screenshot of record type NAPTR
 
-* NS
+NS
+++
+
+Name server record, delegates a DNS zone to use the given authoritative name servers.
 
 .. image:: images/dnsrecord-NS.png
    :alt: Screenshot of record type NS
 
-* NSEC
+NSEC
+++++
+
+Next secure record, part of DNSSEC, used to prove a name does not exist.
 
 .. image:: images/dnsrecord-NSEC.png
    :alt: Screenshot of record type NSEC
 
-* PTR
+PTR
++++
+
+Pointer to a canonical name. The most common use is for implementing reverse DNS lookups.
 
 .. image:: images/dnsrecord-PTR.png
    :alt: Screenshot of record type PTR
 
-* RRSIG
+RRSIG
++++++
+
+Signature for a DNSSEC-secured record set.
 
 .. image:: images/dnsrecord-RRSIG.png
    :alt: Screenshot of record type RRSIG
 
-* SIG
+SIG
++++
+
+Signature record (replaced by RRSIG for DNSSEC).
 
 .. image:: images/dnsrecord-SIG.png
    :alt: Screenshot of record type SIG
 
-* SRV
+SRV
++++
+
+Generalized service location record, used for newer protocols instead of creating protocol-specific records such as MX.
 
 .. image:: images/dnsrecord-SRV.png
    :alt: Screenshot of record type SRV
 
-* SSHFP
+SSHFP
++++++
+
+Resource record for publishing SSH public host key fingerprints in the DNS System, in order to aid in verifying the authenticity of the host.
 
 .. image:: images/dnsrecord-SSHFP.png
    :alt: Screenshot of record type SSHFP
 
-* TXT
+TXT
++++
+
+Text record, originally for arbitrary human-readable text in a DNS record. Since the early 1990s, however, this record more often carries machine-readable data.
 
 .. image:: images/dnsrecord-TXT.png
    :alt: Screenshot of record type TXT
