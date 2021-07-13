@@ -28,11 +28,11 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i subcontracting-fd.schema
+   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/subcontracting-fd.schema
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i subcontracting-fd.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/subcontracting-fd.schema

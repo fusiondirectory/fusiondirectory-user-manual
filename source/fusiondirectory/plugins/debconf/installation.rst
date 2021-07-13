@@ -23,10 +23,10 @@ RHEL
 Install schemas
 ---------------
 
-.. note:: 
-   
+.. note::
+
    The debconf plugin depends on the systems and argonaut plugins so the schema for those plugins should be installed correctly
-   
+
 Debian
 ^^^^^^
 
@@ -41,5 +41,5 @@ RHEL
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/debconf-fd.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/debconf.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/debconf-fd.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/debconf.schema
