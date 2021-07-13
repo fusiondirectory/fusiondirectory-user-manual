@@ -23,8 +23,8 @@ RHEL
 Install schemas
 ---------------
 
-.. note:: 
-   
+.. note::
+
    The migration-mailrouting plugin depends on the mail plugin so the mail plugin schema should be installed correctly
 
 Debian
@@ -39,4 +39,4 @@ RHEL
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/mail-routing.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/mail-routing.schema

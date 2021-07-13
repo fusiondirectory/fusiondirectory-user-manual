@@ -36,5 +36,5 @@ RHEL
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/applications-fd.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/applications-fd-conf.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/applications-fd.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/applications-fd-conf.schema

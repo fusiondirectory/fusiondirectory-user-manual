@@ -28,7 +28,7 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/nextcloud-fd.schema
+   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/nextcloud-fd.schema
 
 RHEL
 ^^^^

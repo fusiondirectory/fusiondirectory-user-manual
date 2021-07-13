@@ -36,6 +36,6 @@ RHEL
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/audit-fd.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/audit-fd-conf.schema
-   
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/audit-fd.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/audit-fd-conf.schema
+
