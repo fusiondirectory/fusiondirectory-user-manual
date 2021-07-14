@@ -8,3 +8,6 @@ FusionDirectory Plugins Subscriptions
 
    description
    installation
+   configuration
+   management
+   subscription
