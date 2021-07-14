@@ -30,11 +30,11 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/openldap/renater-partage-fd.schema
-   
+   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/renater-partage-fd.schema
+
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/openldap/renater-partage-fd.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/renater-partage-fd.schema

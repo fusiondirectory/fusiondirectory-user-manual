@@ -29,10 +29,10 @@ Debian
 .. code-block:: bash
 
    fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/dsa-fd-conf.schema
-   
+
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/dsa-fd-conf.schema
+   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/dsa-fd-conf.schema
