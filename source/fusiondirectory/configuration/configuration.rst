@@ -105,6 +105,7 @@ CAS
 * **Host**: Host of the CAS Server.
 * **Port**: Port of the CAS Server.
 * **CAS context**: CAS context to be used
+* **Verbose Error**: Show the return errors from the CAS connexion
 
 .. _configuration_people_and_group_storage:
 
