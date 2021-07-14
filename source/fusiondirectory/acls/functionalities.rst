@@ -86,6 +86,9 @@ Then you have a part for each user tab depending on your installed plugins.
 The **Create** right on a tab allows to activate it while the **Remove** one allows to deactivate.\ 
 The **Grant permission** to owner checkbox allows to give rights only on the user’s own node as in the editowninfos role we used earlier. 
 
+.. note::
+
+  In FusionDirectory when you give write access to an attribute or whole object this also imply that you have read access on those attributes or objects
 
 Special cases about rights
 __________________________
