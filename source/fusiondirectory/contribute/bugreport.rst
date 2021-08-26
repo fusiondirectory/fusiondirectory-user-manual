@@ -44,7 +44,7 @@ I just have a question!
 We have an various channel of communications
 
 -  `#fusiondirectory, the irc channel of FusionDirectory on
-   freenode <https://webchat.freenode.net/>`__, channel #fusiondirectory
+   Libera.chat <https://web.libera.chat/>`__, channel #fusiondirectory
 -  `FusionDirectory Users mailing
    list <https://lists.fusiondirectory.org/wws/info/users>`__
 -  `FusionDirectory dev mailing
