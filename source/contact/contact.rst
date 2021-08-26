@@ -5,7 +5,7 @@ Contact Us
 We are also contactable on:
 
 * Mailing list: `<https://lists.fusiondirectory.org/wws/lists>`__
-* IRC: #fusiondirectory on irc.freenode.org `<irc://irc.freenode.org/fusiondirectory>`__
+* IRC: #fusiondirectory on irc.libera.chat `<irc://irc.libera.chat/fusiondirectory>`__
 
 Follow Us
 
