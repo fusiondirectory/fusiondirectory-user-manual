@@ -137,7 +137,7 @@ documentation and additional help.
   
   * Coded the LockUser fonction for the webservice
   
-* Jonathan Swaelens <jonathan@opensides.be>
+* Jonathan Swaelens <jonathan.swaelens@fusiondirectory.org>
   
   * QA on FusionDirectory
   * RPM packaging maintener and ArchLinux Packager
@@ -155,7 +155,7 @@ documentation and additional help.
   
   * Code and ideas for making Argonaut Events Extensible
   
-* Paola Penati <paolapenati@hotmail.com>
+* Paola Penati <paola.penati@fusiondirectory.org>
   
   * Italian translation of FusionDirectory and the website
 
