@@ -37,7 +37,7 @@ contributed to the original GOsa² project before the fork to FusionDirectory
 
   * Password checker
 
-* Benoit Mortier <benoit.mortier@opensides.be>
+* Benoit Mortier <benoit.mortier@fusiondirectory.org>
 
   * Butracking, QA, French translation
 
