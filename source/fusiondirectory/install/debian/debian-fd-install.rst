@@ -8,17 +8,6 @@ All The needed dependancies are resolved by the debian packages
    The repositories are in https for Debian
    so you will need to install **apt-transport-https**
 
-Install the FusionDirectory Repos
-'''''''''''''''''''''''''''''''''
-
-Chose the repositories that goes with your Debian version
-
-:ref:`fd-debian-repository-stretch-label`
-
-If you bought a subscription you can configure the subscription repositories
-
-:ref:`fd-enterprise-debian-repository-label`
-
 Install FusionDirectory
 '''''''''''''''''''''''
 

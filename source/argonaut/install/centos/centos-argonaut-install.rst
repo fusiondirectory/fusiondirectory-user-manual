@@ -13,17 +13,6 @@ Argonaut requires both the `EPEL`_ repository
 
    yum update
    
-Install the Argonaut Repos
-''''''''''''''''''''''''''
-
-Chose the repositories that goes with your centos version
-
-:ref:`ar-rpm-repository-label`
-
-If you bought a subscription you can configure the subscription repositories
-
-:ref:`fd-enterprise-centos-repository-label`
-
 Install Argonaut
 ''''''''''''''''
 
