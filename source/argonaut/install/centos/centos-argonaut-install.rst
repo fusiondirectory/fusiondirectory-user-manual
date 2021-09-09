@@ -1,13 +1,17 @@
 Installing Dependencies
 '''''''''''''''''''''''
 
-Argonaut requires the `EPEL`_ repository 
+Argonaut requires both the `EPEL`_ repository 
 
 -  To install epel
 
 .. code-block:: shell
 
-   yum install epel-release
+   yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+   
+.. code-block:: shell
+
+   yum update
    
 Install the Argonaut Repos
 ''''''''''''''''''''''''''
@@ -15,6 +19,10 @@ Install the Argonaut Repos
 Chose the repositories that goes with your centos version
 
 :ref:`ar-rpm-repository-label`
+
+If you bought a subscription you can configure the subscription repositories
+
+:ref:`fd-enterprise-centos-repository-label`
 
 Install Argonaut
 ''''''''''''''''
