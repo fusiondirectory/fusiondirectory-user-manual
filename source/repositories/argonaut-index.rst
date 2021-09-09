@@ -12,3 +12,4 @@ We also provide enterprise packages for customers who have signed for a subscrip
 
    argonaut-debian.rst
    argonaut-centos.rst
+   subscription.rst
