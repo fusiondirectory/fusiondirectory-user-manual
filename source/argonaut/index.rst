@@ -19,7 +19,6 @@ Contents:
    argonaut-server/index.rst
    argonaut-client/index.rst
    applications/index.rst
-   contributing.rst
    license/license.rst
 
 .. include:: globals.rst
