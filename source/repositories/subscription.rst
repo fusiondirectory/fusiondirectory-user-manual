@@ -1,12 +1,8 @@
-.. _fd-subscription-repository-label:
-
 Subscription Repository
 =======================
 
 When buying a subscription you will receive a set of files
 
-
-.. _fd-enterprise-subscription-fusiondirectory-label:
 
 For FusionDirectory
 '''''''''''''''''''
@@ -14,9 +10,6 @@ For FusionDirectory
 The **yourcompany-subscription-fusiondirectory.ini** is the file to be imported into FusionDirectory to show that you have a valid subscription.
 
 See :ref:`fd-activate-a-subscription-label`
-
-
-.. _fd-enterprise-debian-repository-label:
 
 For Debian
 ''''''''''
@@ -53,8 +46,6 @@ Install repositories
    Hit:1 http://security.debian.org/debian-security buster/updates InRelease
    Hit:2 http://deb.debian.org/debian buster InRelease                                                                   
    Hit:3 https://enterprise.fusiondirectory.org/buster-fusiondirectory-fixes buster InRelease
-
-.. _fd-enterprise-centos-repository-label:
 
 For Centos / Redhat
 '''''''''''''''''''

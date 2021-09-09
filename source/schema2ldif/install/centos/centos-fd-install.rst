@@ -1,12 +1,8 @@
 Installing Dependencies
 '''''''''''''''''''''''
 
-Install the Schema2ldif Repos
-'''''''''''''''''''''''''''''
+All The needed dependancies are resolved by the Centos packages
 
-Chose the repositories that goes with your centos version
-
-:ref:`sl-rpm-repository-label`
 
 Install Schema2ldif
 '''''''''''''''''''
