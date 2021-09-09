@@ -10,6 +10,6 @@ We also provide enterprise packages for customers who have signed for a subscrip
 .. toctree::
    :maxdepth: 2
 
-   argonaut-debian.rst
-   argonaut-centos.rst
+   debian.rst
+   centos.rst
    subscription.rst
