@@ -1,3 +1,6 @@
+.. _fd-activate-a-subscription-label:
+
+
 Activate a subscription 
 =======================
 
