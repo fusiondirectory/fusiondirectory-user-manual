@@ -1,0 +1,2 @@
+.. include:: ../../repositories/subscription.rst
+

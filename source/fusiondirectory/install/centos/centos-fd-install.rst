@@ -26,17 +26,6 @@ the `REMI`_ repository for PHP 7.1
    yum-config-manager --enable remi
    yum update
 
-Install the FusionDirectory Repos
-'''''''''''''''''''''''''''''''''
-
-Chose the repositories that goes with your centos version
-
-:ref:`fd-rpm-repository-centos7-label`
-
-If you bought a subscription you can configure the subscription repositories
-
-:ref:`fd-enterprise-centos-repository-label`
-
 Install FusionDirectory
 '''''''''''''''''''''''
 
