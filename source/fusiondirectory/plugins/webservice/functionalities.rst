@@ -8,7 +8,7 @@ This way, you ensure that your ldap objects are kept consistent, your are able t
 
 On top of that you have a nicer API than the low-level LDAP one.
 
-The REST API is documented `here <https://rest-api.fusiondirectory.info/>`_.
+The REST API is documented `here <https://rest-api.fusiondirectory.org/>`_.
 
 .. note::
 
