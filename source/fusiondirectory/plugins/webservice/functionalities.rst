@@ -8,4 +8,4 @@ This way, you ensure that your ldap objects are kept consistent, your are able t
 
 On top of that you have a nicer API than the low-level LDAP one.
 
-The JSONRPC API is documented `here <https://stable-api.fusiondirectory.info/classfdRPCService.html#details>`_.
+The JSONRPC API is documented `here <https://stable-api.fusiondirectory.org/classfdRPCService.html#details>`_.
