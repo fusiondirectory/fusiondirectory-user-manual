@@ -8,3 +8,5 @@ FusionDirectory Plugins Posix
 
    description
    installation
+   functionalities
+

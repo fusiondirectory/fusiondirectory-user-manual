@@ -3,6 +3,10 @@ Groups
 
 This page is for groups and roles management.
 
+.. warning::
+
+   In big groups, you can encounter a PHP fatal error. When it happened you can adapt your PHP configuration with the next value "pcre.backtrack_limit=10000000"
+
 Click on Groups and roles icon on FusionDirectory main page
 
 .. image:: images/core-groups-and-roles-icon.png
