@@ -45,8 +45,8 @@ the result is an ldif file with this content:
    
 "Export complete LDIF for" allows you to export all records of your ldap directory.
 
-Export LDIF WITHOUT PARAMETER
------------------------------
+Export LDIF from an object
+--------------------------
 
 If you click on one of the menu entry like “Users” on the left, you will find a users List. 
 
@@ -63,13 +63,15 @@ Now, if you click on one user "Last name" field, you will see the users manage t
 
 .. code-block:: bash
 
-   dn: cn=sales,ou=groups,dc=fusiondirectory,dc=org
-   cn: sales
-   gidNumber: 1105
-   memberUid: Homer.Sympson
-   memberUid: gmarquez
-   objectClass: top
-   objectClass: posixGroup
+   dn: uid=fd-admin,ou=people,dc=formation-fusiondirectory,dc=org
+   cn: System Administrator
+   sn: Administrator
+   givenName: System
+   uid: fd-admin
+   userPassword:: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx3BJY2M=
+   objectClass: inetOrgPerson
+   objectClass: organizationalPerson
+   objectClass: person
    
 "Export complete LDIF for" allows you to export all records of your ldap subtree.
 
