@@ -48,20 +48,17 @@ the result is an ldif file with this content:
 Export LDIF WITHOUT PARAMETER
 -----------------------------
 
-The LDIF export plugin provides methods to download a complete snapshot of the running LDAP directory as ldif. You may save these files for backup purpose or when initializing a new server. 
+If you click on one of the menu entry like “Users” on the left, you will find a users List. 
+
+.. image:: images/user-selected-left-panel.png
+   :alt: Picture of users list in FusionDirectory
+   
+Now, if you click on one user "Last name" field, you will see the users manage tab
 
 .. image:: images/ldapmanager-export-tabs.png
    :alt: Picture of ldif export tab in FusionDirectory
    
 "Export single entry" allows you to export a single ldap record. For example, in my ldap directory, if I ask to export the sales group:
-
-
-.. code-block:: bash
-
-   cn=sales,ou=groups,dc=fusiondirectory,dc=org
-   
-the result is an ldif file with this content: 
-
 
 
 .. code-block:: bash
@@ -74,7 +71,7 @@ the result is an ldif file with this content:
    objectClass: top
    objectClass: posixGroup
    
-"Export complete LDIF for" allows you to export all records of your ldap directory.
+"Export complete LDIF for" allows you to export all records of your ldap subtree.
 
 Import LDIF
 -----------
