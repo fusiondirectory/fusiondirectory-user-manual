@@ -45,6 +45,36 @@ the result is an ldif file with this content:
    
 "Export complete LDIF for" allows you to export all records of your ldap directory.
 
+Export LDIF from an object
+--------------------------
+
+If you click on one of the menu entry like “Users” on the left, you will find a users List. 
+
+.. image:: images/user-selected-left-panel.png
+   :alt: Picture of users list in FusionDirectory
+   
+Now, if you click on one user "Last name" field, you will see the users manage tab
+
+.. image:: images/ldapmanager-export-tabs.png
+   :alt: Picture of ldif export tab in FusionDirectory
+   
+"Export single entry" allows you to export a single ldap record. For example, in my ldap directory, if I ask to export the sales group:
+
+
+.. code-block:: bash
+
+   dn: uid=fd-admin,ou=people,dc=formation-fusiondirectory,dc=org
+   cn: System Administrator
+   sn: Administrator
+   givenName: System
+   uid: fd-admin
+   userPassword:: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx3BJY2M=
+   objectClass: inetOrgPerson
+   objectClass: organizationalPerson
+   objectClass: person
+   
+"Export complete LDIF for" allows you to export all records of your ldap subtree.
+
 Import LDIF
 -----------
 
