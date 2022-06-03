@@ -58,12 +58,9 @@ FusionDirectory Plugins
    sogo/index
    spamassassin/index
    ssh/index
-   ssh/index
-   subcontracting/index
    subcontracting/index
    subscriptions/index
    sudo/index
-   supann/index
    supann/index
    sympa/index
    systems/index
