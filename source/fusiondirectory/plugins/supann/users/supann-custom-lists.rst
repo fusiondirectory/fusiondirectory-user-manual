@@ -11,8 +11,8 @@ This process works for the following attributes:
 
 *   supannTypeEntiteAffectation (**entite**)
 *   supannEtuDiplome_diplome (**diplome**)
-*   supannEtuEtape (**etuetape** is default empty)
-*   supannEtuElementPedagogique (**etuelementpedagogique** is default empty)
+*   supannEtuEtape (**etuetape** is empty by default)
+*   supannEtuElementPedagogique (**etuelementpedagogique** is empty by default)
 *   supannActivite (**activite**)
 *   supannRoleGenerique (**role**)
 
@@ -32,3 +32,7 @@ You need to do the following to make it work.
    1000013;01;16;ANALYSE DES MILIEUX BIOLOGIQUES;
 
 In FusionDirectory you will need to select your **CUSTOM** part before selecting your entry that are in your file
+
+.. note::
+
+   you will find some examples in /usr/share/doc/fusiondirectory-plugin-supann/examples/
