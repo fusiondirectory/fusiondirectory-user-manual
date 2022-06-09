@@ -9,7 +9,7 @@ For some attributes like diplome you can extend them with a custom file in /etc/
 
 This process works for the following attributes:
 
-*   supannTypeEntiteAffectation (**entite**) only from FD 1.3
+*   supannTypeEntiteAffectation (**entite**)
 *   supannEtuDiplome_diplome (**diplome**)
 *   supannEtuEtape (**etuetape** is default empty)
 *   supannEtuElementPedagogique (**etuelementpedagogique** is default empty)
@@ -31,4 +31,4 @@ You need to do the following to make it work.
    #DIPLOME_CUSTOM;TYPE_DIPLOME_SISE;SECTEUR_DISCIPLINAIRE_SISE;LIBELLE_INTITULE_1;LIBELLE_INTITULE_2
    1000013;01;16;ANALYSE DES MILIEUX BIOLOGIQUES;
 
-In FusionDirectory you will need to select your "CUSTOM" part before selecting your entry that are in your file
+In FusionDirectory you will need to select your **CUSTOM** part before selecting your entry that are in your file
