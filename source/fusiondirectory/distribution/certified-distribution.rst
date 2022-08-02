@@ -13,10 +13,10 @@ Fusiondirectory need at least PHP 5.6.
 DISTRIBUTION      FusionDirectory 1.2      FusionDirectory 1.3
 ================= ======================== =======================
 Debian Jessie     need a support contract  need a support contract
-Debian Stretch    not supported            supported
+Debian Stretch    not supported            not supported
 Debian Buster     not supported            supported
 ----------------- ------------------------ -----------------------
-Ubuntu 16.04 LTS  need a support contract  supported
+Ubuntu 16.04 LTS  need a support contract  need a support contract
 Ubuntu 18.04 LTS  not supported            supported
 Ubuntu 20.04 LTS  not supported            work in progress
 ----------------- ------------------------ -----------------------
