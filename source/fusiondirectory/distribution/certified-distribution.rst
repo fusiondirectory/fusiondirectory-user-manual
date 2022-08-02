@@ -7,9 +7,9 @@ We certify FusionDirectory with all the most common distributions, here is a tab
  * Fusiondirectory 1.3 need >= PHP 5.6 <= 7.2
  * FusionDirectory 1.3.1 need = PHP 7.3 
 
-================= =======================
+================= ========================
 DISTRIBUTION      FusionDirectory 1.3
-================= =======================
+================= ========================
 Debian Stretch    not supported
 Debian Buster     supported
 ----------------- ------------------------
