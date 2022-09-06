@@ -43,7 +43,6 @@ FusionDirectory Plugins
    nextcloud/index
    opsi/index
    personal/index
-   personal/index
    posix/index
    postfix/index
    ppolicy/index
