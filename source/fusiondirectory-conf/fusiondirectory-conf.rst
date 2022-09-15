@@ -16,7 +16,7 @@ locations.
 
 Layout example:
 
-.. code-block::
+.. code-block:: xml
 
    <?xml version="1.0"?>
 
@@ -42,7 +42,7 @@ each location definition inside of this global definition.
 
 Example layout:
 
-.. code-block::
+.. code-block:: xml
 
        <main default="Example Net" listSummary="false" ... >
 
@@ -140,7 +140,7 @@ how to connect to some directory service.
 
 Example:
 
-.. code-block::
+.. code-block:: xml
 
           <referral uri="ldap://ldap.example.net" base="dc=example,dc=net"
               admin="cn=fusiondirectory-admin,dc=example,dc=net"
