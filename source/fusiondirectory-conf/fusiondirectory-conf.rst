@@ -44,20 +44,20 @@ Example layout:
 
 .. code-block:: xml
 
-       <main default="Example Net" listSummary="false" ... >
+   <main default="Example Net" listSummary="false" >
 
-          <location name="Example Net"
+     <location name="Example Net">
 
-             logging="TRUE"
-             forceSSL="TRUE"
+        logging="TRUE"
+        forceSSL="TRUE"
 
-              <referral uri="ldaps://ldap.example.net:636" base="dc=example,dc=net"
-                  admin="cn=fusiondirectory-admin,dc=example,dc=net"
-                  password="secret" />
+        <referral uri="ldaps://ldap.example.net:636" base="dc=example,dc=net"
+        admin="cn=fusiondirectory-admin,dc=example,dc=net"
+        password="secret" />
 
-           </location>
+     </location>
 
-       </main>
+   </main>
 
 Main section options
 --------------------
@@ -142,9 +142,9 @@ Example:
 
 .. code-block:: xml
 
-          <referral uri="ldap://ldap.example.net" base="dc=example,dc=net"
-              admin="cn=fusiondirectory-admin,dc=example,dc=net"
-              password="secret" />
+   <referral uri="ldap://ldap.example.net" base="dc=example,dc=net"
+    admin="cn=fusiondirectory-admin,dc=example,dc=net"
+    password="secret" />
 
 uri is a valid LDAP uri. base is the base this referral is responsible
 for. admin is the DN which has the permission to write LDAP entries. And
