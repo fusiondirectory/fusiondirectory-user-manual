@@ -16,6 +16,7 @@ Contents:
    :maxdepth: 2
 
    fusiondirectory/index.rst
+   fusiondirectory-conf/index.rst
    fusiondirectory-tools/index.rst
    schema2ldif/index.rst
    argonaut/index.rst
