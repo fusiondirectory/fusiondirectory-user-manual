@@ -2,7 +2,7 @@ Installing Dependencies
 '''''''''''''''''''''''
 
 FusionDirectory requires both the `EPEL`_ repository and
-the `REMI`_ repository for PHP 7.1
+the `REMI`_ repository for PHP 7.3
 
 -  To install epel
 
@@ -18,11 +18,11 @@ the `REMI`_ repository for PHP 7.1
 
    yum install yum-utils
 
-- To enable Remi repo an PHP 7.1
+- To enable Remi repo an PHP 7.3
 
 .. code-block:: shell
 
-   yum-config-manager --enable remi-php71
+   yum-config-manager --enable remi-php73
    yum-config-manager --enable remi
    yum update
 
