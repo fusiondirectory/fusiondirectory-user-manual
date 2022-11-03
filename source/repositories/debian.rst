@@ -4,21 +4,15 @@
 Debian Repository
 '''''''''''''''''
 
-.. _fd-debian-repository-stretch-label:
+.. _fd-debian-repository-buster-label:
 
-Debian Stretch
-^^^^^^^^^^^^^^
+Debian Buster
+^^^^^^^^^^^^^
 
 Add a file named **fusiondirectory-release.list** in /etc/apt/sources.list.d/
 
 .. code-block:: shell
 
    #fusiondirectory repository
-   deb https://public.fusiondirectory.org/stretch-fusiondirectory-release/ stretch main
+   deb https://public.fusiondirectory.org/buster-fusiondirectory-release/ buster main
 
-Add a file named **schema2ldif-release.list** in /etc/apt/sources.list.d/
-
-.. code-block:: shell
-
-   #latest version of schema2ldif
-   deb https://public.fusiondirectory.org/stretch-schema2ldif-release/ stretch main
