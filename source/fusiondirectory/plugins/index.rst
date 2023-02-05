@@ -49,7 +49,7 @@ FusionDirectory Plugins
    public-forms/index
    pureftpd/index
    quota/index
-   renaterpartage/index
+   renater-partage/index
    repository/index
    samba/index
    schac/index
