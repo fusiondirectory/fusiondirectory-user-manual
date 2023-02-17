@@ -1,14 +1,7 @@
-# Specify docker image
-image: debian:stretch
-
-# Execute before every job
-# Install libperl-critic-perl, php-codesniffer, git and php
-before_script:
-  - apt-get update -qq
-  - apt-get install -y -qq python-sphinx python-sphinx-rtd-theme make
 
 # Generate sphinx rapport
 create_sphinx_rapport:
+  image: registry.fusiondirectory.org/fusiondirectory/fd/sphinx-cli:buster
   only:
     - branches
     - tags
