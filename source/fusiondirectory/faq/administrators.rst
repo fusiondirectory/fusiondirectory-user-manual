@@ -7,6 +7,6 @@ Administrators issues
 
 .. code-block:: shell
 
-   fusiondirectory-setup --check-ldap
+   fusiondirectory-configuration-manager --check-ldap
 
 
