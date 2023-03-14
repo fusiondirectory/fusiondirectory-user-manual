@@ -4,11 +4,8 @@ fusiondirectory-migration-manager
 Description
 -----------
 
-This tool is designed to help you configure and perform multiple checks on your
-FusionDirectory instance and fix usual misconfiguration.
+This tool is designed to help you migrate your FusionDirectory instance from one version to another
 
-Extra features allow you to install FusionDirectory's plugins, and
-change destinations directories.
 
 Options
 -------

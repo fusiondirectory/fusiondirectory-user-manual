@@ -4,8 +4,7 @@ fusiondirectory-plugins-manager
 Description
 -----------
 
-This tool is designed to help you configure and perform multiple checks on your
-FusionDirectory instance and fix usual misconfiguration.
+This tool is designed to help install FusionDirectory plugin referenced in the FusionDirectory marketplace or a developpers git
 
 Options
 -------
