@@ -77,13 +77,13 @@ Update FusionDirectory class cache and update localization
 
 .. code-block:: shell
    
-   fusiondirectory-setup --update-cache --update-locales
+   fusiondirectory-configuration-manager --update-cache --update-locales
 
 List possible vars to give to --set
 
 .. code-block:: shell
 
-   fusiondirectory-setup --list-vars
+   fusiondirectory-configuration-manager --list-vars
      locale_cache_dir [locale]
      config_file [fusiondirectory.conf]
      fd_cache [/var/cache/fusiondirectory]
@@ -102,4 +102,4 @@ update the class.cache name and write back the variables.inc file
 
 .. code-block:: shell
 
-   fusiondirectory-setup --set-class_cache=class.cache --write-vars
+   fusiondirectory-configuration-manager --set-class_cache=class.cache --write-vars

@@ -17,7 +17,7 @@ Major Release
 * Can remove attributes or objectclasses from the schema only if they were declared OBSOLETE in the previous major release.
 * Can put **OBSOLETE** attributes and classes which are no longer used by the code.
 * Two 2 major releases are needed before removing OBSOLETE attributes and objectClass.
-* Can provide migration scripts in fusiondirectory-setup if needed for those, and/or migration instructions in the documentation.
+* Can provide migration options in fusiondirectory-migration-manager if needed for those, and/or migration instructions in the documentation.
 * Have to provide migration instruction from previous major release.
 
 Minor release
