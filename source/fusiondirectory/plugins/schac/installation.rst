@@ -28,11 +28,11 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/schac-20150413-1.5.0.schema
+   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/schac-20150413-1.5.0.schema
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/schac-20150413-1.5.0.schema
+   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/schac-20150413-1.5.0.schema

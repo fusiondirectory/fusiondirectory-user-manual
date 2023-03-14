@@ -28,13 +28,13 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/webauthn-fd-conf.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/webauthn-fd.schema
+   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/webauthn-fd-conf.schema
+   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/webauthn-fd.schema
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/webauthn-fd-conf.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/webauthn-fd.schema
+   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/webauthn-fd-conf.schema
+   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/webauthn-fd.schema

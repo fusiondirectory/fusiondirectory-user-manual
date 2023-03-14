@@ -32,13 +32,13 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/quota-fd.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/quota.schema
+   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/quota-fd.schema
+   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/quota.schema
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/quota-fd.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/quota.schema
+   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/quota-fd.schema
+   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/quota.schema

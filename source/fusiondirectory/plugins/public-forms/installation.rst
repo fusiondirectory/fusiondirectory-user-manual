@@ -28,13 +28,13 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/public-forms-fd.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/public-forms-fd-conf.schema
+   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/public-forms-fd.schema
+   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/public-forms-fd-conf.schema
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/public-forms-fd.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/public-forms-fd-conf.schema
+   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/public-forms-fd.schema
+   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/public-forms-fd-conf.schema

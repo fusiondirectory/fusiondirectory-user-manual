@@ -28,7 +28,7 @@ We can easily do this by running:
 
 .. code-block:: shell
 
-   fusiondirectory-insert-schema
+   fusiondirectory-schema-manager
 
 You should see the FusionDirectory setup page come up by going to:
 

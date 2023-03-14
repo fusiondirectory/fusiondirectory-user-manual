@@ -30,7 +30,7 @@ Save the file in /etc/ldap/schema/.
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/freeradius.schema
+   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/freeradius.schema
 
 RHEL
 ^^^^
@@ -39,4 +39,4 @@ Save the file in /etc/openldap/schema/.
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/openldap/schema/freeradius.schema
+   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/freeradius.schema

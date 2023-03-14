@@ -32,13 +32,13 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/sudo-fd-conf.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/sudo.schema
+   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/sudo-fd-conf.schema
+   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/sudo.schema
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/sudo-fd-conf.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/sudo.schema
+   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/sudo-fd-conf.schema
+   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/sudo.schema

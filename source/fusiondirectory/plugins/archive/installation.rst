@@ -28,14 +28,14 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/archive-fd.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/archive-fd-conf.schema
+   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/archive-fd.schema
+   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/archive-fd-conf.schema
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/archive-fd.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/archive-fd-conf.schema
+   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/archive-fd.schema
+   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/archive-fd-conf.schema
 

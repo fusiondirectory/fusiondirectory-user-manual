@@ -28,15 +28,15 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/internet2.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/supann-2019-11-22.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/supann-fd-conf.schema
+   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/internet2.schema
+   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/supann-2019-11-22.schema
+   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/supann-fd-conf.schema
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/internet2.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/supann-2019-11-22.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/supann-fd-conf.schema
+   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/internet2.schema
+   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/supann-2019-11-22.schema
+   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/supann-fd-conf.schema
