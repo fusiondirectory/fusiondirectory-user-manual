@@ -34,7 +34,7 @@ You can then install FusionDirectory by running:
 .. code-block:: shell
 
    yum install -y fusiondirectory
-   yum install -y fusiondirectory-selinux fusiondirectory-schema schema2ldif
+   yum install -y fusiondirectory-selinux fusiondirectory-schema
 
 .. warning::   
 
