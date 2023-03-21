@@ -2,4 +2,4 @@ Description
 ===========
 
 
-This plugin add support for webauthn protocol, using using hardware tokens and totp.
+This plugin adds support for webauthn protocol, using hardware tokens and totp.
