@@ -70,7 +70,7 @@ PHP configuration file (``php.ini``) must be adapted to reflect following variab
 
     expose_php = Off;
     implicit_flush = Off;
-    memory_limit = 128M ;      // max memory limit
+    memory_limit = 512M ;      // max memory limit
     max_execution_time = 30 ;  // not mandatory but adviced
     session.auto_start = off ;
 
