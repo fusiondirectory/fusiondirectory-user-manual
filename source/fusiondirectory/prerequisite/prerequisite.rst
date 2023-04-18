@@ -6,7 +6,6 @@ FusionDirectory is a Web application that will need:
 * a webserver;
 * PHP;
 * an ldap server;
-* perl
 
 Web server
 ----------
