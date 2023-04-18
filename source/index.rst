@@ -18,6 +18,7 @@ Contents:
    fusiondirectory/index.rst
    fusiondirectory-conf/index.rst
    fusiondirectory-tools/index.rst
+   fusiondirectory-webservice/index.rst
    support/index.rst
    security/index.rst
    authors/index.rst
