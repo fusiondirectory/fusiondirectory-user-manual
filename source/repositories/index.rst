@@ -11,5 +11,6 @@ We also provide enterprise packages for customers who have signed for a subscrip
    :maxdepth: 2
 
    debian.rst
+   ubuntu.rst
    centos.rst
    subscription.rst
