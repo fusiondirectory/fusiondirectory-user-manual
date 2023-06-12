@@ -31,6 +31,7 @@ Debian
    fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/internet2.schema
    fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/supann-2019-11-22.schema
    fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/supann-fd-conf.schema
+   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/fdFranceConnect.schema
 
 RHEL
 ^^^^
@@ -40,3 +41,4 @@ RHEL
    fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/internet2.schema
    fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/supann-2019-11-22.schema
    fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/supann-fd-conf.schema
+   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/fdFranceConnect.schema
