@@ -11,14 +11,14 @@ Add a file named **fusiondirectory-integrator.list** in /etc/apt/sources.list.d/
 .. code-block:: shell
 
    #fusiondirectory integrator
-   deb https://public.fusiondirectory.org/debian/fusiondirectory-integrator/ bulleyes main
+   deb https://public.fusiondirectory.org/debian/fusiondirectory-integrator/ bullseye main
 
 Add a file named **fusiondirectory-utilities.list** in /etc/apt/sources.list.d/
 
 .. code-block:: shell
 
    #fusiondirectory utilities
-   deb https://public.fusiondirectory.org/debian/fusiondirectory-utilities/ bulleyes main
+   deb https://public.fusiondirectory.org/debian/fusiondirectory-utilities/ bullseye main
 
 Add a file named **fusiondirectory-external-libraries.list** in /etc/apt/sources.list.d/
 
