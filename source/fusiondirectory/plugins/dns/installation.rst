@@ -28,15 +28,15 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/dns-fd-conf.schema
-   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/dns-fd.schema
-   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/dnszone.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/dns-fd-conf.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/dns-fd.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/dnszone.schema
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/dns-fd-conf.schema
-   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/dns-fd.schema
-   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/dnszone.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/dns-fd-conf.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/dns-fd.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/dnszone.schema

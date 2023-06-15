@@ -32,15 +32,15 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/fusioninventory-fd-conf.schema
-   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/fusioninventory-fd.schema
-   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/inventory-fd.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/fusioninventory-fd-conf.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/fusioninventory-fd.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/inventory-fd.schema
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/fusioninventory-fd-conf.schema
-   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/fusioninventory-fd.schema
-   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/inventory-fd.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/fusioninventory-fd-conf.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/fusioninventory-fd.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/inventory-fd.schema

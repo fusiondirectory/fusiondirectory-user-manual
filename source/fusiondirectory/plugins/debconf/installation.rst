@@ -32,8 +32,8 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/debconf-fd.schema
-   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/debconf.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/debconf-fd.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/debconf.schema
 
 
 RHEL
@@ -41,5 +41,5 @@ RHEL
 
 .. code-block:: bash
 
-   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/debconf-fd.schema
-   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/debconf.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/debconf-fd.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/debconf.schema
