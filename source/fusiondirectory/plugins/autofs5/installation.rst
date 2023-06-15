@@ -28,11 +28,11 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/autofs5-fd-conf.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/autofs5-fd-conf.schema
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/autofs5-fd-conf.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/autofs5-fd-conf.schema

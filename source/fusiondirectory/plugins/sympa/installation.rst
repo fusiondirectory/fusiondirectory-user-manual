@@ -32,13 +32,13 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/sympa-fd-conf.schema
-   fusiondirectory-schema-manager --install-schema /etc/ldap/schema/fusiondirectory/sympa-fd.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/sympa-fd-conf.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/sympa-fd.schema
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/sympa-fd-conf.schema
-   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/fusiondirectory/sympa-fd.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/sympa-fd-conf.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/sympa-fd.schema
