@@ -47,5 +47,5 @@ Add a file named **fusiondirectory-release.list** in /etc/apt/sources.list.d/
 .. code-block:: shell
 
    #fusiondirectory repository
-   deb https://public.fusiondirectory.org/debian/buster-fusiondirectory-release/ bullseye main
+   deb https://public.fusiondirectory.org/debian/bullseye-fusiondirectory-release/ bullseye main
 
