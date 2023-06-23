@@ -1,0 +1,38 @@
+Migrate FusionDirectory from 1.1 to 1.1.1
+=========================================
+
+Upgrade schema2ldif
+^^^^^^^^^^^^^^^^^^^
+
+For Jessie distribution add extra repository
+
+.. code-block:: shell
+
+   #fusiondirectory debian-extra repository
+
+   deb http://repos.fusiondirectory.org/fusiondirectory-extra/debian-jessie jessie main
+
+Update the package list and upgrade schema2ldif
+
+.. code-block:: shell
+
+   apt-get update
+   apt-get install schema2ldif
+
+Upgrade FusionDirectory first
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Upgrade FusionDirectory core package before other ones to avoid
+dependencies errors:
+
+.. code-block:: shell
+
+   apt-get install fusiondirectory
+
+Upgrade FusionDirectory schema package too.
+
+.. code-block:: shell
+
+   apt-get install fusiondirectory-schema
+
+Enjoy :)

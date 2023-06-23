@@ -1,0 +1,79 @@
+Migrate FusionDirectory from 1.1.1 to 1.2
+=========================================
+
+New gpg keys
+^^^^^^^^^^^^
+
+.. warning::
+
+    The gpg keys for FusionDirectory and Argonaut have been renewed
+    so you need to install the new keys for the packages to install
+    correctly
+
+    :ref:`old-gpg-keys-label`.
+
+
+Upgrade schema2ldif
+^^^^^^^^^^^^^^^^^^^
+
+For Jessie distribution add extra repository
+
+.. code-block:: shell
+
+   #fusiondirectory debian-extra repository
+
+   deb http://repos.fusiondirectory.org/fusiondirectory-extra/debian-jessie jessie main
+
+Update the package list and upgrade schema2ldif
+
+.. code-block:: shell
+
+   apt-get update
+   apt-get install schema2ldif
+
+Upgrade FusionDirectory first
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Upgrade FusionDirectory core package before other ones to avoid
+dependencies errors:
+
+Upgrade FusionDirectory core package before other ones to avoid
+dependencies errors:
+
+.. code-block:: shell
+
+   apt-get install fusiondirectory
+
+Upgrade FusionDirectory schema package too.
+
+.. code-block:: shell
+
+   apt-get install fusiondirectory-schema
+
+Upgrade of LDAP directory
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Upgrade core schema of FusionDirectory
+
+.. code-block:: shell
+
+   fusiondirectory-insert-schema -m /etc/ldap/schema/fusiondirectory/core-fd.schema
+
+if you are using the renater plugin you have to add its new schema
+
+.. code-block:: shell
+
+   fusiondirectory-insert-schema -m /etc/ldap/schema/fusiondirectory/renater-partage-fd.schema
+
+if you are using the sympa plugin you have to update its schema
+
+.. code-block:: shell
+
+   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/sympa-fd-conf.schema
+   
+   fusiondirectory-insert-schema -m /etc/ldap/schema/fusiondirectory/sympa-fd.schema
+
+In case you use system template that have a DNS tab, you need to remake
+it because the separator "\|" is changed to "^"
+
+Enjoy :)

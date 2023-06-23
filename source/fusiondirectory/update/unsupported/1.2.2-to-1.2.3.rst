@@ -1,0 +1,31 @@
+Migrate FusionDirectory from 1.2.2 to 1.2.3
+===========================================                                       
+
+New gpg keys
+^^^^^^^^^^^^
+
+.. warning::
+
+    The gpg keys for FusionDirectory and Argonaut have been renewed
+    so you need to install the new keys for the packages to install
+    correctly
+
+    :ref:`old-gpg-keys-label`.
+
+Upgrade FusionDirectory first
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Upgrade FusionDirectory core package before other ones to avoid
+dependencies errors:
+
+.. code-block:: shell
+
+   apt-get install fusiondirectory
+
+Upgrade FusionDirectory schema package too.
+
+.. code-block:: shell
+
+   apt-get install fusiondirectory-schema
+
+Enjoy :)
