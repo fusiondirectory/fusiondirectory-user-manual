@@ -1,14 +1,13 @@
 
 Contact Us
-==========          
+==========
 
-We are also contactable on :
+We are also contactable on:
 
-* Mailing list : `<https://lists.fusiondirectory.org/wws/lists>`__
-* IRC : #fusiondirectory on irc.freenode.org `<irc://irc.freenode.org/fusiondirectory>`__
+* Mailing list: `<https://lists.fusiondirectory.org/wws/lists>`__
+* IRC: #fusiondirectory on irc.libera.chat `<irc://irc.libera.chat/fusiondirectory>`__
 
 Follow Us
-         
-on twitter : http://twitter.com/#!/fusiondirectory
 
-on linkedin : http://www.linkedin.com/ group FusionDirectory
+* On twitter: https://twitter.com/fusiondirectory
+* On linkedin: https://www.linkedin.com/company/fusiondirectory

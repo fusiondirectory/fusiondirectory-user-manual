@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to FusionDirectory User Manual's documentation!
-=======================================================
+Introduction to FusionDirectory
+===============================
 
 .. image:: /_static/images/fd_logo.png
    :alt: FusionDirectory
@@ -15,12 +15,15 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   whatis/fusiondirectory.rst
-   prerequisite/prerequisite.rst
-   install/index
-   update/index
-   plugins/index
-   license/index.rst
+   fusiondirectory/index.rst
+   fusiondirectory-conf/index.rst
+   fusiondirectory-tools/index.rst
+   schema2ldif/index.rst
+   argonaut/index.rst
+   support/index.rst
+   security/index.rst
+   authors/index.rst
    contact/contact.rst
+   code-of-conduct.rst
 
 .. include:: globals.rst
