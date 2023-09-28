@@ -9,34 +9,64 @@ This tool is designed to help install FusionDirectory plugin referenced in the F
 Options
 -------
 
---register-plugin
-	 This option allows you to register a plugin within LDAP without copying the required files 
-	 of the plugin itself. 
+**--register-plugin**
 
---unregister-plugin
-	 This option allows you to un-register a plugin already registered within your LDAP.
+Register a plugin within LDAP without copying the required files of the plugin itself. 
 
---install-plugin
-	 This option allows you to install the required files for your plugin in correct directories and
-	 register the plugin within LDAP.
+**--unregister-plugin**
 
---remove-plugin
-	 This option allows you to remove the registered plugin and its related files. 
+Un-register a plugin already registered within your LDAP.
 
---list-plugins
-	 This option allows you to list the registered plugins.
+**--install-plugin**
+
+Install the required files for your plugin in correct directories an register the plugin within LDAP.
+
+**--remove-plugin**
+
+Remove the registered plugin and its related files. 
+
+**--list-plugins**
+
+List the registered plugins.
 
 Examples
 --------
 
+Register a plugin installed
+
+.. code-block:: shell
+   
+    fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/alias/description.yaml
+    Installing : cn=alias,ou=pluginManager,dc=formation-fusiondirectory,dc=org ..
+
+Unregister a plugin installed 
+
+.. code-block:: shell
+
+    fusiondirectory-plugins-manager --unregister-plugin alias
+    alias plugin has been successfully unregistered
+
+List plugins installed into FusionDirectory
+
+.. code-block:: shell
+
+    fusiondirectory-plugins-manager --list-plugins
+    Number of plugins installed : 1
+    Plugin : alias is installed
+
+.. note::
+
+  Those two commands are for plugin installed from outside source like the marketplace or the git of a developer
+    
 Install a plugin within FusionDirectory.
 
 .. code-block:: shell
    
-   fusiondirectory-plugins-manager --install-plugin /path/to/plugin
+   fusiondirectory-plugins-manager --install-plugin notes
 
-Register a plugin within FusionDirectory's LDAP.
+Remove a plugin within FusionDirectory.
 
 .. code-block:: shell
    
-   fusiondirectory-plugins-manager --register-plugin /path/to/plugin
+   fusiondirectory-plugins-manager --remove-plugin notes
+   sorbonne plugin has been successfully removed.    
