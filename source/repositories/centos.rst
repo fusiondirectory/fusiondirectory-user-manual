@@ -52,3 +52,15 @@ Add a file named **fusiondirectory-release.repo** in /etc/yum.repos.d/
   gpgcheck=1
   gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-FUSIONDIRECTORY
 
+To install FusionDirectory Orchestrator
+
+Add a file named **fusiondirectory-orchestrator-release.repo** in /etc/yum.repos.d/
+
+.. code-block:: shell
+
+  [fusiondirectory-orchestrator-release]
+  name=Fusiondirectory Packages for CentOS 7
+  baseurl=https://public.fusiondirectory.org/centos/centos7-fusiondirectory-rochestrator-release/RPMS
+  enabled=1
+  gpgcheck=1
+  gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-FUSIONDIRECTORY

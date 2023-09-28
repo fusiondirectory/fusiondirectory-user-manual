@@ -26,8 +26,7 @@ Add a file named **fusiondirectory-external-libraries.list** in /etc/apt/sources
 
    #fusiondirectory libraries
    deb https://public.fusiondirectory.org/debian/fusiondirectory-external-libraries/ bullseye main
-
-
+ 
 Debian Buster
 ^^^^^^^^^^^^^
 
@@ -48,4 +47,13 @@ Add a file named **fusiondirectory-release.list** in /etc/apt/sources.list.d/
 
    #fusiondirectory repository
    deb https://public.fusiondirectory.org/debian/bullseye-fusiondirectory-release/ bullseye main
+
+To install FusionDirectory Orchestrator
+
+Add a file named **fusiondirectory-orchestrator-release.list** in /etc/apt/sources.list.d/
+
+.. code-block:: shell
+
+   #fusiondirectory Orchestrator repository
+   deb https://public.fusiondirectory.org/debian/bullseye-orchestrator-release/ bullseye main
 
