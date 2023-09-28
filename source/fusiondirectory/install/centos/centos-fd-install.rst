@@ -50,10 +50,19 @@ We can easily do this by running:
 
 .. code-block:: shell
 
-   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/cosine.schema
-   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/inetorgperson.schema
-   fusiondirectory-schema-manager --install-schema /etc/openldap/schema/nis.schema
-   fusiondirectory-schema-manager
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/cosine.schema
+   
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/inetorgperson.schema
+   
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/nis.schema
+   
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/core-fd.schema
+
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/core-fd-conf.schema
+
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/ldapns.schema
+
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/template-fd.schema
 
 Now we just need to restart apache:
 
