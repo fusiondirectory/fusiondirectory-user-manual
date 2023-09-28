@@ -21,10 +21,6 @@ PHP
 
 As of 1.4 release, FusionDirectory requires `PHP <https://www.php.net>`_ 7.3 or 7.4.
 
-.. note::
-
-   We recommand to use the most recent stable PHP release for better performances.
-
 Mandatory extensions
 ^^^^^^^^^^^^^^^^^^^^
 
