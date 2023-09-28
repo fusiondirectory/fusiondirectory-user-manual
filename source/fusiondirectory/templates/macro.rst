@@ -27,6 +27,10 @@ There are some special variables which may also be used instead of an LDAP attri
 * **%callerSN%** gives the SN of the author of the modification
 * **%callerGIVENNAME%** gives the GIVENNAME of the author of the modification
 
+There is also a macro that is used to ask a value in a field when we use a template
+
+* %askme% when put in a template this field will appear blank in form and must be filled by the user
+
 Some modifiers do not even require an LDAP attribute name as they generate a value on their own, such as **r** or **d**.
    
 Modifiers
