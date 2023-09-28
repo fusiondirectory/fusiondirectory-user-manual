@@ -13,11 +13,9 @@ Debian Buster     supported
 Debian Bullseyes  supported
 ----------------- ------------------------
 Ubuntu 16.04 LTS  not supported
-Ubuntu 18.04 LTS  supported ²
+Ubuntu 18.04 LTS  not supported
 Ubuntu 20.04 LTS  supported
 ----------------- ------------------------
 Centos 7          supported
 Centos 8          not supported
 ================= ========================
-
-² need to add the ppa of the php ubuntu maintener
