@@ -217,3 +217,28 @@ Dashboard expired users
    :alt: Image of Dashboard expired users menu in FusionDirectory   
    
 * **Number of days**: Number of days before expiration needed for an account to show in the dashboard not expired accounts list.
+
+Mail Template
+^^^^^^^^^^^^^
+
+.. image:: images/configuration-mail-template.png
+   :alt: Image of Mail Template OU configuration within FusionDirectory
+
+* **Mail Template RDN**: Allows the configuration of the proper OU for mail template.
+
+Tasks
+^^^^^
+Click on Tasks tab.
+
+.. image:: images/configuration-tasks-tab.png
+   :alt: TAB menu to be clicked to access Tasks configuration.
+
+.. image:: images/configuration-tasks-rdn.png
+   :alt: Image of Tasks configuration RDN within FusionDirectory
+
+* **Tasks RDN**: Allows the configuration of the proper OU for tasks.
+
+.. image:: images/configuration-tasks-anti-spam.png
+   :alt: Images of Tasks configuration for anti-spam within FusionDirectory
+
+* **Mail Anti-Spam Configuration**: Allows to setup the interval and maximum emails to be sent per process.

@@ -14,3 +14,6 @@ FusionDirectory Core
    aclroles
    acls
    dashboard
+   mailTemplate
+   tasks
+   tasksDashboard
