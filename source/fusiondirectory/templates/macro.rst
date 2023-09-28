@@ -81,6 +81,8 @@ The **d** modifier can be used to generate dates and times.
 * First parameter is date string (defaults to “now”)
 * Second one is date format (defaults to “d.m.Y”, to be used in date fields).
 
+By default, the d modifier use %d[now,d.m.Y]|% but if you only want the year you can use %d[now,Y]|%
+
 Examples:    
 
 
@@ -90,7 +92,7 @@ Examples:
    %d[tomorrow]|%                    16.03.2017
    %d[today+6days]|%                 21.03.2017
    %d[now,l jS \of F Y h:i:s A]|%    Wednesday 15th of March 2017 02:12:18 PM
-   
+
 as POSIX date fields expects a specific format you need to add 'epoch' as second parameter to the d modifier.
 
 .. code-block:: bash
