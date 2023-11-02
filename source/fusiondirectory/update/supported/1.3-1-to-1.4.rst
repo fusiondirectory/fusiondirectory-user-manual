@@ -12,11 +12,13 @@ New Depot Configuration
 
    :ref:`fd-debian-repository-label`.
 
+   :ref:`fd-ubuntu-repository-label`.
+
    :ref:`fd-rpm-repository-label`.
 
 .. warning::
 
-    The gpg keys for FusionDirectory and Argonaut have been renewed
+    The gpg keys for FusionDirectory have been renewed
     so you need to install the new keys for the packages to install
     correctly
 
