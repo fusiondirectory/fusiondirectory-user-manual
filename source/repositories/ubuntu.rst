@@ -20,6 +20,13 @@ Add a file named **fusiondirectory-utilities.list** in /etc/apt/sources.list.d/
    #fusiondirectory utilities
    deb https://public.fusiondirectory.org/debian/fusiondirectory-utilities/ bullseye main
 
+Add a file named **fusiondirectory-tools.list** in /etc/apt/sources.list.d/
+
+.. code-block:: shell
+
+   #fusiondirectory tools
+   deb https://public.fusiondirectory.org/debian/fusiondirectory-tools/ bullseye main
+
 Add a file named **fusiondirectory-external-libraries.list** in /etc/apt/sources.list.d/
 
 .. code-block:: shell
