@@ -28,13 +28,13 @@ We can easily do this by running:
 
 .. code-block:: shell
 
-   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/core-fd.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/core-fd.schema
 
-   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/core-fd-conf.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/core-fd-conf.schema
 
-   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/ldapns.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/ldapns.schema
 
-   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/template-fd.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/template-fd.schema
 
 You should see the FusionDirectory setup page come up by going to:
 
