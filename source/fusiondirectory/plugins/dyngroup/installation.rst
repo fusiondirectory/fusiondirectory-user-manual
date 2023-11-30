@@ -9,8 +9,8 @@ Debian
 
 .. code-block:: bash
 
-   apt-get install fusiondirectory-plugin-dyngroup
-
+   apt-get install fusiondirectory-plugin-dyngroups
+   
 RHEL
 ^^^^
 
