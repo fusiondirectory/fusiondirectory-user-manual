@@ -14,7 +14,7 @@ Add a file named **fusiondirectory-release.list** in /etc/apt/sources.list.d/
 .. code-block:: shell
 
    #fusiondirectory repository
-   deb https://public.fusiondirectory.org/debian/buster-fusiondirectory-release/ buster main
+   deb https://public.fusiondirectory.org/debian/archive/buster-fusiondirectory-release/ buster main
 
 Debian Bullseye
 ^^^^^^^^^^^^^^^
@@ -24,4 +24,4 @@ Add a file named **fusiondirectory-release.list** in /etc/apt/sources.list.d/
 .. code-block:: shell
 
    #fusiondirectory repository
-   deb https://public.fusiondirectory.org/debian/buster-fusiondirectory-release/ buster main
+   deb https://public.fusiondirectory.org/debian/archive/buster-fusiondirectory-release/ buster main
