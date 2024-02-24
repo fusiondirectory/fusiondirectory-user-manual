@@ -13,7 +13,6 @@ FusionDirectory Core
    configurablelist
    aclroles
    acls
-   dashboard
    mailTemplate
    tasks
    tasksDashboard
