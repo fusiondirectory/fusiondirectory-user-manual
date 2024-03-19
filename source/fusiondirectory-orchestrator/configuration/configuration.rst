@@ -12,10 +12,10 @@ Configuration file
 ^^^^^^^^^^^^^^^
 .. code-block:: shell
 	
-  LDAP_HOST="localhost"
+  FD_LDAP_MASTER_URL="ldaps://ldap.fusiondirectory.org"
 
 Required in order to connect to the proper host.
-FQDN or IP must be provided.
+FQDN or IP must be provided with ldap(s) to secure the connection.
 
 .. code-block:: shell
 	
@@ -31,9 +31,16 @@ Required password to authenticate LDAP
 
 .. code-block:: shell
 	
-  LDAP_OU_USER="ou=people,dc=fusiondirectory"
+  LDAP_OU_DSA="ou=dsa,dc=fusiondirectory,dc=org"
 
-Required to ease the research of the branch people by endpoints.
+Required to ease the research of the branch DSA by endpoints.
+
+.. code-block:: shell
+
+  LDAP_BASE="dc=fusiondirectory,dc=org"
+
+Required to operate with ldap libraries.
+
 
 [JWT token settings]
 ^^^^^^^^^^^^^^^^^^^^
@@ -45,6 +52,18 @@ Required to ease the research of the branch people by endpoints.
 	SECRET_KEY="256 bit key"
 
 Required to secure and validate the generation of access and refresh tokens.
+
+.. code-block:: shell
+
+	TOKEN_EXPIRY="300"
+
+Required to limit the availability of an issued token. In seconds.
+
+.. code-block:: shell
+
+	REFRESH_EXPIRY="432000"
+
+Required to limit the availability of an issued refresh token. In seconds.
 
 [SMTP server settings]
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -78,6 +97,33 @@ Please note the importance of lowercase in 'ssl' or 'tls'.
   MAIL_PORT="SMTP port number"
 
 The TCP/UDP port number of the SMTP server.(Example: SSL 465 / TLS 586).
+
+[DSA Login Information]
+^^^^^^^^^^^^^^^^^^^^^^^
+.. code-block:: shell
+
+  DSA_LOGIN="DSA Login Name"
+  DSA_PASS="DSA Password"
+
+The DSA login that should be used to interact with LDAP.
+
+.. code-block:: shell
+
+  ORCHESTRATOR_API_URL="https://orchestrator.fusiondirectory.org"
+
+The REST API URL in HTTP(s). Required by the fd-orchestrator-client.
+
+[WEB Service FusionDirectory]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. code-block:: shell
+
+  FUSION_DIRECTORY_API_URL="https://fd.fusiondirectory.org/rest.php/v1"
+  WEB_LOGIN="weblogin_username"
+  WEB_PASS="weblogin_password"
+
+Information related to the webservice of fusiondirectory. This is required for fusiondirectory-orchestrator
+to activate specific actions within FusionDirectory WEB.
+
 
 .. Note::
 

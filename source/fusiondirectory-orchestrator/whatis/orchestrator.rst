@@ -24,7 +24,9 @@ Tasks execution
 ^^^^^^^^^^^^^^^
 
 | One of the main aspect of FusionDirectory Orchestrator is to allow processing of some desired tasks.
-| In case of a task of type mail, the list of related emails will be sent if scheduled is matched.
+| In case of a task of type "Mail", the list of related emails will be sent if scheduled is matched.
+| In case of a task of type "Life Cycle", the specialized supann attributes will be updated accordingly.
+| In case of a task of type "Notifications", if an attributes has been modified, emails will be sent out.
 
 JWT authentication
 ^^^^^^^^^^^^^^^^^^

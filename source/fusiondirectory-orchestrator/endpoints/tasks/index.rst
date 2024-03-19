@@ -1,5 +1,5 @@
-Orchestrator Mail Task
-======================
+Orchestrator End Points
+=======================
 
 .. toctree::
    :maxdepth: 2
