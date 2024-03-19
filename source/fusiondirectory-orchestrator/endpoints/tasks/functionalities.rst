@@ -2,7 +2,8 @@
 Functionalities
 ===============
 
-| E-mails are being sent based on the schedule of the processed task.
+| Tasks are being processed based on their set schedule.
+| Two official tasks exists in CORE : "Mail" and "LifeCycle"
 
 How it works
 ------------
@@ -14,50 +15,57 @@ Examples
 
 .. note::
 
-  | An orchestrator client is being developped in order to automate some of the below examples.
-  | It will allow easier management of repeated tasks within a CRON job.
+  | An orchestrator client is now available, you may now manage your repeated tasks within a simple CRON job.
+  | Use option -v (--verbose) outside a CRON job to output the result of your command.
 
-
-Get access-token
-""""""""""""""""
-
-.. code-block:: shell
-
-   # Login and get access-token
-   curl -X POST -H "Content-Type: application/json" https://example.org/orchestrator/api/login -d '{"username":"admin","password":"secret"}'
-
-Get all mail tasks
-""""""""""""""""""
+Get all tasks available
+"""""""""""""""""""""""
 
 .. code-block:: shell
 
-   # Get all mail tasks using the access-token
-   curl -X GET -H "Content-Type: application/json" -H "Authorization: Bearer {token}"  https://example.org/orchestrator/api/tasks/mail
+  fusiondirectory-orchestrator-client -t (--tasks)
 
-Send e-mails
-""""""""""""
 
-.. code-block:: shell
-
-   # Login and get access-token
-   curl -X PATCH -H "Content-Type: application/json" -H "Authorization: Bearer {token}"  https://example.org/orchestrator/api/tasks/mail
-
-Refresh access token
-""""""""""""""""""""
+Execute a task of type "Mail"
+"""""""""""""""""""""""""""""
 
 .. code-block:: shell
 
-    # Refresh access token with refresh token
-    curl -X POST -H "Content-Type: application/json" http://192.168.1.100:8080/orchestrator/api/refresh -d '{"token":"refresh-token"}'
+  fusiondirectory-orchestrator-client -m (--emails)
+
+Execute a task of type "Life Cycle"
+"""""""""""""""""""""""""""""""""""
+
+.. code-block:: shell
+
+  fusiondirectory-orchestrator-client -c (--lifeCycle)
+
+Activate all cyclic tasks
+"""""""""""""""""""""""""
+
+.. code-block:: shell
+
+  fusiondirectory-orchestrator-client -a (--activateCyclicTasks)
+
+Remove all completed sub-tasks
+""""""""""""""""""""""""""""""
+
+.. code-block:: shell
+
+  fusiondirectory-orchestrator-client -r (--remove)
+
+.. note::
+
+  | The client can be used with option -h (--help) in order to have more details on some commands.
 
 Conditions
 ----------
 
-In order to process mail tasks, a few conditions are analysed:
+In order to process any tasks, a few conditions are analysed:
 
 - Schedule for the tasks.
-- A max-emails threshold to be sent.
-- A time interval between mail tasks processing.
+- New members logic.
+- Specialized configuration for the task at hand, either in the task tab itself or within its backend configuration.
 
 .. note::
-   The settings for above conditions are found within FusionDirectory configuration menu.
+   The settings for above conditions may be found within FusionDirectory configuration menu.

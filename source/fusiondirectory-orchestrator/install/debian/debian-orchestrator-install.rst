@@ -30,9 +30,5 @@ We can easily do this by running:
 
    fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/fusiondirectory-orchestrator.schema
 
-You should now be able to use Orchestrator API by visiting :
-
-http://SERVER-IP/orchestrator/api
-
 
 
