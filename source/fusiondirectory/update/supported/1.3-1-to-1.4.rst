@@ -146,7 +146,7 @@ if you are using the personal plugin you have to update is schema
 Check for deprecated attributes and objectClasses in your LDAP
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- **fusiondirectory-configuration-manager --list-deprecated** to list deprecated attributes and objectclasses
+- **fusiondirectory-migration-manager --list-deprecated** to list deprecated attributes and objectclasses
 
 Deprecated attributes:
 
