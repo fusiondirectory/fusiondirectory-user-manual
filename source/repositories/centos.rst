@@ -16,13 +16,13 @@ Add a file named **fusiondirectory-integrator.repo** in /etc/yum.repos.d/
    gpgcheck=1
    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-FUSIONDIRECTORY
 
-Add a file named **fusiondirectory-utilities.repo** in /etc/yum.repos.d/
+Add a file named **fusiondirectory-tools.repo** in /etc/yum.repos.d/
 
 .. code-block:: shell
 
-   [fusiondirectory-Utilities]
+   [fusiondirectory-tools]
    name=Fusiondirectory Utilities Packages for CentOS 7
-   baseurl=https://public.fusiondirectory.org/centos/fusiondirectory-utilities/RPMS
+   baseurl=https://public.fusiondirectory.org/centos/fusiondirectory-tools/RPMS
    enabled=1 
    gpgcheck=1
    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-FUSIONDIRECTORY
@@ -31,7 +31,7 @@ Add a file named **fusiondirectory-external-libraries.repo** in /etc/yum.repos.d
 
 .. code-block:: shell
 
-   [fusiondirectory-External-Libraries]
+   [fusiondirectory-external-libraries]
    name=Fusiondirectory External Libraries Packages for CentOS 7
    baseurl=https://public.fusiondirectory.org/centos/fusiondirectory-external-libraries/RPMS
    enabled=1
