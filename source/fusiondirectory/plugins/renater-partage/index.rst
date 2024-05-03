@@ -10,5 +10,6 @@ FusionDirectory Plugins Renater Partage
 
    description
    installation
+   configuration
    functionalities
    attributes
