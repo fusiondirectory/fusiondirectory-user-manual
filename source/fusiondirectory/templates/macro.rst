@@ -26,6 +26,7 @@ There are some special variables which may also be used instead of an LDAP attri
 * **%callerUID%** gives the UID of the author of the modification
 * **%callerSN%** gives the SN of the author of the modification
 * **%callerGIVENNAME%** gives the GIVENNAME of the author of the modification
+* **%callerMAIL%** gives the MAIL of the author of the modification
 
 There is also a macro that is used to ask a value in a field when we use a template
 
