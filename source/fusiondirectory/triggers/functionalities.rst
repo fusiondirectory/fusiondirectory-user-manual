@@ -59,6 +59,7 @@ Special variables
 * **%callerUID%** gives the UID of the author of the modification
 * **%callerSN%** gives the SN of the author of the modification
 * **%callerGIVENNAME%** gives the GIVENNAME of the author of the modification
+* **%callerMAIL%** gives the MAIL of the author of the modification
 * **%dn%** gives the dn of the modified object
 * **%location%** gives the name of the location of the LDAP
 * **%modifiedLdapAttrs%** lists the attributes modified by the modification (this is an array, see :ref:`array-modifiers`)
