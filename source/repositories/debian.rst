@@ -55,5 +55,4 @@ Add a file named **fusiondirectory-orchestrator-release.list** in /etc/apt/sourc
 .. code-block:: shell
 
    #fusiondirectory Orchestrator repository
-   deb https://public.fusiondirectory.org/debian/bullseye-orchestrator-release/ bullseye main
-
+   deb https://public.fusiondirectory.org/debian/bullseye-fusiondirectory-orchestrator-release/ bullseye main
