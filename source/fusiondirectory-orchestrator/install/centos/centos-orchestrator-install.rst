@@ -15,6 +15,7 @@ Install FusionDirectory Orchestrator
     You must at least be running PHP 7.4
 
 .. code-block:: shell
+
     yum-config-manager --enable remi-php74
 
 You can then install Orchestrator by running: 
