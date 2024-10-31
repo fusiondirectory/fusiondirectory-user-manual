@@ -10,7 +10,7 @@ Debian
 .. code-block:: bash
 
    apt-get install fusiondirectory-plugin-ipam
-   apt-get install fusiondirectory-plugin-ipam-fd.schema
+   apt-get install fusiondirectory-plugin-ipam-schema
 
 RHEL
 ^^^^
@@ -18,7 +18,7 @@ RHEL
 .. code-block:: bash
 
    yum install fusiondirectory-plugin-ipam
-   yum install fusiondirectory-plugin-ipam-fd.schema
+   yum install fusiondirectory-plugin-ipam-schema
 
 Install schemas
 ---------------
