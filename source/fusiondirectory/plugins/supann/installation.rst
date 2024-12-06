@@ -42,3 +42,10 @@ RHEL
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/supann-2019-11-22.schema
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/supann-fd-conf.schema
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/fdFranceConnect.schema
+
+Register the plugin
+-------------------
+
+.. code-block:: bash
+ 
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/supann/description.yaml

@@ -38,3 +38,10 @@ RHEL
 
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/community-fd.schema
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/community-fd-conf.schema
+
+Register the plugin
+-------------------
+
+.. code-block:: bash
+ 
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/community/description.yaml

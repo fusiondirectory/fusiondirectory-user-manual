@@ -18,3 +18,9 @@ RHEL
 
    yum install fusiondirectory-plugin-ldapmanager
    
+Register the plugin
+-------------------
+
+.. code-block:: bash
+ 
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/ldapmanager/description.yaml

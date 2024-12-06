@@ -42,3 +42,10 @@ RHEL
 
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/samba-fd-conf.schema
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/samba.schema
+
+Register the plugin
+-------------------
+
+.. code-block:: bash
+ 
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/samba/description.yaml

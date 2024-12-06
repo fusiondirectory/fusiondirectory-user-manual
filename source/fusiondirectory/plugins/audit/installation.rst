@@ -39,3 +39,9 @@ RHEL
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/audit-fd.schema
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/audit-fd-conf.schema
 
+Register the plugin
+-------------------
+
+.. code-block:: bash
+ 
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/audit/description.yaml

@@ -42,3 +42,10 @@ RHEL
 
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/sudo-fd-conf.schema
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/sudo.schema
+
+Register the plugin
+-------------------
+
+.. code-block:: bash
+ 
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/sudo/description.yaml

@@ -36,3 +36,11 @@ RHEL
 .. code-block:: bash
 
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/sinaps-fd-conf.schema
+
+Register the plugin
+-------------------
+
+.. code-block:: bash
+ 
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/sinaps/description.yaml
+   

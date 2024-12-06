@@ -36,3 +36,10 @@ RHEL
 .. code-block:: bash
 
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/schac-20150413-1.5.0.schema
+
+Register the plugin
+-------------------
+
+.. code-block:: bash
+ 
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/schac/description.yaml

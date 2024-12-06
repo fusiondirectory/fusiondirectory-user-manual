@@ -42,3 +42,11 @@ RHEL
 
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/quota-fd.schema
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/quota.schema
+
+Register the plugin
+-------------------
+
+.. code-block:: bash
+ 
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/quota/description.yaml
+   
