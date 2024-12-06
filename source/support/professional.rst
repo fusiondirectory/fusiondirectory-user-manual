@@ -10,22 +10,12 @@ Why choose FusionDirectory Subscriptions ?
 * We support and maintains OpenLDAP architectures for various entities from small to very big on a daily basis
 * We helped maintain and develop the `PHP LDAP`_ module
 
-You are sure to get :
+More information on our subscriptions
 
-* Answers to your questions about FusionDirectory by phone, email or web,
-* Packages containing bug fixes between two stable versions
-* Assistance for the development of FusionDirectory modules tailored to your needs,
-* Assistance on the update of FusionDirectory
-* A technician on site if the situation requires.
+* Get `service subscriptions for your FusionDirectory`_ instance
+* Get `trainings for your daily use`_
 
-Support Options :
+.. _service subscriptions for your FusionDirectory : https://www.fusiondirectory.org/en/iam-tool-service-subscriptions/
+.. _trainings for your daily use : https://www.fusiondirectory.org/en/trainings/
 
-* Get `Subscriptions for your FusionDirectory`_ instance
-* Get `Training for your daily use`_ of FusionDirectory
-* Get `Subscriptions on specialized plugins`_ of FusionDirectory
-
-.. _FusionDirectory : https://www.fusiondirectory.org/
-.. _Subscriptions for your FusionDirectory : https://www.fusiondirectory.org/en/fusiondirectory-subscription/
-.. _Training for your daily use : https://www.fusiondirectory.org/en/training/
-.. _Subscriptions on specialized plugins : https://www.fusiondirectory.org/en/subscriptions-fusiondirectory-plus/
 .. _PHP LDAP : https://www.php.net/manual/en/book.ldap.php
