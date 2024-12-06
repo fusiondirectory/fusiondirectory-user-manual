@@ -10,8 +10,6 @@ New gpg keys
     so you need to install the new keys for the packages to install
     correctly
 
-    :ref:`old-gpg-keys-label`.
-
 
 Upgrade schema2ldif
 ^^^^^^^^^^^^^^^^^^^
