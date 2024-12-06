@@ -3,11 +3,11 @@
 Getting the official GPG keys to active package signature
 ---------------------------------------------------------
 
-Our packages for Debian and Centos are signed with the official gpg
+Our packages for Debian, Ubuntu and Centos are signed with the official gpg
 key of the project.
 
-Getting the new official gpg key
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Getting the official gpg key
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Asking the key from the keyserver
 
