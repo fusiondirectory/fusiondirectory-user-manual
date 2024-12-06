@@ -36,3 +36,10 @@ RHEL
 .. code-block:: bash
 
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/dsa-fd-conf.schema
+
+Register the plugin
+-------------------
+
+.. code-block:: bash
+ 
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/dsa/description.yaml

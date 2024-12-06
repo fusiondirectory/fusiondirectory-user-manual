@@ -19,3 +19,9 @@ RHEL
    yum install fusiondirectory-plugin-certificates
    
 
+Register the plugin
+-------------------
+
+.. code-block:: bash
+ 
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/certificates/description.yaml

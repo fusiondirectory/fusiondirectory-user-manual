@@ -40,3 +40,11 @@ Save the file in /etc/openldap/schema/.
 .. code-block:: bash
 
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/freeradius.schema
+
+Register the plugin
+-------------------
+
+.. code-block:: bash
+ 
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/freeradius/description.yaml
+   
