@@ -49,12 +49,17 @@ One of the core functionalities of the **FusionDirectory Orchestrator** is the e
 
 The **Orchestrator client** provides a user-friendly interface to activate and manage these tasks, allowing for seamless workflow execution and efficient task orchestration across the system.
 
-JWT authentication
-^^^^^^^^^^^^^^^^^^
+JWT Authentication
+^^^^^^^^^^^^^^^^^^^
 
-| It was decided to enhance our authentication mechanism and use the JWT methodology.
-| Allowing after proper username/password authentication the reception of an access and refresh token.
+To strengthen our authentication mechanism, we have adopted the **JWT (JSON Web Token)** methodology.
 
-The access token is to be used for any operations on FusionDirectory Orchestrator endpoints. 
+After a successful username/password authentication, the user receives two tokens:
 
+- **Access Token**:
+  This token is used to authorize and perform operations on FusionDirectory Orchestrator endpoints.
 
+- **Refresh Token**:
+  This token is used to obtain a new access token when the current one expires, ensuring seamless and secure access without requiring repeated login attempts.
+
+This approach enhances security while simplifying the authentication process, enabling efficient and secure communication with the Orchestrator API.
