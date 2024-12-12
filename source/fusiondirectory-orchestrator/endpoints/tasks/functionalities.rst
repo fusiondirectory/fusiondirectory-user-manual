@@ -1,72 +1,90 @@
-
 Functionalities
 ===============
 
-Every tasks we have developed have a specific endpoitns associated.
+Each task we have developed has a specific associated endpoint. Tasks are processed based on their configured schedules.
 
-Tasks are being processed based on their set schedule.
-
-How it works
+How It Works
 ------------
 
-Asking the proper endpoints with the allowed HTTP methods will trigger the required action.
+Triggering the appropriate endpoint using the allowed HTTP methods will execute the desired action.
 
 Examples
 --------
 
 .. note::
+   | An Orchestrator client is now available, allowing you to manage your recurring tasks easily within a simple CRON job.
+   | Use the `--verbose` option outside of a CRON job to display the result of your command.
 
-  | An orchestrator client is now available, you may now manage your repeated tasks within a simple CRON job.
-  | Use option -v (--verbose) outside a CRON job to output the result of your command.
-
-Get all tasks available
+Get All Available Tasks
 """""""""""""""""""""""
 
 .. code-block:: shell
 
-  fusiondirectory-orchestrator-client -t (--tasks)
+   fusiondirectory-orchestrator-client --tasks
 
-
-Execute a task of type "Mail"
+Execute a Task of Type "Mail"
 """""""""""""""""""""""""""""
 
 .. code-block:: shell
 
-  fusiondirectory-orchestrator-client -m (--emails)
+   fusiondirectory-orchestrator-client --emails
 
-Execute a task of type "Life Cycle"
+Execute a Task of Type "Life Cycle"
 """""""""""""""""""""""""""""""""""
 
 .. code-block:: shell
 
-  fusiondirectory-orchestrator-client -c (--lifeCycle)
+   fusiondirectory-orchestrator-client --lifecycle
 
-Activate all cyclic tasks
+Execute a Task of Type "Notifications"
+"""""""""""""""""""""""""""""""""""""
+
+.. code-block:: shell
+
+   fusiondirectory-orchestrator-client --notifications
+
+Execute a Task of Type "Reminder"
+""""""""""""""""""""""""""""""""
+
+.. code-block:: shell
+
+   fusiondirectory-orchestrator-client --reminder
+
+Activate All Cyclic Tasks
 """""""""""""""""""""""""
 
 .. code-block:: shell
 
-  fusiondirectory-orchestrator-client -a (--activateCyclicTasks)
+   fusiondirectory-orchestrator-client --activate
 
-Remove all completed sub-tasks
+Remove All Completed Sub-Tasks
 """"""""""""""""""""""""""""""
 
 .. code-block:: shell
 
-  fusiondirectory-orchestrator-client -r (--remove)
+   fusiondirectory-orchestrator-client --remove
+
+Execute a Task of Type "Audit"
+"""""""""""""""""""""""""""""
+
+.. code-block:: shell
+
+   fusiondirectory-orchestrator-client --audit
+
+This command manages audit logs, allowing you to delete historical logs based on the retention period defined in the configuration.
+
 
 .. note::
-
-  | The client can be used with option -h (--help) in order to have more details on some commands.
+   The client can be used with the `--help` option to obtain more details about the available commands.
 
 Conditions
 ----------
 
-In order to process any tasks, a few conditions are analysed:
+To process any task, the following conditions are evaluated:
 
-- Schedule for the tasks.
-- New members logic.
-- Specialized configuration for the task at hand, either in the task tab itself or within its backend configuration.
+- The task's schedule.
+- The logic for new members.
+- Specialized configuration for the task, either within the task tab itself or through its backend configuration.
 
 .. note::
-   The settings for above conditions may be found within FusionDirectory configuration menu.
+   These settings can be accessed through the **FusionDirectory Configuration Menu**.
