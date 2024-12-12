@@ -2,8 +2,9 @@
 Functionalities
 ===============
 
-| Tasks are being processed based on their set schedule.
-| Two official tasks exists in CORE : "Mail" and "LifeCycle"
+Every tasks we have developed have a specific endpoitns associated.
+
+Tasks are being processed based on their set schedule.
 
 How it works
 ------------

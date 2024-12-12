@@ -1,32 +1,42 @@
 Description
 ===========
 
-Tasks is an endpoints of Orchestrator.
+The Orchestrator provides a primary endpoint, referred to as **tasks**, which accepts multiple arguments for execution.
+New task objects can be added as plugins and invoked as arguments to this endpoint.
 
 .. note::
-  It is reachable via **https://your_fqdn/api/tasks/**
+   The **tasks** endpoint is accessible via **https://your_fqdn/api/tasks/**.
 
 Arguments
 ---------
 
-- Mail 
+The **tasks** endpoint supports multiple arguments. Below is a list of the officially supported arguments:
 
-You can :
- - Retrieve all tasks of type mail.
- - Process all tasks of type mail and forward the related e-mails.
+.. note::
+   Each official plugin within **tasks** can be passed as an argument to the **tasks** endpoint. Additionally, a client is available within **FusionDirectory-Tools** to simplify interactions.
 
-- lifeCycle
+- **login**
+   This endpoint facilitates authentication and provides the access and refresh tokens required for further communication with subsequent endpoints.
 
-You can :
- - Retrieve all tasks of type "life cycle".
- - Process all tasks of type "life cycle" and updates the related configured attributes.
+- **tasks/mail**
+   Invoking this endpoint triggers the execution of mail task objects defined within **FusionDirectory**.
+   It processes the results from the mail server and reports the status to the associated tasks.
 
-- activateCyclicTasks
+- **tasks/lifeCycle**
+   This endpoint executes lifecycle task objects defined within **FusionDirectory**. Based on task configuration, it evaluates whether a specified Supann resource has reached expiration and performs actions accordingly.
 
-You can :
- - Activate all repetitive tasks based on their redundancy schedule.
+- **tasks/activateCyclicTasks**
+   Activates all repetitive tasks based on their defined recurrence schedules.
 
-- removeSubTasks
+- **tasks/removeSubTasks**
+   Removes all sub-tasks marked as completed.
+   All sub-tasks status can be seen within FusionDirectory dashboard.
 
-You can :
- - It will simply remove the all sub-tasks which are set to be completed.
+- **tasks/reminder**
+   Executes reminder task objects and sends emails to specified groups or individuals. Based on configuration, it can generate tokens for potential account extensions.
+
+- **tasks/notifications**
+   Triggers the execution of notification task objects. Any changes to the supplied attributes result in email notifications being sent to the designated individuals or groups.
+
+- **tasks/audit**
+   This endpoint allows for the deletion of historical audit logs based on a retention period specified in the task configuration within **FusionDirectory**.

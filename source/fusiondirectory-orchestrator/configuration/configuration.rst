@@ -18,6 +18,12 @@ Required in order to connect to the proper host.
 FQDN or IP must be provided with ldap(s) to secure the connection.
 
 .. code-block:: shell
+
+  LDAP_BASE="dc=fusiondirectory,dc=org"
+
+Required to operate with ldap libraries.
+
+.. code-block:: shell
 	
   LDAP_ADMIN="cn=admin,dc=fusiondirectory,dc=org"
 
@@ -34,13 +40,6 @@ Required password to authenticate LDAP
   LDAP_OU_DSA="ou=dsa,dc=fusiondirectory,dc=org"
 
 Required to ease the research of the branch DSA by endpoints.
-
-.. code-block:: shell
-
-  LDAP_BASE="dc=fusiondirectory,dc=org"
-
-Required to operate with ldap libraries.
-
 
 [JWT token settings]
 ^^^^^^^^^^^^^^^^^^^^
@@ -68,6 +67,13 @@ Required to limit the availability of an issued refresh token. In seconds.
 [SMTP server settings]
 ^^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: shell
+
+  MAIL_AUTH="TRUE/FALSE"
+
+If authentication is required, the following settings will be applied.
+Note that some mail servers, such as relay servers, may not require authentication.
+
+.. code-block:: shell
 	
   MAIL_USER="mail_user"
 
@@ -86,8 +92,15 @@ The password used for above authentication.
 The SMTP server domain name or IP.
 
 .. code-block:: shell
+
+  MAIL_SEC_VERIFY="TRUE/FALSE"
+
+This setting determines whether to accept all types of certificates,
+including self-signed certificates, if necessary.
+
+.. code-block:: shell
 	
-  MAIL_SEC="ssl"
+  MAIL_SEC="TLS/SSL"
 
 The required secure methode. "TLS" can be used for "STARTLS".
 Please note the importance of lowercase in 'ssl' or 'tls'.
