@@ -1,5 +1,5 @@
-Functionalities
-===============
+Mails
+=====
 
 Tasks audit has been designed to remove the overflowing backlog and liberate potential
 disk space as well as performances for some specifics applications.

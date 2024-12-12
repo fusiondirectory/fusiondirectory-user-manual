@@ -37,7 +37,7 @@ Execute a Task of Type "Life Cycle"
    fusiondirectory-orchestrator-client --lifecycle
 
 Execute a Task of Type "Notifications"
-"""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""
 
 .. code-block:: shell
 
