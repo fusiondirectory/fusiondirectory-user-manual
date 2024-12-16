@@ -44,7 +44,7 @@ Execute a Task of Type "Notifications"
    fusiondirectory-orchestrator-client --notifications
 
 Execute a Task of Type "Reminder"
-""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""
 
 .. code-block:: shell
 
@@ -65,7 +65,7 @@ Remove All Completed Sub-Tasks
    fusiondirectory-orchestrator-client --remove
 
 Execute a Task of Type "Audit"
-"""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""
 
 .. code-block:: shell
 

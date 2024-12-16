@@ -10,3 +10,4 @@ FusionDirectory Plugins Audit
    installation
    configuration
    functionalities
+   auditTask
