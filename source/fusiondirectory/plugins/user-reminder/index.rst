@@ -10,3 +10,4 @@ FusionDirectory Plugins user-reminder
    installation
    configuration
    functionalities
+   reminderTask
