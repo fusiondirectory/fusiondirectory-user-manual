@@ -122,6 +122,9 @@ if you are using the mail plugin you have to update is schema
 
    fusiondirectory-schema-manager --replace-schema /etc/ldap/schema/fusiondirectory/mail-fd.schema
 
+.. code-block:: shell
+
+   fusiondirectory-schema-manager --replace-schema /etc/ldap/schema/fusiondirectory/mail-fd-conf.schema
 
 if you are using the cyrus plugin you have to update is schema
 
