@@ -23,8 +23,8 @@ Creating the Task
       :width: 600px
       :align: center
 
-Configuring the Life Cycle
---------------------------
+Configuring Reminder
+--------------------
 
 - Go to the **Tasks Reminder** tab.
 - Select the resource to monitor for expiration. You can also define the desired next Supann resource for cases where prolongation is enabled.
@@ -63,18 +63,15 @@ If needed, you can manually run the task with the same command:
 
    fusiondirectory-orchestrator-client --reminder
 
-   .. note::
-      Add the ``--verbose`` flag to the command for detailed output during execution.
+.. note::
+  Add the ``--verbose`` flag to the command for detailed output during execution.
 
-Audit Logs
-----------
-
-By default, all task-related activities are logged at the following location:
-
-``/var/log/orchestrator/orchestrator.log``
 
 .. note::
-   Regularly review audit logs to verify that the task is functioning as expected and ensure compliance with your organization’s policies.
+    The logs are stored by default at the following location:
+
+    ``/var/log/orchestrator/orchestrator.log``
+
 
 Summary
 -------
