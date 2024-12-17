@@ -6,7 +6,7 @@ Orchestrator End Points
 
    description.rst
    functionalities.rst
+   lifecycle.rst
    notifications.rst
-   lifeCycle.rst
-   userReminder.rst
+   userreminder.rst
    audit.rst
