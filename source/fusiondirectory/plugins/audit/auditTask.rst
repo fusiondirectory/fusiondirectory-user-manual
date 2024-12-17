@@ -31,6 +31,14 @@ Task Configuration
 Task Execution
 --------------
 
+
+For your configured task to executed, you need to configure your fusiondirectory-orchestrator-client
+
+Read the FusionDirectory Audit Orchestrator Documentation
+
+See  :ref:`audit-task-execution-label` for more information.
+
+
 Once the task is configured, it will automatically delete audit logs based on the set retention period. The task can be executed in the following ways:
 
 1. **Automated Execution via Cron Job**:

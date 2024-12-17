@@ -24,9 +24,9 @@ Task Configuration
       :alt: Life cycle - Task creation step 1
       :width: 600px
 
-2. **Life Cycle Configuration**:
-   - Navigate to the **Tasks Life Cycle** tab.
-   - Select the resource you wish to monitor for expiration and the desired next Supann resource.
+2. **Notifications Configuration**:
+   - Navigate to the **Tasks Notifications** tab.
+   - Select attributes you want to monitor, the list is configurable via the configuration menu / notifications.
    - Select the members. This can be a simple group or a dynamic group (allowing great flexibility).
 
    .. image:: images/notifications-t2.png
