@@ -15,4 +15,5 @@ FusionDirectory Core
    acls
    mailTemplate
    tasks
+   tasksMail
    tasksDashboard

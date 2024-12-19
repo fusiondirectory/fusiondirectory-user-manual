@@ -34,6 +34,7 @@ FusionDirectory Plugins
    kerberos/index
    ldapdump/index
    ldapmanager/index
+   lifeCycle/index
    mail/index
    mailinblack/index
    migration-mailrouting/index
@@ -41,6 +42,7 @@ FusionDirectory Plugins
    netgroups/index
    newsletter/index
    nextcloud/index
+   notifications/index
    opsi/index
    personal/index
    posix/index
