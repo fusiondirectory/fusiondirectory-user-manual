@@ -15,17 +15,17 @@ Access is read-only. If you need to make changes, then you must press the 'Edit'
 .. image:: images/triggers-edit-button.png
    :alt: Picture of Edit button in FusionDirectory
 
-In Hooks section you can define all your triggers
+In Triggers section you can define all your triggers
 
 .. image:: images/triggers-example.png
-   :alt: Picture of Hooks settings in FusionDirectory   
+   :alt: Picture of Triggers settings in FusionDirectory   
 
-* **Hooks** : triggers that are called when specific actions happens
-* **Tab** : the tab that this triggers concerns (mandatory)
-* **Mode** : when to call this command (required)   
-* **Command**: the command that will be called (mandatory)
-* **Display hook output** : when enables successful trigger execution output is displayed to the user using a dialog
-
+* **Display trigger output** : when enabled succesful trigger execution output is displayed to the user using a dialog
+* **Triggers** : triggers that are called when specific actions happens
+* **Tab** : the tab that this trigger concerns (required)
+* **Mode** : when to call this command (required)
+* **Deactivated** : use this to temporarily deactivate a trigger (required)
+* **Command** : the command that will be called (rquired)
 
 The line :
 

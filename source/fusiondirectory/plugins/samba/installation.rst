@@ -32,13 +32,13 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/samba-fd-conf.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/samba.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/samba-fd-conf.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/samba.schema
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/samba-fd-conf.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/samba.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/samba-fd-conf.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/samba.schema

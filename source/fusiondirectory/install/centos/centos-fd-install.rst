@@ -34,7 +34,7 @@ You can then install FusionDirectory by running:
 .. code-block:: shell
 
    yum install -y fusiondirectory
-   yum install -y fusiondirectory-selinux fusiondirectory-schema schema2ldif
+   yum install -y fusiondirectory-selinux fusiondirectory-schema
 
 .. warning::   
 
@@ -50,10 +50,19 @@ We can easily do this by running:
 
 .. code-block:: shell
 
-   fusiondirectory-insert-schema -i /etc/openldap/schema/cosine.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/inetorgperson.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/nis.schema
-   fusiondirectory-insert-schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/cosine.schema
+   
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/inetorgperson.schema
+   
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/nis.schema
+   
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/core-fd.schema
+
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/core-fd-conf.schema
+
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/ldapns.schema
+
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/template-fd.schema
 
 Now we just need to restart apache:
 

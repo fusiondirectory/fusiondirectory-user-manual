@@ -18,13 +18,30 @@ Modifiers are applied from left to right.
 .. code-block:: bash
 
    %sn%           The value of "Last name" field, entered during account creation.
+
+There are some special variables which may also be used instead of an LDAP attribute name, most of them are specific to triggers (see :ref:`triggers-special-variables`), but the following ones are also available to templates:
+
+* **%callerDN%** gives the DN of the author of the modification
+* **%callerCN%** gives the CN of the author of the modification
+* **%callerUID%** gives the UID of the author of the modification
+* **%callerSN%** gives the SN of the author of the modification
+* **%callerGIVENNAME%** gives the GIVENNAME of the author of the modification
+
+There is also a macro that is used to ask a value in a field when we use a template
+
+* %askme% when put in a template this field will appear blank in form and must be filled by the user
+
+Some modifiers do not even require an LDAP attribute name as they generate a value on their own, such as **r** or **d**.
    
 Modifiers
 ---------
 
 **a**
 
-The **a** modifier can be used to remove accents.
+The **a** modifier can be used to remove accents, in one of two modes:
+
+* ascii (default): In this mode accents and non-ascii characters are removed.
+* uid: In this mode accents and all invalid characters for an uid value are removed. if **Strict naming policy** is **on** in the configuration, this will also convert to lowercase.
 
 Examples: 
 
@@ -34,6 +51,8 @@ Examples:
 
    %a|sn%           "Last name" field returned unaccented.
                      If "sn=Valérie" then the returned value is "Valerie"
+   %a[uid]|sn%      "Last name" field returned as valid uid.
+                     If "sn=Poivre D'Arvor" then the returned value is "poivredarvor"
                      
 **b**
 
@@ -66,6 +85,8 @@ The **d** modifier can be used to generate dates and times.
 * First parameter is date string (defaults to “now”)
 * Second one is date format (defaults to “d.m.Y”, to be used in date fields).
 
+By default, the d modifier use %d[now,d.m.Y]|% but if you only want the year you can use %d[now,Y]|%
+
 Examples:    
 
 
@@ -75,15 +96,35 @@ Examples:
    %d[tomorrow]|%                    16.03.2017
    %d[today+6days]|%                 21.03.2017
    %d[now,l jS \of F Y h:i:s A]|%    Wednesday 15th of March 2017 02:12:18 PM
-   
+
 as POSIX date fields expects a specific format you need to add 'epoch' as second parameter to the d modifier.
 
 .. code-block:: bash
 
    %d[today+30days,epoch]|%                 15.04.2017
    
+**e**
+
+The modifier **e** can be used to generate incremental numbers.
+As the **r**, **d** and **n** modifiers it should be used alone, with no attribute name.
+
+This modifier will add an incremental number to the value. The number will be incremented relative to the last generated value.
+It does not check or ensure unicity by itself. It does not ensure that values will be contiguous, as an incremented value may happen in a template usage that fails in the end.
+
+* First parameter is an id to reference this incremental number. Several masks sharing this id will share the value pool.
+* Second parameter is starting number, defaults to 1.
+* Third parameter is step, defaults to 1.
+
+Examples:
+
+.. code-block:: bash
+
+   %e[employeeNumber]|%     Number starting at 1
+   %e[twoDigitsNumber,10]|% Number starting at 10
+   %e[evenNumber,0,2]|%     Number starting at 0 and going 2 by 2
    
    
+
 **i**
 
 The **i** modifier can be used to have the first letter of a word in capital letters and the rest in lower case letters.
@@ -118,7 +159,27 @@ The **l** modifier can be used to return the lowercase version of the parameter.
    %l|sn%           "Last name" field returned in lowercase. 
                      If "sn=Valérie" then the returned value is "valérie"
                      
-                     
+**n**
+
+The modifier **n** can be used to generate numbers.
+As the **r** and **d** modifiers it should be used alone, with no attribute name.
+
+This modifier will make sure the result value is unique for the filled field in the LDAP. The number will get as high as needed to ensure that.
+
+* First parameter is whether the number should always be there or only in case of duplicates (1 or 0, defaults to 0).
+* Second parameter is starting number, defaults to 1.
+* Third parameter is step, defaults to 1.
+
+Examples:
+
+.. code-block:: bash
+
+   %n|%           If not unique, adds a number starting at 1
+   %n[1]|%        A number starting at 1
+   %n[0, 2]|%     If not unique, adds a number starting at 2
+   %n[1,10]|%     A number starting at 10
+   %n[1,20,10]|%  A number starting at 20 and going up ten by ten
+
 **p**
 
 The **p** modifier can be used to remove whitespaces. It can also be used for any search and replace based on preg_replace. 
@@ -241,6 +302,13 @@ The **J** modifier returns the values joined together. It takes the separator as
 
 The **L** modifier returns the last value of the array
 
+**M**
+
+The **M** modifier returns values that matches the regular expression passed as parameter. As it returns an array, an other modifier is usually used after such as J or C.
+
+.. code-block:: bash
+
+   %M[/a$/]C|arrayAttribute%           returns the number of values ending with the letter a
 
 Combining examples
 ------------------

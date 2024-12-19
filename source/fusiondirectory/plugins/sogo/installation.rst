@@ -28,15 +28,15 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/sogo-fd-conf.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/calEntry.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/calRessources.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/sogo-fd-conf.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/calEntry.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/calRessources.schema
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/sogo-fd-conf.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/calEntry.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/calRessources.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/sogo-fd-conf.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/calEntry.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/calRessources.schema

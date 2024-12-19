@@ -28,11 +28,11 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/dovecot-fd.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/dovecot-fd.schema
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/dovecot-fd.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/dovecot-fd.schema

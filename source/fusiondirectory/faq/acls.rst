@@ -27,4 +27,5 @@ Additionally you have to check the option 'Apply this acl only for users own ent
         ignoreAcl="put_the_desired_dn"
         <!-- ... -->
     </main>
+  
 

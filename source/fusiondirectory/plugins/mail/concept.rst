@@ -13,6 +13,7 @@ For now we support :
    * :ref:`The Cyrus mail method <plugins-cyrus>`
    * :ref:`Dovecot <plugins-dovecot>`
    * :ref:`RENATER Partage <plugins-renater-partage>`
+   * :ref:`Zimbra <plugins-zimbra>`
 
 The basic method just store the data that can be used by other service like postfix for example. The other method like cyrus, dovecot, renater-partage need the corresponding server
 

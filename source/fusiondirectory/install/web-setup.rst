@@ -71,7 +71,7 @@ You got to the end of the web setup. You now need to download the config file us
 .. image:: images/web-setup-08-finish2.png
    :alt: LDAP inspection step of web setup
 
-You may get this additionnal message if the permissions are wrong in which case you can run "fusiondirectory-setup --check-config" as root to fix those.
+You may get this additionnal message if the permissions are wrong in which case you can run "fusiondirectory-configuration-manager --check-config" as root to fix those.
 
 Once everything is fine, clicking next will redirect you to the login screen of your FusionDirectory installation.
 

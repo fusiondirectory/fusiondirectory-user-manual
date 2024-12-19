@@ -28,13 +28,13 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/gpg-fd.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/pgp*
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/gpg-fd.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/pgp*
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/gpg-fd.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/pgp*
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/gpg-fd.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/pgp*

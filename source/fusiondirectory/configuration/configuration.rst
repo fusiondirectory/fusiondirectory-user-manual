@@ -82,8 +82,7 @@ Login and session
 * **Enforce encrypted connections**: Enables PHP security checks to force encrypted access (https) to the web interface.
 * **Warn if session is not encrypted**: Enables PHP security checks to detect non encrypted access to the web interface. FusionDirectory will display a warning in this case.
 * **Session lifetime**: (required) Defines  when  a  session will expire in seconds. For Debian systems, this will not work because the sessions will be removed by a cron job instead. Please modify the value inside of your php.ini instead.
-* **HTTP authentification**: Activate HTTP authentification (basic auth).
-* **HTTP Header authentication**: Activate HTTP header authentification (default `LemonLDAP::NG`_ method)
+* **Login method**: (required) Which login method should be used for connecting to FusionDirectory
 * **Header name**: Define the name of the header you will use for HTTP Header Authentification
 
 SSL
@@ -106,6 +105,7 @@ CAS
 * **Host**: Host of the CAS Server.
 * **Port**: Port of the CAS Server.
 * **CAS context**: CAS context to be used
+* **Verbose Error**: Show the return errors from the CAS connexion
 
 .. _configuration_people_and_group_storage:
 
@@ -131,6 +131,7 @@ People and group storage
 * **Restrict role members**: When enabled only users from the same branch or members of groups from the same branch can be added to a role.
 * **Separate address fields**: When enabled, expose *street*, *postOfficeBox* and *postalCode* fields instead of *postalAddress*.
 * **Postal address pattern**: When **Separate address fields** is enabled, filling this allows to fill *postalAddress* using values from the separate fields in a pattern.
+* **Avatar max size**: Maximum user picture width and height in pixels. Bigger uploaded pictures will be resized.
 
 Debugging
 ^^^^^^^^^
@@ -142,6 +143,7 @@ Debugging
 * **Maximum LDAP query time**: Tells FusionDirectory to stop LDAP actions if there is no answer within the specified number of seconds.
 * **Log LDAP statistics**: Tells FusionDirectory to track LDAP timing statistics to the syslog. This may help to find indexing problems or bad search filters.
 * **Debug level**: Display certains debug informations on each page load. Valid values are LDAP, Database, Shell, POST, SESSION, ACL, SI, Mail. The different values ​​can also be combined with each other.
+* **Log debug messages**: Sends debug output to syslog as well
 
 Miscellaneous
 ^^^^^^^^^^^^^
@@ -153,18 +155,90 @@ Miscellaneous
 * **Show ACL tab on all objects**: For very specific ACL rights setting where you might need to give rights on a single object.
 * **Available department categories**: Available categories in the departments category dropdown.
 * **Plugin menu blacklist**: A list of plugins to hide from FusionDirectory menu for a given group of users.
+* **ACL target filter limit**: Defines the maximum number of entries an ACL target filter is allowed to return
 
-Hooks
-^^^^^
+Triggers
+^^^^^^^^
 
-* **Hooks**: Defines hooks that are called when specific actions happens.
+Click on Triggers tab
 
-  Each hook is defined by:
+.. image:: images/configuration-triggers-tab.png
+   :alt: Image of Triggers tab in FusionDirectory
 
-  * Tab: The plugin tab triggering this hook
-  * Mode: When this hook is triggered
-  * Command: The executed command when this hook is triggered. Use the placeholder syntax to pass attribute values to the hook.
+.. image:: images/configuration-triggers-menu.png
+   :alt: Image of Triggers menu in FusionDirectory   
+   
+* **Triggers**: Defines triggers that are called when specific actions happens.
 
-* **Display hook output**: Activate to display the hook output.
+  Each trigger is defined by:
+
+  * Tab: The plugin tab triggering this trigger
+  * Mode: When this trigger is triggered
+  * Command: The executed command when this trigger is triggered. Use the placeholder syntax to pass attribute values to the trigger.
+
+* **Display trigger output**: Activate to display the trigger output.
 
 .. _LemonLDAP::NG : http://lemonldap-ng.org/
+
+Click on Plugins tab
+
+.. image:: images/configuration-plugins-tab.png
+   :alt: Image of Plugins tab in FusionDirectory
+
+Object groups
+^^^^^^^^^^^^^
+
+.. image:: images/configuration-object-groups.png
+   :alt: Image of Object groups menu in FusionDirectory   
+   
+* **Groups RDN**: (required) Branch in which object groups will be stored.
+
+SASL
+^^^^
+
+.. image:: images/configuration-sasl.png
+   :alt: Image of SASL menu in FusionDirectory   
+   
+* **Force to ask for password**: (required) Useful if you add a trigger using password value when SASL user passwords are edited.
+
+Dashboard name schema
+^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: images/configuration-dashboard-name-schema.png
+   :alt: Image of Dashboard name schema menu in FusionDirectory   
+   
+* **Number of digits**: Number of digits to use after prefix.
+* **Prefixes**: (required) Prefixes to be used for computer ids.
+
+Dashboard expired users
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: images/configuration-dashboard-expired-users.png
+   :alt: Image of Dashboard expired users menu in FusionDirectory   
+   
+* **Number of days**: Number of days before expiration needed for an account to show in the dashboard not expired accounts list.
+
+Mail Template
+^^^^^^^^^^^^^
+
+.. image:: images/configuration-mail-template.png
+   :alt: Image of Mail Template OU configuration within FusionDirectory
+
+* **Mail Template RDN**: Allows the configuration of the proper OU for mail template.
+
+Tasks
+^^^^^
+Click on Tasks tab.
+
+.. image:: images/configuration-tasks-tab.png
+   :alt: TAB menu to be clicked to access Tasks configuration.
+
+.. image:: images/configuration-tasks-rdn.png
+   :alt: Image of Tasks configuration RDN within FusionDirectory
+
+* **Tasks RDN**: Allows the configuration of the proper OU for tasks.
+
+.. image:: images/configuration-tasks-anti-spam.png
+   :alt: Images of Tasks configuration for anti-spam within FusionDirectory
+
+* **Mail Anti-Spam Configuration**: Allows to setup the interval and maximum emails to be sent per process.

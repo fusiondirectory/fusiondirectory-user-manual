@@ -6,5 +6,7 @@ The FusionDirectory tools are a suite of utilities to help you manage your fusio
 .. toctree::
    :maxdepth: 2
 
-   fusiondirectory-setup
-   fusiondirectory-insert-schema
+   fusiondirectory-configuration-manager
+   fusiondirectory-schema-manager
+   fusiondirectory-plugins-manager
+   fusiondirectory-migration-manager

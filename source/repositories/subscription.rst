@@ -3,14 +3,6 @@ Subscription Repository
 
 When buying a subscription you will receive a set of files
 
-
-For FusionDirectory
-'''''''''''''''''''
-
-The **yourcompany-subscription-fusiondirectory.ini** is the file to be imported into FusionDirectory to show that you have a valid subscription.
-
-See :ref:`fd-activate-a-subscription-label`
-
 For Debian
 ''''''''''
 
@@ -101,3 +93,11 @@ Install repositories
    (6/9): remi-safe/primary_db                                                   | 2.1 MB  00:00:01     
    (7/9): remi-php72/primary_db                                                  | 254 kB  00:00:01     
    (8/9): epel/x86_64/primary_db                                                 | 7.0 MB  00:00:03     
+
+
+For FusionDirectory
+^^^^^^^^^^^^^^^^^^^
+
+The **yourcompany-subscription-fusiondirectory.ini** is the file to be imported into FusionDirectory to show that you have a valid subscription.
+
+See :ref:`fd-activate-a-subscription-label`

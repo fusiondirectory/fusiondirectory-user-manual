@@ -6,7 +6,6 @@ FusionDirectory is a Web application that will need:
 * a webserver;
 * PHP;
 * an ldap server;
-* perl
 
 Web server
 ----------
@@ -20,11 +19,7 @@ FusionDirectory requires a web server that supports PHP, like:
 PHP
 ---
 
-As of 1.3.1 release, FusionDirectory will requires `PHP <http://php.net>`_ **7.3**
-
-.. note::
-
-   We recommand to use the most recent stable PHP release for better performances.
+As of 1.4 release, FusionDirectory requires `PHP <https://www.php.net>`_ 7.3 or 7.4.
 
 Mandatory extensions
 ^^^^^^^^^^^^^^^^^^^^
@@ -71,7 +66,7 @@ PHP configuration file (``php.ini``) must be adapted to reflect following variab
 
     expose_php = Off;
     implicit_flush = Off;
-    memory_limit = 128M ;      // max memory limit
+    memory_limit = 512M ;      // max memory limit
     max_execution_time = 30 ;  // not mandatory but adviced
     session.auto_start = off ;
 

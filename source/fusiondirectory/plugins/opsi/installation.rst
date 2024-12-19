@@ -32,13 +32,13 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/opsi-fd-conf.schema
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/opsi-fd.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/opsi-fd-conf.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/opsi-fd.schema
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/opsi-fd-conf.schema
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/opsi-fd.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/opsi-fd-conf.schema
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/opsi-fd.schema

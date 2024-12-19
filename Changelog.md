@@ -1,3 +1,90 @@
+## %"FusionDirectory 1.4" - 2024-02-22
+
+### Added
+
+#### user-manual
+- user-manual#36 document the invitation plugin
+- user-manual#37 document the public-forms plugin
+- user-manual#47 document the supann 2018 cycle de vie in fusiondirectory
+- user-manual#67 Document placeholder %i%
+- user-manual#85 Documentation for modifier m is missing
+- user-manual#87 ACL documentation for new user filter and target filter
+- user-manual#100 document the use of %modifiedLdapAttrs%
+- user-manual#101 Document the way the triggers works
+- user-manual#103 document the new configurable lists
+- user-manual#108 explain that the filter on the attribute depend on the attribute visible on the object list
+- user-manual#111 document the ipam plugin
+- user-manual#112 document the base of the system plugin
+- user-manual#117 Document NextCloud plugin
+- user-manual#125 document the new dyngroup plugin
+- user-manual#126 put the documentation from the man page for fusiondirectory.conf into the official web documentation
+- user-manual#128 Document access to interfaces from webservice
+- user-manual#129 Document import of systems with interfaces data
+- user-manual#135 Document the archive plugin
+- user-manual#139 document the new modifier e
+- user-manual#142 we need to document the zimbra plugin
+- user-manual#143 Document limitation for huge number of values in LDAP fields
+- user-manual#144 Document parameter of "a" modifier
+- user-manual#146 document the new option for cas verbose
+- user-manual#147 Document subscriptions plugin
+- user-manual#162 tell user that they need to use the official freeradius schema for the fusiondirectory plugin
+- user-manual#169 Document supann France Connect support
+- user-manual#170 document the mailinblack plugin
+- user-manual#173 we need to document the function of the supann groups in the supann plugin
+- user-manual#187 Add an example for d modifier where we only use the year
+- user-manual#191 Add a note about inserting dyngroup.schema for dyngroup plugin
+- user-manual#192 Update supann list custom documentation
+- user-manual#204 [User-Manual] - Adds the new behaviour and updates existings entries related to fusiondirectory-tools
+- user-manual#207 Make page to migration 1.3.1 to 1.4
+- user-manual#213 we should add an entry of me nu on the left that show the webservice
+- user-manual#216 [User-Manual] 1.4 LDAP Numbering needs updates since FranceConnect new schema
+- user-manual#217 [User-manual] - FranceConnect - Adds to supann the new schema to be installed
+- user-manual#225 There is no mention of askme macro
+- user-manual#229 [Orchestrator] - Installation and configuration manual
+- user-manual#231 Add the task and mail template fonctionnality to the manual
+- user-manual#233 the fusiondirectory-schema-manager documentation doesn't show all possibilities
+- user-manual#236 one url is missing from the documentation on repositories
+- user-manual#237 add to the upgrade instruction to install all the new repositories
+
+### Changed
+
+#### user-manual
+- user-manual#104 hooks have been renamed triggers and have new options
+- user-manual#105 redo and update the configuration part of the user manual
+- user-manual#106 update audit plugin configuration
+- user-manual#107 update the invitations configuration
+- user-manual#109 update the supann plugin documentation
+- user-manual#110 the prerequisite talk about php 5.6 but its 7.x minimun in 1.4-dev
+- user-manual#114 reorganize index plugin
+- user-manual#179 we need to clarify how to install the subscription and remove reference to specific subscriptions
+- user-manual#182 the minimal version of php for 1.4 has been changed this has to be reflected into the manual
+- user-manual#185 Update the documentation for ldapmanager
+- user-manual#195 update the prerequisite for fusiondirectory 1.4
+- user-manual#205 Rename the docs renater-partage docs
+- user-manual#215 change the install method for fusondirectory 1.4
+- user-manual#212 FusionDirectory should recommand at least 512MB ram
+- user-manual#242 change the wording for the professional support and urls
+
+### Removed
+
+#### user-manual
+- user-manual#113 remove squid plugin from 1.4 documentation
+- user-manual#211 there is no perl needed anymore
+- user-manual#227 Correct contact us in the documentation
+- user-manual#228 Remove we recommend to use the most recent php version as we are fixed on certains versions
+- user-manual#243 remove the dashboard part as is no longer in FusionDirectory
+
+### Fixed
+
+#### user-manual
+- user-manual#123 the name of the schema have changed since supann 2018
+- user-manual#189 Documentation for version 1.3 and 1.4 mention Debian Stretch repositories
+- user-manual#210 [Webauthn] - Fixes typos in documentation
+- user-manual#218 Change --install-schema to --insert-schema
+- user-manual#220 [user-manual] - Issue related to the configuration of the zimbra plugin
+- user-manual#222 There is a typo in the repository for 1.4 its tell buster when it should tell bullseye
+- user-manual#226 [user-manual] missing instructions for inserting core schemas for FusionDirectory
+
 ## %"FusionDirectory 1.3.1" - 2023-06-23
 
 ### Added
@@ -71,6 +158,7 @@
 - user-manual#193 clarify the php version supported for FusionDirectory 1.3.x
 - user-manual#194 update the certified distribution matrix
 - user-manual#202 update the documentation for 1.3.1
+- user-manual#234 add the for bullseye you should use buster repository in 13.1
 
 ### Deprecated
 
@@ -96,4 +184,5 @@
 - user-manual#145 url for the old webservice based on jsonrpc is wrong in the manual
 - user-manual#178 replace freenode by libera
 - user-manual#184 FD upgrade : updating fd-core schema not mentioned in the doc
+
 

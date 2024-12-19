@@ -4,19 +4,18 @@ Certified distributions
 
 We certify FusionDirectory with all the most common distributions, here is a table which summarizes the level of support by distribution and version.
 
- * FusionDirectory 1.3.1 need = PHP 7.3 
+ * Fusiondirectory 1.4 need = PHP 7.4 
 
 ================= ========================
-DISTRIBUTION      FusionDirectory 1.3.1
+DISTRIBUTION      FusionDirectory 1.4
 ================= ========================
 Debian Buster     supported
-Debian Bullseye   not supported
+Debian Bullseyes  supported
 ----------------- ------------------------
-Ubuntu 18.04 LTS  supported ²
-Ubuntu 20.04 LTS  not supported
+Ubuntu 16.04 LTS  not supported
+Ubuntu 18.04 LTS  not supported
+Ubuntu 20.04 LTS  supported
 ----------------- ------------------------
 Centos 7          supported
 Centos 8          not supported
 ================= ========================
-
-² Need the ppa repository from the official maintainer of Debian/Ubuntu packages

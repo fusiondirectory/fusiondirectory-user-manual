@@ -10,6 +10,10 @@ FusionDirectory Core
    departments
    users
    groups
+   configurablelist
    aclroles
    acls
    dashboard
+   mailTemplate
+   tasks
+   tasksDashboard

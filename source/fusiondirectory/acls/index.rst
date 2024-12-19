@@ -1,3 +1,5 @@
+.. _fd-acls:
+
 ACLs
 ====
 
@@ -11,3 +13,4 @@ FusionDirectory ACLs
    create-acls
    use-acls
    delegation.rst
+   use-acls-with-filters

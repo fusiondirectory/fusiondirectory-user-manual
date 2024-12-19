@@ -66,6 +66,14 @@ Location of database servers of an AFS cell.
 .. image:: images/dnsrecord-AFSDB.png
    :alt: Screenshot of record type AFSDB
 
+CAA
++++
+
+DNS Certification Authority Authorization, constraining acceptable CAs for a host/domain.
+
+.. image:: images/dnsrecord-CAA.png
+   :alt: Screenshot of record type CAA
+
 CERT
 ++++
 
@@ -81,6 +89,22 @@ Alias of one name to another: the DNS lookup will continue by retrying the looku
 
 .. image:: images/dnsrecord-CNAME.png
    :alt: Screenshot of record type CNAME
+
+DKIM (TXT)
+++++++++++
+
+DomainKeys Identified Mail (DKIM) is an email authentication method designed to detect forged sender addresses in email (email spoofing).
+
+.. image:: images/dnsrecord-DKIM.png
+   :alt: Screenshot of record type DKIM
+
+DMARC (TXT)
++++++++++++
+
+DMARC (Domain-based Message Authentication, Reporting and Conformance) is an email authentication protocol. It is designed to give email domain owners the ability to protect their domain from unauthorized use, commonly known as email spoofing.
+
+.. image:: images/dnsrecord-DMARC.png
+   :alt: Screenshot of record type DMARC
 
 DS
 ++
@@ -170,6 +194,14 @@ Signature record (replaced by RRSIG for DNSSEC).
 .. image:: images/dnsrecord-SIG.png
    :alt: Screenshot of record type SIG
 
+SPF (TXT)
++++++++++
+
+Sender Policy Framework (SPF) is an email authentication method designed to detect forging sender addresses during the delivery of the email.
+
+.. image:: images/dnsrecord-SPF.png
+   :alt: Screenshot of record type SPF
+
 SRV
 +++
 
@@ -193,3 +225,5 @@ Text record, originally for arbitrary human-readable text in a DNS record. Since
 
 .. image:: images/dnsrecord-TXT.png
    :alt: Screenshot of record type TXT
+
+The records with (TXT) appended are actually stored as TXT records in the zone, but FusionDirectory still provides a specific interface to help you correctly use them.

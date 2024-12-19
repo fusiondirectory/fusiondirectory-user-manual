@@ -74,10 +74,9 @@ This question can be solved by creating:
 -  LDAP schema suitable for application to the LDAP server
 -  A plugin for its management in FusionDirectory with the simple plugin
    `API`_
--  An `Argonaut`_ module for the client installed on the server
+-  An FusionDirectory Orchestrator module 
 
 .. _FAI : https://fai-project.org/
 .. _OPSI : https://www.opsi.org/
 .. _PARTAGE : https://partage.renater.fr/
-.. _Argonaut : https://www.argonaut-project.org/
-.. _API : https://fusiondirectory-developer-documentation.readthedocs.io/en/1.3/api/index.html
+.. _API : https://fusiondirectory-developer-documentation.readthedocs.io/en/1.4/api/index.html

@@ -3,12 +3,43 @@
 RPM Repository
 ''''''''''''''
 
-To install FusionDirectory on Centos 7 you will need to add 3 yum repositories
+First add the FusionDirectory tools and libraries repositories
 
-.. _fd-rpm-repository-centos7-label:
+Add a file named **fusiondirectory-integrator.repo** in /etc/yum.repos.d/
 
-CentOS 7 / RHEL 7
-^^^^^^^^^^^^^^^^^
+.. code-block:: shell
+
+   [fusiondirectory-integrator]
+   name=Fusiondirectory Integrator Packages for CentOS 7
+   baseurl=https://public.fusiondirectory.org/centos/fusiondirectory-integrator/RPMS
+   enabled=1
+   gpgcheck=1
+   gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-FUSIONDIRECTORY
+
+Add a file named **fusiondirectory-utilities.repo** in /etc/yum.repos.d/
+
+.. code-block:: shell
+
+   [fusiondirectory-Utilities]
+   name=Fusiondirectory Utilities Packages for CentOS 7
+   baseurl=https://public.fusiondirectory.org/centos/fusiondirectory-utilities//RPMS
+   enabled=1 
+   gpgcheck=1
+   gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-FUSIONDIRECTORY
+
+Add a file named **fusiondirectory-external-libraries.repo** in /etc/yum.repos.d/
+
+.. code-block:: shell
+
+   [fusiondirectory-External-Libraries]
+   name=Fusiondirectory External Libraries Packages for CentOS 7
+   baseurl=https://public.fusiondirectory.org/centos/fusiondirectory-external-libraries/RPMS
+   enabled=1
+   gpgcheck=1
+   gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-FUSIONDIRECTORY
+
+CentOS 7
+^^^^^^^^
 
 Add a file named **fusiondirectory-release.repo** in /etc/yum.repos.d/
 
@@ -16,33 +47,20 @@ Add a file named **fusiondirectory-release.repo** in /etc/yum.repos.d/
 
   [fusiondirectory-release]
   name=Fusiondirectory Packages for CentOS 7
-  baseurl=https://public.fusiondirectory.org/centos7-fusiondirectory-release/RPMS
+  baseurl=https://public.fusiondirectory.org/centos/centos7-fusiondirectory-release/RPMS
   enabled=1
   gpgcheck=1
   gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-FUSIONDIRECTORY
 
-Add a file named **fusiondirectory-schema2ldif-release.repo** in /etc/yum.repos.d/
+To install FusionDirectory Orchestrator
+
+Add a file named **fusiondirectory-orchestrator-release.repo** in /etc/yum.repos.d/
 
 .. code-block:: shell
 
-   [fusiondirectory-schema2ldif-release]
-   name=Fusiondirectory Packages for CentOS 7
-   baseurl=https://public.fusiondirectory.org/centos7-schema2ldif-release/RPMS
-   enabled=1
-   gpgcheck=1
-   gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-FUSIONDIRECTORY
-
-Add a file named **fusiondirectory-extra.repo** in /etc/yum.repos.d/
-
-.. code-block:: shell
-
-   [fusiondirectory-extra]
-   name=Fusiondirectory Packages for CentOS 7
-   baseurl=https://public.fusiondirectory.org/centos7-fusiondirectory-extra/RPMS
-   enabled=1
-   gpgcheck=1
-   gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-FUSIONDIRECTORY
-
-
-
-
+  [fusiondirectory-orchestrator-release]
+  name=Fusiondirectory Packages for CentOS 7
+  baseurl=https://public.fusiondirectory.org/centos/centos7-fusiondirectory-rochestrator-release/RPMS
+  enabled=1
+  gpgcheck=1
+  gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-FUSIONDIRECTORY

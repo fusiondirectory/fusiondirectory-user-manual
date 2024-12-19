@@ -28,11 +28,11 @@ Debian
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/ldap/schema/fusiondirectory/ejbca-fd*
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/ejbca-fd*
 
 RHEL
 ^^^^
 
 .. code-block:: bash
 
-   fusiondirectory-insert-schema -i /etc/openldap/schema/fusiondirectory/ejbca-fd*
+   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/ejbca-fd*

@@ -25,7 +25,7 @@ Post triggers
 * **postmodify** : Execute the script after editing.
 * **postremove** : Execute the script after removing.
 
-The hook works well and does not display information if it returns 0 
+The trigger works well and does not display information if it returns 0 
 On error, displays command output.
 
 
@@ -47,7 +47,7 @@ You can use ldap attributes as command line options. See :ref:`fd-macros-label`.
 LDAP arrays
 -----------
 
-If you put a var that is an array in the args of the hook, gosaAlternateMailAddress for instance, only the first value will be returned unless you use :ref:`array-modifiers`.
+If you put a var that is an array in the args of the trigger, gosaAlternateMailAddress for instance, only the first value will be returned unless you use :ref:`array-modifiers`.
 
 .. _triggers-special-variables:
 
@@ -61,6 +61,7 @@ Special variables
 * **%callerGIVENNAME%** gives the GIVENNAME of the author of the modification
 * **%dn%** gives the dn of the modified object
 * **%location%** gives the name of the location of the LDAP
+* **%modifiedLdapAttrs%** lists the attributes modified by the modification (this is an array, see :ref:`array-modifiers`)
 
 On users you get these extra variables available: 
 

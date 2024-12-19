@@ -1,3 +1,5 @@
+.. _plugins-systems:
+
 Systems
 =======
 
@@ -8,3 +10,5 @@ FusionDirectory Plugins Systems
 
    description
    installation
+   configuration
+   functionalities
