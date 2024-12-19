@@ -5,23 +5,12 @@ Reminder Task Execution
 
 Once the task is configured, execute it using the **orchestrator-client** tool. You have two execution options:
 
-Automated Execution via Cron
-----------------------------
-
-To automate the task, set up a cron job with the following command:
-
 .. code-block:: bash
 
    fusiondirectory-orchestrator-client --reminder
 
-Manual Execution
-----------------
-
-If needed, you can manually run the task with the same command:
-
-.. code-block:: bash
-
-   fusiondirectory-orchestrator-client --reminder
+.. note::
+   **Recommendation** automate this process within a CRON job.
 
 .. note::
   Add the ``--verbose`` flag to the command for detailed output during execution.

@@ -1,7 +1,7 @@
 Description
 ===========
 
-The Orchestrator provides a primary endpoint, referred to as **tasks**, which accepts multiple arguments for execution.
+FusionDirectory Orchestrator provides a primary endpoint, referred to as **tasks**, which accepts multiple arguments for execution.
 New task objects can be added as plugins and invoked as arguments to this endpoint.
 
 .. note::
