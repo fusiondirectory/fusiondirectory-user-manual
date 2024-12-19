@@ -21,3 +21,4 @@ Once the task is configured, you can execute the orchestrator-client with the op
    The audit logs are stored by default at the following location:
 
    ``/var/log/orchestrator/orchestrator.log``
+

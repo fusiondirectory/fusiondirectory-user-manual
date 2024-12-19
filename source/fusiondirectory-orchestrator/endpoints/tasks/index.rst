@@ -10,3 +10,4 @@ Orchestrator End Points
    notifications.rst
    userreminder.rst
    audit.rst
+   mails.rst
