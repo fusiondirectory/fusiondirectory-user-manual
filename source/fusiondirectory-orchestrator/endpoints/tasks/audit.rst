@@ -1,6 +1,8 @@
 Audit - Task Execution
 ======================
 
+Once the task is configured, you can execute the orchestrator-client with the options below.
+
  .. _audit-task-execution-label:
 
 1. **Automated Execution via Cron Job**:

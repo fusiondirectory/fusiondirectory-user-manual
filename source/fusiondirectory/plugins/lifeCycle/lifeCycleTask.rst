@@ -32,7 +32,7 @@ Task Configuration
 Task Execution
 --------------
 
-For your configured task to executed, you need to configure your fusiondirectory-orchestrator-client
+For your configured task to be executed, you need to configure your fusiondirectory-orchestrator-client
 
 See :ref:`Life Cycle Task Execution <lifecycle-task-execution-label>`. for more information.
 

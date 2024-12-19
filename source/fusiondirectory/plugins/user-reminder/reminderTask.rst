@@ -43,16 +43,9 @@ Configuring Reminder
 Task Execution
 --------------
 
-Once the task is configured, execute it using the **orchestrator-client** tool. You have two execution options:
+For your configured task to be executed, you need to configure your fusiondirectory-orchestrator-client
 
-Automated Execution via Cron
-----------------------------
-
-To automate the task, set up a cron job with the following command:
-
-.. code-block:: bash
-
-   fusiondirectory-orchestrator-client --reminder
+See :ref:`Reminder Task Execution <reminder-task-execution-label>`. for more information.
 
 Manual Execution
 ----------------
