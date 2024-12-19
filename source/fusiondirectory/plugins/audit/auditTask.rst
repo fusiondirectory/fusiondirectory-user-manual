@@ -7,7 +7,7 @@ The **Audit** task helps in managing the backlog of audit logs, freeing up disk 
   It must be used with FusionDirectory Orchestrator
 
 FusionDirectory Configuration
-=============================
+-----------------------------
 
 Task Configuration
 ------------------
@@ -36,3 +36,8 @@ For your configured task to executed, you need to configure your fusiondirectory
 
 See :ref:`Audit Task Execution <audit-task-execution-label>`. for more information.
 
+Summary
+-------
+
+The configured audit tasks, as demonstrated in the example above, will automatically remove all audits that have exceeded the yearly retention period,
+ensuring compliance and efficient data management on an annual basis.

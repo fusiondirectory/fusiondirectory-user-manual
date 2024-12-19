@@ -1,5 +1,5 @@
 Audit - Task Execution
-----------------------
+======================
 
  .. _audit-task-execution-label:
 
@@ -20,8 +20,3 @@ Audit - Task Execution
     The audit logs are stored by default at the following location:
 
     ``/var/log/orchestrator/orchestrator.log``
-
-Summary
--------
-
-This task, based on the e
