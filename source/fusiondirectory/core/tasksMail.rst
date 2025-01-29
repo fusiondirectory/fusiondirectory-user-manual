@@ -7,9 +7,6 @@ It can be dynamic group, simple group or a member directly.
 .. note::
    This task must be used with **FusionDirectory Orchestrator** to function properly.
 
-FusionDirectory Configuration
-=============================
-
 Task Setup
 ----------
 
@@ -62,3 +59,4 @@ The **Mail Task**, when configured as described, will:
 
 - Run daily (or according to your configured schedule).
 - Send the email to targeted users individually.
+
