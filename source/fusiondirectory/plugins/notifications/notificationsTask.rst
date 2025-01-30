@@ -42,9 +42,7 @@ See :ref:`Notifications Task Execution <notifications-task-execution-label>`. fo
 
 .. important::
    Notifications relies on the last executable date.
-   Notifications relies on the last executable date.
-   Notifications relies on the last executable date.
-I doniddddddddd   When running the task for the first time, no previous executable date exists.
+   When running the task for the first time, no previous executable date exists.
    As a protective measure, you must execute the task manually once to create an
    initial "last execute" timestamp. This timestamp will serve as the basis for
    triggering notifications in subsequent executions.
