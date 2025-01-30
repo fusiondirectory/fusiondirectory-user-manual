@@ -63,6 +63,7 @@ FusionDirectory Plugins
    subscriptions/index
    sudo/index
    supann/index
+   supann-ext/index
    sympa/index
    systems/index
    user-reminder/index
