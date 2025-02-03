@@ -6,22 +6,24 @@ The **Audit** task helps in managing the backlog of audit logs, freeing up disk 
 .. NOTE::
   It must be used with FusionDirectory Orchestrator
 
-FusionDirectory Configuration
------------------------------
+Task Setup
+----------
 
-Task Configuration
-------------------
+Creating the Task
+-----------------
 
-1. **Create a Task**:
-   - Open the **Tasks** section and define the schedule and repetition interval for this task.
+   - Open the **Tasks** section in FusionDirectory
+   - Define the task’s schedule and repetition interval.
 
    .. image:: images/audit_t1.png
       :alt: Audit - Task creation step 1
       :width: 600px
 
+Configuring Audit Task
+----------------------
 
-2. **Set Audit Retention Period**:
-   - Navigate to the **Audit** tab, configure the desired time retention settings in days, and then click **Save**.
+- Go to the Tasks Audit tab.
+- Configure the desired time retention settings in days, and then click **Save**.
 
    .. image:: images/audit_t2.png
       :alt: Audit - Task creation step 2
@@ -39,5 +41,7 @@ See :ref:`Audit Task Execution <audit-task-execution-label>`. for more informati
 Summary
 -------
 
-The configured audit tasks, as demonstrated in the example above, will automatically remove all audits that have exceeded the yearly retention period,
-ensuring compliance and efficient data management on an annual basis.
+The **Audit Task**, when configured as described, will:
+
+ - Automatically remove all audits that have exceeded the yearly retention period.
+ - Ensure compliance and efficient data management on an annual basis.
