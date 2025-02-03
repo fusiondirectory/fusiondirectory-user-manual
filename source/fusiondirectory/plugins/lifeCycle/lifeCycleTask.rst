@@ -7,27 +7,35 @@ It uses the end date of a targeted Supann resource and allows for modification, 
 .. note::
    It must be used with FusionDirectory Orchestrator.
 
-FusionDirectory Configuration
------------------------------
+Task Setup
+----------
 
-Task Configuration
-------------------
+Creating the Task
+-----------------
 
-1. **Create a Task**:
-   - Open the **Tasks** section and define the schedule and repetition interval for this task.
+   - Open the **Tasks** section of FusionDirectory
+   - Define the task’s schedule and repetition interval.
 
    .. image:: images/lifeCycle-p1.png
       :alt: Life cycle - Task creation step 1
       :width: 600px
 
-2. **Life Cycle Configuration**:
-   - Navigate to the **Tasks Life Cycle** tab.
-   - Select the resource you wish to monitor for expiration and the desired next Supann resource.
-   - Select the members. This can be a simple group or a dynamic group (allowing great flexibility).
+Configuring Life Cycle Task
+---------------------------
 
-   .. image:: images/lifeCycle-p2.png
-      :alt: Life cycle - Task creation step 2
-      :width: 600px
+- **Navigate** to the **Tasks Life Cycle** tab.
+- **Select** the resource, state, and (optionally) sub-state to monitor for expiration in the **left section**.
+- **Choose** the resource, state, and (optionally) sub-state to be assigned after the expiration of the previous resource in the **right section**.
+- **Define** the extra days to extend the new resource’s **end date**. The calculation begins from the last end date of the previous resource.
+- **Assign** the relevant members.
+
+.. note::
+   You can select either a **static group** or a **dynamic group** for greater flexibility.
+
+
+.. image:: images/lifeCycle-p2.png
+  :alt: Life cycle - Task creation step 2
+  :width: 600px
 
 Task Execution
 --------------
@@ -39,4 +47,13 @@ See :ref:`Life Cycle Task Execution <lifecycle-task-execution-label>`. for more 
 Summary
 -------
 
-This task, configured as per the example, will, on a daily basis, analyze the Supann resource for the targeted user and, if expired, change the Supann resource to the desired configuration.
+The **Life Cycle Task**, when configured as described, will:
+
+- **Analyze** the Supann resource for the targeted user on a **daily basis**.
+- **Check** if the configured state has expired.
+-  **If expired**, update the Supann resource to the desired configuration.
+
+.. note::
+   This ensures automatic resource management and helps maintain up-to-date configurations.
+
+

@@ -11,27 +11,45 @@ state.
 .. note::
    It must be used with FusionDirectory Orchestrator.
 
-FusionDirectory Configuration
-=============================
+Task Setup
+----------
 
-Task Configuration
-------------------
+Creating the Task
+-----------------
 
-1. **Create a Task**:
-   - Open the **Tasks** section and define the schedule and repetition interval for this task.
+- Open the Tasks section in FusionDirectory.
+- Define the task’s schedule and repetition interval.
 
    .. image:: images/notifications-t1.png
       :alt: Life cycle - Task creation step 1
       :width: 600px
 
-2. **Notifications Configuration**:
-   - Navigate to the **Tasks Notifications** tab.
-   - Select attributes you want to monitor, the list is configurable via the configuration menu / notifications.
-   - Select the members. This can be a simple group or a dynamic group (allowing great flexibility).
+Configuring Task Notifications
+------------------------------
 
-   .. image:: images/notifications-t2.png
-      :alt: Life cycle - Task creation step 2
-      :width: 600px
+**Navigate** to the **Tasks Notifications** tab.
+**Select** the attributes to monitor.
+
+   .. warning::
+      The list of attributes **must be** configured via the **FusionDirectory configuration menu** under the **Notifications** tab before use.
+
+**Choose** the email template to use.
+   - The template **must be pre-created**.
+   - Specify the sender of the notifications.
+**Assign** the relevant monitored members.
+   - These members will be analyzed against the defined attributes in audit logs for any modifications **since the last execution of the task**.
+**Specify** the recipients who will receive the notifications.
+ **(Optional)** Enable monitoring of a **Supann resource**.
+   - This allows notifications to be sent when a member reaches a specific Supann state.
+   - You can choose to monitor both attributes and Supann resources or only one of them.
+
+.. note::
+   You can select either a **static group** or a **dynamic group** for greater flexibility.
+
+
+.. image:: images/notifications-t2.png
+  :alt: Life cycle - Task creation step 2
+  :width: 600px
 
 Task Execution
 --------------
@@ -51,5 +69,8 @@ See :ref:`Notifications Task Execution <notifications-task-execution-label>`. fo
 Summary
 -------
 
-This task, configured as per the example, will, on a hourly basis, analyze the monitored attributes or supan states for
-selected members and offer a notification mechanism based on above preset.
+Once configured as described, the **Task Notification** will:
+
+- **Analyze** the monitored attributes **hourly**.
+- **Analyze** the monitored Supann states **hourly**.
+- **Send** an email notification based on the predefined settings.
