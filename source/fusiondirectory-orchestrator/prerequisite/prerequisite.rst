@@ -18,7 +18,7 @@ FusionDirectory Orchestrator requires the following web server that supports PHP
 PHP
 ---
 
-As of 1.4 release, FusionDirectory Orchestrator requires `PHP <https://www.php.net>`_ 7.4.
+FusionDirectory Orchestrator 1.1 works with `PHP <https://www.php.net>`_ 7.4 and PHP 8.0.
 
 ^^^^^^^^^^^^^^^^^^^^
 
