@@ -40,3 +40,10 @@ RHEL
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/sogo-fd-conf.schema
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/calEntry.schema
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/calRessources.schema
+
+Register the plugin
+-------------------
+
+.. code-block:: bash
+ 
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/sogo/description.yaml

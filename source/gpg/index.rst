@@ -7,4 +7,3 @@ All our packages are signed by a gpg key
    :maxdepth: 2
 
    gpg-keys.rst
-   old-gpg-keys.rst

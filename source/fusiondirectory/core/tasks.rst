@@ -4,13 +4,20 @@ Tasks
 This page allows to manage Tasks objects
 
 .. image:: images/core-tasks.png
-   :alt: Picture of mail template within FusionDirectory
+   :alt: Picture of list of tasks within FusionDirectory
 
 You can create new Tasks easily.
+
+.. image:: images/mail-task-t1.png
+   :alt: Task - Step 1: Task creation
+
+Mandatory settings of a task
 
 .. image:: images/core-tasks-creation.png
    :alt: Picture of tasks creation within FusionDirectory
 
+* **Name**: Name of the task
+* **Date**: Starting date of the task
 * **Time**: Allows the schedule of the tasks to be timed in Hours:Minutes:Seconds format.
 
 Select the type of tasks available.
@@ -19,23 +26,12 @@ Select the type of tasks available.
    :alt: Picture of tasks - subtasks creation within FusionDirectory
 
 * **Acticate Subtasks**: Allows the creation of subtasks which will be processed by FusionDirectory Orchestrator.
-  
-Choose the options for the mail tasks
 
-.. image:: images/core-tasks-mail-creation.png
-   :alt: Picture of tasks mail creation within FusionDirectory
+Within the advanced setting section
 
-* **Mail Template**: Allows the selection of previsously created mail template.
-* **Members**: Allows the selection of users and groups as well as LDAP filtering options.
+.. image:: images/task-advanced-settings.png
+   :alt: Picture of tasks - Task Schedule within FusionDirectory
 
-.. image:: images/core-tasks-mail-creation-details.png
-   :alt: Picture of tasks mail creation details within FusionDirectory
-
-* **Sender**: Allows to setup the source e-mail address.
-* **Mail Type**: Multiple e-mails attributes exists, it allows the selection of one in particular for selected members.
-
-.. note::
-   * The default "Primary Address" from Mail plugin  is being used by default.
-   * If selected members have no e-mails configured for the attribute type selected, e-mails won't be received.
-
-
+* **Only with new members**: It will only create sub-tasks for new members listed. (Great with dynamic group).
+* **Repetable Task**: Repeatable task, allows the orchestrator-client to trigger the execution of the tasks automatically.
+* **Repetable Schedule**: The schedule of automatic re-activation of the task.
