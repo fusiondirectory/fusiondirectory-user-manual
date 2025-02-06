@@ -13,13 +13,6 @@ Add a file named **fusiondirectory-integrator.list** in /etc/apt/sources.list.d/
    #fusiondirectory integrator
    deb https://public.fusiondirectory.org/debian/fusiondirectory-integrator/ bullseye main
 
-Add a file named **fusiondirectory-utilities.list** in /etc/apt/sources.list.d/
-
-.. code-block:: shell
-
-   #fusiondirectory utilities
-   deb https://public.fusiondirectory.org/debian/fusiondirectory-utilities/ bullseye main
-
 Add a file named **fusiondirectory-tools.list** in /etc/apt/sources.list.d/
 
 .. code-block:: shell
@@ -62,5 +55,4 @@ Add a file named **fusiondirectory-orchestrator-release.list** in /etc/apt/sourc
 .. code-block:: shell
 
    #fusiondirectory Orchestrator repository
-   deb https://public.fusiondirectory.org/debian/bullseye-orchestrator-release/ bullseye main
-
+   deb https://public.fusiondirectory.org/debian/bullseye-fusiondirectory-orchestrator-release/ bullseye main
