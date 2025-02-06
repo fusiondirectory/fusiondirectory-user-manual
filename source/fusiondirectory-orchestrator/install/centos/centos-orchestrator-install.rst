@@ -10,6 +10,14 @@ All The needed dependancies are resolved by the centos packages
 Install FusionDirectory Orchestrator 
 ''''''''''''''''''''''''''''''''''''
 
+.. note::
+
+    You must at least be running PHP 7.4
+
+.. code-block:: shell
+
+    yum-config-manager --enable remi-php74
+
 You can then install Orchestrator by running: 
 
 .. code-block:: shell
@@ -28,10 +36,6 @@ We can easily do this by running:
 .. code-block:: shell
 
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/fusiondirectory-orchestrator.schema
-
-You should now be able to use Orchestrator API by visiting :
-
-http://SERVER-IP/orchestrator/api
 
 
 

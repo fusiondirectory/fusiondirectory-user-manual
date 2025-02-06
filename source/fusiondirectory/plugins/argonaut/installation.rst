@@ -40,3 +40,10 @@ RHEL
 .. code-block:: bash
 
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/argonaut-fd.schema
+
+Register the plugin
+-------------------
+
+.. code-block:: bash
+ 
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/argonaut/description.yaml

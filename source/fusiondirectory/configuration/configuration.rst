@@ -201,23 +201,6 @@ SASL
    
 * **Force to ask for password**: (required) Useful if you add a trigger using password value when SASL user passwords are edited.
 
-Dashboard name schema
-^^^^^^^^^^^^^^^^^^^^^
-
-.. image:: images/configuration-dashboard-name-schema.png
-   :alt: Image of Dashboard name schema menu in FusionDirectory   
-   
-* **Number of digits**: Number of digits to use after prefix.
-* **Prefixes**: (required) Prefixes to be used for computer ids.
-
-Dashboard expired users
-^^^^^^^^^^^^^^^^^^^^^^^
-
-.. image:: images/configuration-dashboard-expired-users.png
-   :alt: Image of Dashboard expired users menu in FusionDirectory   
-   
-* **Number of days**: Number of days before expiration needed for an account to show in the dashboard not expired accounts list.
-
 Mail Template
 ^^^^^^^^^^^^^
 

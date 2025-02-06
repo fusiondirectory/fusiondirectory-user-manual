@@ -42,3 +42,10 @@ RHEL
 
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/opsi-fd-conf.schema
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/opsi-fd.schema
+
+Register the plugin
+-------------------
+
+.. code-block:: bash
+ 
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/opsi/description.yaml

@@ -39,3 +39,9 @@ RHEL
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/alias-fd-conf.schema
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/alias-fd.schema
 
+Register the plugin
+-------------------
+
+.. code-block:: bash
+ 
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/alias/description.yaml

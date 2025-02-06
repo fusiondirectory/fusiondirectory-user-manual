@@ -17,3 +17,10 @@ RHEL
 .. code-block:: bash
 
    yum install fusiondirectory-plugin-mixedgroups
+
+Register the plugin
+-------------------
+
+.. code-block:: bash
+ 
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/mixedgroups/description.yaml
