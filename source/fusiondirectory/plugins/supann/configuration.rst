@@ -1,78 +1,110 @@
 Configuration
 =============
 
-The SupAnn standard specifies how to fill cn attribute: https://services.renater.fr/documentation/supann/supann2018/recommandations2018/attributs/cn
+SupAnn standard (2020) documentation can be found `here <https://services.renater.fr/documentation/supann/supann2020/recommandations2020/index>`_.
 
-You can change how FusionDirectory fill cn attribute by modifying CN Pattern by **%t[fr_FR]|sn% %t[fr_FR]|givenName%** in the configuration backend :ref:`configuration_people_and_group_storage`
+Additionally, the SupAnn standard specifies how to fill the `cn` attribute: `SupAnn CN Attribute Documentation <https://services.renater.fr/documentation/supann/supann2018/recommandations2018/attributs/cn>`_.
+
+You can modify how FusionDirectory renders the `CN` attribute by adjusting the **CN Pattern** in the configuration backend.
+For more details, refer to :ref:`configuration_people_and_group_storage`.
+
+Default CN Pattern
+------------------
+
+The default pattern is:
+
+.. code-block:: text
+
+   %t[fr_FR]|sn% %t[fr_FR]|givenName%
+
+This pattern determines how the `cn` attribute is structured within FusionDirectory.
+
 
 Configure SupAnn Status
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Click on Configuration icon on FusionDirectory main page
+To configure the SupAnn status in FusionDirectory, follow these steps:
 
-.. image:: images/supann-configuration-icon-main.png
-   :alt: Picture of configuration icon in FusionDirectory
+1. Click on the **Configuration** icon on the FusionDirectory main page.
 
-Go to SupAnn tab
+   .. image:: images/supann-configuration-icon-main.png
+      :alt: Configuration icon in FusionDirectory
 
-.. image:: images/supann-tab.png
-   :alt: Picture of supann tab in FusionDirectory
+2. Navigate to the **SupAnn** tab.
 
-Click on Edit button bottom right
+   .. image:: images/supann-tab.png
+      :alt: SupAnn tab in FusionDirectory
 
-.. image:: images/supann-edit-button.png
-   :alt: Picture of Edit button in FusionDirectory   
+3. Click the **Edit** button at the bottom right.
 
-.. image:: images/supann-configuration-menu_1.png
-   :alt: Picture of SupAnn configuration menu_1 in FusionDirectory
+   .. image:: images/supann-edit-button.png
+      :alt: Edit button in FusionDirectory
 
-.. image:: images/supann-configuration-menu_2.png
-   :alt: Picture of SupAnn configuration menu_2 in FusionDirectory
-   
-* **SupAnn RDN** : branch in which SupAnn structures will be stored (required)
-* **SupAnn mail for recovery** : allow the use of mail addresses from the personal mail address field from SupAnn account for password recovery
-* **Custom resources** : custom resources and thei labels
+4. The SupAnn configuration menu will appear:
 
-For example : if you want to add a label resources for the library, fill-in the following fields as showned and click "add" 
+   .. image:: images/supann-configuration-menu_1.png
+      :alt: SupAnn configuration menu in FusionDirectory
 
-.. image:: images/supann-example-library.png
-   :alt: Picture of example of resource label in FusionDirectory
-   
-* **Substates** : allowed substates for an account. There are three substates type : Active, Inactive and Suspended
-* **Custom labels** : labels for cutsom substates   
+- **SupAnn RDN**: Specifies the branch where SupAnn structures will be stored (required).
+- **SupAnn mail for recovery**: Allows password recovery using email addresses from the personal mail field in a SupAnn account.
+- **Custom resources**: Defines custom resources and their labels.
 
-For Example, you can add the ressource Library having substatus "Perdu", lost
+   .. image:: images/supann-configuration-menu_2.png
+      :alt: SupAnn configuration menu continuation in FusionDirectory
 
-.. image:: images/supann-example-substatus.png
-   :alt: Picture of example of substatus label in FusionDirectory
+**In order to configure a new resource**
+1. Fill in the appropriate fields as shown below.
+2. Click **Add**.
 
-When you are done, click on OK button bottom right
+   .. image:: images/supann-example-library.png
+      :alt: Example of resource label configuration in FusionDirectory
 
-.. image:: images/supann-ok-button.png
-   :alt: Picture of OK button in FusionDirectory
-   
-Now, in order to see if your settings have been correctly added to a user, go to user SupAnn status tab.
+- **Substates**: Specifies the allowed substates for an account. There are three types:
+  - Active
+  - Inactive
+  - Suspended
+- **Custom labels**: Defines labels for custom substates.
 
-On **Resource** drop-down menu you have now a "Library" entry
+#### Example: Adding a "Lost" Substate
 
-On **Substatus**  drop-down menu you have now a "Library" entry
+To add the substate **Perdu** (Lost) under the "Library" resource:
 
-.. image:: images/supann-example-user-supann-status.png
-   :alt: Picture of supann status menu in FusionDirectory
-   
+   .. image:: images/supann-example-substatus.png
+      :alt: Example of substatus label configuration in FusionDirectory
 
-Configure Multiservice card
+### Finalizing the Configuration
+
+Once all settings are configured, click **OK** at the bottom right.
+
+   .. image:: images/supann-configuration-menu_3.png
+      :alt: SupAnn configuration menu continuation in FusionDirectory
+
+- **SupAnn RDN**: Specifies the branch where SupAnn structures will be stored (required).
+- **SupAnn mail for recovery**: Allows password recovery using email addresses from the personal mail field in a SupAnn account.
+- **Custom resources**: Defines custom resources and their labels.
+
+   .. image:: images/supann-configuration-menu_4.png
+      :alt: SupAnn configuration menu continuation in FusionDirectory
+
+---
+
+Configure Multiservice Card
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Here is the wiew of Multiservice Card settings to configure
+The **Multiservice Card** settings allow configuration of various card-related parameters. Below is an overview:
 
-.. image:: images/supann-multiservice-card-settings_1.png
-   :alt: Picture of Multiservice Card settings in FusionDirectory
-   
-.. image:: images/supann-multiservice-card-settings_2.png
-   :alt: Picture of Multiservice Card settings in FusionDirectory
-   
-* **Card types** : card types and their labels. Please, prefix with {ORIGIN} for non standard types
-* **Card sources** : multi service card possible sources, with format system@domain
-* **Card formats** : allowed formats for multiservice cards      
-* **Card application domains** : domains for card applications
+   .. image:: images/supann-multiservice-card-settings_1.png
+      :alt: Multiservice Card settings in FusionDirectory
+
+   .. image:: images/supann-multiservice-card-settings_2.png
+      :alt: Multiservice Card settings continuation in FusionDirectory
+
+### Configuration Options
+
+- **Card types**: Defines available card types and their labels. Prefix non-standard types with `{ORIGIN}`.
+- **Card sources**: Specifies possible sources for multiservice cards, using the format `system@domain`.
+- **Card formats**: Lists allowed formats for multiservice cards.
+- **Card application domains**: Defines the domains in which card applications are valid.
+
+This concludes the configuration guide for SupAnn and Multiservice Cards in FusionDirectory.
+
