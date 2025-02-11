@@ -17,10 +17,8 @@ The default pattern is:
 
 This pattern determines how the `cn` attribute is structured within FusionDirectory.
 
-Configure SupAnn Status
+Configure SupAnn Options
 ------------------------
-
-To configure the SupAnn status in FusionDirectory, follow these steps:
 
 1. Click on the **Configuration** icon on the FusionDirectory main page.
 
@@ -39,12 +37,19 @@ To configure the SupAnn status in FusionDirectory, follow these steps:
 
 4. The SupAnn configuration menu will appear:
 
-   - **SupAnn RDN**: Specifies the branch where SupAnn structures will be stored (required).
-   - **SupAnn mail for recovery**: Allows password recovery using email addresses from the personal mail field in a SupAnn account.
-   - **Custom resources**: Defines custom resources and their labels.
+- **SupAnn RDN**: Defines the branch where SupAnn structures will be stored (**required**).
+- **SupAnn Mail for Recovery**: Enables password recovery using email addresses from the personal mail field in a SupAnn account.
+- **Show mailForwardingAddress Field**: Displays the **mailForwardingAddress** attribute, making it available and editable in individual user configurations.
+- **Custom supannMailPrivee Types**: Allows you to define a **Type** and a **Label** for private email addresses, following SupAnn guidelines.
+- **Custom supannTelephonePrive Types**: Enables defining a **Type** and a **Label** for private phone numbers, in accordance with SupAnn standards.
+- **Custom supannAdressePostalePrivee Types**: Permits the definition of a **Type** and a **Label** for private postal addresses, ensuring compliance with SupAnn guidelines.
+- **SupAnn Civilité**: Expands available titles beyond "M." and "Mme." to provide greater inclusivity, following SupAnn recommendations.
 
    .. image:: images/supann-configuration-menu_1.png
       :alt: SupAnn configuration menu in FusionDirectory
+
+Configure SupAnn Resources
+--------------------------
 
 **In order to configure a new resource:**
     1. Fill in the appropriate fields as shown below.
@@ -62,9 +67,12 @@ To configure the SupAnn status in FusionDirectory, follow these steps:
 
 - **Custom Labels**: Defines labels for custom substates.
 
+**Overview of Supann Resources configuration section**
 
-Example: Adding a "Lost" Substate
------------------------------------
+   .. image:: images/supann-configuration-menu_2.png
+      :alt: SupAnn configuration menu in FusionDirectory
+
+*Example: Adding a "Lost" Substate*
 
 To add the substate **Perdu** (Lost) under the "Library" resource:
 
@@ -74,10 +82,19 @@ To add the substate **Perdu** (Lost) under the "Library" resource:
 Once all settings are configured, click **OK** at the bottom right.
 
 
-Configure Multiservice Card
-----------------------------
+Configure Supann Multiservice Card
+----------------------------------
 
-The **Multiservice Card** settings allow configuration of various card-related parameters. Below is an overview:
+**Configuration Options**
+
+The **Multiservice Card** settings allow configuration of various card-related parameters.
+
+- **Card types**: Defines available card types and their labels. Prefix non-standard types with `{ORIGIN}`.
+- **Card sources**: Specifies possible sources for multiservice cards, using the format `system@domain`.
+- **Card formats**: Lists allowed formats for multiservice cards.
+- **Card application domains**: Defines the domains in which card applications are valid.
+
+*Below is an overview:*
 
    .. image:: images/supann-multiservice-card-settings_1.png
       :alt: Multiservice Card settings in FusionDirectory
@@ -85,17 +102,18 @@ The **Multiservice Card** settings allow configuration of various card-related p
    .. image:: images/supann-multiservice-card-settings_2.png
       :alt: Multiservice Card settings continuation in FusionDirectory
 
-Configuration Options
-----------------------
 
-- **Card types**: Defines available card types and their labels. Prefix non-standard types with `{ORIGIN}`.
-- **Card sources**: Specifies possible sources for multiservice cards, using the format `system@domain`.
-- **Card formats**: Lists allowed formats for multiservice cards.
-- **Card application domains**: Defines the domains in which card applications are valid.
+Configure SupAnn Consent
+------------------------
 
-Below is the configuration for "consent", where consent objects as well as consent types can be configured. The important features panel allows activating or deactivating features appearing on the individual user configuration page.
+The following configuration allows you to define **consent objects** and **consent types** within SupAnn.
 
-SupAnn Status is by default ticked, allowing to have a specific status on resources linked to the individual account. Multiservice card and FranceConnect integrate the same behavior. You have the flexibility to use those SupAnn features if so desired.
+The **Important Features** panel enables activation or deactivation of specific features displayed on the individual user configuration page.
+
+By default, **SupAnn Status** is enabled, allowing accounts to have a designated status for resources linked to them.
+The **Multiservice Card** and **FranceConnect** follow the same behavior, providing seamless integration.
+
+You have the flexibility to enable or disable these SupAnn features based on your requirements.
 
    .. image:: images/supann-configuration-menu_4.png
       :alt: SupAnn configuration menu continuation in FusionDirectory
