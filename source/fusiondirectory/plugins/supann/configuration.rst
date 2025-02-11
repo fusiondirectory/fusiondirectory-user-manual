@@ -58,6 +58,7 @@ There are three types:
     - Active
     - Inactive
     - Suspended
+
 - **Custom labels**: Defines labels for custom substates.
 
 Example: Adding a "Lost" Substate
