@@ -54,12 +54,14 @@ To configure the SupAnn status in FusionDirectory, follow these steps:
       :alt: Example of resource label configuration in FusionDirectory
 
 - **Substates**: Specifies the allowed substates for an account.
-There are three types:
-    - Active
-    - Inactive
-    - Suspended
+  There are three types:
 
-- **Custom labels**: Defines labels for custom substates.
+  - **Active**
+  - **Inactive**
+  - **Suspended**
+
+- **Custom Labels**: Defines labels for custom substates.
+
 
 Example: Adding a "Lost" Substate
 -----------------------------------
