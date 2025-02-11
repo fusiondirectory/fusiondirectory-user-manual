@@ -5,10 +5,9 @@ SupAnn standard (2020) documentation can be found `here <https://services.renate
 
 Additionally, the SupAnn standard specifies how to fill the `cn` attribute: `SupAnn CN Attribute Documentation <https://services.renater.fr/documentation/supann/supann2018/recommandations2018/attributs/cn>`_.
 
-You can modify how FusionDirectory renders the `CN` attribute by adjusting the **CN Pattern** in the configuration backend. For more details, refer to :ref:`configuration_people_and_group_storage`.
+You can modify how FusionDirectory renders the `CN` attribute by adjusting the **CN Pattern** in the configuration backend.
 
-Default CN Pattern
-------------------
+For more details, refer to :ref:`configuration_people_and_group_storage`.
 
 The default pattern is:
 
@@ -48,17 +47,18 @@ To configure the SupAnn status in FusionDirectory, follow these steps:
       :alt: SupAnn configuration menu in FusionDirectory
 
 **In order to configure a new resource:**
-1. Fill in the appropriate fields as shown below.
-2. Click **Add**.
+    1. Fill in the appropriate fields as shown below.
+    2. Click **Add**.
 
    .. image:: images/supann-example-library.png
       :alt: Example of resource label configuration in FusionDirectory
 
-   - **Substates**: Specifies the allowed substates for an account. There are three types:
-     - Active
-     - Inactive
-     - Suspended
-   - **Custom labels**: Defines labels for custom substates.
+- **Substates**: Specifies the allowed substates for an account.
+There are three types:
+    - Active
+    - Inactive
+    - Suspended
+- **Custom labels**: Defines labels for custom substates.
 
 Example: Adding a "Lost" Substate
 -----------------------------------
