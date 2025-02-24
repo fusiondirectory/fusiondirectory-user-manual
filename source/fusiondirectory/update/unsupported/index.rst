@@ -49,5 +49,7 @@ Unsupported version
    1.2.1-to-1.2.2.rst
    1.2.2-to-1.2.3.rst
    1.2.3-to-1.3.rst
+   1.3-to-1.3.1.rst
+   1.3-1-to-1.4.rst
 
 .. _archive : https://public.fusiondirectory.org/archive/fusiondirectory-release
