@@ -204,6 +204,7 @@
 - user-manual#193 clarify the php version supported for FusionDirectory 1.3.x
 - user-manual#194 update the certified distribution matrix
 - user-manual#202 update the documentation for 1.3.1
+- user-manual#234 add the for bullseye you should use buster repository in 13.1
 
 ### Deprecated
 
@@ -229,3 +230,5 @@
 - user-manual#145 url for the old webservice based on jsonrpc is wrong in the manual
 - user-manual#178 replace freenode by libera
 - user-manual#184 FD upgrade : updating fd-core schema not mentioned in the doc
+
+
