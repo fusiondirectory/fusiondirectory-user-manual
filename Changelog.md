@@ -1,3 +1,49 @@
+## %"FusionDirectory 1.5" - 2025-02-24
+
+### Added
+
+#### user-manual
+- user-manual#175 add the new fonctionnality to desactivate supann tab in supann plugin manual
+- user-manual#176 add new configuration for supann consent in the supann tab in the configuration backend
+- user-manual#177 add new configuration for supann etiquettes for mail and tel in the supann tab in the configuration backend
+- user-manual#219 [user-manual] - updates supann-ext documentation
+- user-manual#241 add the new configuration for the fusiondirectory configuration partage backend configuration
+- user-manual#248 [Tasks] - Explaination in details with screenshots of the new tabs life cycle and the incoming notifications
+- user-manual#258 explain to user how to register the plugin in each plugin installation section
+- user-manual#263 Migration note for 1.4 to 1.5
+- user-manual#271 The task explanation page should show the full task menu and then explain the different sections
+- user-manual#276 add a sectionn for the marketplace from the dev documentation
+
+### Changed
+
+#### user-manual
+- user-manual#253 update the logo with the new one
+- user-manual#265 Add new Authors to the Manual
+- user-manual#268 Update the readme.md
+- user-manual#269 remove the part that talk about stable dev and rewrite the fixes part
+- user-manual#274 make clear that FusionDirectory only support PHP 7.4 and that FusionDirectory Orchestrator start at PHP 7.4
+
+### Removed
+
+#### user-manual
+- user-manual#256 remove the bionic reference form the manual
+- user-manual#260 removing the old gpg singature from the manual
+- user-manual#261 remove the development gpg key
+- user-manual#262 change support link due to the new website
+- user-manual#275 remove the mention of iis in the manual
+
+### Fixed
+
+#### user-manual
+- user-manual#244 Change the core/main menu into the documentation to reflect the new FusionDirectory menu organisation
+- user-manual#249 Wrong command in "Check for deprecated attributes" section of migration guide from 1.3.-1 to 1.4
+- user-manual#251 remove the utilities repository from the documentation as tools is already containing everything
+- user-manual#254 Wrong url for orchestrator release
+- user-manual#259 Wrong commands in latest/fusiondirectory/plugins/ipam/
+- user-manual#264 Documentation for migration from 1.31 to 1.4 missing migrating mail-fd-conf.schema
+- user-manual#270 there is an error in the task mail explanation
+
+
 ## %"FusionDirectory 1.4" - 2024-02-22
 
 ### Added
@@ -184,5 +230,3 @@
 - user-manual#145 url for the old webservice based on jsonrpc is wrong in the manual
 - user-manual#178 replace freenode by libera
 - user-manual#184 FD upgrade : updating fd-core schema not mentioned in the doc
-
-

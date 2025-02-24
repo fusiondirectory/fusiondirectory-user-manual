@@ -1,8 +1,12 @@
-FusionDirectory Orchestrator Endpoints
-======================================
-
+Endpoints
+=========
 
 .. toctree::
    :maxdepth: 2
 
-   tasks/index.rst
+   description.rst
+   lifecycle.rst
+   notifications.rst
+   userreminder.rst
+   audit.rst
+   mails.rst

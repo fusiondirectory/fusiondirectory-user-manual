@@ -20,6 +20,7 @@ Contents:
    fusiondirectory-tools/index.rst
    fusiondirectory-orchestrator/index.rst
    fusiondirectory-webservice/index.rst
+   fusiondirectory-marketplace/index.rst
    support/index.rst
    security/index.rst
    authors/index.rst

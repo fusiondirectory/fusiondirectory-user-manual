@@ -14,12 +14,11 @@ FusionDirectory requires a web server that supports PHP, like:
 
 * `Apache 2 (or more recent) <http://httpd.apache.org>`_;
 * `Nginx <http://nginx.org/>`_;
-* `Microsoft IIS <https://www.iis.net>`_.
 
 PHP
 ---
 
-As of 1.4 release, FusionDirectory requires `PHP <https://www.php.net>`_ 7.3 or 7.4.
+FusionDirectory 1.5 requires `PHP <https://www.php.net>`_ 7.4.
 
 Mandatory extensions
 ^^^^^^^^^^^^^^^^^^^^

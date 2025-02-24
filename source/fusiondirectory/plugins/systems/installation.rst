@@ -40,3 +40,10 @@ RHEL
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/service-fd.schema
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/systems-fd.schema
    fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/systems-fd-conf.schema
+
+Register the plugin
+-------------------
+
+.. code-block:: bash
+ 
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/systems/description.yaml

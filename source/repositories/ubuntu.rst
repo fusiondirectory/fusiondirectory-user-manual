@@ -13,13 +13,6 @@ Add a file named **fusiondirectory-integrator.list** in /etc/apt/sources.list.d/
    #fusiondirectory integrator
    deb https://public.fusiondirectory.org/debian/fusiondirectory-integrator/ bullseye main
 
-Add a file named **fusiondirectory-utilities.list** in /etc/apt/sources.list.d/
-
-.. code-block:: shell
-
-   #fusiondirectory utilities
-   deb https://public.fusiondirectory.org/debian/fusiondirectory-utilities/ bullseye main
-
 Add a file named **fusiondirectory-tools.list** in /etc/apt/sources.list.d/
 
 .. code-block:: shell
@@ -46,16 +39,6 @@ Add a file named **fusiondirectory-release.list** in /etc/apt/sources.list.d/
 
    #fusiondirectory repository
    deb https://public.fusiondirectory.org/ubuntu/focal-fusiondirectory-release/ focal main
-
-Ubuntu bionic      
-^^^^^^^^^^^^^ 
-
-Add a file named **fusiondirectory-release.list** in /etc/apt/sources.list.d/
-
-.. code-block:: shell
-
-   #fusiondirectory repository
-   deb https://public.fusiondirectory.org/ubuntu/bionic-fusiondirectory-release/ bionic main
 
 
 

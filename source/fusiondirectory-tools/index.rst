@@ -10,3 +10,4 @@ The FusionDirectory tools are a suite of utilities to help you manage your fusio
    fusiondirectory-schema-manager
    fusiondirectory-plugins-manager
    fusiondirectory-migration-manager
+   fusiondirectory-orchestrator-client
