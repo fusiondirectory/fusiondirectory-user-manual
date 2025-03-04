@@ -6,6 +6,9 @@ Description
 
 This tool is designed to help you migrate your FusionDirectory instance from one version to another
 
+ .. warning::
+    The FusionDirectory Migration Manager is designed to be used within your FusionDirectory instance.
+    It enables access to the fusiondirectory.conf files, which contain authentication details for your LDAP instance, facilitating seamless migration and configuration management. 
 
 Options
 -------
