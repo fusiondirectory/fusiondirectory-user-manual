@@ -1,7 +1,7 @@
 Unsupported version
 ===================
 
-You can find all unsupported version on FusionDirectory `archive`_ for historic purposes
+You can find unsupported version of FusionDirectory on our archive repository for `debian`_
 
 Unsupported version
 
@@ -52,4 +52,4 @@ Unsupported version
    1.3-to-1.3.1.rst
    1.3-1-to-1.4.rst
 
-.. _archive : https://public.fusiondirectory.org/archive/fusiondirectory-release
+.. _debian : https://public.fusiondirectory.org/debian/archive/
