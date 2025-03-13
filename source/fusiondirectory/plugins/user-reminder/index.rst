@@ -9,5 +9,4 @@ FusionDirectory Plugins user-reminder
    description
    installation
    configuration
-   functionalities
    reminderTask
