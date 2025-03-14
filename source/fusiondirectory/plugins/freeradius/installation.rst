@@ -21,7 +21,7 @@ RHEL
 Install schemas
 ---------------
 
-You need to download and insert `freeradius official schema <https://github.com/FreeRADIUS/freeradius-server/blob/master/doc/schemas/ldap/openldap/freeradius.schema>`__
+You need to download and insert `freeradius official schema <https://github.com/FreeRADIUS/freeradius-server/blob/master/doc/schemas/ldap/openldap/freeradius-radius.schema>`__
 
 Debian
 ^^^^^^
