@@ -1,8 +1,17 @@
 Migrate FusionDirectory from 1.4 to 1.5
 =======================================
 
-Upgrade FusionDirectory first
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Upgrade FusionDirectory Tools First
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Upgrade the fusiondirectory-tools to get the latest version of the fusiondirectory-tools
+
+.. code-block:: shell
+
+   apt-get install fusiondirectory-tools
+
+Upgrade FusionDirectory
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Upgrade FusionDirectory core package before other ones to avoid
 dependencies errors:
