@@ -8,6 +8,11 @@ All The needed dependancies are resolved by the debian packages
    The repositories are in https for Debian
    so you will need to install **apt-transport-https**
 
+.. note::
+
+   If you want the fusiondirectory-orchestrator-client on the same machine as the fusiondirectory-orchestrator server
+   you have to install the package **fusiondirectory-tools**
+
 Install FusionDirectory Orchestrator 
 ''''''''''''''''''''''''''''''''''''
 
