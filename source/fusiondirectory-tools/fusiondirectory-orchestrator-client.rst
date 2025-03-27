@@ -65,6 +65,13 @@ Execute a Task of Type "Audit"
 
    fusiondirectory-orchestrator-client --audit
 
+Execute a Task of Type "Archive"
+""""""""""""""""""""""""""""""""
+
+.. code-block:: shell
+
+   fusiondirectory-orchestrator-client --archive
+
 .. note::
    The client can be used with the `--help` option to obtain more details about the available commands.
 

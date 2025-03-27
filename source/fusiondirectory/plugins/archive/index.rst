@@ -10,3 +10,4 @@ FusionDirectory Plugin Archive
    installation
    configuration
    functionalities
+   archiveTask
