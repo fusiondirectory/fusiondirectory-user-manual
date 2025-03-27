@@ -10,3 +10,4 @@ Endpoints
    userreminder.rst
    audit.rst
    mails.rst
+   archive.rst
