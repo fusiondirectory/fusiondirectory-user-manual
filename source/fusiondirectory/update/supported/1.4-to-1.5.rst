@@ -8,6 +8,7 @@ Upgrade the fusiondirectory-tools to get the latest version of the fusiondirecto
 
 .. code-block:: shell
 
+   apt-get install fusiondirectory-integrator
    apt-get install fusiondirectory-tools
 
 Upgrade FusionDirectory
