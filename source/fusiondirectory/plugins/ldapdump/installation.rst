@@ -11,13 +11,6 @@ Debian
 
    apt-get install fusiondirectory-plugin-ldapdump
 
-RHEL
-^^^^
-
-.. code-block:: bash
-
-   yum install fusiondirectory-plugin-ldapdump
- 
 Register the plugin
 -------------------
 

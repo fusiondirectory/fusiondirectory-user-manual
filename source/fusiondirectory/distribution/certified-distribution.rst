@@ -16,6 +16,6 @@ Ubuntu 16.04 LTS  not supported
 Ubuntu 18.04 LTS  not supported
 Ubuntu 20.04 LTS  supported
 ----------------- ------------------------
-Centos 7          supported
+Centos 7          not supported
 Centos 8          not supported
 ================= ========================

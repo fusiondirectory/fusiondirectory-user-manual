@@ -11,13 +11,6 @@ Debian
 
    apt-get install fusiondirectory-plugin-kerberos
 
-RHEL
-^^^^
-
-.. code-block:: bash
-
-   yum install fusiondirectory-plugin-kerberos
-
 Register the plugin
 -------------------
 

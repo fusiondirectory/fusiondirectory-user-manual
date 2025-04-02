@@ -11,13 +11,6 @@ Debian
 
    apt-get install fusiondirectory-plugin-mixedgroups
 
-RHEL
-^^^^
-
-.. code-block:: bash
-
-   yum install fusiondirectory-plugin-mixedgroups
-
 Register the plugin
 -------------------
 

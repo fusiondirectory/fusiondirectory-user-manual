@@ -14,14 +14,6 @@ Debian
    apt-get install fusiondirectory-plugin-zimbra
    apt-get install fusiondirectory-plugin-zimbra-schema
 
-RHEL
-^^^^
-
-.. code-block:: bash
-
-   yum install fusiondirectory-plugin-zimbra
-   yum install fusiondirectory-plugin-zimbra-schema
-
 Insert schemas
 ---------------
 
@@ -32,13 +24,6 @@ Debian
 
    fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/zimbra-fd.schema
    
-RHEL
-^^^^
-
-.. code-block:: bash
-
-   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/zimbra-fd.schema
-
 Register the plugin
 -------------------
 

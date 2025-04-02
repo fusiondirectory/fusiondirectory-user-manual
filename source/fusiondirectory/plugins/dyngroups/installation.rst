@@ -11,13 +11,6 @@ Debian
 
    apt-get install fusiondirectory-plugin-dyngroups
    
-RHEL
-^^^^
-
-.. code-block:: bash
-
-   yum install fusiondirectory-plugin-dyngroups
-
 Register the plugin
 -------------------
 

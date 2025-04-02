@@ -11,13 +11,6 @@ Debian
 
    apt-get install fusiondirectory-plugin-ldapmanager
    
-RHEL
-^^^^
-
-.. code-block:: bash
-
-   yum install fusiondirectory-plugin-ldapmanager
-   
 Register the plugin
 -------------------
 

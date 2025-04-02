@@ -11,13 +11,6 @@ Debian
 
    apt-get install fusiondirectory-plugin-posix
 
-RHEL
-^^^^
-
-.. code-block:: bash
-
-   yum install fusiondirectory-plugin-posix
-
 Register the plugin
 -------------------
 
