@@ -1,7 +1,7 @@
 Dyngroup
 ========
 
-FusionDirectory Plugins Dyngroup
+FusionDirectory Plugins Dyngroups
 
 .. toctree::
    :maxdepth: 2
