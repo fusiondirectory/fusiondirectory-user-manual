@@ -36,3 +36,10 @@ RHEL
 .. code-block:: bash
 
     fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/supann-ext-fd.schema
+
+Register the plugin
+-------------------
+
+.. code-block:: bash
+
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/supann-ext/description.yaml
