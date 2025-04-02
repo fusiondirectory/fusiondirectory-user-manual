@@ -47,6 +47,11 @@ Fill the fields for the Zimbra plugin and save it
    * Domain: mail domain ex: acme.com
    * Class of service: Service class name | cos id (zimbra cos id)
 
+.. note::
+  ! there is no space the pipe and the service name and the cos id !
+  **xl_fusiondirectory|12348743567899**
+
+
 Click on "save" button bottom right to save your server
 
 .. image:: images/zimbra-save.png
