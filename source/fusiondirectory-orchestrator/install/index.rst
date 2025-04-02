@@ -5,4 +5,3 @@ Install FusionDirectory Orchestrator
    :maxdepth: 2
 
    debian/index.rst
-   centos/index.rst

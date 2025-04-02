@@ -12,14 +12,6 @@ Debian
    apt-get install fusiondirectory-plugin-samba
    apt-get install fusiondirectory-plugin-samba-schema
 
-RHEL
-^^^^
-
-.. code-block:: bash
-
-   yum install fusiondirectory-plugin-samba
-   yum install fusiondirectory-plugin-samba-schema
-
 Install schemas
 ---------------
 
@@ -34,14 +26,6 @@ Debian
 
    fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/samba-fd-conf.schema
    fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/samba.schema
-
-RHEL
-^^^^
-
-.. code-block:: bash
-
-   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/samba-fd-conf.schema
-   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/samba.schema
 
 Register the plugin
 -------------------

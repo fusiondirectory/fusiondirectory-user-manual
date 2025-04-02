@@ -12,14 +12,6 @@ Debian
    apt-get install fusiondirectory-plugin-argonaut
    apt-get install fusiondirectory-plugin-argonaut-schema
 
-RHEL
-^^^^
-
-.. code-block:: bash
-
-   yum install fusiondirectory-plugin-argonaut
-   yum install fusiondirectory-plugin-argonaut-schema
-
 Install schemas
 ---------------
 
@@ -33,13 +25,6 @@ Debian
 .. code-block:: bash
 
    fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/argonaut-fd.schema
-
-RHEL
-^^^^
-
-.. code-block:: bash
-
-   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/argonaut-fd.schema
 
 Register the plugin
 -------------------

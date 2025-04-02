@@ -14,8 +14,6 @@ New Depot Configuration
 
    :ref:`fd-ubuntu-repository-label`.
 
-   :ref:`fd-rpm-repository-label`.
-
 .. warning::
 
     The gpg keys for FusionDirectory have been renewed

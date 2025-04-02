@@ -12,14 +12,6 @@ Debian
    apt-get install fusiondirectory-plugin-user-reminder
    apt-get install fusiondirectory-plugin-user-reminder-schema
 
-RHEL
-^^^^
-
-.. code-block:: bash
-
-   yum install fusiondirectory-plugin-user-reminder
-   yum install fusiondirectory-plugin-user-reminder-schema
-
 Install schemas
 ---------------
 
@@ -30,10 +22,3 @@ Debian
 
    fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/user-reminder-fd-conf.schema
    
-RHEL
-^^^^
-
-.. code-block:: bash
-
-   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/user-reminder-fd-conf.schema
-  

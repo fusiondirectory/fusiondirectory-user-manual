@@ -12,14 +12,6 @@ Debian
    apt-get install fusiondirectory-plugin-dhcp
    apt-get install fusiondirectory-plugin-dhcp-schema
 
-RHEL
-^^^^
-
-.. code-block:: bash
-
-   yum install fusiondirectory-plugin-dhcp
-   yum install fusiondirectory-plugin-dhcp-schema
-
 Install schemas
 ---------------
 
@@ -34,14 +26,6 @@ Debian
 
    fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/dhcp-fd-conf.schema
    fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/dhcp-fd.schema
-
-RHEL
-^^^^
-
-.. code-block:: bash
-
-   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/dhcp-fd-conf.schema
-   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/dhcp-fd.schema
 
 Register the plugin
 -------------------

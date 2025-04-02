@@ -12,14 +12,6 @@ Debian
    apt-get install fusiondirectory-plugin-opsi
    apt-get install fusiondirectory-plugin-opsi-schema
 
-RHEL
-^^^^
-
-.. code-block:: bash
-
-   yum install fusiondirectory-plugin-opsi
-   yum install fusiondirectory-plugin-opsi-schema
-
 Install schemas
 ---------------
 
@@ -34,14 +26,6 @@ Debian
 
    fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/opsi-fd-conf.schema
    fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/opsi-fd.schema
-
-RHEL
-^^^^
-
-.. code-block:: bash
-
-   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/opsi-fd-conf.schema
-   fusiondirectory-schema-manager --insert-schema /etc/openldap/schema/fusiondirectory/opsi-fd.schema
 
 Register the plugin
 -------------------

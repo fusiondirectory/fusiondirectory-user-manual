@@ -11,13 +11,6 @@ Debian
 
    apt-get install fusiondirectory-plugin-developers
    
-RHEL
-^^^^
-
-.. code-block:: bash
-
-   yum install fusiondirectory-plugin-developers
-
 Register the plugin
 -------------------
 
