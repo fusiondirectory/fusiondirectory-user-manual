@@ -44,4 +44,4 @@ Register the plugin
 
 .. code-block:: bash
  
-   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/public/description.yaml
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/public-forms/description.yaml
