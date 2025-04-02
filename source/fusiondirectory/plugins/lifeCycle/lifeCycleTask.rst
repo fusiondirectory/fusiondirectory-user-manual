@@ -1,5 +1,5 @@
-Life Cycle
-==========
+Life Cycle task
+===============
 
 The **Life Cycle** task manages the end of life of your accounts.
 It uses the end date of a targeted Supann resource and allows for modification, prolongation, or change of state.

@@ -5,4 +5,7 @@ Life Cycle
 .. toctree::
    :maxdepth: 2
 
-   lifeCycleTask.rst
+   description
+   installation
+   configuration
+   lifeCycleTask
