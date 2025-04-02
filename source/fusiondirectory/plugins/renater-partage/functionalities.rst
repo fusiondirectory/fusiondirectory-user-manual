@@ -43,6 +43,10 @@ Fill the fields for the Renater plugin and save it
    * Key: API key received from Renater
    * Class of service: Service class name | cos id (zimbra cos id)
 
+.. note::
+  ! there is no space the pipe and the service name and the cos id !
+  **xl_fusiondirectory|12348743567899**
+
 Click on "save" button bottom right to save your server
 
 .. image:: images/renaterpartage-save.png
