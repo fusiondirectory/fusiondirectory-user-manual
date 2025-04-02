@@ -16,13 +16,13 @@ RHEL
 
 .. code-block:: bash
 
-   yum install fusiondirectory-plugin-dyngroup
+   yum install fusiondirectory-plugin-dyngroups
 
 Register the plugin
 -------------------
 
 .. code-block:: bash
  
-   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/dyngroup/description.yaml
+   fusiondirectory-plugins-manager --register-plugin /etc/fusiondirectory/yaml/dyngroups/description.yaml
    
    

@@ -3,7 +3,7 @@
 Functionalities
 ===============
 
-Dyngroup plugin lets you manage groupOfURLs objects within FusionDirectory just like regular groups and roles.
+Dyngroups plugin lets you manage groupOfURLs objects within FusionDirectory just like regular groups and roles.
 
 You can go to the "Groups and roles" page and create a dynamic group.
 

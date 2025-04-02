@@ -22,7 +22,7 @@ FusionDirectory Plugins
    dns/index
    dovecot/index
    dsa/index
-   dyngroup/index
+   dyngroups/index
    ejbca/index
    fai/index
    freeradius/index
