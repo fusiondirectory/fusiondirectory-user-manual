@@ -23,6 +23,13 @@ Execute a Task of Type "Mail"
 
    fusiondirectory-orchestrator-client --emails
 
+Execute a Task of Type "Extractor"
+""""""""""""""""""""""""""""""""""
+
+.. code-block:: shell
+
+   fusiondirectory-orchestrator-client --extract [optional path]
+
 Execute a Task of Type "Life Cycle"
 """""""""""""""""""""""""""""""""""
 

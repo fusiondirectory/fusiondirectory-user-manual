@@ -24,6 +24,7 @@ FusionDirectory Plugins
    dsa/index
    dyngroups/index
    ejbca/index
+   extractor/index
    fai/index
    freeradius/index
    fusioninventory/index

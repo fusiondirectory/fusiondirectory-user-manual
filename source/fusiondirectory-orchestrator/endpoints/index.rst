@@ -11,3 +11,4 @@ Endpoints
    audit.rst
    mails.rst
    archive.rst
+   extractor.rst
