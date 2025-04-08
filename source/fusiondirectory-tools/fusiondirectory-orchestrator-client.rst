@@ -68,9 +68,23 @@ Remove All Completed Sub-Tasks
 Execute a Task of Type "Audit"
 """"""""""""""""""""""""""""""
 
-.. code-block:: shell
+The `--audit` option allows you to execute tasks of type "Audit". This includes two modes of operation:
 
-   fusiondirectory-orchestrator-client --audit
+1. **Standard Audit Deletion**:
+
+   - Removes audit logs older than the configured retention period.
+
+     .. code-block:: shell
+
+        fusiondirectory-orchestrator-client --audit
+
+2. **Syslog Transformation**:
+
+   - Transforms audit logs into syslog format and appends them to a daily syslog file.
+
+     .. code-block:: shell
+
+        fusiondirectory-orchestrator-client --audit syslog
 
 Execute a Task of Type "Archive"
 """"""""""""""""""""""""""""""""
