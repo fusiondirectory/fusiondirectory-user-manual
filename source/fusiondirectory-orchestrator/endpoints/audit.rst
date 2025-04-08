@@ -1,23 +1,34 @@
-Audit task execution
+Audit Task Execution
 ====================
 
 .. _audit-task-execution-label:
 
 Once the task is configured, execute it using the **orchestrator-client** tool. You have two execution options:
 
-.. code-block:: bash
+1. **Standard Audit Deletion**:
+   - Removes audit logs older than the configured retention period.
+   - Example:
 
-   fusiondirectory-orchestrator-client --audit
+     .. code-block:: bash
+
+        fusiondirectory-orchestrator-client --audit
+
+2. **Syslog Transformation**:
+   - Transforms audit logs into syslog format and appends them to a daily syslog file.
+   - Example:
+
+     .. code-block:: bash
+
+        fusiondirectory-orchestrator-client --audit syslog
 
 .. note::
    **Recommendation** automate this process within a CRON job.
 
 .. note::
-  Add the ``--verbose`` flag to the command for detailed output during execution.
-
+   Add the ``--verbose`` flag to the command for detailed output during execution.
 
 .. note::
-    The logs are stored by default at the following location:
+   The syslogs are stored at the following location:
 
-    ``/var/log/orchestrator/orchestrator.log``
+   ``/var/log/fusiondirectory/``
 
