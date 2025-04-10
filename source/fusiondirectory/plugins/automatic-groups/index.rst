@@ -1,5 +1,5 @@
-Life Cycle
-==========
+Automatic Groups
+================
 
 
 .. toctree::
