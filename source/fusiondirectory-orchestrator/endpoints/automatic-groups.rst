@@ -38,7 +38,7 @@ Basic Execution
    fusiondirectory-orchestrator-client --automatic-groups
 
 With Verbose Output
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
 
