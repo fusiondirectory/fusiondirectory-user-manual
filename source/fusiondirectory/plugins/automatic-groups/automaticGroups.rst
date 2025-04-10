@@ -21,7 +21,7 @@ Creating the Task
       :width: 600px
 
 Configuring Automatic Groups Task
---------------------------------
+---------------------------------
 
 - **Navigate** to the **Tasks Automatic Groups** tab.
 - **Select** the target group where users will be added or removed.
