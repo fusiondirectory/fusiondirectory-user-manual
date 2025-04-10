@@ -12,3 +12,4 @@ Endpoints
    mails.rst
    archive.rst
    extractor.rst
+   automatic-groups.rst

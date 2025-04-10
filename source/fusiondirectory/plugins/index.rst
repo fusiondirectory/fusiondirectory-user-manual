@@ -13,6 +13,7 @@ FusionDirectory Plugins
    audit/index
    autofs5/index
    autofs/index
+   automatic-groups/index
    certificates/index
    community/index
    cyrus/index
