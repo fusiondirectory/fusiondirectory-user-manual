@@ -1,10 +1,6 @@
 Extractor Task
 ==============
 
-The **Extractor Task** plugin allows you to define a set of users, user groups, or dynamic groups to extract data into a specific format. 
-For now, only **CSV** is available, but additional formats will be supported in the future. 
-The CSV file adapts its headers based on the attributes collected among the users listed, ensuring proper formatting even if some users have undefined attributes compared to others.
-
 .. note::
    It must be used with FusionDirectory Orchestrator and requires the `--extract` option.
 
