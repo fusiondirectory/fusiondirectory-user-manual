@@ -193,7 +193,7 @@ Object groups
    
 * **Groups RDN**: (required) Branch in which object groups will be stored.
 * **Default user for groups** When enabled, FusionDirectory will automatically add a *default user* (with DN ``uid=default,ou=nonexistent,BASE_DN``) as a member to all groups.
-This default user acts as a placeholder for group membership and will be visible in the group members list as "Default user placeholder". If disabled, this entry will not appear in groups.
+   This default user acts as a placeholder for group membership and will be visible in the group members list as "Default user placeholder". If disabled, this entry will not appear in groups.
 
 SASL
 ^^^^
