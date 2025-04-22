@@ -7,6 +7,13 @@ This page is for groups and roles management.
 
    In big groups, you can encounter a PHP fatal error. When it happened you can adapt your PHP configuration with the next value "pcre.backtrack_limit=10000000"
 
+.. note::
+
+   FusionDirectory can automatically add a *default user* to groups if the administrator enables the ``fdOGroupDefaultUser`` setting in the configuration.  
+   This default user is represented by the DN ``uid=default,ou=nonexistent,BASE_DN`` and acts as a placeholder for group membership.  
+   If this feature is enabled, you will see an entry labeled "Default user placeholder" in the group members list.  
+   If disabled, this entry will not appear.
+
 Click on Groups and roles icon on FusionDirectory main page
 
 .. image:: images/core-groups-and-roles-icon.png
@@ -90,5 +97,5 @@ Of course, you can also create groups, roles and POSIX groups from scratch, by c
 **Restore snapshots**: Restore snapshots of groups
 
 .. image:: images/core-action-restore-snapshots.png
-   :alt: Picture of restore snapshots menu in FusionDirectory      
-    
+   :alt: Picture of restore snapshots menu in FusionDirectory
+
