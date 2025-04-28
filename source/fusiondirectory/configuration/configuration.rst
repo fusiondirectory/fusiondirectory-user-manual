@@ -63,6 +63,7 @@ Password settings
   * sasl
   * ssha
   * sha
+  * argon2 (available by using LDAP version 2.5 with overlay).
 
   These values will be overridden when using templates.
 * **Force default hash**: Enable/Disable force the use of the default password hash.
