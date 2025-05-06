@@ -28,10 +28,14 @@ There are two methods for configuring which resources to monitor:
 **Method 1: Using Specific Resource States**
 
 - **Navigate** to the **Tasks Life Cycle** tab.
-- In the **Pre / existing resources details** section, select the resource, state, and (optionally) sub-state to monitor for expiration.
-- In the **Post resources details** section, choose the resource, state, and (optionally) sub-state to be assigned after the expiration of the monitored resource.
-- **Define** the extra days to extend the new resource's **end date**. The calculation begins from the last end date of the previous resource.
+- In the **Current resources details** section, select the resource, state, and (optionally) sub-state to monitor for expiration.
+- In the **Future resources details** section, choose the resource, state, and (optionally) sub-state to be assigned after the expiration of the monitored resource.
+- **Define** the extra days to extend the future resource's **end date**. The calculation begins from the last end date of the future resource.
 - **Assign** the relevant members.
+
+.. image:: images/lifeCycle-p2.png
+  :alt: Life cycle - Task creation step 2
+  :width: 600px
 
 **Method 2: Using Regex Pattern Filtering**
 
@@ -41,41 +45,42 @@ There are two methods for configuring which resources to monitor:
    - Example patterns:
       - `{COMPTE}.*` to match all account resources
       - `{MAIL}A:SupannActif:.*` to match active mail resources
-- Configure the **Post resources details** as described above.
+- Configure the **Future resources details** as described above.
 - **Assign** the relevant members.
+
+.. image:: images/lifeCycle-p3.png
+  :alt: Life cycle - Task creation step 2
+  :width: 600px
 
 .. note::
    You can select either a **static group** or a **dynamic group** for greater flexibility.
-
-.. image:: images/lifeCycle-p2.png
-  :alt: Life cycle - Task creation step 2
-  :width: 600px
 
 Resource Modification Behavior
 ------------------------------
 
 .. tip::
-   While the task allows updating any resource based on the expiration of another, we recommend matching pre-resources with post-resources (monitoring and updating the same resource) when possible.
+   While the task allows updating any resource based on the expiration of another, we recommend matching current resources with future resources (monitoring and updating the same resource) when possible.
 
    This was the original intended purpose and ensures a more predictable lifecycle management.
 
    However, the flexibility to update different resources is available for specific use cases where needed.
 
-When a monitored resource expires (either pre-resource or regex match), the task will:
+When a monitored resource expires (either current resource or regex match), the task will:
 
-- Look for the specified post-resource in the user's record
-- If the post-resource is found and has a valid end date, it will:
-  - Set the post-resource's **current end date** as its new **start date**
-  - Calculate a new end date by taking the post-resource's current end date and adding any extra days specified
-  - Update the post-resource with these new dates
-- If not found or if the post-resource has no valid end date, the task will log an error
+- Look for the specified future resource in the user's record
+- If the future resource is found and has a valid end date, it will:
+
+  - Set the future resource's **current end date** as its new **start date**
+  - Calculate a new end date by taking the future resource's current end date and adding any extra days specified
+  - Update the future resource with these new dates
+- If not found or if the future resource has no valid end date, the task will log an error
 
 .. warning::
-   The task modifies the POST-resource specified in the configuration, NOT the expired resource that triggered the task.
+   The task modifies the FUTURE resource specified in the configuration, NOT the expired resource that triggered the task.
    
-   The post-resource must already exist in the user's record and have a valid end date for the update to work.
+   The future resource must already exist in the user's record and have a valid end date for the update to work.
    
-   IMPORTANT: The current END date of the post-resource will become its new START date after the update.
+   IMPORTANT: The current END date of the future resource will become its new START date after the update.
 
 .. note::
    Example: If a user has an expired {MAIL} resource and your task is configured to update {COMPTE}, the task will:
@@ -97,8 +102,8 @@ Summary
 The **Life Cycle Task**, when configured as described, will:
 
 - **Analyze** the Supann resources for the targeted users on a **daily basis**.
-- **Check** if the configured state has expired, either using specific pre-state values or regex pattern matching.
-- **If expired**, update the specified post-resource to the desired configuration.
+- **Check** if the configured state has expired, either using specific current resource values or regex pattern matching.
+- **If expired**, update the specified future resource to the desired configuration.
 
 .. note::
    This ensures automatic resource management and helps maintain up-to-date configurations.
