@@ -12,7 +12,7 @@ Configuration file
 ^^^^^^^^^^^^^^^
 .. code-block:: shell
 	
-  FD_LDAP_MASTER_URL="ldaps://ldap.fusiondirectory.org"
+  LDAP_URI="ldaps://ldap.fusiondirectory.org"
 
 Required in order to connect to the proper host.
 FQDN or IP must be provided with ldap(s) to secure the connection.
@@ -25,21 +25,34 @@ Required to operate with ldap libraries.
 
 .. code-block:: shell
 	
-  LDAP_ADMIN="cn=admin,dc=fusiondirectory,dc=org"
+  LDAP_BIND_DN="cn=admin,dc=fusiondirectory,dc=org"
 
 Required by LDAP in order to use the proper privileges.
 
 .. code-block:: shell
 	
-  LDAP_PWD="ldap_pwd"
+  LDAP_PASSWORD="ldap_pwd"
 
 Required password to authenticate LDAP
 
+[FusionDirectory Webservice]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: shell
-	
-  LDAP_OU_DSA="ou=dsa,dc=fusiondirectory,dc=org"
 
-Required to ease the research of the branch DSA by endpoints.
+  FUSIONDIRECTORY_WEBSERVICE_URL="https://fd.fusiondirectory.org/rest.php/v1"
+  FUSIONDIRECTORY_WEBSERVICE_LOGIN="weblogin_username"
+  FUSIONDIRECTORY_WEBSERVICE_PASSWORD="weblogin_password"
+
+Information related to the webservice of fusiondirectory. This is required for fusiondirectory-orchestrator
+to activate specific actions within FusionDirectory webservice.
+
+.. Note::
+
+  | Orchestrator is highly depending on the URL rewriting mechanism of the web server.
+  | In case of Apache2 ".htaccess" files are responsible for that logic.
+
+  | Although informative, there should not be any value of modifying the contents of those files.
+  | The goal is to redirect any call on URI to the main index file located in API directory. 
 
 [JWT token settings]
 ^^^^^^^^^^^^^^^^^^^^
@@ -111,37 +124,3 @@ Please note the importance of lowercase in 'ssl' or 'tls'.
 
 The TCP/UDP port number of the SMTP server.(Example: SSL 465 / TLS 586).
 
-[DSA Login Information]
-^^^^^^^^^^^^^^^^^^^^^^^
-.. code-block:: shell
-
-  DSA_LOGIN="DSA Login Name"
-  DSA_PASS="DSA Password"
-
-The DSA login that should be used to interact with LDAP.
-
-.. code-block:: shell
-
-  ORCHESTRATOR_API_URL="https://orchestrator.fusiondirectory.org"
-
-The REST API URL in HTTP(s). Required by the fd-orchestrator-client.
-
-[WEB Service FusionDirectory]
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. code-block:: shell
-
-  FUSION_DIRECTORY_API_URL="https://fd.fusiondirectory.org/rest.php/v1"
-  WEB_LOGIN="weblogin_username"
-  WEB_PASS="weblogin_password"
-
-Information related to the webservice of fusiondirectory. This is required for fusiondirectory-orchestrator
-to activate specific actions within FusionDirectory WEB.
-
-
-.. Note::
-
-  | Orchestrator is highly depending on the URL rewriting mechanism of the web server.
-  | In case of Apache2 ".htaccess" files are responsible for that logic.
-
-  | Although informative, there should not be any value of modifying the contents of those files.
-  | The goal is to redirect any call on URI to the main index file located in API directory. 
