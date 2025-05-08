@@ -31,7 +31,7 @@ Required by LDAP in order to use the proper privileges.
 
 .. code-block:: shell
 	
-  LDAP_PASSWORD="ldap_pwd"
+  LDAP_PASSWORD="ldap_password"
 
 Required password to authenticate LDAP
 
