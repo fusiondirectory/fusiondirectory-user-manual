@@ -5,3 +5,4 @@ Install FusionDirectory Orchestrator on Debian
    :maxdepth: 4
 
    debian-orchestrator-install.rst
+   register.rst
