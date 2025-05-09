@@ -158,6 +158,16 @@ Miscellaneous
 * **Plugin menu blacklist**: A list of plugins to hide from FusionDirectory menu for a given group of users.
 * **ACL target filter limit**: Defines the maximum number of entries an ACL target filter is allowed to return
 
+Tokens
+^^^^^^
+
+.. image:: images/configuration-token.png
+   :alt: Image of token section in FusionDirectory
+
+* **FusionDirectory**: Branch where token managed by FusionDirectory are stored
+* **FusionDirectory Orchestrator**: Branch where FusionDirectory Orchestrator token are stored
+* **FusionDirectory Recovery**: Branch where FusionDirectory Recovery token are stored
+
 Triggers
 ^^^^^^^^
 
