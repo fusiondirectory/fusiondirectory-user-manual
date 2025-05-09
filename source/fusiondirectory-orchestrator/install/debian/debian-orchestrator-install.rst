@@ -34,6 +34,3 @@ We can easily do this by running:
 .. code-block:: shell
 
    fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/fusiondirectory-orchestrator.schema
-
-
-
