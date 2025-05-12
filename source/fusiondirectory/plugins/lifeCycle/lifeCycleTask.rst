@@ -43,13 +43,13 @@ There are two methods for configuring which resources to monitor:
 - **Enable** the regex filtering option.
 - **Enter** a regex pattern to match against supannRessourceEtatDate values.
    - Example patterns:
-      - `{COMPTE}.*` to match all account resources
-      - `{MAIL}A:SupannActif:.*` to match active mail resources
+      - ``{COMPTE}.*`` to match all account resources
+      - ``{MAIL}A:SupannActif:.*`` to match active mail resources
 - Configure the **Future resources details** as described above.
 - **Assign** the relevant members.
 
 .. image:: images/lifeCycle-p3.png
-  :alt: Life cycle - Task creation step 2
+  :alt: Life cycle - Task configuration with Regex
   :width: 600px
 
 .. note::
@@ -58,36 +58,73 @@ There are two methods for configuring which resources to monitor:
 Resource Modification Behavior
 ------------------------------
 
+The Life Cycle task processes users in two main phases:
+
+1.  **Eligibility Check:**
+    For each user assigned to the task, it first checks if *any* of their Supann resources meet the expiration criteria defined in the **Current resources details** (or via the **Regex Pattern** if "Regex Pattern" is selected as the Current Resource type). If no monitored resource is found to be expired, no further action is taken for that user.
+
+2.  **Update Execution:**
+    If an expired monitored resource is found (making the user eligible), the task then determines which specific user resource(s) to update. The exact behavior depends on the combination of how the **Current resources details** (Monitored) and **Future resources details** (Target) are configured:
+
+    *   **Scenario A: Monitored Resource = Static Name, Target Resource = Static Name**
+        *   **Trigger:** The specific static resource defined in "Current resources details" (matching by name, state, and optionally sub-state) is found on the user and is expired.
+        *   **Action:** The task looks for a user resource whose name matches the static name specified in "Future resources details".
+        *   **Update:** If this target resource is found and has a valid end date:
+            *   It **keeps its original name**.
+            *   Its state and sub-state are updated to what is configured in "Future resources details".
+            *   Its original end date becomes its new start date.
+            *   A new end date is calculated by adding the "Extra days to add" (from "Future resources details") to this new start date.
+            *   If the target resource is not found or lacks a valid end date, an error is logged.
+
+    *   **Scenario B: Monitored Resource = Regex Pattern, Target Resource = Static Name**
+        *   **Trigger:** *Any* user resource whose name matches the **Regex Pattern** AND whose state/sub-state match those in "Current resources details" is found and is expired.
+        *   **Action:** The task looks for a user resource whose name matches the static name specified in "Future resources details".
+        *   **Update:** Same as Scenario A.
+
+    *   **Scenario C: Monitored Resource = Static Name, Target Resource = Regex Pattern**
+        *   **Trigger:** The specific static resource defined in "Current resources details" (matching by name, state, and optionally sub-state) is found on the user and is expired.
+        *   **Action:** The task looks for *all* user resources whose names match the **Regex Pattern** (specified in "Regex Pattern Configuration").
+        *   **Update:** Each such found resource that has a valid end date is updated:
+            *   It **keeps its original name**.
+            *   Its state and sub-state are updated to what is configured in "Future resources details".
+            *   Its original end date becomes its new start date.
+            *   A new end date is calculated using "Extra days to add".
+            *   Resources matching the regex but lacking a valid end date are skipped.
+
+    *   **Scenario D: Monitored Resource = Regex Pattern, Target Resource = Regex Pattern**
+        *   **Trigger & Action:** The task iterates through all of the user's Supann resources. If a resource:
+            1.  Matches the **Regex Pattern** by name, AND
+            2.  Matches the state/sub-state defined in "Current resources details", AND
+            3.  Is expired.
+        *   **Update:** *That same resource* (the one that met all trigger conditions) is updated if it has a valid end date:
+            *   It **keeps its original name**.
+            *   Its state and sub-state are updated to what is configured in "Future resources details".
+            *   Its original end date becomes its new start date.
+            *   A new end date is calculated using "Extra days to add".
+
 .. tip::
-   While the task allows updating any resource based on the expiration of another, we recommend matching current resources with future resources (monitoring and updating the same resource) when possible.
-
-   This was the original intended purpose and ensures a more predictable lifecycle management.
-
-   However, the flexibility to update different resources is available for specific use cases where needed.
-
-When a monitored resource expires (either current resource or regex match), the task will:
-
-- Look for the specified future resource in the user's record
-- If the future resource is found and has a valid end date, it will:
-
-  - Set the future resource's **current end date** as its new **start date**
-  - Calculate a new end date by taking the future resource's current end date and adding any extra days specified
-  - Update the future resource with these new dates
-- If not found or if the future resource has no valid end date, the task will log an error
+   While the task allows updating resources with different names based on the expiration of another (e.g., {MAIL} expiring triggers an update to {COMPTE}), we generally recommend configuring the task so that the "Current Resource" and "Future Resource" refer to the same underlying resource name (e.g., monitor {COMPTE} to update {COMPTE}, or monitor via Regex for "XYZ" and target via Regex for "XYZ"). This ensures more predictable lifecycle management for a single resource. The flexibility for different names is available for specific advanced use cases.
 
 .. warning::
-   The task modifies the FUTURE resource specified in the configuration, NOT the expired resource that triggered the task.
-   
-   The future resource must already exist in the user's record and have a valid end date for the update to work.
-   
-   IMPORTANT: The current END date of the future resource will become its new START date after the update.
+   - The resource(s) targeted for modification **must already exist** on the user's record and **must have a valid end date** for the update to proceed. This original end date is crucial as it becomes the new start date.
+   - The task modifies the state, sub-state, and dates of the targeted resource(s). The **name of the targeted resource itself is preserved**.
+   - If a targeted resource is not found (in Scenarios A & B) or if it lacks a valid end date, that specific update will be skipped, and an error may be logged.
 
 .. note::
-   Example: If a user has an expired {MAIL} resource and your task is configured to update {COMPTE}, the task will:
-   
-   1. Detect the expired {MAIL} resource 
-   2. Find the existing {COMPTE} resource
-   3. Update the {COMPTE} resource where its current end date becomes its new start date, and current end date + extra days becomes its new end date
+   **Example (Illustrating Scenario A):**
+   A user has an expired ``{MAIL}`` resource (e.g., state 'X', sub-state 'Y').
+   Your task is configured with:
+   - **Current resources details:** Resource={MAIL}, State=X, Sub-state=Y
+   - **Future resources details:** Resource={COMPTE}, State=A, Sub-state=B, Extra days=30
+
+   The task will:
+   1. Detect the expired ``{MAIL}`` resource matching state X, sub-state Y.
+   2. Find the existing ``{COMPTE}`` resource on the user.
+   3. If ``{COMPTE}`` exists and has a valid end date (e.g., 20250101):
+      - The ``{COMPTE}`` resource's new state becomes A, sub-state becomes B.
+      - Its new start date becomes 20250101.
+      - Its new end date becomes 20250101 + 30 days.
+      The resource string would change from something like ``{COMPTE}Z:W:startDate:20250101`` to ``{COMPTE}A:B:20250101:newEndDate``.
 
 Task Execution
 --------------
