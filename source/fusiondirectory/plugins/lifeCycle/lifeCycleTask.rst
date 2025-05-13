@@ -37,20 +37,28 @@ There are two methods for configuring which resources to monitor:
   :alt: Life cycle - Task creation step 2
   :width: 600px
 
-**Method 2: Using Regex Pattern Filtering**
+**Method 2: Using Regex to Define Monitored Resources**
 
-- **Navigate** to the **Regex Pattern Filtering** section.
-- **Enable** the regex filtering option.
-- **Enter** a regex pattern to match against supannRessourceEtatDate values.
-   - Example patterns:
-      - ``{COMPTE}.*`` to match all account resources
-      - ``{MAIL}A:SupannActif:.*`` to match active mail resources
-- Configure the **Future resources details** as described above.
+This method is used when you want to monitor resources based on a pattern rather than a single static name.
+
+- **Navigate** to the **Tasks Life Cycle** tab.
+- In the **Current resources details** section:
+    - Select ``REGEX`` for the **Resource** field. This will activate the "Regex Pattern Configuration" section.
+    - Define the **State** and optionally the **Sub-state** to monitor for expiration in conjunction with the regex pattern.
+- **Navigate** to the **Regex Pattern Configuration** section (which becomes active when "REGEX" is chosen above).
+   - **Enter** the **Regex Pattern** to match against the names of the user's Supann resources (e.g., the part within ``{}``).
+      For example:
+         - Use ``^COM.*`` to match resource names starting with "COMPTE".
+         - Use ``^M.*`` to match resource names starting with "MAIL".
+- Configure the **Future resources details** section as described in Method 1 (defining the target resource name, its new state/sub-state, and extra days).
 - **Assign** the relevant members.
 
 .. image:: images/lifeCycle-p3.png
   :alt: Life cycle - Task configuration with Regex
   :width: 600px
+
+.. note::
+   In the above example, if either ``{COMPTE}`` or ``{MAIL}`` has expired, the task will modify either one or both of them as needed. This means that a single Life Cycle task is sufficient to handle updates for both resources, ensuring efficient resource management.
 
 .. note::
    You can select either a **static group** or a **dynamic group** for greater flexibility.
@@ -67,9 +75,11 @@ The Life Cycle task processes users in two main phases:
     If an expired monitored resource is found (making the user eligible), the task then determines which specific user resource(s) to update. The exact behavior depends on the combination of how the **Current resources details** (Monitored) and **Future resources details** (Target) are configured:
 
     *   **Scenario A: Monitored Resource = Static Name, Target Resource = Static Name**
+      
         *   **Trigger:** The specific static resource defined in "Current resources details" (matching by name, state, and optionally sub-state) is found on the user and is expired.
         *   **Action:** The task looks for a user resource whose name matches the static name specified in "Future resources details".
         *   **Update:** If this target resource is found and has a valid end date:
+  
             *   It **keeps its original name**.
             *   Its state and sub-state are updated to what is configured in "Future resources details".
             *   Its original end date becomes its new start date.
@@ -77,14 +87,17 @@ The Life Cycle task processes users in two main phases:
             *   If the target resource is not found or lacks a valid end date, an error is logged.
 
     *   **Scenario B: Monitored Resource = Regex Pattern, Target Resource = Static Name**
+    
         *   **Trigger:** *Any* user resource whose name matches the **Regex Pattern** AND whose state/sub-state match those in "Current resources details" is found and is expired.
         *   **Action:** The task looks for a user resource whose name matches the static name specified in "Future resources details".
         *   **Update:** Same as Scenario A.
 
     *   **Scenario C: Monitored Resource = Static Name, Target Resource = Regex Pattern**
+     
         *   **Trigger:** The specific static resource defined in "Current resources details" (matching by name, state, and optionally sub-state) is found on the user and is expired.
         *   **Action:** The task looks for *all* user resources whose names match the **Regex Pattern** (specified in "Regex Pattern Configuration").
         *   **Update:** Each such found resource that has a valid end date is updated:
+      
             *   It **keeps its original name**.
             *   Its state and sub-state are updated to what is configured in "Future resources details".
             *   Its original end date becomes its new start date.
@@ -92,11 +105,14 @@ The Life Cycle task processes users in two main phases:
             *   Resources matching the regex but lacking a valid end date are skipped.
 
     *   **Scenario D: Monitored Resource = Regex Pattern, Target Resource = Regex Pattern**
+     
         *   **Trigger & Action:** The task iterates through all of the user's Supann resources. If a resource:
             1.  Matches the **Regex Pattern** by name, AND
             2.  Matches the state/sub-state defined in "Current resources details", AND
             3.  Is expired.
+    
         *   **Update:** *That same resource* (the one that met all trigger conditions) is updated if it has a valid end date:
+    
             *   It **keeps its original name**.
             *   Its state and sub-state are updated to what is configured in "Future resources details".
             *   Its original end date becomes its new start date.
@@ -112,12 +128,15 @@ The Life Cycle task processes users in two main phases:
 
 .. note::
    **Example (Illustrating Scenario A):**
+  
    A user has an expired ``{MAIL}`` resource (e.g., state 'X', sub-state 'Y').
    Your task is configured with:
+  
    - **Current resources details:** Resource={MAIL}, State=X, Sub-state=Y
    - **Future resources details:** Resource={COMPTE}, State=A, Sub-state=B, Extra days=30
 
    The task will:
+ 
    1. Detect the expired ``{MAIL}`` resource matching state X, sub-state Y.
    2. Find the existing ``{COMPTE}`` resource on the user.
    3. If ``{COMPTE}`` exists and has a valid end date (e.g., 20250101):
