@@ -20,8 +20,8 @@ Options
    file for each language, with every .po files it found. Needs *msgcat*
    and *msgfmt* to be installed.
 
---check-directories
-   This option perform a check on all FusionDirectory's files or
+--check-directories fusiondirectory|orchestrator
+   This option perform a check on all FusionDirectory's or Orchestrator's files or
    directories.
 
 --check-config
