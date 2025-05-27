@@ -83,8 +83,10 @@ This wil open a dialog incliding all the object settings and you can check/unche
    :alt: Picture of advanced object settings in FusionDirectory
    
 Then you have a part for each user tab depending on your installed plugins. 
-The **Create** right on a tab allows to activate it while the **Remove** one allows to deactivate.\ 
+The **Create** right on a tab allows to activate it while the **Remove** one allows to deactivate.
+
 The **Grant permission** to owner checkbox allows to give rights only on the user’s own node as in the editowninfos role we used earlier. 
+
 
 .. note::
 
@@ -105,6 +107,19 @@ To be able to create a user using a template, the connected user needs:
 * Create right of user/user on the base the user is created in (or any parent department)
 
 * Write right of the fields required by the templates on the base the user is created in (or any parent department)
+
+Template hide main object creation button
+.........................................
+
+The "Template hide main object creation button" ACL allows you to restrict users to only create objects using templates, hiding the main object creation button from the interface.
+
+When a user has only template creation rights (Example for user object):
+
+* The main "Create user" button will be hidden from the management interface
+* Only the "Create user from template" option will be available
+* This ensures users can only create objects using predefined templates, maintaining consistency and reducing configuration errors
+
+This is particularly useful for delegated administrators who should follow specific organizational templates when creating new users, while preventing them from creating users with custom configurations.
 
 Snapshot
 ........
