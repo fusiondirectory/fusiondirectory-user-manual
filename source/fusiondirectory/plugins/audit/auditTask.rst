@@ -37,6 +37,9 @@ Configuring Audit Task
       :alt: Audit - Syslog Transformation option
       :width: 600px
 
+.. NOTE::
+  You may set a specific prefix for the syslog file, which will be used to name the daily syslog files. If not set, the default prefix will be used.
+
 Task Execution
 --------------
 
