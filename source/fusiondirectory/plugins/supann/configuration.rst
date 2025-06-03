@@ -40,7 +40,7 @@ Configure SupAnn Options
    .. image:: images/supann-configuration-menu_1.png
       :alt: SupAnn configuration menu in FusionDirectory
 
-- **SupAnn RDN**: Defines the branch where SupAnn structures will be stored (**required**).
+- **SupannRessourceEtatDate integrity**: Controls validation of resource state data (**required**). When enabled (default), FusionDirectory enforces strict validation ensuring that all resources, states, and substates referenced in user accounts exist in the system configuration. When disabled, allows more flexible configurations where resources might not be pre-defined - useful during migration phases or when managing legacy data where some resources may be temporarily undefined.
 - **SupAnn Mail for Recovery**: Enables password recovery using email addresses from the personal mail field in a SupAnn account.
 - **Show mailForwardingAddress Field**: Displays the **mailForwardingAddress** attribute, making it available and editable in individual user configurations.
 - **Custom supannMailPrivee Types**: Allows you to define a **Type** and a **Label** for private email addresses, following SupAnn guidelines.
