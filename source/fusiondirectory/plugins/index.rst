@@ -12,7 +12,6 @@ FusionDirectory Plugins
    argonaut/index
    audit/index
    autofs5/index
-   autofs/index
    automatic-groups/index
    certificates/index
    community/index
