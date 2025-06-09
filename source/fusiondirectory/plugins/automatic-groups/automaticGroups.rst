@@ -37,9 +37,7 @@ Configuring Automatic Groups Task
 .. image:: images/automaticGroups-p2.png
   :alt: Automatic Groups - Task creation step 2
   :width: 600px
-
-.. note::
-   
+  
 Task Execution
 --------------
 
