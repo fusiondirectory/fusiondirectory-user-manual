@@ -16,7 +16,6 @@ FusionDirectory Plugins
    certificates/index
    community/index
    cyrus/index
-   debconf/index
    developers/index
    dhcp/index
    dns/index
