@@ -86,6 +86,17 @@ Login and session
 * **Login method**: (required) Which login method should be used for connecting to FusionDirectory
 * **Header name**: Define the name of the header you will use for HTTP Header Authentification
 
+HTTP Header Authentication
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+When using HTTP Header Authentication, FusionDirectory can dynamically switch between different LDAP server locations based on an HTTP header. 
+
+By sending the ``X-FusionDirectory-Location`` header with your request, you can specify which location (defined in your ``fusiondirectory.conf`` file) should be used for this authentication session. 
+The value of this header must exactly match the name of a location as configured in your ``fusiondirectory.conf``. 
+
+For example, if you have locations named "default" and "off-site" in your configuration, sending ``X-FusionDirectory-Location: off-site`` will connect to the LDAP server defined in the "off-site" location.
+This is particularly useful in environments with multiple LDAP servers or when integrating with reverse proxies and single sign-on solutions that can route users to different LDAP servers based on business rules.
+
 SSL
 ^^^
 
