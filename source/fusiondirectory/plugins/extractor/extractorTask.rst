@@ -36,6 +36,10 @@ Creating the Task
      :alt: Extractor - Task creation step 1
      :width: 600px
 
+.. note::
+   The task can not use the option "Only with new members", to have it ticked won't result into a scenario where only the extracted data of new users is performed.
+   The extraction is always performed for all users, groups, or dynamic groups selected in the task configuration.
+
 Configuring Extractor Task
 --------------------------
 
