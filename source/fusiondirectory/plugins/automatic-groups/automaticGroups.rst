@@ -31,11 +31,15 @@ Configuring Automatic Groups Task
 .. note::
    You can select either individual users or groups for processing. When groups are selected, all members will be processed individually.
 
+   The **resource** field can also be set to a regular expression (regex). When a regex is used, any resource name matching the pattern will be taken into consideration. If members possess any of these matching resources with the specified state and sub-state, they will be added to the target group.
+
 
 .. image:: images/automaticGroups-p2.png
   :alt: Automatic Groups - Task creation step 2
   :width: 600px
 
+.. note::
+   
 Task Execution
 --------------
 
