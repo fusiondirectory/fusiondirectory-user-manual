@@ -41,7 +41,6 @@ FusionDirectory Plugins
    netgroups/index
    nextcloud/index
    notifications/index
-   opsi/index
    personal/index
    posix/index
    postfix/index
