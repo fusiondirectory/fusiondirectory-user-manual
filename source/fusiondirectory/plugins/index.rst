@@ -38,7 +38,6 @@ FusionDirectory Plugins
    mail/index
    mailinblack/index
    migration-mailrouting/index
-   mixedgroups/index
    netgroups/index
    nextcloud/index
    notifications/index
