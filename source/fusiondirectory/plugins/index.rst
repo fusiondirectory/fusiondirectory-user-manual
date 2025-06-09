@@ -27,7 +27,6 @@ FusionDirectory Plugins
    extractor/index
    fai/index
    freeradius/index
-   fusioninventory/index
    gpg/index
    invitations/index
    ipam/index
