@@ -25,7 +25,6 @@ FusionDirectory Plugins
    dyngroups/index
    ejbca/index
    extractor/index
-   fai/index
    freeradius/index
    gpg/index
    invitations/index
