@@ -42,7 +42,6 @@ FusionDirectory Plugins
    migration-mailrouting/index
    mixedgroups/index
    netgroups/index
-   newsletter/index
    nextcloud/index
    notifications/index
    opsi/index
