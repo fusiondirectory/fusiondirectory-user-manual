@@ -38,6 +38,7 @@ Fill the fields for the Zimbra plugin and save it
    * Mailbox deletion: Should FD delete the mailbox when removing the account
    * Mailbox creation: Should FD error out or not when mailbox with the same email already exists
    * Password synchronization: Should FD sync the password to the zimbra account. Disable this if you have SSO.
+   * Keep unknown aliases: Should FD keep unknown aliases when updating the user. This is useful if you have aliases that are not managed by FusionDirectory.
    * Id attribute: Which LDAP attribute to use as email id. "mail" by default. If this is not "mail", "mail" will be added as an alias instead.
    * Login: Login to use to connect to the API
    * Password: Password to use
