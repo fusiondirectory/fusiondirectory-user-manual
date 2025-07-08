@@ -44,6 +44,9 @@ This method monitors a specific, named Supann resource for expiration and update
     - **Extra days to add**: Define how many days to add to the target resource's new end date. The calculation uses the target resource's *original end date* as the new *start date*.
 - **Assign** the relevant members (users/groups) to this task.
 
+.. note::
+   When **Sub-state** is set to "None", it means that any "Resources" and "States" matching the definition—regardless of their "Sub-state"—will be considered a match. In this case, the "Sub-state" is ignored entirely; whether it is set or not has no effect on the matching logic.
+
 .. image:: images/lifeCycle-p2.png
   :alt: Life cycle - Task configuration with specific resources
   :width: 600px
