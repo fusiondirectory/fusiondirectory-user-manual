@@ -12,5 +12,6 @@ FusionDirectory Plugins Supann
    installation
    configuration
    structures
+   objects/index
    users/index
    groups/index
