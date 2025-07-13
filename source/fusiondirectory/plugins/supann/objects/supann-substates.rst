@@ -23,3 +23,6 @@ Fill-in the following fields :
 * **Sub State Name** : name of the sub state
 * **Sub State Label** : label of the sub state that will be shown in FusionDirectory
 * **Sub State Description** : description of the sub state
+
+.. image:: images/supann-objects-substate-list.png
+   :alt: Picture of Supann Sub State list

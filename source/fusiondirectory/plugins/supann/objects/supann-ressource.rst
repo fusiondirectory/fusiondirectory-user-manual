@@ -23,3 +23,6 @@ Fill-in the following fields :
 * **Ressource Name** : name of the ressource
 * **Ressource Label** : label of the ressource that will be shown in FusionDirectory
 * **Ressource Description** : description of the ressource
+
+.. image:: images/supann-objects-ressource-list.png
+   :alt: Picture of Supann Ressource list

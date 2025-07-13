@@ -24,3 +24,6 @@ Fill-in the following fields :
 * **State Label** : label of the state that will be shown in FusionDirectory
 * **State Description** : description of the state
 * **Available Sub States** : substates available for the state
+
+.. image:: images/supann-objects-state-list.png
+   :alt: Picture of Supann State list
