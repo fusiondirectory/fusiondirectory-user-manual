@@ -58,7 +58,6 @@ FusionDirectory Plugins
    sudo/index
    supann/index
    supann-ext/index
-   sympa/index
    systems/index
    user-reminder/index
    webauthn/index
