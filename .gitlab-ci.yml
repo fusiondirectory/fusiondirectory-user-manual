@@ -6,4 +6,4 @@ create_sphinx_rapport:
     - branches
     - tags
   script:
-    - make SPHINXOPTS='-n -W -D' html
+    - make SPHINXOPTS='-n -W' html
