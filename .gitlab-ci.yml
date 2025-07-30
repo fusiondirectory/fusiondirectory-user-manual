@@ -1,7 +1,7 @@
 
 # Generate sphinx rapport
 create_sphinx_rapport:
-  image: registry.fusiondirectory.org/fusiondirectory/fd/sphinx-cli:buster
+  image: registry.fusiondirectory.org/fusiondirectory/fd/sphinx-cli:fd
   only:
     - branches
     - tags
