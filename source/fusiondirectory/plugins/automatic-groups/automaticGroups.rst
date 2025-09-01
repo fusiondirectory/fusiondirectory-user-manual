@@ -51,7 +51,7 @@ When the standard automatic groups task executes:
 This ensures that group memberships remain synchronized with the current state of users in your directory.
 
 .. note::
-   Regex is available for the Supann resource criteria, allowing for flexible matching resource patterns.
+   Regex is available for the Supann resource criteria, allowing for flexible matching of (only) resource patterns.
 
 Dynamic Group Creation
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -66,7 +66,7 @@ When the dynamic group creation task executes:
 The resulting dynamic group will automatically include all users whose Supann resource state matches the specified criteria, using LDAP's dynamic membership capabilities.
 
 .. note::
-   Regex is only available for the standard group assignment mode, not for dynamic group creation.
+   Regex is also available for the Supann resource (only) criteria in this mode. Creating a correct dynamic group related filter.
 
 Dynamic Group Structure
 -----------------------
