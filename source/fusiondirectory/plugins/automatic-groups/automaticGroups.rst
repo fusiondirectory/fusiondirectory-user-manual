@@ -51,19 +51,20 @@ When the standard automatic groups task executes:
 This ensures that group memberships remain synchronized with the current state of users in your directory.
 
 Optionaly, you can use regex to define more complex matching criteria for the Supann resource.
-In the Current resources details section:
-
- - Resource: Select REGEX. This activates the “Regex Pattern Configuration” section.
- - State: Define the state to monitor in conjunction with the regex pattern.
- - Sub-state (Optional): Define the sub-state.
 
 .. image:: images/automaticGroups-p3.png
   :alt: Automatic Groups - Task creation step 2
   :width: 600px
 
-In the Regex Pattern Configuration section:
+In the **Resource State Criteria** section:
+    - **Resource**: Select ``REGEX``. This activates the "Regex Pattern Configuration" section.
+    - **State**: Define the state to monitor in conjunction with the regex pattern.
+    - **Sub-state** (Optional): Define the sub-state.
 
- - Regex Pattern: Enter the regular expression to match against the names of the user’s Supann resources (the part within {}, e.g., “COMPTE”, “MAIL”).
+In the **Regex Pattern Configuration** section:
+   - **Regex Pattern**: Enter the regular expression to match against the names of the user's Supann resources (the part within ``{}``, e.g., "COMPTE", "MAIL").
+      - A single asterisk ``*`` will be treated as ``.*`` (match any character sequence), effectively matching all resource names.
+      - Example: ``^MAIL.*`` matches resource names starting with "MAIL".
 
 Dynamic Group Creation
 ^^^^^^^^^^^^^^^^^^^^^^
