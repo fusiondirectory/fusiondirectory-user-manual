@@ -91,11 +91,49 @@ HTTP Header Authentication
 
 When using HTTP Header Authentication, FusionDirectory can dynamically switch between different LDAP server locations based on an HTTP header. 
 
-By sending the ``X-FusionDirectory-Location`` header with your request, you can specify which location (defined in your ``fusiondirectory.conf`` file) should be used for this authentication session. 
+By sending the ``X-FusionDirectory-Location`` header with your request, you can specify which location defined in your ``fusiondirectory.conf`` file should be used for this authentication session. 
 The value of this header must exactly match the name of a location as configured in your ``fusiondirectory.conf``. 
 
 For example, if you have locations named "default" and "off-site" in your configuration, sending ``X-FusionDirectory-Location: off-site`` will connect to the LDAP server defined in the "off-site" location.
 This is particularly useful in environments with multiple LDAP servers or when integrating with reverse proxies and single sign-on solutions that can route users to different LDAP servers based on business rules.
+
+.. code-block:: php
+
+  <?xml version="1.0"?>
+  <conf>
+    <!-- Main section **********************************************************
+         The main section defines global settings, which might be overridden by
+         each location definition inside.
+
+         For more information about the configuration parameters, take a look at
+         the FusionDirectory.conf(5) manual page.
+    -->
+    <main default="default"
+        logging="TRUE"
+        displayErrors="FALSE"
+        forceSSL="FALSE"
+        templateCompileDirectory="/var/spool/fusiondirectory/"
+        debugLevel="0"
+    >
+
+      <!-- Location definition -->
+      <location name="default"
+      >
+        <referral URI="ldap://main.fusiondirectory.org:389" base="dc=fusiondirectory,dc=org"
+                        adminDn="cn=admin,dc=fusiondirectory,dc=org"
+                        adminPassword="tester" />
+      </location>
+    
+      <location name="off-site"
+      >
+        <referral URI="ldap://off-site.fusiondirectory.org.:389" base="dc=fusiondirectory,dc=org"
+                        adminDn="cn=admin,dc=fusiondirectory,dc=org"
+                        adminPassword="tester" />
+      </location>
+
+    </main>
+  </conf>
+
 
 SSL
 ^^^
