@@ -22,3 +22,14 @@ The created groups will appear in the list with other groups.
 
 .. note::
   Dynamic group requires dynlist and autogroup overlays to be installed in your LDAP directory.
+
+
+Dynamic Group LDAP Filter
+-------------------------
+
+- **LDAP URL**: ldap:///{branch},{base_dn}??sub?(supannRessourceEtat={resource}{state}[:substate])
+
+For example, a dynamic group for resource "COMPTE" with state "A" would be:
+
+- Name: dynamic-compte-a
+- LDAP URL: ldap:///ou=people,dc=example,dc=com??sub?(supannRessourceEtat={COMPTE}A)
