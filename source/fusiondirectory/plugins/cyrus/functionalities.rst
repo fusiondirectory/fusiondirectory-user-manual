@@ -42,14 +42,6 @@ Cyrus settings
     * Admin user: (required) Imap server admin user.
     * Password: (required) Admin user password.
     
-    
-Sieve settings
-
-    * Hostname: Hostname of the Cyrus Sieve server.
-    * Port: Port number on which Cyrus Sieve server should be contacted.
-    * Option: (required) Options for contacting Cyrus Sieve server. Valid values are notls, tls and ssl.
-    
-    
 Click on 'save'
 
 
