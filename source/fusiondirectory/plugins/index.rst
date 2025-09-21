@@ -50,6 +50,7 @@ FusionDirectory Plugins
    repository/index
    samba/index
    schac/index
+   sieve/index 
    sinaps/index
    sogo/index
    spamassassin/index
