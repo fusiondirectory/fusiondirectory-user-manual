@@ -9,7 +9,6 @@ FusionDirectory Plugins
    alias/index
    applications/index
    archive/index
-   argonaut/index
    audit/index
    autofs5/index
    automatic-groups/index
