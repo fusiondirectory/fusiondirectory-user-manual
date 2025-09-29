@@ -27,10 +27,6 @@ Fill-in the following fields :
 
 You can also set the start date and end date of the current status for a resource.
 
-If you set an end date, you either have to change the status yourself or use our tool **argonaut-user-reminder** with the option **--supann-update**.
-
-**argonaut-user-reminder** should run daily to keep the status consistent.
-
 Click on "OK"button bottom right to save your settings
 
 .. image:: images/supann-user-ok-button.png
