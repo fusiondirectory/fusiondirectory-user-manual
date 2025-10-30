@@ -20,5 +20,8 @@ Debian
 
 .. code-block:: bash
 
+
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/user-reminder-fd.schema
+
    fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/user-reminder-fd-conf.schema
    
