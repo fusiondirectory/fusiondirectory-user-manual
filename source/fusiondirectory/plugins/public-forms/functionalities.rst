@@ -20,6 +20,8 @@ Public Form
 * **Private**: This is only useful if the :ref:`plugins-invitations` plugin is installed and will make this form only available with a valid invitation
 * **Creation base**: The base the created object will be placed in
 * **TOS URL**: If filled, a mandatory checkbox will force people to accept the terms of service available at this URL before submitting the form
+* **Locked by Default**: Create users that are locked by default
+* **Captcha**: Should we use a captcha on the form
 
 Altered fields
 --------------
