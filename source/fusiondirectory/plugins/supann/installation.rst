@@ -22,7 +22,8 @@ Debian
 
    fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/internet2.schema
    fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/eduperson.schema
-   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/supann-2019-11-22.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/supann.schema
+   fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/supann-fd.schema
    fusiondirectory-schema-manager --insert-schema /etc/ldap/schema/fusiondirectory/supann-fd-conf.schema
 
 Register the plugin
