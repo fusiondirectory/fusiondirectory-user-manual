@@ -46,6 +46,8 @@ Configuring Task Notifications
 .. note::
    You can select either a **static group** or a **dynamic group** for greater flexibility.
 
+.. note::
+   You cannot use posix groups with this task 
 
 .. image:: images/notifications-t2.png
   :alt: Life cycle - Task creation step 2

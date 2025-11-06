@@ -80,6 +80,9 @@ This method allows monitoring or targeting resources based on a name pattern.
 .. note::
    You can assign members using **static groups** or **dynamic groups** for flexible targeting.
 
+.. note::
+   You cannot use posix groups with this task
+
 Resource State Modification Behavior
 ------------------------------------
 
