@@ -8,3 +8,4 @@ FusionDirectory Plugins Ppolicy
 
    description
    installation
+   functionalities
