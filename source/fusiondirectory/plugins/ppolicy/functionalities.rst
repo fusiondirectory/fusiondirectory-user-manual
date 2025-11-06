@@ -1,7 +1,7 @@
 .. include:: /globals.rst
 
-Ppolicy
-=======
+Functionalities
+===============
 
 * Set the default ppolicy DN in FusionDirectory configuration backend
 
