@@ -57,6 +57,9 @@ Configuring Extractor Task
 .. note::
    You can select either a **static group** or a **dynamic group** for greater flexibility.
 
+.. note::
+   You cannot use posix groups with this task 
+
 Task Execution
 --------------
 
