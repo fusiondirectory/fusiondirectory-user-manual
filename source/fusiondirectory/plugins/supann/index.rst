@@ -15,3 +15,4 @@ FusionDirectory Plugins Supann
    objects/index
    users/index
    groups/index
+   applications/index
