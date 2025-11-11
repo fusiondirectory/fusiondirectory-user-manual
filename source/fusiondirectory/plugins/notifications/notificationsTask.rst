@@ -33,7 +33,7 @@ Configuring Task Notifications
    .. warning::
       The list of attributes **must be** configured via the **FusionDirectory configuration menu** under the **Notifications** tab before use.
 
-**(Optional)** Enable monitoring of a **Supann resource**.
+**(Optional)** Enable future **Supann resource**.
    - Define the next resource, state and substate after notification if you want to use this functionality.
 
 **Assign** the relevant monitored members.
