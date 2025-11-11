@@ -33,15 +33,19 @@ Configuring Task Notifications
    .. warning::
       The list of attributes **must be** configured via the **FusionDirectory configuration menu** under the **Notifications** tab before use.
 
-**Choose** the email template to use.
-   - The template **must be pre-created**.
-   - Specify the sender of the notifications.
+**(Optional)** Enable monitoring of a **Supann resource**.
+   - Define the next resource, state and substate after notification if you want to use this functionality.
+
 **Assign** the relevant monitored members.
    - These members will be analyzed against the defined attributes in audit logs for any modifications **since the last execution of the task**.
 **Specify** the recipients who will receive the notifications.
  **(Optional)** Enable monitoring of a **Supann resource**.
    - This allows notifications to be sent when a member reaches a specific Supann state.
    - You can choose to monitor both attributes and Supann resources or only one of them.
+
+**Choose** the email template to use.
+   - The template **must be pre-created**.
+   - Specify the sender of the notifications.
 
 .. note::
    You can select either a **static group** or a **dynamic group** for greater flexibility.
@@ -76,3 +80,4 @@ Once configured as described, the **Task Notification** will:
 - **Analyze** the monitored attributes **hourly**.
 - **Analyze** the monitored Supann states **hourly**.
 - **Send** an email notification based on the predefined settings.
+- **Change** the resource, state and substate if configured.
