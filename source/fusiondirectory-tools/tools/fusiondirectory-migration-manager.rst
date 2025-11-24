@@ -20,10 +20,10 @@ Options
    List LDAP entries using deprecated attributes or objectClass.
 
 --ldif-deprecated
-	 Print an LDIF removing deprecated attributes.
+	Print an LDIF removing deprecated attributes.
 
 --remove-supann-root
-	 Remove Supann root establishment from FusionDirectory release < v1.4.
+	Remove Supann root establishment from FusionDirectory release < v1.4.
 
 --check-ids
    This option check your LDAP tree for duplicated uidNumber or
@@ -32,8 +32,11 @@ Options
 --migrate-users
    This option add FusionDirectory attributes to the people branch.
 
+--migrate-supannobjects
+   This option migrate custom Supann resources and Supann substates before  FusionDirectory 1.6 to supannObjects.
+
 --migrate-interfaces
-	 This allows migrating your system if FusionDirectory release is < v1.4.
+	This allows migrating your system if FusionDirectory release is < v1.4.
 
 --list-vars
    This option will list the variables you can change to install
